@@ -1,0 +1,22 @@
+export const historicalRates = [
+  { quarter: "2021-Q1", fia: { avgCapRate: 4.25, topCapRate: 6.50, avgParticipation: 42 }, glwb: { avgRollup: 7.5, avgWD65: 5.0, avgFee: 1.15 }, iul: { avgCapRate: 9.50, topCapRate: 11.00, avgIllustrated: 5.75 }},
+  { quarter: "2021-Q2", fia: { avgCapRate: 4.50, topCapRate: 6.75, avgParticipation: 44 }, glwb: { avgRollup: 7.5, avgWD65: 5.0, avgFee: 1.15 }, iul: { avgCapRate: 9.50, topCapRate: 11.00, avgIllustrated: 5.80 }},
+  { quarter: "2021-Q3", fia: { avgCapRate: 4.50, topCapRate: 7.00, avgParticipation: 45 }, glwb: { avgRollup: 7.25, avgWD65: 5.0, avgFee: 1.12 }, iul: { avgCapRate: 9.75, topCapRate: 11.25, avgIllustrated: 5.85 }},
+  { quarter: "2021-Q4", fia: { avgCapRate: 4.75, topCapRate: 7.00, avgParticipation: 46 }, glwb: { avgRollup: 7.0, avgWD65: 5.0, avgFee: 1.10 }, iul: { avgCapRate: 9.75, topCapRate: 11.25, avgIllustrated: 5.90 }},
+  { quarter: "2022-Q1", fia: { avgCapRate: 5.00, topCapRate: 7.25, avgParticipation: 50 }, glwb: { avgRollup: 7.0, avgWD65: 5.0, avgFee: 1.10 }, iul: { avgCapRate: 10.00, topCapRate: 11.50, avgIllustrated: 6.00 }},
+  { quarter: "2022-Q2", fia: { avgCapRate: 5.50, topCapRate: 7.75, avgParticipation: 55 }, glwb: { avgRollup: 7.0, avgWD65: 5.0, avgFee: 1.10 }, iul: { avgCapRate: 10.00, topCapRate: 11.50, avgIllustrated: 6.05 }},
+  { quarter: "2022-Q3", fia: { avgCapRate: 5.75, topCapRate: 8.00, avgParticipation: 60 }, glwb: { avgRollup: 7.0, avgWD65: 5.0, avgFee: 1.08 }, iul: { avgCapRate: 10.25, topCapRate: 11.75, avgIllustrated: 6.10 }},
+  { quarter: "2022-Q4", fia: { avgCapRate: 6.25, topCapRate: 8.50, avgParticipation: 65 }, glwb: { avgRollup: 6.75, avgWD65: 5.0, avgFee: 1.08 }, iul: { avgCapRate: 10.25, topCapRate: 11.75, avgIllustrated: 6.15 }},
+  { quarter: "2023-Q1", fia: { avgCapRate: 6.50, topCapRate: 9.00, avgParticipation: 70 }, glwb: { avgRollup: 6.75, avgWD65: 5.0, avgFee: 1.05 }, iul: { avgCapRate: 10.50, topCapRate: 12.00, avgIllustrated: 6.20 }},
+  { quarter: "2023-Q2", fia: { avgCapRate: 7.00, topCapRate: 9.25, avgParticipation: 80 }, glwb: { avgRollup: 6.75, avgWD65: 5.10, avgFee: 1.05 }, iul: { avgCapRate: 10.50, topCapRate: 12.00, avgIllustrated: 6.25 }},
+  { quarter: "2023-Q3", fia: { avgCapRate: 7.25, topCapRate: 9.50, avgParticipation: 85 }, glwb: { avgRollup: 6.50, avgWD65: 5.10, avgFee: 1.05 }, iul: { avgCapRate: 10.50, topCapRate: 12.00, avgIllustrated: 6.30 }},
+  { quarter: "2023-Q4", fia: { avgCapRate: 7.50, topCapRate: 9.75, avgParticipation: 90 }, glwb: { avgRollup: 6.50, avgWD65: 5.15, avgFee: 1.05 }, iul: { avgCapRate: 10.75, topCapRate: 12.00, avgIllustrated: 6.35 }},
+  { quarter: "2024-Q1", fia: { avgCapRate: 7.50, topCapRate: 10.00, avgParticipation: 95 }, glwb: { avgRollup: 6.50, avgWD65: 5.15, avgFee: 1.05 }, iul: { avgCapRate: 10.75, topCapRate: 12.25, avgIllustrated: 6.40 }},
+  { quarter: "2024-Q2", fia: { avgCapRate: 7.75, topCapRate: 10.25, avgParticipation: 100 }, glwb: { avgRollup: 6.50, avgWD65: 5.20, avgFee: 1.05 }, iul: { avgCapRate: 10.75, topCapRate: 12.25, avgIllustrated: 6.40 }},
+  { quarter: "2024-Q3", fia: { avgCapRate: 7.75, topCapRate: 10.25, avgParticipation: 105 }, glwb: { avgRollup: 6.75, avgWD65: 5.20, avgFee: 1.08 }, iul: { avgCapRate: 10.50, topCapRate: 12.25, avgIllustrated: 6.45 }},
+  { quarter: "2024-Q4", fia: { avgCapRate: 7.80, topCapRate: 10.50, avgParticipation: 110 }, glwb: { avgRollup: 6.75, avgWD65: 5.25, avgFee: 1.08 }, iul: { avgCapRate: 10.50, topCapRate: 12.25, avgIllustrated: 6.45 }},
+  { quarter: "2025-Q1", fia: { avgCapRate: 7.80, topCapRate: 10.50, avgParticipation: 115 }, glwb: { avgRollup: 7.0, avgWD65: 5.25, avgFee: 1.10 }, iul: { avgCapRate: 10.50, topCapRate: 12.25, avgIllustrated: 6.47 }},
+  { quarter: "2025-Q2", fia: { avgCapRate: 7.75, topCapRate: 10.50, avgParticipation: 115 }, glwb: { avgRollup: 7.0, avgWD65: 5.25, avgFee: 1.10 }, iul: { avgCapRate: 10.50, topCapRate: 12.25, avgIllustrated: 6.47 }},
+  { quarter: "2025-Q3", fia: { avgCapRate: 7.80, topCapRate: 10.75, avgParticipation: 118 }, glwb: { avgRollup: 7.0, avgWD65: 5.25, avgFee: 1.10 }, iul: { avgCapRate: 10.50, topCapRate: 12.25, avgIllustrated: 6.47 }},
+  { quarter: "2025-Q4", fia: { avgCapRate: 7.80, topCapRate: 10.75, avgParticipation: 120 }, glwb: { avgRollup: 6.8, avgWD65: 5.25, avgFee: 1.10 }, iul: { avgCapRate: 10.50, topCapRate: 12.25, avgIllustrated: 6.47 }}
+];
