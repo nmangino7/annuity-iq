@@ -337,39 +337,46 @@ export const rilaProducts = [
   {
     id: 'jackson-market-link-pro-ii-6yr',
     carrierId: 'jackson-national',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-21',
     name: 'Market Link Pro II (6-Year)',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: -10, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Floor', floorLevel: -20, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.40 },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 15.90 },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 13.00 },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: 75.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 25000, maximumIssueAge: 85,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['Both buffer and floor options', '20% floor option available', 'Multiple index strategies'],
+    highlights: ['S&P 500 1yr cap 11.50%, Performance Trigger 12.40%', 'Russell 2000 1yr cap 14.75%, Trigger 15.90%', '6-year S&P 500 cap 75% (Performance Boost)', 'Fixed account 3.00%'],
     sourceUrl: "https://www.jackson.com/annuities/registered-index-linked-annuities",
-    lastRateUpdate: '2025-01-15'
+    lastRateUpdate: '2026-02-21'
   },
   // ── 17. Jackson Market Link Pro II (1yr) ──
   {
     id: 'jackson-market-link-pro-ii-1yr',
     carrierId: 'jackson-national',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-21',
     name: 'Market Link Pro II (1-Year)',
     term: 1,
     accountOptions: [
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.75, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.40 },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 25000, maximumIssueAge: 85,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 0 },
     deathBenefit: 'Account Value',
-    highlights: ['1-year renewable contract', 'No surrender charges', 'Annual buffer reset'],
+    highlights: ['S&P 500 cap 11.50% (10% buffer)', 'Performance Trigger 12.40%', 'Russell 2000 cap 14.75%', 'No surrender charges'],
     sourceUrl: "https://www.jackson.com/annuities/registered-index-linked-annuities",
-    lastRateUpdate: '2025-01-15'
+    lastRateUpdate: '2026-02-21'
   },
   // ── 18. Pacific Life Pacific Odyssey ──
   {

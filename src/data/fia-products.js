@@ -401,6 +401,8 @@ export const fiaProducts = [
   {
     id: "nationwide-peak-10",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Nationwide Peak 10",
     surrenderPeriod: 10,
     surrenderSchedule: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
@@ -409,7 +411,7 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
-    fixedAccountRate: 3.00,
+    fixedAccountRate: 3.55,
     indexStrategies: [
       {
         indexName: "S&P 500",
@@ -467,7 +469,7 @@ export const fiaProducts = [
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["Guaranteed Income Solution (free, 4% simple roll-up)", "Optional Bonus Income+ Rider available", "Strong 2-year participation rates"],
+    highlights: ["Fixed account 3.55%", "S&P 500 cap 6.25%, BNP/JP Morgan caps 10.00%", "Strong 2-year participation rates"],
     sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed/types/nationwide-peak-10",
     lastRateUpdate: "2026-02-21"
   },
@@ -741,6 +743,8 @@ export const fiaProducts = [
   {
     id: "midland-national-endeavor-8",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "MNL Endeavor 8",
     surrenderPeriod: 8,
     surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 0],
@@ -749,37 +753,56 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 8.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.30,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 7.50,
+        capRate: 8.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "S&P MARC 5% ER",
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Sum",
+        capRate: 2.05,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 275,
+        participationRate: 35,
         spread: 0,
         floor: 0,
         isUncapped: true
       },
       {
-        indexName: "BNP Paribas Multi Asset Diversified 5",
+        indexName: "S&P MARC 5% ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 300,
+        participationRate: 140,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "Fidelity Multifactor Yield 5% ER",
+        creditingMethod: "Biennial Point-to-Point",
+        capRate: null,
+        participationRate: 205,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["8% premium bonus", "8-year surrender period", "Uncapped volatility-controlled indices"],
+    highlights: ["S&P 500 cap 8.00%, Monthly Sum 2.05%", "S&P MARC 5% ER 140% PR, Fidelity MFY 205% PR (biennial)", "8-year surrender, $20K minimum", "Inverse Performance Trigger 9.00%"],
     sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -936,7 +959,7 @@ export const fiaProducts = [
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["9.25% S&P 500 cap (no fee)", "Multiple crediting methods"],
+    highlights: ["S&P 500 cap 9.25%, Fixed 3.80%", "Growth Accelerator option: S&P cap 11.75% (0.95% fee)", "Performance Trigger 5.75%, Advantage 15% Trigger 8.25%", "10-year surrender, $25K minimum"],
     sourceUrl: "https://annuityeducator.com/reviews/american-equity-investment-life-insurance-company/fixed-index/assetshield-10",
     lastRateUpdate: "2026-02-21"
   },
@@ -992,14 +1015,17 @@ export const fiaProducts = [
   {
     id: "great-american-legend-7",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Great American Legend 7",
     surrenderPeriod: 7,
-    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
+    surrenderSchedule: [9, 8, 7, 6, 5, 4, 3, 0],
     minimumPremium: 10000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.15,
     indexStrategies: [
       {
         indexName: "S&P 500",
@@ -1011,18 +1037,27 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 2.75,
+        indexName: "First Trust Barclays Edge",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 14.25,
         participationRate: 100,
         spread: 0,
-        floor: -10,
+        floor: 0,
         isUncapped: false
       },
       {
-        indexName: "Nasdaq-100",
+        indexName: "iShares US Real Estate",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 7.75,
+        capRate: 12.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "SPDR Gold",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 12.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1030,7 +1065,7 @@ export const fiaProducts = [
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["7-year surrender period", "High cap rates"],
+    highlights: ["S&P 500 cap 9.25%, Fixed 4.15%", "First Trust Barclays Edge cap 14.25%", "Real Estate & Gold indexes available", "7-year surrender, $10K minimum"],
     sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
@@ -1420,19 +1455,22 @@ export const fiaProducts = [
   {
     id: "jackson-income-assurance",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Jackson Income Assurance",
     surrenderPeriod: 10,
-    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    surrenderSchedule: [9, 8, 7, 7, 6, 5, 4, 3, 2, 1, 0],
     minimumPremium: 25000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 5.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.65,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 7.25,
+        capRate: 4.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1446,11 +1484,11 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        triggerRate: 5.50
+        triggerRate: 4.40
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["Built-in GMWB income rider", "5% premium bonus", "Launched August 2025"],
+    highlights: ["Built-in GMWB income rider (1.10% fee)", "5% premium bonus", "S&P 500 cap 4.75%, Performance Trigger 4.40%"],
     sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -1519,7 +1557,7 @@ export const fiaProducts = [
       }
     ],
     incomeRiderAvailable: false,
-    highlights: ["9.25% S&P 500 cap (high band)", "4.30% fixed rate", "5-year surrender period", "Multiple index options including Nasdaq-100"],
+    highlights: ["S&P 500 cap 9.25%, Fixed 4.30%", "JP Morgan ETF Efficiente cap 18.00%", "Putnam Dynamic Low Vol cap 18.00%", "5-year surrender, $25K minimum"],
     sourceUrl: "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-5",
     lastRateUpdate: "2026-02-21"
   },
@@ -1611,6 +1649,8 @@ export const fiaProducts = [
   {
     id: "delaware-life-target-growth-10",
     carrierId: "delaware-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Delaware Life Target Growth 10",
     surrenderPeriod: 10,
     surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -1619,21 +1659,22 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 12.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.60,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 6.75,
+        capRate: 9.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "JP Morgan Mozaic II",
+        indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 275,
+        participationRate: 55,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -1646,20 +1687,29 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        triggerRate: 5.50
+        triggerRate: 7.25
       },
       {
-        indexName: "Nasdaq-100",
+        indexName: "Goldman Sachs Canopy",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 6.00,
-        participationRate: 100,
+        capRate: null,
+        participationRate: 110,
         spread: 0,
         floor: 0,
-        isUncapped: false
+        isUncapped: true
+      },
+      {
+        indexName: "First Trust Capital Strength Barclays 10%",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 95,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["12% premium bonus", "Four strategy options"],
+    highlights: ["12% premium bonus", "S&P 500 Bailout cap 9.50%", "Goldman Sachs Canopy 110% PR", "Fixed account 4.60%", "Precision Portfolio option available (higher caps with fee)"],
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1891,14 +1941,17 @@ export const fiaProducts = [
   {
     id: "athene-performance-elite-plus-10",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Athene Performance Elite Plus 10",
     surrenderPeriod: 10,
-    surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 25000,
+    surrenderSchedule: [12, 12, 12, 11, 10, 9, 8, 7, 6, 4, 0],
+    minimumPremium: 10000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 18.0,
+    premiumBonus: 22.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.90,
     indexStrategies: [
       {
         indexName: "S&P 500",
@@ -1911,26 +1964,43 @@ export const fiaProducts = [
       },
       {
         indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        triggerRate: 4.75
-      },
-      {
-        indexName: "BNP Paribas Multi Asset Diversified 5",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 250,
+        participationRate: 60,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "BNP Paribas Multi-Asset",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 130,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "AI Powered US Equity",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 107,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "Nasdaq",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 77,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["18% premium bonus — among highest in industry", "Income rider available", "Lower caps offset by bonus"],
+    highlights: ["22% premium bonus — among highest in industry", "S&P cap 5.50% (base), 8.00% (enhanced, 0.95% fee)", "BNP Paribas Multi-Asset 130% PR (base)", "Fixed account 2.90%"],
     sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
@@ -2220,29 +2290,32 @@ export const fiaProducts = [
   {
     id: "north-american-charter-plus-14",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "North American Charter Plus 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 25000,
+    minimumPremium: 75000,
     maximumIssueAge: 75,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 25.0,
+    premiumBonus: 17.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.80,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 5.50,
+        capRate: 6.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "Barclays Atlas 5",
+        indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 460,
+        participationRate: 20,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -2251,14 +2324,23 @@ export const fiaProducts = [
         indexName: "S&P MARC 5% ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 350,
+        participationRate: 90,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "Morgan Stanley Dynamic Global Enhanced",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 140,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["25% premium bonus", "14-year surrender period", "460% participation rate"],
+    highlights: ["17% premium bonus (High Band)", "14-year surrender period", "Morgan Stanley Dynamic Global 140% PR", "S&P MARC 5% ER 90% PR"],
     sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -2678,45 +2760,76 @@ export const fiaProducts = [
   {
     id: "allianz-benefit-control",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Allianz Benefit Control Annuity",
     surrenderPeriod: 10,
     surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
     minimumPremium: 20000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 0.0,
+    premiumBonus: 25.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.50,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 9.25,
+        capRate: 4.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "Nasdaq-100",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 8.00,
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Sum",
+        capRate: 1.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 3.50
+      },
+      {
+        indexName: "BlackRock iBld Claria",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 90,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
       },
       {
         indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 180,
+        participationRate: 75,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "PIMCO Tactical Balanced",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 70,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["Lifetime income rider included", "No premium bonus for higher caps"],
+    highlights: ["25% PIV premium bonus", "Income-focused design (S&P cap 4.00%)", "BlackRock iBld Claria 90% PR", "#1 best-selling FIA in market (Allianz)"],
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -3498,54 +3611,58 @@ export const fiaProducts = [
   {
     id: "global-atlantic-foreaccumulation-ii",
     carrierId: "global-atlantic",
-    name: "Global Atlantic ForeAccumulation II",
-    surrenderPeriod: 7,
-    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 10000,
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
+    name: "Global Atlantic ForeAccumulation II 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 25000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.00,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.50,
+        capRate: 9.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "BNP Paribas Multi Asset Diversified 5",
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 6.50
+      },
+      {
+        indexName: "BlackRock Diversa",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 350,
+        participationRate: 145,
         spread: 0,
         floor: 0,
         isUncapped: true
       },
       {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 3.25,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "JP Morgan Mozaic II",
+        indexName: "PIMCO Balanced",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 275,
+        participationRate: 190,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: false,
-    highlights: ["Second generation accumulation product", "Among highest cap rates in market"],
+    highlights: ["Fixed account 4.00%", "BlackRock Diversa 145% PR, PIMCO Balanced 190% PR", "Growth Accelerator option available (1.25% fee)"],
     sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -4807,45 +4924,67 @@ export const fiaProducts = [
   {
     id: "fg-safe-income-advantage",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "F&G Safe Income Advantage",
-    surrenderPeriod: 7,
-    surrenderSchedule: [8, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 15000,
+    surrenderPeriod: 10,
+    surrenderSchedule: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 0],
+    minimumPremium: 10000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 4.0,
+    premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.50,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.25,
+        capRate: 3.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Sum",
+        capRate: 1.20,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 2.25
+      },
+      {
+        indexName: "CIBC Balanced Asset 5",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 210,
+        participationRate: 120,
         spread: 0,
         floor: 0,
         isUncapped: true
       },
       {
-        indexName: "S&P MARC 5% ER",
+        indexName: "BlackRock Market Advantage",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 185,
+        participationRate: 50,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["4% premium bonus", "Income rider with 7-year surrender"],
+    highlights: ["Income-focused design (S&P cap 3.00%)", "EGMWB rider included (1.15% fee)", "CIBC Balanced Asset 5 PR 120%", "10-year surrender, $10K minimum"],
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
@@ -7799,28 +7938,30 @@ export const fiaProducts = [
   {
     id: "fg-accelerator-plus-10",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "F&G Accelerator Plus 10",
     surrenderPeriod: 10,
     surrenderSchedule: [14, 13, 12, 11, 10, 8, 6, 4, 2, 1, 0],
     minimumPremium: 10000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 10.0,
+    premiumBonus: 11.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.75,
     indexStrategies: [
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 5.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 40, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 1.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 4.50 },
-      { indexName: "CIBC Balanced Asset 5", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 80, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "CIBC Balanced Asset 10", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 45, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "GS Global Factor", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 210, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "BlackRock Market Advantage", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 65, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "Morgan Stanley US Equity Allocator", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 55, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "Barclays Trailblazer Sectors 5", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 120, spread: 0, floor: 0, isUncapped: true }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 45, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 2.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 5.00 },
+      { indexName: "CIBC Balanced Asset 5", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 210, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "GS Global Factor", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 160, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "BlackRock Market Advantage", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 125, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Barclays Trailblazer Sectors 5", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 225, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Morgan Stanley US Equity Allocator", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 70, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: true,
-    highlights: ["10% premium bonus", "19 indexed strategies plus fixed", "Performance multiplier up to 175% of account value for income", "7 index options"],
+    highlights: ["11% premium bonus", "S&P 500 cap 7.25% (base), 10.25% (enhanced)", "CIBC Balanced Asset 5 PR 210% (biennial)", "EGMWB rider 0.95% fee"],
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
