@@ -3,38 +3,50 @@ export const rilaProducts = [
   {
     id: 'allianz-index-advantage-nf-6',
     carrierId: 'allianz-life',
-    name: 'Index Advantage NF (6-Year)',
+    name: 'Index Advantage+ NF (6-Year)',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 110, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
-      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.75, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.75, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.25, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.25, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: 65.00, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 8.70 },
+      { indexName: 'Russell 2000', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.20 }
     ],
-    minimumPremium: 25000, maximumIssueAge: 80,
+    minimumPremium: 10000, maximumIssueAge: 85,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4],
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
-    highlights: ['10% and 20% buffer options', 'Uncapped participation available', '6-year term', 'Multiple index choices'],
-    lastRateUpdate: '2025-01-15'
+    highlights: ['No product fee', '10%, 20%, 30% buffer options', 'Uncapped 6-year strategies', '1-year and 6-year crediting terms'],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/registered-index-linked-annuities/index-advantage-plus-nf/rates",
+    lastRateUpdate: '2026-02-21'
   },
   // ── 2. Allianz Index Advantage NF (3yr) ──
   {
     id: 'allianz-index-advantage-nf-3',
     carrierId: 'allianz-life',
-    name: 'Index Advantage NF (3-Year)',
+    name: 'Index Advantage+ NF (3-Year)',
     term: 3,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 90, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 85.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 40.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 28.00, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 70.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 45.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
-    minimumPremium: 25000, maximumIssueAge: 80,
+    minimumPremium: 10000, maximumIssueAge: 85,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4],
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
     deathBenefit: 'Account Value',
-    highlights: ['3-year commitment', 'Lower surrender charges', 'Uncapped S&P 500 with 20% buffer'],
-    lastRateUpdate: '2025-01-15'
+    highlights: ['3-year crediting terms', 'No product fee', 'Up to 85% S&P 500 3-year cap'],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/registered-index-linked-annuities/index-advantage-plus-nf/rates",
+    lastRateUpdate: '2026-02-21'
   },
   // ── 3. Allianz Index Advantage+ NF ──
   {
@@ -53,6 +65,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Greater of AV or ROP',
     highlights: ['Enhanced cap rates vs standard NF', 'Return of Premium death benefit', 'Dual uncapped options'],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/registered-index-linked-annuities",
     lastRateUpdate: '2025-01-15'
   },
   // ── 4. Brighthouse Shield Level 6 (1yr) ──
@@ -108,6 +121,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Step Rate crediting method', 'Dual Direction option', 'Multiple crediting approaches'],
+    sourceUrl: "https://www.brighthousefinancial.com/products/annuities/shield-annuities",
     lastRateUpdate: '2025-01-15'
   },
   // ── 7. Equitable SCS PLUS (6yr, 10% buffer) ──
@@ -117,7 +131,7 @@ export const rilaProducts = [
     name: 'Structured Capital Strategies PLUS (6-Year)',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
@@ -128,6 +142,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['10%, 20%, and 30% buffer options', 'Largest RILA in the market', '6 index choices'],
+    sourceUrl: "https://equitable.com/annuities/variable-annuities/performance-cap-rates",
     lastRateUpdate: '2025-01-15'
   },
   // ── 8. Equitable SCS PLUS (3yr) ──
@@ -145,6 +160,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
     deathBenefit: 'Account Value',
     highlights: ['3-year crediting period', 'Higher caps for multi-year', 'Up to 20% buffer'],
+    sourceUrl: "https://equitable.com/annuities/variable-annuities/performance-cap-rates",
     lastRateUpdate: '2025-01-15'
   },
   // ── 9. Equitable SCS Income ──
@@ -162,6 +178,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Greater of AV or ROP',
     highlights: ['Lifetime income benefit included', 'Buffer protection with income', 'Return of Premium death benefit'],
+    sourceUrl: "https://equitable.com/annuities/variable-annuities/performance-cap-rates",
     lastRateUpdate: '2025-01-15'
   },
   // ── 10. Lincoln Level Advantage (6yr) ──
@@ -180,6 +197,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['Uncapped S&P 500 with 20% buffer', '6-year contract term', 'Strong carrier ratings'],
+    sourceUrl: "https://www.lincolnfinancial.com/public/microsite/leveladvantage/ratescenter",
     lastRateUpdate: '2025-01-15'
   },
   // ── 11. Lincoln Level Advantage (1yr) ──
@@ -197,6 +215,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 0 },
     deathBenefit: 'Account Value',
     highlights: ['1-year term — no long commitment', 'Annual reset of buffer', 'No surrender charges'],
+    sourceUrl: "https://www.lincolnfinancial.com/public/microsite/leveladvantage/ratescenter",
     lastRateUpdate: '2025-01-15'
   },
   // ── 12. Lincoln Level Advantage B-Share ──
@@ -214,6 +233,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Lower minimum premium ($10K)', 'B-Share pricing', 'Standard buffer options'],
+    sourceUrl: "https://www.lincolnfinancial.com/public/microsite/leveladvantage/ratescenter",
     lastRateUpdate: '2025-01-15'
   },
   // ── 13. Nationwide Defined Protection (6yr) ──
@@ -233,6 +253,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Up to 25% buffer protection', '5 index options', 'A+ rated carrier'],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/registered-index-linked",
     lastRateUpdate: '2025-01-15'
   },
   // ── 14. Nationwide Defined Protection (3yr) ──
@@ -250,6 +271,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 },
     deathBenefit: 'Account Value',
     highlights: ['3-year term with higher caps', 'Buffer and floor options', 'Shorter commitment period'],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/registered-index-linked",
     lastRateUpdate: '2025-01-15'
   },
   // ── 15. Nationwide Monument Advisor ──
@@ -267,6 +289,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Greater of AV or ROP',
     highlights: ['Fee-based (advisory) product', 'Return of Premium death benefit', 'Uncapped participation option'],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/registered-index-linked",
     lastRateUpdate: '2025-01-15'
   },
   // ── 16. Jackson Market Link Pro II (6yr) ──
@@ -286,6 +309,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Both buffer and floor options', '20% floor option available', 'Multiple index strategies'],
+    sourceUrl: "https://www.jackson.com/annuities/registered-index-linked-annuities",
     lastRateUpdate: '2025-01-15'
   },
   // ── 17. Jackson Market Link Pro II (1yr) ──
@@ -303,6 +327,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 0 },
     deathBenefit: 'Account Value',
     highlights: ['1-year renewable contract', 'No surrender charges', 'Annual buffer reset'],
+    sourceUrl: "https://www.jackson.com/annuities/registered-index-linked-annuities",
     lastRateUpdate: '2025-01-15'
   },
   // ── 18. Pacific Life Pacific Odyssey ──
@@ -321,6 +346,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['Uncapped S&P 500 option', 'A+ rated carrier', 'Multiple index choices'],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/registered-index-linked-annuities.html",
     lastRateUpdate: '2025-01-15'
   },
   // ── 19. Pacific Life Pacific Index ──
@@ -338,6 +364,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['15% buffer option', 'Lower minimum premium', 'International index access'],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/registered-index-linked-annuities.html",
     lastRateUpdate: '2025-01-15'
   },
   // ── 20. Prudential FlexGuard (6yr) ──
@@ -358,6 +385,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['10%, 15%, 20% buffer options', 'Emerging Markets index', 'One of the largest RILA providers'],
+    sourceUrl: "https://www.prudential.com/personal/annuities/flexguard-rate-center",
     lastRateUpdate: '2025-01-15'
   },
   // ── 21. Prudential FlexGuard (3yr) ──
@@ -375,6 +403,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 },
     deathBenefit: 'Account Value',
     highlights: ['3-year crediting with higher caps', 'Up to 20% buffer on 3yr', 'Shorter commitment'],
+    sourceUrl: "https://www.prudential.com/personal/annuities/flexguard-rate-center",
     lastRateUpdate: '2025-01-15'
   },
   // ── 22. Prudential FlexGuard Income ──
@@ -392,6 +421,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Greater of AV or ROP',
     highlights: ['Built-in lifetime income benefit', 'Buffer protection with income', 'ROP death benefit'],
+    sourceUrl: "https://www.prudential.com/personal/annuities/flexguard-rate-center",
     lastRateUpdate: '2025-01-15'
   },
   // ── 23. Great-American Index Protector 7 ──
@@ -409,6 +439,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Low $10K minimum', 'A+ rated carrier', 'Simple buffer structure'],
+    sourceUrl: "https://www.massmutualascend.com/products/registered-index-linked-annuity/rates",
     lastRateUpdate: '2025-01-15'
   },
   // ── 24. Global Atlantic ForeAccumulation II ──
@@ -427,6 +458,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['Competitive cap rates', 'Uncapped participation with 20% buffer', '4 index options'],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: '2025-01-15'
   },
   // ── 25. Athene Amplify ──
@@ -445,6 +477,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Backed by Apollo', 'Competitive rates', 'International index access'],
+    sourceUrl: "https://www.athene.com/products/rila/amplify2",
     lastRateUpdate: '2025-01-15'
   },
   // ── 26. Transamerica Structured Index Advantage ──
@@ -462,6 +495,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Aegon-backed strength', '15% buffer option', 'Simple product design'],
+    sourceUrl: "https://www.transamerica.com/rila-rate-center",
     lastRateUpdate: '2025-01-15'
   },
   // ── 27. Symetra Accumulator RILA ──
@@ -479,6 +513,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Uncapped S&P 500 option', '$15K minimum', 'Sumitomo-backed carrier'],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities/IndexLinkedAnnuity/trek-plus",
     lastRateUpdate: '2025-01-15'
   },
   // ── 28. Protective Structured Solutions ──
@@ -531,6 +566,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Sammons Financial Group', 'Uncapped participation option', 'A+ rated'],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: '2025-01-15'
   },
   // ── 31. Midland National RetireVantage RILA ──
@@ -616,6 +652,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
     highlights: ['Strong Midwest carrier', 'Nasdaq-100 index', 'Competitive caps'],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: '2025-01-15'
   },
   // ── 36. Mutual of Omaha Indexed Shield ──
@@ -778,6 +815,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['Launched January 2025', '50+ index-linked strategies', 'Unique Dual Directional — positive credit even in some down markets', 'Buffer, Floor, and Adaptive Floor protection'],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: '2026-01-15'
   },
   {
@@ -795,6 +833,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
     deathBenefit: 'Account Value',
     highlights: ['3-year commitment option', 'Dual Directional available', 'Lower surrender charges', 'Part of ForeStructured Growth II suite'],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: '2026-01-15'
   },
 
@@ -815,6 +854,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['5 index choices including Nasdaq-100', 'Uncapped S&P 500 with 20% buffer', 'Transamerica financial strength', '10% and 20% buffer levels'],
+    sourceUrl: "https://www.transamerica.com/rila-rate-center",
     lastRateUpdate: '2026-01-15'
   },
 
@@ -834,6 +874,7 @@ export const rilaProducts = [
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
     highlights: ['Low $10K minimum premium', 'Uncapped S&P 500 with 20% buffer', 'Symetra — Sumitomo Life subsidiary', '4 index options'],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities/IndexLinkedAnnuity/trek-plus",
     lastRateUpdate: '2026-01-15'
   },
 

@@ -22,6 +22,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Highest withdrawal rates at most age bands", "Nursing home doubler included"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities",
     lastRateUpdate: "2026-01-15"
   },
   // 2
@@ -47,6 +48,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Enhanced rollup rate over prior version", "Automatic annual step-up", "Nursing home doubler"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities",
     lastRateUpdate: "2026-01-15"
   },
   // 3
@@ -72,6 +74,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup for 10 years", "Competitive rider fee", "Strong withdrawal percentages"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 4
@@ -97,6 +100,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["Longer rollup period of 14 years", "Lower rider fee", "Nursing home doubler included"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 5
@@ -122,6 +126,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Strong rollup and withdrawal rates", "Nursing home doubler", "Annual step-up provision"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-01-20"
   },
   // 6
@@ -147,6 +152,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["Compound rollup for greater accumulation", "Higher withdrawal rates at later ages", "Nursing home benefit included"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-01-20"
   },
   // 7
@@ -172,6 +178,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup for 12 years", "Solid withdrawal schedule", "Annual step-up available"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-01-10"
   },
   // 8
@@ -197,6 +204,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["Compound rollup with 15-year maximum", "Lower rider fee at 0.95%", "Nursing home doubler"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-01-10"
   },
   // 9
@@ -222,6 +230,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 80,
     highlights: ["Lower minimum premium of $15,000", "Competitive rider fee", "Annual step-up provision"],
+    sourceUrl: "https://www.midlandnational.com/annuities",
     lastRateUpdate: "2026-01-05"
   },
   // 10
@@ -247,6 +256,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 80,
     highlights: ["14-year rollup period", "Nursing home doubler included", "Low minimum premium"],
+    sourceUrl: "https://www.midlandnational.com/annuities",
     lastRateUpdate: "2026-01-05"
   },
   // 11
@@ -272,6 +282,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Strong withdrawal rates across all ages", "Nursing home doubler", "12-year simple rollup"],
+    sourceUrl: "https://www.massmutualascend.com/products",
     lastRateUpdate: "2025-12-15"
   },
   // 12
@@ -297,6 +308,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup rate", "Competitive withdrawal schedule", "Annual step-up"],
+    sourceUrl: "https://www.massmutualascend.com/products",
     lastRateUpdate: "2025-12-15"
   },
   // 13
@@ -372,6 +384,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup for 10 years", "Nursing home doubler", "Strong withdrawal rates"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-01-15"
   },
   // 16
@@ -397,6 +410,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["14-year rollup accumulation", "Lower rider fee at 1.00%", "RMD-friendly withdrawals"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-01-15"
   },
   // 17
@@ -422,6 +436,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Compound rollup for higher accumulation", "Nursing home doubler", "Competitive withdrawal rates"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2025-12-20"
   },
   // 18
@@ -447,6 +462,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["6.5% compound rollup", "Highest withdrawal rates at 80+", "Premium nursing home benefit"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2025-12-20"
   },
   // 19
@@ -472,6 +488,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Trusted Lincoln Financial brand", "Nursing home doubler", "12-year rollup period"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities/optionalfeatures",
     lastRateUpdate: "2026-01-01"
   },
   // 20
@@ -497,6 +514,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup rate", "Higher withdrawal percentages", "Strong brand reputation"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities/optionalfeatures",
     lastRateUpdate: "2026-01-01"
   },
   // 21
@@ -522,6 +540,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["6% compound rollup for 12 years", "Strong carrier financial ratings", "Reasonable rider fee"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities.html",
     lastRateUpdate: "2025-12-20"
   },
   // 22
@@ -547,6 +566,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["7% compound rollup", "Top-tier withdrawal rates", "Nursing home benefit"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities.html",
     lastRateUpdate: "2025-12-20"
   },
   // 23
@@ -572,6 +592,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Flexible withdrawal options", "Nursing home doubler included", "Well-known variable annuity carrier"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-01-10"
   },
   // 24
@@ -597,6 +618,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Lower fee option from Jackson", "12-year rollup period", "Annual step-up provision"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-01-10"
   },
   // 25
@@ -722,6 +744,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "Nursing home doubler", "Strong KKR-backed carrier"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-01-15"
   },
   // 30
@@ -747,6 +770,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["6% compound rollup for 14 years", "Enhanced withdrawal schedule", "Nursing home benefit included"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-01-15"
   },
   // 31
@@ -772,6 +796,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 80,
     highlights: ["Low 0.95% rider fee", "Lower minimum premium", "Sumitomo Mitsui-backed carrier"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 32
@@ -797,6 +822,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["14-year rollup period", "Nursing home doubler", "Competitive withdrawal schedule"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 33
@@ -822,6 +848,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Well-known Transamerica brand", "Nursing home doubler", "Annual step-up provision"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities",
     lastRateUpdate: "2025-12-15"
   },
   // 34
@@ -847,6 +874,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["Highest withdrawal rates at age 65+", "8% simple rollup", "Premium income rider"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities",
     lastRateUpdate: "2025-12-15"
   },
   // 35
@@ -872,6 +900,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Mutual company strength", "5% compound for 15 years", "Nursing home doubler"],
+    sourceUrl: "https://www.massmutual.com/annuities",
     lastRateUpdate: "2026-01-05"
   },
   // 36
@@ -897,6 +926,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["6.5% compound rollup", "Enhanced withdrawal rates", "Top-rated mutual company"],
+    sourceUrl: "https://www.massmutual.com/annuities",
     lastRateUpdate: "2026-01-05"
   },
   // 37
@@ -1022,6 +1052,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Major European-backed carrier", "Nursing home doubler", "Popular 222 product platform"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities",
     lastRateUpdate: "2026-01-20"
   },
   // 42
@@ -1047,6 +1078,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["Low 0.95% rider fee", "Compound rollup for long-term growth", "Value-oriented income option"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities",
     lastRateUpdate: "2026-01-20"
   },
   // 43
@@ -1097,6 +1129,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["6% compound rollup", "Nursing home doubler", "Enhanced withdrawal percentages"],
+    sourceUrl: "https://www.massmutualascend.com/products",
     lastRateUpdate: "2025-12-15"
   },
   // 45
@@ -1197,6 +1230,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Solid 7% simple rollup", "Nursing home doubler", "Well-rounded income rider"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-01-05"
   },
   // 49
@@ -1272,6 +1306,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup on 360 platform", "Nursing home doubler", "Strong Allianz financial backing"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 52
@@ -1297,6 +1332,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 85,
     highlights: ["6.5% compound rollup", "Higher maximum issue age of 85", "Flexible income start date"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 53
@@ -1322,6 +1358,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["15-year rollup period", "Nursing home doubler", "Nationwide brand strength"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 54
@@ -1347,6 +1384,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["6% compound rollup", "Enhanced withdrawal rates", "Nursing home benefit included"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 55
@@ -1372,6 +1410,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["7% simple rollup", "Nursing home doubler", "Sammons Financial Group backing"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 56
@@ -1397,6 +1436,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 80,
     highlights: ["Lower minimum premium of $15,000", "1.00% rider fee", "12-year rollup accumulation"],
+    sourceUrl: "https://www.midlandnational.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 57
@@ -1422,6 +1462,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Apollo-backed carrier strength", "Nursing home doubler", "12-year simple rollup"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 58
@@ -1447,6 +1488,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 85,
     highlights: ["Low 0.95% rider fee", "15-year compound rollup", "Issue age up to 85"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 59
@@ -1472,6 +1514,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "Nursing home doubler", "Strong F&G product suite"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 60
@@ -1497,6 +1540,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["6% compound rollup for 14 years", "Competitive 1.05% fee", "Long accumulation period"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 61
@@ -1522,6 +1566,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "AA- rated carrier", "Nursing home benefit included"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
   // 62
@@ -1547,6 +1592,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 85,
     highlights: ["5.5% compound rollup for 14 years", "1.00% rider fee", "Issue age up to 85"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
   // 63
@@ -1572,6 +1618,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "Nursing home doubler", "Lincoln Financial brand strength"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities/optionalfeatures",
     lastRateUpdate: "2026-02-01"
   },
   // 64
@@ -1597,6 +1644,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["Low 0.90% rider fee", "15-year compound rollup", "Value-oriented income solution"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities/optionalfeatures",
     lastRateUpdate: "2026-02-01"
   },
   // 65
@@ -1622,6 +1670,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup for 10 years", "Nursing home doubler", "Strong GAIG backing"],
+    sourceUrl: "https://www.massmutualascend.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 66
@@ -1647,6 +1696,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 85,
     highlights: ["5.5% compound rollup for 14 years", "Issue age up to 85", "Competitive 1.05% fee"],
+    sourceUrl: "https://www.massmutualascend.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 67
@@ -1672,6 +1722,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["14-year rollup period", "Nursing home doubler", "Popular Legend product platform"],
+    sourceUrl: "https://www.massmutualascend.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 68
@@ -1697,6 +1748,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["Updated Freedom Flex platform", "Nursing home doubler", "12-year rollup period"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 69
@@ -1722,6 +1774,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["6.5% compound rollup", "Highest withdrawal rates from Jackson", "Premium nursing home benefit"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 70
@@ -1747,6 +1800,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7% simple rollup", "KKR-backed financial strength", "Nursing home doubler"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 71
@@ -1772,6 +1826,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["1.00% competitive rider fee", "12-year rollup period", "Shorter 7-year surrender product"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 72
@@ -1847,6 +1902,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "Nursing home doubler", "Aegon-backed carrier"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 75
@@ -1872,6 +1928,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["5.5% compound for 14 years", "1.00% competitive fee", "Long-term income accumulation"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 76
@@ -1997,6 +2054,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 80,
     highlights: ["7% simple rollup", "Nursing home doubler", "Low $15,000 minimum premium"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 81
@@ -2022,6 +2080,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 85,
     highlights: ["5.5% compound for 14 years", "Issue age up to 85", "Sumitomo Mitsui financial backing"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 82
@@ -2072,6 +2131,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7% simple rollup", "Nursing home doubler", "AA- S&P rated carrier"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
   // 84
@@ -2097,6 +2157,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["14-year rollup period", "1.00% rider fee", "Long accumulation with low cost"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
   // 85
@@ -2122,6 +2183,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["6.5% compound rollup", "Nursing home doubler", "Brookfield-backed carrier"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 86
@@ -2147,6 +2209,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup for 12 years", "Enhanced withdrawal rates", "Annual step-up provision"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 87
@@ -2222,6 +2285,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["7% compound rollup", "A++ AM Best rated", "Highest MassMutual withdrawal rates"],
+    sourceUrl: "https://www.massmutual.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 90
@@ -2322,6 +2386,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "Nursing home doubler", "Low minimum premium of $15,000"],
+    sourceUrl: "https://www.midlandnational.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 94
@@ -2347,6 +2412,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 85,
     highlights: ["5.5% compound for 14 years", "1.00% rider fee", "Issue age up to 85"],
+    sourceUrl: "https://www.midlandnational.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 95
@@ -2372,6 +2438,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["6% compound rollup for 12 years", "Nursing home doubler", "VersaChoice product flexibility"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 96
@@ -2447,6 +2514,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "Nursing home doubler", "Enhanced TriVysta platform"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 99
@@ -2472,6 +2540,7 @@ export const glwbRiders = [
     minimumPremium: 20000,
     maximumIssueAge: 80,
     highlights: ["5.5% compound for 14 years", "1.00% rider fee", "Long-term accumulation focus"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-02-01"
   },
   // 100
@@ -2572,6 +2641,7 @@ export const glwbRiders = [
     minimumPremium: 30000,
     maximumIssueAge: 80,
     highlights: ["6.5% compound rollup", "Top-tier Allianz withdrawal rates", "Premium income solution"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 104
@@ -2597,6 +2667,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup", "Highest Nationwide withdrawal rates", "Premium nursing home benefit"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities",
     lastRateUpdate: "2026-02-01"
   },
   // 105
@@ -2622,6 +2693,7 @@ export const glwbRiders = [
     minimumPremium: 15000,
     maximumIssueAge: 85,
     highlights: ["Low 0.90% rider fee", "15-year compound rollup", "Issue age up to 85"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2648,6 +2720,7 @@ export const glwbRiders = [
     minimumPremium: 5000,
     maximumIssueAge: 85,
     highlights: ["Industry-leading VA GMWB rider", "7% simple rollup for 10 years", "Annual step-up to lock in gains", "Available on all Jackson VA contracts"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2674,6 +2747,7 @@ export const glwbRiders = [
     minimumPremium: 5000,
     maximumIssueAge: 85,
     highlights: ["Lower-cost advisory version", "6% simple rollup for 10 years", "Net-of-fee benefit base calculation", "Designed for fee-based advisors"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2700,6 +2774,7 @@ export const glwbRiders = [
     minimumPremium: 5000,
     maximumIssueAge: 85,
     highlights: ["Low-cost GMWB at 0.60%", "No rollup — income based on account value", "Annual step-up available", "Best for clients near retirement"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2726,6 +2801,7 @@ export const glwbRiders = [
     minimumPremium: 10000,
     maximumIssueAge: 80,
     highlights: ["8% simple interest rollup", "Nursing home benefit doubler", "Available on Jackson FIA products", "Highest rollup rate in Jackson lineup"],
+    sourceUrl: "https://www.jackson.com/annuities/variable-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2752,6 +2828,7 @@ export const glwbRiders = [
     minimumPremium: 10000,
     maximumIssueAge: 80,
     highlights: ["7% simple rollup for 10 years", "Nursing home doubler", "Available on most NAC FIA products", "Sammons Financial Group backing"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2778,6 +2855,7 @@ export const glwbRiders = [
     minimumPremium: 10000,
     maximumIssueAge: 85,
     highlights: ["5% compound rollup for 15 years", "Lower-cost income option at 0.75%", "Nursing home benefit at 1.5x", "15-year compound accumulation"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2804,6 +2882,7 @@ export const glwbRiders = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     highlights: ["8% simple rollup — highest in NAC lineup", "2x nursing home doubler", "Attached to Benefit Solutions II FIA", "Premium bonus product"],
+    sourceUrl: "https://www.northamericancompany.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2823,6 +2902,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 2.0,
     minimumPremium: 15000, maximumIssueAge: 80,
     highlights: ["7% simple rollup", "Nursing home doubler", "Available on Pacific FIA products", "Pacific Life A+ rated"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2842,6 +2922,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 2.0,
     minimumPremium: 15000, maximumIssueAge: 80,
     highlights: ["8% simple rollup — highest in Pacific lineup", "2x nursing home benefit", "Premium rider for maximum income", "Annual step-up feature"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2861,6 +2942,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 1.5,
     minimumPremium: 10000, maximumIssueAge: 80,
     highlights: ["7% simple rollup", "1.5x nursing home benefit", "Available on Transamerica FIA products", "Transamerica brand strength"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2880,6 +2962,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 2.0,
     minimumPremium: 15000, maximumIssueAge: 80,
     highlights: ["8% simple rollup — highest in Transamerica", "2x nursing home doubler", "Attached to bonus FIA product", "Maximum income potential"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2899,6 +2982,7 @@ export const glwbRiders = [
     nursingHomeBenefit: false, nursingHomeMultiplier: null,
     minimumPremium: 10000, maximumIssueAge: 80,
     highlights: ["7% simple rollup", "Low 0.95% rider fee", "Available on Safe Income Plus FIA", "F&G AM Best A rated"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2918,6 +3002,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 2.0,
     minimumPremium: 10000, maximumIssueAge: 80,
     highlights: ["8% rollup with 10% premium bonus", "Performance multiplier up to 175%", "2x nursing home benefit", "Maximum income power with bonus"],
+    sourceUrl: "https://www.fglife.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2937,6 +3022,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 2.0,
     minimumPremium: 15000, maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "2x nursing home doubler", "Apollo-backed financial strength", "Available on Athene FIA products"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2956,6 +3042,7 @@ export const glwbRiders = [
     nursingHomeBenefit: false, nursingHomeMultiplier: null,
     minimumPremium: 10000, maximumIssueAge: 85,
     highlights: ["6% COMPOUND rollup — grows faster over time", "Low 0.85% rider fee", "Issue age up to 85", "Compound growth advantage"],
+    sourceUrl: "https://www.athene.com/products",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2975,6 +3062,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 2.0,
     minimumPremium: 10000, maximumIssueAge: 80,
     highlights: ["7.5% simple rollup", "2x nursing home doubler", "#1 FIA seller", "Low $10K minimum"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2994,6 +3082,7 @@ export const glwbRiders = [
     nursingHomeBenefit: true, nursingHomeMultiplier: 1.5,
     minimumPremium: 10000, maximumIssueAge: 85,
     highlights: ["12-year rollup period — longest available", "1.5x nursing home benefit", "Trusted Mutual of Omaha brand", "Issue age up to 85"],
+    sourceUrl: "https://www.mutualofomaha.com/annuities",
     lastRateUpdate: "2026-02-01"
   }
 ];

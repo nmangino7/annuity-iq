@@ -17,6 +17,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Long-Term Care Rider'],
     highlights: ['Strong accumulation focus', '65 subaccount options', 'Zero net cost loans after year 10'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/variableuniversallife',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -32,6 +33,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.50, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 8 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Estate Protection'],
     highlights: ['Low 0.60% M&E for high face amounts', 'Preferred loan rates after year 8', '70 subaccounts'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/variableuniversallife',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -47,6 +49,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Long-Term Care Extension', 'Waiver of Premium'],
     highlights: ['LTC/life hybrid product', 'Guaranteed to age 100', 'Long-term care benefit pool'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/variableuniversallife',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -62,6 +65,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium', 'Term Insurance Rider'],
     highlights: ['Lifetime no-lapse guarantee', 'Protection-focused design', '55 subaccounts'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/variableuniversallife',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -79,6 +83,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium', 'IncomeFlex', 'Children Term Rider'],
     highlights: ['Lifetime no-lapse guarantee', 'Prudential financial strength', '58 subaccounts'],
+    sourceUrl: 'https://www.prudential.com/personal/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -94,6 +99,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.75, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['72 subaccounts', 'Zero net cost loans', 'Strong accumulation potential'],
+    sourceUrl: 'https://www.prudential.com/personal/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -109,6 +115,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Second-to-die design', 'Lifetime NLG', 'Estate planning focus'],
+    sourceUrl: 'https://www.prudential.com/personal/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -126,6 +133,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Vitality Wellness'],
     highlights: ['Vitality wellness rewards', '68 subaccounts', 'Zero net cost loans'],
+    sourceUrl: 'https://www.johnhancock.com/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -141,6 +149,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium', 'Children Term Rider', 'Vitality Wellness'],
     highlights: ['Lifetime no-lapse guarantee', 'Vitality wellness program', '55 subaccounts'],
+    sourceUrl: 'https://www.johnhancock.com/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -156,6 +165,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.75, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Vitality Plus', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['Vitality program can reduce COI', 'Wellness rewards & discounts', '62 subaccounts'],
+    sourceUrl: 'https://www.johnhancock.com/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -173,6 +183,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.50, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 8 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Long-Term Care Rider'],
     highlights: ['78 subaccounts — industry-leading for VUL', 'Preferred loan rates year 8', '2% guaranteed minimum'],
+    sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -188,6 +199,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.25, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 6 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Long-Term Care', 'Estate Protection'],
     highlights: ['Lowest M&E in VUL class (0.55%)', '82 subaccounts', '3.50% fixed account rate', 'Year 6 preferred loans'],
+    sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -203,6 +215,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium', 'Term Insurance Rider'],
     highlights: ['Lifetime NLG', 'Protection-first design', '60 subaccounts'],
+    sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -220,6 +233,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['62 subaccounts', 'Zero net cost loans', 'Nationwide financial strength'],
+    sourceUrl: 'https://nationwidefinancial.com/products/life',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -235,6 +249,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium', 'Long-Term Care Extension'],
     highlights: ['Hybrid accumulation + protection', 'LTC extension rider', '55 subaccounts'],
+    sourceUrl: 'https://nationwidefinancial.com/products/life',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -252,6 +267,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['60 subaccounts', 'Zero net cost loans', 'Solid accumulation chassis'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -267,6 +283,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Lifetime NLG', 'Protection-focused', '48 subaccounts'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -284,6 +301,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.50, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 8 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Long-Term Care Rider'],
     highlights: ['Mutual company strength', '3.50% fixed rate', '72 subaccounts', 'Dividend participation'],
+    sourceUrl: 'https://www.massmutual.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -299,6 +317,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Second-to-die design', 'Lifetime NLG', 'Low 0.55% M&E for high face amount', 'Estate planning focus'],
+    sourceUrl: 'https://www.massmutual.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -348,6 +367,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.50, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 7 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Long-Term Care'],
     highlights: ['NYL AAA strength', '3.50% fixed rate', 'Year 7 preferred loans', 'Dividend-participating'],
+    sourceUrl: 'https://www.newyorklife.com/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -363,6 +383,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Lifetime NLG', 'NYL financial strength', '50 subaccounts'],
+    sourceUrl: 'https://www.newyorklife.com/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -476,6 +497,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.50, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 8 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Long-Term Care Services Rider', 'Market Stabilizer Option II'],
     highlights: ['85+ investment options including MSO II buffer', 'Industry-leading LTC rider', 'Zero net cost loans year 8', 'Tax-free retirement income design'],
+    sourceUrl: 'https://equitable.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -491,6 +513,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Long-Term Care Services Rider', 'Market Stabilizer Option II', 'Waiver of Premium'],
     highlights: ['Auto no-lapse guarantee included', 'MSO II buffered indexed options (-10%/-15%/-20%)', 'LTC Services rider for care flexibility', 'Cost-effective permanent protection'],
+    sourceUrl: 'https://equitable.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -506,6 +529,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Second-to-die estate planning', 'Lifetime NLG', 'Low 0.50% M&E', '70 subaccounts with MSO II'],
+    sourceUrl: 'https://equitable.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -523,6 +547,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.75, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['2 indexed fixed accounts for downside protection', 'Mutual company dividends', '65 subaccounts with diverse fund families', 'Persistency credits starting year 6'],
+    sourceUrl: 'https://www.pennmutual.com/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -538,6 +563,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.50, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 8 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['Lower-fee Vanguard investment options', '3 indexed fixed accounts tied to S&P 500', '0% floor on indexed accounts', 'Launched January 2024'],
+    sourceUrl: 'https://www.pennmutual.com/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -553,6 +579,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Lifetime no-lapse guarantee', 'Death benefit focus', '50 subaccounts', 'Penn Mutual mutual company strength'],
+    sourceUrl: 'https://www.pennmutual.com/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -570,6 +597,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 4.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 5 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Estate Protection', 'Waiver of Premium'],
     highlights: ['Ultra-low 0.40% M&E for $1M+ face', 'Year 5 preferred loans', '3.75% fixed rate — among highest', '85 subaccounts, 2.50% guaranteed min'],
+    sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -585,6 +613,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium'],
     highlights: ['Launched June 2025', 'Streamlined design for ages 30-55', 'Available through State Farm', 'Indexed interest crediting strategies'],
+    sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -602,6 +631,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium', 'Children\'s Term Rider'],
     highlights: ['75 subaccount options', 'Zero net cost loans after year 10', 'No-lapse guarantee to age 90', 'Strong accumulation chassis'],
+    sourceUrl: 'https://nationwidefinancial.com/products/life',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -619,6 +649,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection'],
     highlights: ['Second-to-die policy for estate planning', 'No-lapse to age 100', 'Lower COI due to joint survivorship', '$250K minimum face'],
+    sourceUrl: 'https://nationwidefinancial.com/products/life',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -636,6 +667,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Chronic Illness Rider', 'Waiver of Premium'],
     highlights: ['Allianz strong brand', '70 subaccounts', 'Zero net cost loans', 'Indexed fixed accounts available'],
+    sourceUrl: 'https://www.allianzlife.com/what-we-offer/Life-Insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -653,6 +685,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 8 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['Apollo-backed carrier strength', '3.50% fixed account rate', 'Zero net cost loans after year 8', '55 subaccount options'],
+    sourceUrl: 'https://www.athene.com',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -704,6 +737,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['KKR-backed carrier', '3.50% fixed account', 'Indexed account crediting options', 'Strong cash value accumulation'],
+    sourceUrl: 'https://professionals.globalatlantic.com/products/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -721,6 +755,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Chronic Illness Rider', 'Waiver of Premium'],
     highlights: ['Minnesota Life subsidiary', 'No-lapse to age 95', 'Zero net cost loans', 'Chronic illness rider'],
+    sourceUrl: 'https://www.securian.com/financial-professionals/products/individual-life-insurance.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -755,6 +790,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: false, preferredLoanAfterYear: null },
     riders: ['Accelerated Benefit Rider', 'Waiver of Premium', 'Children\'s Term Rider'],
     highlights: ['Trusted mutual company brand', 'No-lapse to age 95', '50 subaccounts', '$75K minimum face amount'],
+    sourceUrl: 'https://www.mutualofomaha.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -772,6 +808,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['Sumitomo Life subsidiary', 'Low 0.65% M&E charge', '3.50% fixed account', 'Zero net cost loans'],
+    sourceUrl: 'https://www.symetra.com/our-products/individuals/life-insurance',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -823,6 +860,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Chronic Illness Rider'],
     highlights: ['Same 90-subaccount platform as Perspective II VA', 'Jackson #1 VA provider', 'Zero net cost loans', 'Chronic illness rider included'],
+    sourceUrl: 'https://www.jackson.com',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -840,6 +878,7 @@ export const vulProducts = [
     loanProvisions: { fixedLoanRate: 5.00, variableLoanAvailable: true, zeroNetCostLoanAvailable: true, preferredLoanAfterYear: 10 },
     riders: ['Accelerated Benefit Rider', 'Overloan Protection', 'Waiver of Premium'],
     highlights: ['Sammons Financial backing', 'A+ AM Best rated', '45 subaccount options', 'Zero net cost loans available'],
+    sourceUrl: 'https://www.northamericancompany.com/life-insurance',
     lastRateUpdate: '2026-02-01'
   }
 ];

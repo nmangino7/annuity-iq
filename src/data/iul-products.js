@@ -53,6 +53,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Highest S&P 500 cap rate in class", "Rate Lock feature", "Multiple volatility-controlled index options"],
+    sourceUrl: "https://www.northamericancompany.com/life-insurance/indexed-universal-life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -60,41 +61,63 @@ export const iulProducts = [
   {
     id: "nationwide-iul-accumulator-ii",
     carrierId: "nationwide",
-    name: "IUL Accumulator II",
-    maxIllustratedRate: 6.32,
+    name: "IUL Accumulator II 2020",
+    maxIllustratedRate: 6.42,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.75,
+        capRate: 10.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false,
+        hasMultiplier: true,
+        multiplierValue: 1.15
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Uncapped Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 6.00,
+        floor: 0,
+        isUncapped: true,
         hasMultiplier: false,
         multiplierValue: null
       },
       {
-        indexName: "MSCI EAFE",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 10.00,
+        indexName: "Multi-Index Monthly Average",
+        creditingMethod: "Monthly Average",
+        capRate: 13.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false,
-        hasMultiplier: false,
-        multiplierValue: null
+        hasMultiplier: true,
+        multiplierValue: 1.15
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER Index",
+        indexName: "JP Morgan Mercury",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 145,
+        participationRate: 175,
         spread: 0,
         floor: 0,
         isUncapped: true,
-        hasMultiplier: true,
-        multiplierValue: 1.15
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "BNP Paribas Global H-Factor",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 220,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
       }
     ],
     fixedAccountRate: 3.25,
@@ -109,7 +132,8 @@ export const iulProducts = [
     riders: ["Accelerated Benefit Rider", "BenefitAccess Rider", "Overloan Protection"],
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
-    highlights: ["Return of Premium death benefit option", "BenefitAccess chronic illness rider", "Strong carrier ratings"],
+    highlights: ["15% Nationwide Multiplier (year 6+)", "50% Advanced Multiplier (year 1+)", "220% BNP Paribas participation", "10.25% S&P 500 cap"],
+    sourceUrl: "https://nationwidefinancial.com/products/life/indexed-universal/indexed-ul-accumulator-ii",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -167,6 +191,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Pacific Dynamix proprietary index with 1.50x multiplier", "Industry-leading no-lapse to 95", "Strong accumulation focus"],
+    sourceUrl: "https://www.pacificlife.com/home/individuals/life-insurance/life-rates.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -224,6 +249,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Flexible premium design", "Multiple index choices", "Competitive Russell 2000 cap"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -270,6 +296,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Eclipse Index Shield with 1.25x multiplier", "Strong AA- rated carrier", "Overloan Protection included"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life/eclipse-accumulator.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -282,52 +309,76 @@ export const iulProducts = [
     indexAccounts: [
       {
         indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.50,
-        participationRate: 100,
+        creditingMethod: "Trigger Rate",
+        capRate: null,
+        participationRate: null,
         spread: 0,
         floor: 0,
         isUncapped: false,
         hasMultiplier: false,
-        multiplierValue: null
-      },
-      {
-        indexName: "Bloomberg US Dynamic Balance II ER",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 200,
-        spread: 0,
-        floor: 0,
-        isUncapped: true,
-        hasMultiplier: true,
-        multiplierValue: 1.75
+        multiplierValue: null,
+        triggerRate: 8.00
       },
       {
         indexName: "S&P 500",
         creditingMethod: "Monthly Sum Cap",
-        capRate: 3.25,
+        capRate: 3.60,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false,
         hasMultiplier: false,
         multiplierValue: null
+      },
+      {
+        indexName: "Bloomberg US Dynamic Balance III ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 175,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: true,
+        multiplierValue: 1.40
+      },
+      {
+        indexName: "PIMCO Tactical Balanced ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 175,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: true,
+        multiplierValue: 1.40
+      },
+      {
+        indexName: "S&P 500 Futures ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 60,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: true,
+        multiplierValue: 1.40
       }
     ],
-    fixedAccountRate: 3.00,
-    guaranteedMinCreditingRate: 2.0,
+    fixedAccountRate: 5.30,
+    guaranteedMinCreditingRate: 0.25,
     loanProvisions: {
       fixedLoanRate: 5.0,
       variableLoanAvailable: true,
       zeroNetCostLoanAvailable: true
     },
     noLapseGuarantee: "None",
-    deathBenefitOptions: ["Level", "Increasing"],
-    riders: ["Accelerated Benefit Rider", "Index Lock", "Premium Bonus"],
+    deathBenefitOptions: ["Level", "Increasing", "Return of Premium"],
+    riders: ["Accelerated Benefit Rider", "Index Lock", "Loan Protection Rider"],
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
-    highlights: ["Highest max illustrated rate at 6.75%", "200% participation rate on Bloomberg index", "1.75x multiplier on volatility-controlled index"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["40% Select multiplier (contractually guaranteed)", "175% Bloomberg participation with 1.40x multiplier", "5.30% fixed account rate", "8.00% S&P 500 trigger rate"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/Life-Insurance/Indexed-Universal-Life/Allianz-Life-Accumulator/Rates",
+    lastRateUpdate: "2026-02-21"
   },
 
   // 7. Lincoln WealthBuilder IUL
@@ -384,6 +435,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Return of Premium option", "Lincoln LifeAssure living benefits", "Multi-Asset index with 1.20x multiplier"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -430,6 +482,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Barclays Trailblazer index with 150% participation", "Competitive pricing", "Strong accumulation chassis"],
+    sourceUrl: "https://www.fglife.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -487,6 +540,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Top-tier carrier financial strength", "NASDAQ-100 index option", "IncomeFlex guaranteed income rider"],
+    sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -533,6 +587,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Simple product design", "Strong mutual company", "Competitive S&P 500 cap rate"],
+    sourceUrl: "https://www.mutualofomaha.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -590,6 +645,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Vitality wellness program with rewards", "Dimensional Multi-Factor Index with 1.40x multiplier", "170% participation rate"],
+    sourceUrl: "https://www.johnhancock.com/life-insurance.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -636,6 +692,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["Mutual company dividend philosophy", "Strong financial stability", "Fidelity AIM Dividend Index option"],
+    sourceUrl: "https://www.pennmutual.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -693,6 +750,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Second highest S&P 500 cap rate at 11.75%", "Sammons Financial Group backing", "Three uncapped index options"],
+    sourceUrl: "https://www.midlandnational.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -739,6 +797,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["KKR-backed carrier with growing market share", "JPMorgan Mozaic II index", "Competitive accumulation design"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -785,6 +844,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 70,
     highlights: ["A++ rated mutual company", "Highest guaranteed minimum crediting rate", "Lifetime no-lapse guarantee"],
+    sourceUrl: "https://www.massmutual.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -991,6 +1051,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Sumitomo Life backing", "Clean product design", "Competitive pricing for healthy applicants"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1037,6 +1098,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Minnesota Life subsidiary of Securian Financial", "Eclipse Index Shield with multiplier", "Strong AA- S&P rating"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1105,7 +1167,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 130,
@@ -1186,6 +1248,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Pacific Dynamix with 1.45x multiplier", "International Hang Seng index option", "Low 4.0% fixed loan rate"],
+    sourceUrl: "https://www.pacificlife.com/home/individuals/life-insurance/life-rates.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1243,6 +1306,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["5-Year point-to-point option", "Market Stabilizer Option for downside protection", "Strong legacy carrier"],
+    sourceUrl: "https://equitable.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1289,6 +1353,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 70,
     highlights: ["Highest-rated carrier (Aaa/AAA)", "Lifetime no-lapse guarantee", "Highest fixed account rate at 4.25%"],
+    sourceUrl: "https://www.newyorklife.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1311,7 +1376,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 185,
@@ -1335,6 +1400,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["185% participation rate on Bloomberg index", "Cash Value Enhancement Rider bonus", "Index Lock feature for market timing"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/Life-Insurance/Indexed-Universal-Life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1392,6 +1458,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["170% participation on Barclays Atlas 5", "Dual multiplier strategies", "Premium accumulation focused design"],
+    sourceUrl: "https://www.northamericancompany.com/life-insurance/indexed-universal-life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1414,7 +1481,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER Index",
+        indexName: "Bloomberg US Dynamic Balance III ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 110,
@@ -1438,6 +1505,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Protection-focused design", "BenefitAccess chronic illness rider"],
+    sourceUrl: "https://nationwidefinancial.com/products/life/indexed-universal",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1484,6 +1552,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["Linked-benefit LTC product with index upside", "Long-term care protection focus", "Single or limited premium options"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1541,6 +1610,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["NASDAQ-100 index option", "Merrill Lynch RPM with 1.25x multiplier", "Income rider for retirement planning"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1587,6 +1657,7 @@ export const iulProducts = [
     minimumFaceAmount: 25000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Low $25k minimum face amount", "Protection-first design with index upside"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1633,6 +1704,7 @@ export const iulProducts = [
     minimumFaceAmount: 250000,
     maximumIssueAge: 80,
     highlights: ["Survivorship (second-to-die) product", "Estate planning focused", "Top-tier carrier for large face amounts"],
+    sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1690,6 +1762,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Barclays Trailblazer with 1.35x multiplier", "Enhanced Cash Value Rider bonus", "Two uncapped index options"],
+    sourceUrl: "https://www.fglife.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1736,6 +1809,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Vitality wellness program with premium discounts", "Protection-focused chassis"],
+    sourceUrl: "https://www.johnhancock.com/life-insurance.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1793,6 +1867,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 75,
     highlights: ["Income-focused distribution design", "Low 4.5% fixed loan rate", "Mutual company stability"],
+    sourceUrl: "https://www.pennmutual.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1896,6 +1971,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["12.00% S&P 500 cap rate", "Barclays Atlas 5 with 1.45x multiplier", "Premium Bonus Rider for additional accumulation"],
+    sourceUrl: "https://www.midlandnational.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2056,6 +2132,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["JPMorgan Mozaic II with 1.20x multiplier", "Monthly sum cap S&P 500 option", "KKR-backed carrier strength"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2159,6 +2236,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Incentive Bonus for premium persistency", "Trigger strategy crediting method", "Equitable Multi-Strategy Index with 1.35x multiplier"],
+    sourceUrl: "https://equitable.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2205,6 +2283,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Protection-focused design", "Low 4.5% fixed loan rate"],
+    sourceUrl: "https://www.pacificlife.com/home/individuals/life-insurance/life-rates.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2227,7 +2306,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -2251,6 +2330,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["Income distribution focused design", "Lowest fixed loan rate at 3.75%", "Income Multiplier Rider for retirement"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/Life-Insurance/Indexed-Universal-Life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2330,7 +2410,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER Index",
+        indexName: "Bloomberg US Dynamic Balance III ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 160,
@@ -2365,6 +2445,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 80,
     highlights: ["Premium Flexibility Rider for skip-premium years", "Bloomberg Dynamic Balance with 1.30x multiplier", "Three death benefit options"],
+    sourceUrl: "https://nationwidefinancial.com/products/life/indexed-universal",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2422,6 +2503,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Lincoln Multi-Asset Index with 1.35x multiplier and 155% participation", "Cash Value Plus Rider for bonus credits", "Strong accumulation chassis"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2468,6 +2550,7 @@ export const iulProducts = [
     minimumFaceAmount: 25000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Lowest S&P 500 cap but strongest guarantee", "Low $25k minimum face amount"],
+    sourceUrl: "https://www.northamericancompany.com/life-insurance/indexed-universal-life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2525,6 +2608,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Income distribution focused design", "International MSCI EAFE index option", "Strong mutual company backing"],
+    sourceUrl: "https://www.mutualofomaha.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2650,6 +2734,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Pacific Dynamix with 1.55x multiplier and 195% participation", "BlackRock iBLD index option", "Industry-leading no-lapse to 95"],
+    sourceUrl: "https://www.pacificlife.com/home/individuals/life-insurance/life-rates.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2696,6 +2781,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 85,
     highlights: ["Lifetime no-lapse guarantee to age 121", "Protection-first design with index upside", "Highest maximum issue age at 85"],
+    sourceUrl: "https://www.pacificlife.com/home/individuals/life-insurance/life-rates.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2764,6 +2850,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Lincoln Multi-Asset with 1.45x multiplier and 170% participation", "2-Year P2P with 21% cap", "Four index account options"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2821,6 +2908,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 80,
     highlights: ["Hybrid indexed/variable product with full market access", "Multiple variable subaccounts available", "Highest max illustrated rate in class"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2843,7 +2931,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -2889,6 +2977,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["225% participation with 1.85x multiplier on Bloomberg index", "NASDAQ-100 index option", "Premium bonus for early cash value growth"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/Life-Insurance/Indexed-Universal-Life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2922,7 +3011,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER Index",
+        indexName: "Bloomberg US Dynamic Balance III ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 140,
@@ -2946,6 +3035,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Hybrid indexed/variable universal life", "BenefitAccess chronic illness rider", "Full variable subaccount market participation"],
+    sourceUrl: "https://nationwidefinancial.com/products/life/indexed-universal",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3014,6 +3104,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 80,
     highlights: ["FlexGuard buffer protection on variable accounts", "Highest VUL illustrated rate at 7.25%", "Full variable and indexed options in one product"],
+    sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3082,6 +3173,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Third generation Custom Premier with enhanced features", "2-Year P2P with 19.5% cap", "Pru Dynamic Multi-Index with 1.20x multiplier"],
+    sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3242,6 +3334,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Enhanced second generation Financial Foundation", "Merrill Lynch RPM with 1.30x multiplier", "NASDAQ-100 index option"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3288,6 +3381,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Protection-focused design", "Clean two-index product structure"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3356,6 +3450,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Latest generation with enhanced Dimensional Multi-Factor Index", "1.50x multiplier with 185% participation", "Vitality wellness discounts"],
+    sourceUrl: "https://www.johnhancock.com/life-insurance.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3402,6 +3497,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Vitality wellness program with premium discounts", "Protection-focused with competitive guarantees"],
+    sourceUrl: "https://www.johnhancock.com/life-insurance.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3459,6 +3555,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 80,
     highlights: ["Enhanced Vitality PLUS wellness rewards", "Healthy Living Bonus for active policyholders", "International MSCI EAFE index option"],
+    sourceUrl: "https://www.johnhancock.com/life-insurance.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3516,6 +3613,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["Enhanced Accumulation Builder with Plus features", "Fidelity AIM Dividend with 1.15x multiplier", "Mutual company dividend philosophy"],
+    sourceUrl: "https://www.pennmutual.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3584,6 +3682,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 75,
     highlights: ["Optimized for retirement income distribution", "Lowest fixed loan rate at 4.25%", "Four index account diversification"],
+    sourceUrl: "https://www.pennmutual.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3617,7 +3716,7 @@ export const iulProducts = [
         multiplierValue: 1.35
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 140,
@@ -3641,6 +3740,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Securian Index Shield with 1.35x multiplier and 175% participation", "Premium Bonus for early cash value enhancement", "AA- rated carrier"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3674,7 +3774,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 130,
@@ -3698,6 +3798,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 70,
     highlights: ["A++ rated mutual company with lifetime guarantee", "Highest guaranteed minimum crediting rate at 2.5%", "Strong fixed account rate at 4.0%"],
+    sourceUrl: "https://www.massmutual.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3731,7 +3832,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 115,
@@ -3755,6 +3856,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 70,
     highlights: ["Highest-rated carrier (Aaa/AAA) with lifetime guarantee", "Bloomberg Dynamic Balance uncapped option added", "Enhanced second generation"],
+    sourceUrl: "https://www.newyorklife.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3799,7 +3901,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 125,
@@ -3823,6 +3925,7 @@ export const iulProducts = [
     minimumFaceAmount: 200000,
     maximumIssueAge: 75,
     highlights: ["Four index options for maximum diversification", "Highest-rated carrier with strong no-lapse to 95", "Accumulation-focused NYL product"],
+    sourceUrl: "https://www.newyorklife.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3880,6 +3983,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["BrightLife Growth Bonus for premium persistency", "Equitable Multi-Strategy with 1.40x multiplier", "2-Year P2P with 20.5% cap"],
+    sourceUrl: "https://equitable.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3926,6 +4030,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["No-lapse guarantee to age 100", "Protection-focused BrightLife product", "Strong legacy carrier backing"],
+    sourceUrl: "https://equitable.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3983,6 +4088,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Enhanced second generation Income Advantage", "JPMorgan Mozaic uncapped with 1.15x multiplier", "Strong mutual company backing"],
+    sourceUrl: "https://www.mutualofomaha.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4051,6 +4157,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 80,
     highlights: ["Four index choices including NASDAQ-100", "Accumulation-focused design", "Strong mutual company financial stability"],
+    sourceUrl: "https://www.mutualofomaha.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4187,7 +4294,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 145,
@@ -4244,7 +4351,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 120,
@@ -4485,6 +4592,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Highest S&P 500 cap at 12.50%", "Four uncapped/capped index strategies", "Latest generation with BlackRock iBLD added"],
+    sourceUrl: "https://www.northamericancompany.com/life-insurance/indexed-universal-life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4542,6 +4650,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 75,
     highlights: ["Maximum growth focused design", "Barclays Atlas 5 with 1.50x multiplier and 180% participation", "2-Year P2P with 22% cap"],
+    sourceUrl: "https://www.northamericancompany.com/life-insurance/indexed-universal-life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4599,6 +4708,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Securian Financial subsidiary with AA- rating", "Securian Index Shield with 1.20x multiplier", "International MSCI EAFE option"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4621,7 +4731,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -4667,6 +4777,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 80,
     highlights: ["200% participation with 1.65x multiplier on Bloomberg", "Enhanced second generation with NASDAQ-100", "Strong accumulation focus"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/Life-Insurance/Indexed-Universal-Life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4713,6 +4824,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 85,
     highlights: ["No-lapse guarantee to age 100", "Protection-focused with index upside", "Maximum issue age of 85"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4746,7 +4858,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER Index",
+        indexName: "Bloomberg US Dynamic Balance III ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 165,
@@ -4781,6 +4893,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Enhanced Plus II with four index options", "Bloomberg Dynamic Balance with 1.35x multiplier", "Return of Premium death benefit option"],
+    sourceUrl: "https://nationwidefinancial.com/products/life/indexed-universal",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4849,6 +4962,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Barclays Trailblazer with 1.40x multiplier and 175% participation", "Four index strategies", "2-Year P2P option"],
+    sourceUrl: "https://www.fglife.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4895,6 +5009,7 @@ export const iulProducts = [
     minimumFaceAmount: 75000,
     maximumIssueAge: 80,
     highlights: ["Estate/legacy planning focused product", "No-lapse guarantee to age 100", "Sammons Financial Group backing"],
+    sourceUrl: "https://www.midlandnational.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5066,6 +5181,7 @@ export const iulProducts = [
     minimumFaceAmount: 250000,
     maximumIssueAge: 80,
     highlights: ["Survivorship (second-to-die) Custom Premier design", "Estate tax planning focused", "Pru Dynamic Multi-Index with multiplier"],
+    sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5123,6 +5239,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Sumitomo Life backing for financial stability", "Three index options including international", "Competitive accumulation design"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5226,6 +5343,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Protection-focused with no-lapse to age 95", "KKR-backed carrier strength", "JPMorgan Mozaic uncapped strategy"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5351,6 +5469,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Income distribution optimized Eclipse design", "Low 4.5% fixed loan rate", "Securian Index Shield with 1.20x multiplier"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5408,6 +5527,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 75,
     highlights: ["Jackson National entering IUL market", "JPMorgan Mozaic with 1.20x multiplier", "Russell 2000 index option"],
+    sourceUrl: "https://www.jackson.com",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5441,7 +5561,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 130,
@@ -5625,6 +5745,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Income-optimized BrightLife design", "Lowest fixed loan rate at 4.25%", "Trigger strategy for downside years"],
+    sourceUrl: "https://equitable.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5682,6 +5803,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
     highlights: ["Income distribution focused Pacific Life product", "Lowest fixed loan rate at 3.75%", "Pacific Dynamix with 1.35x multiplier"],
+    sourceUrl: "https://www.pacificlife.com/home/individuals/life-insurance/life-rates.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5715,7 +5837,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II ER",
+        indexName: "Bloomberg US Dynamic Balance III ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 140,
@@ -5750,6 +5872,7 @@ export const iulProducts = [
     minimumFaceAmount: 150000,
     maximumIssueAge: 70,
     highlights: ["A++ rated mutual company accumulation product", "Four index strategies including 2-Year P2P", "No-lapse guarantee to age 95"],
+    sourceUrl: "https://www.massmutual.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5773,6 +5896,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 80,
     highlights: ["Lifetime no-lapse guarantee to age 121", "Protection-focused design", "Lower cost of insurance", "JPMorgan Mozaic II index option"],
+    sourceUrl: "https://www.jackson.com",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5797,6 +5921,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 75,
     highlights: ["Income distribution-focused IUL", "1.35x multiplier on uncapped S&P", "160% JPMorgan Mozaic participation", "Zero net cost loans available"],
+    sourceUrl: "https://www.jackson.com",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5821,6 +5946,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Transamerica flagship IUL product", "140% Merrill Lynch RPM participation", "1.25x S&P multiplier", "No-lapse guarantee to age 90"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5845,6 +5971,7 @@ export const iulProducts = [
     minimumFaceAmount: 100000,
     maximumIssueAge: 70,
     highlights: ["Accumulation-focused IUL", "1.40x S&P multiplier — highest in lineup", "155% Merrill Lynch RPM participation", "Nasdaq-100 index option"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/life-insurance",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5869,6 +5996,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Latest generation Builder Plus", "1.45x S&P multiplier", "155% BNP Paribas participation", "No-lapse guarantee to age 90"],
+    sourceUrl: "https://www.northamericancompany.com/life-insurance/indexed-universal-life",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5893,6 +6021,7 @@ export const iulProducts = [
     minimumFaceAmount: 50000,
     maximumIssueAge: 75,
     highlights: ["Cash accumulation-focused IUL", "1.30x S&P multiplier", "135% CIBC Balanced Asset participation", "Zero net cost loans available"],
+    sourceUrl: "https://www.fglife.com/life-insurance",
     lastRateUpdate: "2026-02-01"
   }
 ];

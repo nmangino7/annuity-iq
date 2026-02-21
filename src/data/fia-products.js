@@ -5,30 +5,31 @@ export const fiaProducts = [
     carrierId: "allianz-life",
     name: "Allianz 222+ Annuity",
     surrenderPeriod: 10,
-    surrenderSchedule: [10, 10, 10, 8.75, 7.50, 6.25, 5.00, 3.75, 2.50, 1.25, 0],
+    surrenderSchedule: [9.3, 9.3, 8.3, 7.3, 6.25, 5.25, 4.2, 3.15, 2.1, 1.05, 0],
     minimumPremium: 20000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.8,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 9.50,
+        capRate: 4.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 200,
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Sum",
+        capRate: 1.70,
+        participationRate: 100,
         spread: 0,
         floor: 0,
-        isUncapped: true
+        isUncapped: false
       },
       {
         indexName: "S&P 500",
@@ -38,12 +39,40 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        triggerRate: 6.25
+        triggerRate: 3.65
+      },
+      {
+        indexName: "Bloomberg US Dynamic Balance IIII",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 85,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "PIMCO Tactical Balanced",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 80,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500 Futures",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 45,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["Two uncapped strategies", "Performance trigger available"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["PIV bonus structure (45% premium + 150% interest)", "60-day rate lock feature", "Multiple uncapped index strategies"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/222-plus",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 2. Allianz Benefit Control+ ──────────────────────────────────────
@@ -52,63 +81,27 @@ export const fiaProducts = [
     carrierId: "allianz-life",
     name: "Allianz Benefit Control+ Annuity",
     surrenderPeriod: 10,
-    surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
+    surrenderSchedule: [9.3, 9.3, 8.3, 7.3, 6.25, 5.25, 4.2, 3.15, 2.1, 1.05, 0],
     minimumPremium: 20000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.5,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.75,
+        capRate: 4.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "Nasdaq-100",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 7.50,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "Bloomberg US Dynamic Balance II",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 175,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      }
-    ],
-    incomeRiderAvailable: true,
-    highlights: ["Lifetime income benefit rider", "Multiple index choices"],
-    lastRateUpdate: "2026-02-01"
-  },
-
-  // ── 3. Athene Ascent Pro 10 ───────────────────────────────────────────
-  {
-    id: "athene-ascent-pro-10",
-    carrierId: "athene",
-    name: "Athene Ascent Pro 10",
-    surrenderPeriod: 10,
-    surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 25000,
-    maximumIssueAge: 85,
-    guaranteedMinimumRate: 0.0,
-    premiumBonus: 10.0,
-    freeWithdrawalPercent: 10,
-    indexStrategies: [
-      {
         indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 7.50,
+        creditingMethod: "Monthly Sum",
+        capRate: 1.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -122,21 +115,88 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        triggerRate: 5.75
+        triggerRate: 3.15
       },
       {
-        indexName: "BNP Paribas Multi Asset Diversified 5",
+        indexName: "Bloomberg US Dynamic Balance IIII",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 300,
+        participationRate: 75,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "PIMCO Tactical Balanced",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 70,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["10% premium bonus", "Uncapped volatility-controlled index", "Performance trigger strategy"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["Lifetime income benefit rider", "PIV bonus options (Accelerated or Balanced)", "Multiple uncapped index strategies"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/Benefit-Control-Plus",
+    lastRateUpdate: "2026-02-21"
+  },
+
+  // ── 3. Athene Ascent Pro 10 ───────────────────────────────────────────
+  {
+    id: "athene-ascent-pro-10",
+    carrierId: "athene",
+    name: "Athene Ascent Pro 10 (Bonus)",
+    surrenderPeriod: 10,
+    surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 5, 4, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 10.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.85,
+    indexStrategies: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 5.50,
+        participationRate: 62,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "BNP Paribas Multi Asset Diversified 5",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 140,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "BNP Paribas Multi Asset Diversified 5",
+        creditingMethod: "2-Year Point-to-Point",
+        capRate: null,
+        participationRate: 190,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "AI Powered US Equity",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 112,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      }
+    ],
+    incomeRiderAvailable: true,
+    highlights: ["10% premium bonus", "Built-in Ascent Income Rider (1.00% fee)", "Uncapped volatility-controlled indices"],
+    sourceUrl: "https://www.athene.com/products/fia/ascent-pro",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 3b. Athene Accumulator 10 ──────────────────────────────────────────
@@ -146,11 +206,12 @@ export const fiaProducts = [
     name: "Athene Accumulator 10",
     surrenderPeriod: 10,
     surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
-    minimumPremium: 10000,
+    minimumPremium: 100000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 5.10,
     indexStrategies: [
       {
         indexName: "S&P 500",
@@ -162,27 +223,19 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 3.25,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
         indexName: "BNP Paribas Multi Asset Diversified 5",
-        creditingMethod: "Annual Point-to-Point",
+        creditingMethod: "2-Year Point-to-Point",
         capRate: null,
-        participationRate: 350,
+        participationRate: 380,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: false,
-    highlights: ["12.25% S&P 500 cap — among the highest", "No premium bonus for higher caps", "Accumulation focused"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["12.25% S&P 500 cap — among the highest", "380% BNP 2-year participation", "No additional fees, no rider charges", "$100K minimum for top-tier rates"],
+    sourceUrl: "https://www.athene.com/products/fia/accumulator",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 4. Athene Agility 10 ─────────────────────────────────────────────
@@ -197,39 +250,58 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.90,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.25,
-        participationRate: 100,
+        capRate: 5.25,
+        participationRate: 57,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
         indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        triggerRate: 7.00
-      },
-      {
-        indexName: "MSCI EAFE",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 7.00,
-        participationRate: 100,
+        creditingMethod: "2-Year Point-to-Point",
+        capRate: 10.75,
+        participationRate: 78,
         spread: 0,
         floor: 0,
         isUncapped: false
+      },
+      {
+        indexName: "BNP Paribas Multi Asset Diversified 5",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 130,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "BNP Paribas Multi Asset Diversified 5",
+        creditingMethod: "2-Year Point-to-Point",
+        capRate: null,
+        participationRate: 180,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "AI Powered US Equity",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["High S&P 500 cap rate", "No premium bonus - higher caps"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["Enhanced Income Benefit Rider included at no cost", "Multiple 2-year strategies", "Uncapped volatility-controlled indices"],
+    sourceUrl: "https://www.athene.com/products/fia/agility",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 5. Nationwide New Heights Select 12 ──────────────────────────────
@@ -242,15 +314,24 @@ export const fiaProducts = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 1.0,
+    premiumBonus: 5.0,
     freeWithdrawalPercent: 7,
     indexStrategies: [
       {
         indexName: "S&P 500",
+        creditingMethod: "3-Year Point-to-Point",
+        capRate: null,
+        participationRate: 50,
+        spread: 1.95,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 70,
-        spread: 1.90,
+        participationRate: 35,
+        spread: 1.95,
         floor: 0,
         isUncapped: true
       },
@@ -258,25 +339,25 @@ export const fiaProducts = [
         indexName: "JP Morgan Mozaic II",
         creditingMethod: "3-Year Point-to-Point",
         capRate: null,
-        participationRate: 160,
-        spread: 0,
+        participationRate: 185,
+        spread: 0.75,
         floor: 0,
         isUncapped: true
       },
       {
-        indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
+        indexName: "JP Morgan Mozaic II",
+        creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: null,
-        spread: 0,
+        participationRate: 115,
+        spread: 0.75,
         floor: 0,
-        isUncapped: false,
-        triggerRate: 5.50
+        isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["30% income benefit base bonus (High Point 365 rider)", "12-year surrender period", "Uncapped S&P 500 with participation"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["5% premium bonus (with High Point Select EDBR)", "9.5% compound annual roll-up for 12 years", "Income rider fee 1.10%"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed/types/new-heights-select-12",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 6. Nationwide Peak 10 ────────────────────────────────────────────
@@ -285,35 +366,73 @@ export const fiaProducts = [
     carrierId: "nationwide",
     name: "Nationwide Peak 10",
     surrenderPeriod: 10,
-    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    surrenderSchedule: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
     minimumPremium: 25000,
-    maximumIssueAge: 80,
+    maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 8.0,
+    premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.00,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.50,
+        capRate: 6.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false
       },
       {
-        indexName: "JP Morgan Mozaic II",
+        indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 250,
+        participationRate: 55,
+        spread: 1.00,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "BNP Paribas Global H-Factor",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "BNP Paribas Global H-Factor",
+        creditingMethod: "2-Year Point-to-Point",
+        capRate: null,
+        participationRate: 295,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "JP Morgan Cycle",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "JP Morgan Cycle",
+        creditingMethod: "2-Year Point-to-Point",
+        capRate: null,
+        participationRate: 265,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["8% premium bonus", "Strong S&P 500 cap"],
-    lastRateUpdate: "2026-02-01"
+    highlights: ["Guaranteed Income Solution (free, 4% simple roll-up)", "Optional Bonus Income+ Rider available", "Strong 2-year participation rates"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed/types/nationwide-peak-10",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 7. North American Performance Choice ─────────────────────────────
@@ -359,6 +478,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["High cap rate without bonus", "Monthly sum strategy available"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -397,6 +517,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["1% guaranteed minimum rate", "5% premium bonus"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -423,7 +544,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -443,6 +564,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Income-focused design"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -489,6 +611,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Accumulation focused", "7-year surrender period"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -535,6 +658,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Monthly average strategy available", "No premium bonus - higher caps"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -572,6 +696,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["0.5% guaranteed minimum", "4% premium bonus"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -618,6 +743,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "8-year surrender period", "Uncapped volatility-controlled indices"],
+    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -664,6 +790,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["14% upfront bonus (up to 17% with ABR)", "10-year surrender", "High participation uncapped indices"],
+    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -690,7 +817,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -711,6 +838,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["25% premium bonus", "Income rider with rollup"],
+    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -766,6 +894,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10.50% S&P 500 cap", "Multiple crediting methods"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -812,6 +941,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus", "Strong income rider"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -858,6 +988,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7-year surrender period", "High cap rates"],
+    sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -896,6 +1027,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["5% premium bonus", "0.5% guaranteed minimum"],
+    sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -942,6 +1074,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["6% premium bonus", "Lincoln i4LIFE income rider available"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -980,6 +1113,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7-year surrender", "No bonus for higher caps"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1026,6 +1160,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus", "Monthly average strategy"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1072,6 +1207,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Dual uncapped strategies"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1145,7 +1281,7 @@ export const fiaProducts = [
         triggerRate: 5.25
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -1211,6 +1347,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Accumulation focused", "Multiple index options", "No premium bonus — higher caps"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1249,6 +1386,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Built-in GMWB income rider", "5% premium bonus", "Launched August 2025"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1286,6 +1424,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["10.75% S&P 500 cap - among the highest", "Accumulation only"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1471,6 +1610,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7% premium bonus", "International index option"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities/fixed-index",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1506,7 +1646,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -1543,7 +1683,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -1636,7 +1776,7 @@ export const fiaProducts = [
         triggerRate: 6.00
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -1647,6 +1787,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["1% guaranteed minimum rate", "MassMutual financial strength"],
+    sourceUrl: "https://www.massmutual.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1694,6 +1835,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["18% premium bonus — among highest in industry", "Income rider available", "Lower caps offset by bonus"],
+    sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1778,6 +1920,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Lifetime income focus", "5% premium bonus"],
+    sourceUrl: "https://www.empower.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1804,7 +1947,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -1916,6 +2059,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["High caps without bonus", "DJIA index option"],
+    sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -1961,7 +2105,7 @@ export const fiaProducts = [
         triggerRate: 4.75
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 275,
@@ -1972,6 +2116,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["15% premium bonus", "High minimum premium for best rates"],
+    sourceUrl: "https://www.athene.com/products/fia/ascent-pro",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2018,6 +2163,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["25% premium bonus", "14-year surrender period", "460% participation rate"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2044,7 +2190,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 165,
@@ -2065,6 +2211,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7-year surrender with income focus", "Performance trigger option"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2111,6 +2258,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8-year surrender period", "Daily average strategy"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2137,7 +2285,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 275,
@@ -2166,6 +2314,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["12% premium bonus", "Four strategy options"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2212,6 +2361,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["7-year accumulation focus", "High cap and participation rates"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2247,7 +2397,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -2313,6 +2463,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["5% premium bonus", "International index diversification"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2358,7 +2509,7 @@ export const fiaProducts = [
         triggerRate: 5.25
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -2459,7 +2610,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 180,
@@ -2470,6 +2621,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Lifetime income rider included", "No premium bonus for higher caps"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2496,7 +2648,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 210,
@@ -2526,6 +2678,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["360-degree strategy approach", "Four index strategies included"],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2570,7 +2723,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -2581,6 +2734,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "High participation on volatility-controlled indices"],
+    sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2628,6 +2782,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["5% premium bonus", "Income-focused with performance trigger"],
+    sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2683,6 +2838,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Advisory channel product", "No bonus for highest possible caps"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2729,6 +2885,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus", "Income rider with rollup benefit"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2775,6 +2932,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Accumulation-focused design", "No bonus for maximum cap rates"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2810,7 +2968,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -2821,6 +2979,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["20% premium bonus", "Select series with enhanced income rider"],
+    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2877,6 +3036,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["30% premium bonus", "14-year surrender with highest bonus tier"],
+    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2903,7 +3063,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 300,
@@ -2933,6 +3093,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["15% premium bonus", "Enhanced performance tier"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2979,6 +3140,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Flexible choice of strategies", "Monthly average for smooth returns"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3034,6 +3196,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["6% premium bonus", "International and domestic index options"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3072,6 +3235,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["1% guaranteed minimum rate", "Multi-year guarantee with index upside"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3127,6 +3291,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Third generation Legend series", "Four index strategy options"],
+    sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3173,6 +3338,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Accumulation product", "Monthly average strategy for consistent growth"],
+    sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3228,6 +3394,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Third generation Rally series", "No bonus for highest caps"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3283,6 +3450,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Second generation accumulation product", "Among highest cap rates in market"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3330,6 +3498,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus", "Income rider with guaranteed rollup"],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3523,6 +3692,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["7-year surrender period", "No bonus for higher cap rates"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities/fixed-index",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3579,6 +3749,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus", "Elite tier with enhanced strategies"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities/fixed-index",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3605,7 +3776,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -3661,7 +3832,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 210,
@@ -3707,7 +3878,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -3718,6 +3889,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["5% premium bonus", "Income rider with competitive rollup"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3755,6 +3927,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["No bonus for highest caps", "Simple accumulation design"],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3802,6 +3975,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Income-focused with trigger strategy"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3848,6 +4022,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["7-year accumulation focused", "Monthly average option"],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -3920,7 +4095,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -4059,7 +4234,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 275,
@@ -4123,7 +4298,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -4236,6 +4411,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Structured buffer product", "Higher caps with defined downside buffers"],
+    sourceUrl: "https://equitable.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4282,6 +4458,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Buffer product with income rider", "Structured approach to retirement income"],
+    sourceUrl: "https://equitable.com/annuities/variable-annuities/performance-cap-rates",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4318,7 +4495,7 @@ export const fiaProducts = [
         triggerRate: 5.75
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -4329,6 +4506,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["1% guaranteed minimum", "New York Life AAA-rated financial strength"],
+    sourceUrl: "https://www.newyorklife.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4355,7 +4533,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -4477,6 +4655,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["5% premium bonus", "7-year surrender with strong rates"],
+    sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4524,6 +4703,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["15% premium bonus", "Strong income rider with rollup"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4550,7 +4730,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 210,
@@ -4570,6 +4750,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["4% premium bonus", "Income rider with 7-year surrender"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4608,6 +4789,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["5-year surrender - shortest commitment", "Competitive rates for short term"],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4654,6 +4836,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["5% premium bonus", "7-year surrender New Heights series"],
+    sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4680,7 +4863,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 190,
@@ -4701,6 +4884,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["0.5% guaranteed minimum", "John Hancock brand strength"],
+    sourceUrl: "https://www.johnhancock.com/annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4737,7 +4921,7 @@ export const fiaProducts = [
         triggerRate: 5.50
       },
       {
-        indexName: "Bloomberg US Dynamic Balance II",
+        indexName: "Bloomberg US Dynamic Balance III",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 180,
@@ -4748,6 +4932,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["1.5% guaranteed minimum - among the highest", "MassMutual A++ rated carrier"],
+    sourceUrl: "https://www.massmutual.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4794,6 +4979,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Buffer product with income benefit", "Uncapped with spread strategy available"],
+    sourceUrl: "https://www.prudential.com/personal/annuities/flexguard-rate-center",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4840,6 +5026,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Income-focused design"],
+    sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4942,6 +5129,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Jackson financial strength backing"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -4989,6 +5177,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["0.75% guaranteed minimum", "7% premium bonus with income focus"],
+    sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5090,6 +5279,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "7-year Endeavor series"],
+    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5200,6 +5390,7 @@ export const fiaProducts = [
       "No premium bonus — higher caps and participation rates",
       "Multiple uncapped volatility-controlled index strategies"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5307,6 +5498,7 @@ export const fiaProducts = [
       "Multiple uncapped volatility-controlled index strategies",
       "Max issue age 90"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5414,6 +5606,7 @@ export const fiaProducts = [
       "Multiple uncapped strategies over 185% participation",
       "4.50% fixed rate option"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5494,6 +5687,7 @@ export const fiaProducts = [
       "Uncapped volatility-controlled index strategies",
       "No premium bonus for higher crediting rates"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5601,6 +5795,7 @@ export const fiaProducts = [
       "Short surrender with bonus — rare combination",
       "Slightly lower caps/participation vs non-bonus Teton"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5708,6 +5903,7 @@ export const fiaProducts = [
       "Slightly lower caps/participation vs non-bonus Teton",
       "Cumulative free withdrawals up to 30%"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5842,6 +6038,7 @@ export const fiaProducts = [
       "13 crediting strategies across 6 indexes",
       "Boost spread strategies available"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -5913,6 +6110,7 @@ export const fiaProducts = [
       "Longest accumulation window",
       "Highest surrender charges (up to 14.75%)"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6021,6 +6219,7 @@ export const fiaProducts = [
       "Wellness withdrawal doubles income for up to 5 years",
       "No annual contract fees"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6129,6 +6328,7 @@ export const fiaProducts = [
       "200%+ participation on volatility-controlled indexes",
       "Wellness withdrawal doubles income for up to 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6200,6 +6400,7 @@ export const fiaProducts = [
       "No annual fees on base product",
       "Uncapped volatility-controlled indexes above 200% participation"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6289,6 +6490,7 @@ export const fiaProducts = [
       "No annual fees on base product",
       "Wellness withdrawal doubles income for up to 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6387,6 +6589,7 @@ export const fiaProducts = [
       "Built-in lifetime withdrawal benefit at no fee",
       "Wellness withdrawal doubles income for up to 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6458,6 +6661,7 @@ export const fiaProducts = [
       "Built-in lifetime income at no additional cost",
       "Longest surrender with highest bonus"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6566,6 +6770,7 @@ export const fiaProducts = [
       "Built-in ELWB — Level or Increasing lifetime withdrawals",
       "Wellness/ADL benefit doubles income for up to 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6711,6 +6916,7 @@ export const fiaProducts = [
       "Built-in ELWB — Level or Increasing lifetime withdrawals",
       "Wellness/ADL benefit doubles income for up to 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6782,6 +6988,7 @@ export const fiaProducts = [
       "6% guaranteed rollup PLUS positive interest credits",
       "Longest deferral period for maximum income accumulation"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6865,6 +7072,7 @@ export const fiaProducts = [
       "Increasing, Level, or Accelerated lifetime withdrawal options",
       "Wellness benefit doubles single income for up to 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -6947,6 +7155,7 @@ export const fiaProducts = [
       "Enhanced death benefit based on Benefit Value",
       "Three withdrawal options: Increasing, Level, Accelerated"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7020,6 +7229,7 @@ export const fiaProducts = [
       "Enhanced death benefit for wealth transfer",
       "Longest deferral maximizes Benefit Value growth"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7150,6 +7360,7 @@ export const fiaProducts = [
       "Enhanced death benefit paid over 5 years based on Benefit Value",
       "Three withdrawal options: Increasing, Level, Accelerated"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7271,6 +7482,7 @@ export const fiaProducts = [
       "Enhanced death benefit based on Benefit Value",
       "Three withdrawal options: Increasing, Level, Accelerated"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7346,6 +7558,7 @@ export const fiaProducts = [
       "14-year legacy product for maximum wealth transfer",
       "Enhanced death benefit distributed over 5 years"
     ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7377,6 +7590,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Built-in Anytime Income rider", "12 index crediting strategies", "6 index options including CIBC, BlackRock, Morgan Stanley", "Biennial strategies for higher participation"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7408,6 +7622,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Built-in Future Income rider (10-yr wait)", "Higher rates than Anytime Income version", "12 index crediting strategies", "Enhanced income with 10-year deferral"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7434,6 +7649,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Accumulation-focused with no rider fees", "Enhanced death benefit at no cost", "7 indexed strategies across 4 indices", "Performance enhancement charge option available"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7463,6 +7679,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus", "19 indexed strategies plus fixed", "Performance multiplier up to 175% of account value for income", "7 index options"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7491,6 +7708,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["10% premium bonus vested over 14 years", "14-year surrender period", "Performance multiplier up to 175% for income", "Higher participation rates than 10-year version"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7518,6 +7736,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["4% premium bonus", "GMDB rider at 0.60% annual fee", "Death benefit base grows at 5% simple interest", "Gold commodity index available"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7545,6 +7764,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["6% premium bonus", "GMDB rider at 0.60% annual fee", "Death benefit base grows at 5% simple interest", "Gold commodity and biennial strategies"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7572,6 +7792,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["7% premium bonus", "14-year surrender period with highest participation rates", "GMDB rider at 0.60% annual fee", "Up to 265% participation on GS Global Factor"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7597,6 +7818,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["6.50% premium bonus", "EGMWB income rider at 0.90% annual fee", "EGMDB death benefit at 0.60% annual fee", "Protection Package with income + death benefit"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7622,6 +7844,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7.50% premium bonus", "14-year surrender period", "EGMWB income rider + EGMDB death benefit", "Highest bonus in Prosperity Elite series"],
+    sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7647,6 +7870,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["NAC's flagship accumulation FIA", "BNP Paribas volatility-controlled index", "130% uncapped participation", "5.50% performance trigger rate"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7669,6 +7893,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: false,
     highlights: ["Short 5-year surrender period", "Lower minimum at $10K", "Simple product design", "Best for near-term accumulation"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7692,6 +7917,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7-year surrender period", "Higher rates than 5-year version", "BNP Paribas index option", "Income rider available"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7716,6 +7942,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Industry-leading 17% premium bonus", "Bonus vested over 10 years", "Income-focused with high rollup", "BNP Paribas index with 95% participation"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7741,6 +7968,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Strong accumulation product", "120% BNP Paribas participation", "No bonus — cleaner cap rates", "Income rider available"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7766,6 +7994,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["12-year surrender for higher rates", "135% BNP Paribas participation", "Highest trigger rate in NAC lineup", "Enhanced cap rates vs 10-year"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7790,6 +8019,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Versatile product with income + accumulation", "100% BNP Paribas participation", "Income rider available"],
+    sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7815,6 +8045,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Next-gen Rally series", "JPMorgan Mozaic II index with 110% participation", "ESG index option (MSCI KLD 400)", "Income rider available"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7838,6 +8069,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["7-year shorter surrender period", "Simplified product design", "JPMorgan Mozaic II index", "Income rider compatible"],
+    sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7862,6 +8094,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["Companion to Index 7", "Longer 10-year surrender for better rates", "Merrill Lynch RPM index option", "Income rider available"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities/fixed-index",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7887,6 +8120,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["8% premium bonus", "Nasdaq-100 index option", "Merrill Lynch RPM index with 100% participation", "Income rider compatible"],
+    sourceUrl: "https://www.transamerica.com/individual/what-we-offer/products/annuities/fixed-index",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7906,12 +8140,13 @@ export const fiaProducts = [
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 8.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 50, spread: 0, floor: 0, isUncapped: true },
       { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 2.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 150, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance III", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 150, spread: 0, floor: 0, isUncapped: true },
       { indexName: "Credit Suisse Momentum Allocator", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 120, spread: 0, floor: 0, isUncapped: true },
       { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 5.00 }
     ],
     incomeRiderAvailable: true,
     highlights: ["Pacific Life flagship accumulation FIA", "150% Bloomberg Dynamic Balance participation", "Credit Suisse Momentum Allocator index", "Income rider available"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
   },
 
@@ -7930,11 +8165,12 @@ export const fiaProducts = [
     indexStrategies: [
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 45, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 135, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance III", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 135, spread: 0, floor: 0, isUncapped: true },
       { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 4.25 }
     ],
     incomeRiderAvailable: true,
     highlights: ["Income-focused design", "Built-in income benefit", "Bloomberg Dynamic Balance 135% participation", "Pacific Life A+ AM Best rated"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
   }
 ];

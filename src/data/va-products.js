@@ -21,6 +21,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Industry-leading GMWB riders', '95 subaccount options', 'Free annual step-up'],
+    sourceUrl: 'https://www.jackson.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -38,6 +39,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['112 subaccount choices', 'Enhanced living benefit riders', 'Premium brand fund managers'],
+    sourceUrl: 'https://www.jackson.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -54,6 +56,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['No surrender charges', 'Low 0.70% total charge', 'Fee-based advisor friendly'],
+    sourceUrl: 'https://www.jackson.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -70,6 +73,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['4-year surrender period', 'L-share liquidity', 'Full living benefit suite'],
+    sourceUrl: 'https://www.jackson.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -90,6 +94,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['102 subaccount options', 'Multiple living benefit choices', 'Estate enhancement rider'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -106,6 +111,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Competitive M&E charge', '6-year surrender', 'Strong brand fund lineup'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -120,6 +126,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Lowest-cost Lincoln VA', 'No surrender charges', 'Fee-based advisor platform'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -134,6 +141,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['I-share pricing', 'No surrender charges', '$50K minimum for institutional pricing'],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -154,6 +162,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Unique daily step-up on income benefit', 'Split fee structure — lower total cost', 'Highest Daily Lifetime Income rider'],
+    sourceUrl: 'https://www.prudential.com/personal/annuities/products/premier-investment',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -170,6 +179,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Income-focused design', '70 subaccounts', 'Prudential financial strength'],
+    sourceUrl: 'https://www.prudential.com/personal/annuities/products/premier-investment',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -186,6 +196,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Low $5K minimum', '5-year surrender', 'Daily step-up income benefit'],
+    sourceUrl: 'https://www.prudential.com/personal/annuities/products/premier-investment',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -200,6 +211,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Ultra-low 0.65% total charge', 'No surrender', 'Fee-based advisor only'],
+    sourceUrl: 'https://www.prudential.com/personal/annuities/products/premier-investment',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -219,6 +231,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['90 subaccount options', 'Strong income rider', 'Estate enhancement available'],
+    sourceUrl: 'https://www.annuities.pacificlife.com/home/annuities/variable-annuities.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -235,6 +248,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['4-year L-share liquidity', 'Same rider suite as Odyssey', 'Lower entry point'],
+    sourceUrl: 'https://www.annuities.pacificlife.com/home/annuities/variable-annuities.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -252,6 +266,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['105 subaccounts — one of largest shelves', 'Competitive 1.25% total charge', '6% rollup income rider'],
+    sourceUrl: 'https://www.annuities.pacificlife.com/home/annuities/variable-annuities.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -271,6 +286,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['6% rollup rate', 'Spousal protection rider', '85 subaccounts'],
+    sourceUrl: 'https://www.nationwide.com/personal/investing/annuities/variable',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -285,6 +301,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Low-cost advisory platform', 'No surrender charges', '80 subaccounts'],
+    sourceUrl: 'https://www.nationwide.com/personal/investing/annuities/variable',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -301,6 +318,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Low $5K minimum', '5-year surrender', 'Solid living benefit'],
+    sourceUrl: 'https://www.nationwide.com/personal/investing/annuities/variable',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -352,6 +370,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Solid fund lineup', '5.5% rollup rate', '78 subaccounts'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -368,6 +387,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['3-year L-share — fastest liquidity', 'Full rider suite available', '65 subaccounts'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -380,6 +400,7 @@ export const vaProducts = [
     deathBenefits: [{ name: 'Account Value', type: 'Standard', annualCost: 0, description: 'AV at death' }],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Low-cost advisory wrapper', 'No surrender charges', '72 subaccounts'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -433,6 +454,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Vitality wellness rewards', '82 subaccounts', '5.5% rollup'],
+    sourceUrl: 'https://www.johnhancock.com/annuities.html',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -447,6 +469,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Low 0.75% total charge', 'No surrender charges', 'Accumulation focus'],
+    sourceUrl: 'https://www.johnhancock.com/annuities.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -465,6 +488,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['92 subaccounts', 'Mutual company strength', '5.5% rollup income rider'],
+    sourceUrl: 'https://www.massmutual.com/annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -481,6 +505,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['4-year L-share', 'MassMutual financial strength', '70 subaccounts'],
+    sourceUrl: 'https://www.massmutual.com/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -534,6 +559,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Solid 5.5% rollup', 'Great American financial strength', '55 subaccounts'],
+    sourceUrl: 'https://www.massmutualascend.com/products',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -546,6 +572,7 @@ export const vaProducts = [
     deathBenefits: [{ name: 'Account Value', type: 'Standard', annualCost: 0, description: 'AV' }],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Low 0.70% total charge', 'No surrender charges', 'Fee-based platform'],
+    sourceUrl: 'https://www.massmutualascend.com/products',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -590,6 +617,7 @@ export const vaProducts = [
     deathBenefits: [{ name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'ROP' }],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Competitive 1.35% total charge', '58 subaccounts', 'Growing VA platform'],
+    sourceUrl: 'https://professionals.globalatlantic.com/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -609,6 +637,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['NYL AAA financial strength', 'Competitive 1.30% total charge', 'MainStay fund family access'],
+    sourceUrl: 'https://www.newyorklife.com/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -653,6 +682,7 @@ export const vaProducts = [
     deathBenefits: [{ name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'ROP' }],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['F&G insurance backing', '52 subaccounts', '5% rollup income rider'],
+    sourceUrl: 'https://www.fglife.com/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -669,6 +699,7 @@ export const vaProducts = [
     deathBenefits: [{ name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'ROP' }],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Competitive 1.30% total charge', '48 subaccounts', 'Symetra financial backing'],
+    sourceUrl: 'https://www.symetra.com/our-products/individuals/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -854,6 +885,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['90 subaccount options', 'Retirement Cornerstone GLWB', '6-year surrender period', 'Market Stabilizer Option available'],
+    sourceUrl: 'https://equitable.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
   {
@@ -868,6 +900,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Advisory/fee-based — no surrender charges', '100+ investment options', 'Low 0.65% total annual charge', 'Designed for RIA/fee-based advisors'],
+    sourceUrl: 'https://equitable.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -887,6 +920,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['80 subaccount options', 'Income Edge GMWB with 6% rollup', 'Enhanced death benefit option', 'Standard B-Share with 7-year surrender'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -905,6 +939,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Low 0.95% total annual charge', '5-year shorter surrender period', '60 subaccount options', 'Lower-cost alternative to standard VA'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -924,6 +959,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['$5,000 minimum premium', '70 subaccount choices', '5-year surrender period', 'Highest Anniversary Value death benefit option'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -940,6 +976,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Ultra-low 0.25% total annual charge', 'No surrender charges', 'Fee-based advisor product', 'I-Share commission-free structure'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -958,6 +995,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 100, rmdFriendly: true,
     highlights: ['Advisory no-load VA', 'Low 0.55% total annual charge', 'Inspire Income GMWB available', '55 subaccount options'],
+    sourceUrl: 'https://www.transamerica.com/individual/what-we-offer/products/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -977,6 +1015,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Short 3-year L-Share surrender period', '90 subaccount options', 'LifeGuard Freedom Flex available', 'Highest quarterly anniversary death benefit option'],
+    sourceUrl: 'https://www.jackson.com/annuities/variable-annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -995,6 +1034,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Sammons Financial Group backing', '50 subaccount options', '6% rollup income rider', 'A+ AM Best rated carrier'],
+    sourceUrl: 'https://www.northamericancompany.com/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -1013,6 +1053,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Allianz brand — #1 in FIA sales', 'Indexed crediting options within VA', '60 subaccount choices', '6-year surrender period'],
+    sourceUrl: 'https://www.allianzlife.com/what-we-offer/annuities',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -1032,6 +1073,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Apollo-backed carrier', '55 subaccount options', 'Enhanced death benefit available', 'Strong financial ratings'],
+    sourceUrl: 'https://www.athene.com/products',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -1068,6 +1110,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['Minnesota Life subsidiary', '60 subaccount options', 'Low 1.15% total annual charge', 'Strong midwestern carrier'],
+    sourceUrl: 'https://www.securian.com/financial-professionals/products/annuities.html',
     lastRateUpdate: '2026-02-01'
   },
 
@@ -1123,6 +1166,7 @@ export const vaProducts = [
     ],
     freeWithdrawalPercent: 10, rmdFriendly: true,
     highlights: ['KKR-backed carrier', '50 subaccount options', '6% rollup income rider', 'Fast-growing carrier'],
+    sourceUrl: 'https://professionals.globalatlantic.com/products/annuities',
     lastRateUpdate: '2026-02-01'
   }
 ];
