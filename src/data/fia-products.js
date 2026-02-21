@@ -177,6 +177,8 @@ export const fiaProducts = [
   {
     id: "athene-ascent-pro-10",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Athene Ascent Pro 10 (Bonus)",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 5, 4, 0],
@@ -234,6 +236,8 @@ export const fiaProducts = [
   {
     id: "athene-accumulator-10",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Athene Accumulator 10",
     surrenderPeriod: 10,
     surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
@@ -273,6 +277,8 @@ export const fiaProducts = [
   {
     id: "athene-agility-10",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Athene Agility 10",
     surrenderPeriod: 10,
     surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
@@ -782,6 +788,8 @@ export const fiaProducts = [
   {
     id: "midland-national-indexbuilder-10",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "MNL IndexBuilder 10",
     surrenderPeriod: 10,
     surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -790,11 +798,12 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 14.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.70,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 5.75,
+        capRate: 6.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -804,25 +813,25 @@ export const fiaProducts = [
         indexName: "S&P MARC 5% ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 300,
+        participationRate: 115,
         spread: 0,
         floor: 0,
         isUncapped: true
       },
       {
-        indexName: "BNP Paribas Multi Asset Diversified 5",
+        indexName: "Fidelity Multifactor Yield 5% ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 350,
+        participationRate: 115,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["14% upfront bonus (up to 17% with ABR)", "10-year surrender", "High participation uncapped indices"],
-    sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
-    lastRateUpdate: "2026-02-01"
+    highlights: ["14% upfront bonus (up to 17% with ABR)", "10-year surrender", "Enhanced participation with 0.95% annual charge"],
+    sourceUrl: "https://annuityeducator.com/reviews/midland-national-life-insurance-company/fixed-index/mnl-indexbuilder-10-high-band-most-states",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 14. Midland National RetireVantage 10 ────────────────────────────
@@ -877,6 +886,8 @@ export const fiaProducts = [
   {
     id: "american-equity-assetshield-10",
     carrierId: "american-equity",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "American Equity AssetShield 10",
     surrenderPeriod: 10,
     surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
@@ -885,11 +896,12 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.80,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.50,
+        capRate: 9.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -898,7 +910,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Monthly Sum",
-        capRate: 3.25,
+        capRate: 2.00,
         participationRate: 100,
         spread: 0,
         floor: -10,
@@ -917,16 +929,16 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Daily Average",
         capRate: null,
-        participationRate: 60,
+        participationRate: 40,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
-    highlights: ["10.50% S&P 500 cap", "Multiple crediting methods"],
-    sourceUrl: "https://www.american-equity.com/annuities",
-    lastRateUpdate: "2026-02-01"
+    highlights: ["9.25% S&P 500 cap (no fee)", "Multiple crediting methods"],
+    sourceUrl: "https://annuityeducator.com/reviews/american-equity-investment-life-insurance-company/fixed-index/assetshield-10",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 16. American Equity BonusMax ─────────────────────────────────────
@@ -1066,6 +1078,8 @@ export const fiaProducts = [
   {
     id: "lincoln-optiblend-10",
     carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Lincoln OptiBlend 10",
     surrenderPeriod: 10,
     surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
@@ -1074,11 +1088,12 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 6.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.10,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.00,
+        capRate: 9.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1097,16 +1112,35 @@ export const fiaProducts = [
         indexName: "BlackRock Dynamic Diversified",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 225,
+        participationRate: 200,
         spread: 0,
         floor: 0,
         isUncapped: true
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 55,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 7.55
       }
     ],
     incomeRiderAvailable: true,
     highlights: ["6% premium bonus", "Lincoln i4LIFE income rider available"],
-    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
-    lastRateUpdate: "2026-02-01"
+    sourceUrl: "https://annuityeducator.com/reviews/lincoln-national-life-insurance-company/fixed-index/lincoln-optiblend-10",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 20. Lincoln OptiBlend 7 ──────────────────────────────────────────
@@ -1425,19 +1459,22 @@ export const fiaProducts = [
   {
     id: "symetra-accumulation-edge",
     carrierId: "symetra",
-    name: "Symetra Accumulation Edge",
-    surrenderPeriod: 7,
-    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 10000,
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
+    name: "Symetra Edge Elite 5",
+    surrenderPeriod: 5,
+    surrenderSchedule: [7, 6, 5, 4, 3, 0],
+    minimumPremium: 25000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.30,
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.75,
+        capRate: 9.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1445,18 +1482,46 @@ export const fiaProducts = [
       },
       {
         indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 3.25,
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 50,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 7.25
+      },
+      {
+        indexName: "Nasdaq-100",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.75,
         participationRate: 100,
         spread: 0,
-        floor: -10,
+        floor: 0,
         isUncapped: false
+      },
+      {
+        indexName: "JP Morgan ETF Efficiente 5",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 145,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
       }
     ],
     incomeRiderAvailable: false,
-    highlights: ["10.75% S&P 500 cap - among the highest", "Accumulation only"],
-    sourceUrl: "https://www.symetra.com/our-products/individuals/annuities",
-    lastRateUpdate: "2026-02-01"
+    highlights: ["9.25% S&P 500 cap (high band)", "4.30% fixed rate", "5-year surrender period", "Multiple index options including Nasdaq-100"],
+    sourceUrl: "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-5",
+    lastRateUpdate: "2026-02-21"
   },
 
   // ── 27. Eagle Life Eagle Select 10 ───────────────────────────────────
@@ -5320,6 +5385,8 @@ export const fiaProducts = [
   {
     id: "silac-teton-5",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton 5",
     surrenderPeriod: 5,
     surrenderSchedule: [12, 12, 11, 10, 9, 0],
@@ -5334,7 +5401,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 7.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -5344,7 +5411,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 52,
+        participationRate: 50,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5362,7 +5429,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Monthly Average with Participation Rate",
         capRate: null,
-        participationRate: 95,
+        participationRate: 90,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5371,7 +5438,7 @@ export const fiaProducts = [
         indexName: "S&P 500 Duo Swift",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 70,
+        participationRate: 67,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5380,7 +5447,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 185,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5389,7 +5456,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 170,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5398,7 +5465,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 175,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5411,7 +5478,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 4.25
+        fixedRate: 4.00
       }
     ],
     incomeRiderAvailable: false,
@@ -5422,13 +5489,15 @@ export const fiaProducts = [
       "Multiple uncapped volatility-controlled index strategies"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton 7 (Accumulation) ───────────────────────────────────────
   {
     id: "silac-teton-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -5443,7 +5512,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 7.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -5453,7 +5522,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 52,
+        participationRate: 50,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5471,7 +5540,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Monthly Average with Participation Rate",
         capRate: null,
-        participationRate: 95,
+        participationRate: 90,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5480,7 +5549,7 @@ export const fiaProducts = [
         indexName: "S&P 500 Duo Swift",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 70,
+        participationRate: 67,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5489,7 +5558,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 185,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5498,7 +5567,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 170,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5507,7 +5576,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 175,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5530,13 +5599,15 @@ export const fiaProducts = [
       "Max issue age 90"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton 10 (Accumulation) ──────────────────────────────────────
   {
     id: "silac-teton-10",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton 10",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
@@ -5551,7 +5622,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 7.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -5561,7 +5632,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 52,
+        participationRate: 50,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5579,7 +5650,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Monthly Average with Participation Rate",
         capRate: null,
-        participationRate: 95,
+        participationRate: 90,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5588,7 +5659,7 @@ export const fiaProducts = [
         indexName: "S&P 500 Duo Swift",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 70,
+        participationRate: 67,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5597,7 +5668,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 185,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5606,7 +5677,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 170,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5615,7 +5686,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 175,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5628,7 +5699,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 4.50
+        fixedRate: 4.25
       }
     ],
     incomeRiderAvailable: false,
@@ -5638,13 +5709,15 @@ export const fiaProducts = [
       "4.50% fixed rate option"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton 14 (Accumulation) ──────────────────────────────────────
   {
     id: "silac-teton-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -5659,7 +5732,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 7.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -5669,7 +5742,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 52,
+        participationRate: 50,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5678,7 +5751,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 185,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5687,7 +5760,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 175,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5696,7 +5769,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 175,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -5709,7 +5782,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 4.50
+        fixedRate: 4.25
       }
     ],
     incomeRiderAvailable: false,
@@ -5719,13 +5792,15 @@ export const fiaProducts = [
       "No premium bonus for higher crediting rates"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton Bonus 5 (Accumulation with Bonus) ─────────────────────
   {
     id: "silac-teton-bonus-5",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton Bonus 5",
     surrenderPeriod: 5,
     surrenderSchedule: [12, 12, 11, 10, 9, 0],
@@ -5740,7 +5815,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 6.0,
+        capRate: 5.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -5768,7 +5843,7 @@ export const fiaProducts = [
         indexName: "S&P 500 Duo Swift",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 55,
+        participationRate: 52,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5804,7 +5879,7 @@ export const fiaProducts = [
         indexName: "Bloomberg Versa 10",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 67,
+        participationRate: 65,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -5827,13 +5902,15 @@ export const fiaProducts = [
       "Slightly lower caps/participation vs non-bonus Teton"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton Bonus 7 (Accumulation with Bonus) ─────────────────────
   {
     id: "silac-teton-bonus-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton Bonus 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -5848,7 +5925,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 6.0,
+        capRate: 6.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -5935,13 +6012,15 @@ export const fiaProducts = [
       "Cumulative free withdrawals up to 30%"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton Bonus 10 (Accumulation with Bonus) ────────────────────
   {
     id: "silac-teton-bonus-10",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton Bonus 10",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
@@ -5956,7 +6035,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 6.0,
+        capRate: 6.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6070,13 +6149,15 @@ export const fiaProducts = [
       "Boost spread strategies available"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Teton Bonus 14 (Accumulation with Bonus) ────────────────────
   {
     id: "silac-teton-bonus-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Teton Bonus 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -6091,7 +6172,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 6.0,
+        capRate: 6.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6101,7 +6182,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 145,
+        participationRate: 150,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6110,7 +6191,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 135,
+        participationRate: 140,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6132,7 +6213,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 2.75
+        fixedRate: 3.00
       }
     ],
     incomeRiderAvailable: false,
@@ -6142,13 +6223,15 @@ export const fiaProducts = [
       "Highest surrender charges (up to 14.75%)"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Denali 7 (Accumulation + Lifetime Income) ───────────────────
   {
     id: "silac-denali-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Denali 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -6163,7 +6246,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 9.0,
+        capRate: 8.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6173,7 +6256,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 57,
+        participationRate: 55,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -6181,7 +6264,118 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Monthly Sum with Cap",
-        capRate: 2.85,
+        capRate: 2.75,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Average with Participation Rate",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500 Duo Swift",
+        creditingMethod: "Annual Point-to-Point with Participation Rate",
+        capRate: null,
+        participationRate: 75,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500 RavenPack AI",
+        creditingMethod: "Annual Point-to-Point with Participation Rate",
+        capRate: null,
+        participationRate: 200,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "Barclays Atlas 5",
+        creditingMethod: "Annual Point-to-Point with Participation Rate",
+        capRate: null,
+        participationRate: 190,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "Nasdaq Generations 5",
+        creditingMethod: "Annual Point-to-Point with Participation Rate",
+        capRate: null,
+        participationRate: 195,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "Fixed Rate",
+        creditingMethod: "Fixed",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        fixedRate: 4.50
+      }
+    ],
+    incomeRiderAvailable: true,
+    highlights: [
+      "Built-in lifetime withdrawal benefit at no fee",
+      "200%+ participation on multiple volatility-controlled indexes",
+      "Wellness withdrawal doubles income for up to 5 years",
+      "No annual contract fees"
+    ],
+    sourceUrl: "https://www.silacins.com/products/annuities",
+    lastRateUpdate: "2025-12-10"
+  },
+
+  // ── SILAC Denali 10 (Accumulation + Lifetime Income) ──────────────────
+  {
+    id: "silac-denali-10",
+    carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
+    name: "SILAC Denali 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
+    minimumPremium: 10000,
+    maximumPremium: 1000000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 5,
+    mvAdjustment: true,
+    indexStrategies: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point with Cap",
+        capRate: 9.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point with Participation Rate",
+        capRate: null,
+        participationRate: 60,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Sum with Cap",
+        capRate: 3.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6200,7 +6394,7 @@ export const fiaProducts = [
         indexName: "S&P 500 Duo Swift",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 77,
+        participationRate: 82,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -6209,7 +6403,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 215,
+        participationRate: 220,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6227,7 +6421,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 207,
+        participationRate: 210,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6246,127 +6440,20 @@ export const fiaProducts = [
     incomeRiderAvailable: true,
     highlights: [
       "Built-in lifetime withdrawal benefit at no fee",
-      "200%+ participation on multiple volatility-controlled indexes",
-      "Wellness withdrawal doubles income for up to 5 years",
-      "No annual contract fees"
-    ],
-    sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
-  },
-
-  // ── SILAC Denali 10 (Accumulation + Lifetime Income) ──────────────────
-  {
-    id: "silac-denali-10",
-    carrierId: "silac",
-    name: "SILAC Denali 10",
-    surrenderPeriod: 10,
-    surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
-    minimumPremium: 10000,
-    maximumPremium: 1000000,
-    maximumIssueAge: 85,
-    guaranteedMinimumRate: 0.0,
-    premiumBonus: 0.0,
-    freeWithdrawalPercent: 5,
-    mvAdjustment: true,
-    indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 9.0,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point with Participation Rate",
-        capRate: null,
-        participationRate: 57,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum with Cap",
-        capRate: 2.85,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Average with Participation Rate",
-        capRate: null,
-        participationRate: 105,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "S&P 500 Duo Swift",
-        creditingMethod: "Annual Point-to-Point with Participation Rate",
-        capRate: null,
-        participationRate: 77,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500 RavenPack AI",
-        creditingMethod: "Annual Point-to-Point with Participation Rate",
-        capRate: null,
-        participationRate: 215,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "Barclays Atlas 5",
-        creditingMethod: "Annual Point-to-Point with Participation Rate",
-        capRate: null,
-        participationRate: 205,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "Nasdaq Generations 5",
-        creditingMethod: "Annual Point-to-Point with Participation Rate",
-        capRate: null,
-        participationRate: 207,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "Fixed Rate",
-        creditingMethod: "Fixed",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        fixedRate: 5.25
-      }
-    ],
-    incomeRiderAvailable: true,
-    highlights: [
-      "Built-in lifetime withdrawal benefit at no fee",
       "5.25% fixed rate option",
       "200%+ participation on volatility-controlled indexes",
       "Wellness withdrawal doubles income for up to 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Denali 14 (Accumulation + Lifetime Income) ──────────────────
   {
     id: "silac-denali-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Denali 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -6381,7 +6468,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 9.0,
+        capRate: 9.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6391,7 +6478,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 215,
+        participationRate: 225,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6400,7 +6487,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 205,
+        participationRate: 210,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6409,7 +6496,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 207,
+        participationRate: 215,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6422,7 +6509,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 5.25
+        fixedRate: 5.00
       }
     ],
     incomeRiderAvailable: true,
@@ -6432,13 +6519,15 @@ export const fiaProducts = [
       "Uncapped volatility-controlled indexes above 200% participation"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Denali Bonus 7 (Accumulation + Bonus + Lifetime Income) ─────
   {
     id: "silac-denali-bonus-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Denali Bonus 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -6453,7 +6542,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 6.75,
+        capRate: 6.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6463,7 +6552,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 45,
+        participationRate: 42,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -6481,7 +6570,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 165,
+        participationRate: 155,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6490,7 +6579,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 155,
+        participationRate: 145,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6499,7 +6588,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 160,
+        participationRate: 150,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6512,7 +6601,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 3.50
+        fixedRate: 3.25
       }
     ],
     incomeRiderAvailable: true,
@@ -6522,13 +6611,15 @@ export const fiaProducts = [
       "Wellness withdrawal doubles income for up to 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Denali Bonus 10 (Accumulation + Bonus + Lifetime Income) ────
   {
     id: "silac-denali-bonus-10",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Denali Bonus 10",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
@@ -6621,13 +6712,15 @@ export const fiaProducts = [
       "Wellness withdrawal doubles income for up to 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Denali Bonus 14 (Accumulation + Bonus + Lifetime Income) ────
   {
     id: "silac-denali-bonus-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Denali Bonus 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -6642,7 +6735,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 6.75,
+        capRate: 7.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6652,7 +6745,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 165,
+        participationRate: 170,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6661,7 +6754,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 155,
+        participationRate: 160,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6670,7 +6763,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 160,
+        participationRate: 165,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6693,13 +6786,15 @@ export const fiaProducts = [
       "Longest surrender with highest bonus"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Evolve 7 (Income-Focused FIA) ───────────────────────────────
   {
     id: "silac-evolve-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Evolve 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -6714,7 +6809,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 9.0,
+        capRate: 8.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6724,7 +6819,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 57,
+        participationRate: 55,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -6732,7 +6827,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Monthly Sum with Cap",
-        capRate: 2.85,
+        capRate: 2.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6742,7 +6837,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Monthly Average with Participation Rate",
         capRate: null,
-        participationRate: 105,
+        participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6751,7 +6846,7 @@ export const fiaProducts = [
         indexName: "S&P 500 Duo Swift",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 77,
+        participationRate: 75,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -6760,7 +6855,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 215,
+        participationRate: 200,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6769,7 +6864,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 205,
+        participationRate: 190,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6778,7 +6873,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 207,
+        participationRate: 195,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6802,13 +6897,15 @@ export const fiaProducts = [
       "Wellness/ADL benefit doubles income for up to 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Evolve 10 (Income-Focused FIA) ──────────────────────────────
   {
     id: "silac-evolve-10",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Evolve 10",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
@@ -6948,13 +7045,15 @@ export const fiaProducts = [
       "Wellness/ADL benefit doubles income for up to 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Evolve 14 (Income-Focused FIA) ──────────────────────────────
   {
     id: "silac-evolve-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Evolve 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -6969,7 +7068,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 9.50,
+        capRate: 9.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -6979,7 +7078,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 220,
+        participationRate: 225,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6988,7 +7087,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 205,
+        participationRate: 210,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -6997,7 +7096,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 210,
+        participationRate: 215,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7010,7 +7109,7 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: false,
-        fixedRate: 4.75
+        fixedRate: 5.00
       }
     ],
     incomeRiderAvailable: true,
@@ -7020,13 +7119,15 @@ export const fiaProducts = [
       "Longest deferral period for maximum income accumulation"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Vega 7 (Legacy / Wealth Transfer) ──────────────────────────
   {
     id: "silac-vega-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Vega 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -7043,7 +7144,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 4.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -7053,7 +7154,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 52,
+        participationRate: 32,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -7062,7 +7163,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 120,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7071,7 +7172,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 110,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7080,7 +7181,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 115,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7104,13 +7205,15 @@ export const fiaProducts = [
       "Wellness benefit doubles single income for up to 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Vega 10 (Legacy / Wealth Transfer) ─────────────────────────
   {
     id: "silac-vega-10",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Vega 10",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
@@ -7127,7 +7230,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 4.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -7137,7 +7240,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 52,
+        participationRate: 32,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -7146,7 +7249,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 120,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7155,7 +7258,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 110,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7164,7 +7267,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 115,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7187,13 +7290,15 @@ export const fiaProducts = [
       "Three withdrawal options: Increasing, Level, Accelerated"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Vega 14 (Legacy / Wealth Transfer) ─────────────────────────
   {
     id: "silac-vega-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Vega 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -7210,7 +7315,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 8.25,
+        capRate: 4.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -7220,7 +7325,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 200,
+        participationRate: 110,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7229,7 +7334,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 187,
+        participationRate: 105,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7238,7 +7343,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 190,
+        participationRate: 105,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7261,13 +7366,15 @@ export const fiaProducts = [
       "Longest deferral maximizes Benefit Value growth"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Vega Bonus 7 (Legacy / Wealth Transfer with Bonus) ─────────
   {
     id: "silac-vega-bonus-7",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Vega Bonus 7",
     surrenderPeriod: 7,
     surrenderSchedule: [12, 12, 11, 10, 9, 7, 4, 0],
@@ -7286,7 +7393,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 4.50,
+        capRate: 5.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -7296,7 +7403,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 30,
+        participationRate: 35,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -7305,7 +7412,7 @@ export const fiaProducts = [
         indexName: "S&P 500",
         creditingMethod: "Monthly Average with Participation Rate",
         capRate: null,
-        participationRate: 55,
+        participationRate: 60,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -7313,7 +7420,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Monthly Sum with Cap",
-        capRate: 1.75,
+        capRate: 2.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -7323,7 +7430,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 110,
+        participationRate: 125,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7341,7 +7448,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 105,
+        participationRate: 115,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7359,7 +7466,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 105,
+        participationRate: 120,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7368,7 +7475,7 @@ export const fiaProducts = [
         indexName: "Bloomberg Versa 10",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 50,
+        participationRate: 57,
         spread: 0,
         floor: 0,
         isUncapped: false
@@ -7392,13 +7499,15 @@ export const fiaProducts = [
       "Three withdrawal options: Increasing, Level, Accelerated"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Vega Bonus 10 (Legacy / Wealth Transfer with Bonus) ────────
   {
     id: "silac-vega-bonus-10",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Vega Bonus 10",
     surrenderPeriod: 10,
     surrenderSchedule: [12, 12, 11, 10, 9, 8, 7, 6, 4, 2, 0],
@@ -7472,7 +7581,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 105,
+        participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7514,13 +7623,15 @@ export const fiaProducts = [
       "Three withdrawal options: Increasing, Level, Accelerated"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── SILAC Vega Bonus 14 (Legacy / Wealth Transfer with Bonus) ────────
   {
     id: "silac-vega-bonus-14",
     carrierId: "silac",
+    ratesVerified: true,
+    lastVerifiedDate: "2025-12-10",
     name: "SILAC Vega Bonus 14",
     surrenderPeriod: 14,
     surrenderSchedule: [14.75, 13.75, 12.75, 11.75, 10.75, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
@@ -7539,7 +7650,7 @@ export const fiaProducts = [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point with Cap",
-        capRate: 4.50,
+        capRate: 3.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -7549,7 +7660,7 @@ export const fiaProducts = [
         indexName: "S&P 500 RavenPack AI",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 110,
+        participationRate: 92,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7558,7 +7669,7 @@ export const fiaProducts = [
         indexName: "Barclays Atlas 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 105,
+        participationRate: 87,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7567,7 +7678,7 @@ export const fiaProducts = [
         indexName: "Nasdaq Generations 5",
         creditingMethod: "Annual Point-to-Point with Participation Rate",
         capRate: null,
-        participationRate: 105,
+        participationRate: 90,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -7590,7 +7701,7 @@ export const fiaProducts = [
       "Enhanced death benefit distributed over 5 years"
     ],
     sourceUrl: "https://www.silacins.com/products/annuities",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2025-12-10"
   },
 
   // ── F&G 1-2-3 (Anytime Income) ──────────────────────────────────────
