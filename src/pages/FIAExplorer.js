@@ -166,7 +166,7 @@ function renderFIATable() {
           onchange="this.checked ? window.app.addToCompare({id:'${p.id}',name:'${p.name}',type:'fia'}) : window.app.removeFromCompare('${p.id}')">
       </td>
       <td class="px-3 py-2.5 cursor-pointer" onclick="location.hash='/fia/${p.id}'">
-        <div class="font-medium text-blue-600 dark:text-blue-400 hover:underline">${p.name}</div>
+        <div class="font-medium text-blue-600 dark:text-blue-400 hover:underline">${p.name}${p.ratesVerified ? ' <span title="Rates verified from carrier source" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-semibold rounded-full align-middle">Verified</span>' : ''}</div>
       </td>
       <td class="px-3 py-2.5 text-slate-600 dark:text-slate-300">${p.carrierName}</td>
       <td class="px-3 py-2.5 text-center">${ratingBadge(p.amBest)}</td>

@@ -199,13 +199,15 @@ export const iulProducts = [
   {
     id: "transamerica-financial-choice-iul",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Financial Choice IUL",
     maxIllustratedRate: 6.22,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.25,
+        capRate: 9.5,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -257,13 +259,15 @@ export const iulProducts = [
   {
     id: "securian-eclipse-accumulator",
     carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Eclipse Accumulator IUL",
     maxIllustratedRate: 6.41,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 11.00,
+        capRate: 10.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -331,7 +335,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -490,13 +494,15 @@ export const iulProducts = [
   {
     id: "prudential-prulife-index-advantage",
     carrierId: "prudential",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "PruLife Index Advantage",
     maxIllustratedRate: 6.28,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.25,
+        capRate: 8.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -595,13 +601,15 @@ export const iulProducts = [
   {
     id: "john-hancock-accumulation-iul-20",
     carrierId: "john-hancock",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Accumulation IUL 20",
     maxIllustratedRate: 6.50,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.75,
+        capRate: 9,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1167,7 +1175,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 130,
@@ -1198,13 +1206,15 @@ export const iulProducts = [
   {
     id: "pacific-life-pia-7",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Pacific Indexed Accumulator 7",
     maxIllustratedRate: 6.45,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 11.25,
+        capRate: 8,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1376,7 +1386,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 185,
@@ -1466,13 +1476,15 @@ export const iulProducts = [
   {
     id: "nationwide-iul-protector-ii",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "IUL Protector II",
     maxIllustratedRate: 5.50,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.75,
+        capRate: 10.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1481,7 +1493,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER Index",
+        indexName: "Bloomberg US Dynamic Balance II ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 110,
@@ -1618,13 +1630,15 @@ export const iulProducts = [
   {
     id: "securian-eclipse-protector",
     carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Eclipse Protector IUL",
     maxIllustratedRate: 5.65,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 9.00,
+        capRate: 8.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -2306,7 +2320,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -2410,7 +2424,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER Index",
+        indexName: "Bloomberg US Dynamic Balance II ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 160,
@@ -2789,13 +2803,15 @@ export const iulProducts = [
   {
     id: "lincoln-wealthaccumulate-iul",
     carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "WealthAccumulate IUL",
     maxIllustratedRate: 6.68,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 11.75,
+        capRate: 9.5,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -2931,7 +2947,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -3011,7 +3027,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER Index",
+        indexName: "Bloomberg US Dynamic Balance II ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 140,
@@ -3284,13 +3300,15 @@ export const iulProducts = [
   {
     id: "transamerica-financial-foundation-iul-ii",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Financial Foundation IUL II",
     maxIllustratedRate: 6.38,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.50,
+        capRate: 12.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -3389,13 +3407,15 @@ export const iulProducts = [
   {
     id: "john-hancock-accumulation-iul-21",
     carrierId: "john-hancock",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Accumulation IUL 21",
     maxIllustratedRate: 6.72,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 11.25,
+        capRate: 9,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -3716,7 +3736,7 @@ export const iulProducts = [
         multiplierValue: 1.35
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 140,
@@ -3774,7 +3794,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 130,
@@ -3832,7 +3852,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 115,
@@ -3901,7 +3921,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 125,
@@ -4294,7 +4314,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 145,
@@ -4351,7 +4371,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 120,
@@ -4731,7 +4751,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -4858,7 +4878,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER Index",
+        indexName: "Bloomberg US Dynamic Balance II ER Index",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 165,
@@ -5561,7 +5581,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 130,
@@ -5837,7 +5857,7 @@ export const iulProducts = [
         multiplierValue: null
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III ER",
+        indexName: "Bloomberg US Dynamic Balance II ER",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 140,
@@ -5929,10 +5949,12 @@ export const iulProducts = [
   {
     id: "transamerica-financial-foundation-iul",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Financial Foundation IUL Plus",
     maxIllustratedRate: 6.40,
     indexAccounts: [
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 10.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false, hasMultiplier: false, multiplierValue: null },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false, hasMultiplier: false, multiplierValue: null },
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 50, spread: 0, floor: 0, isUncapped: true, hasMultiplier: true, multiplierValue: 1.25 },
       { indexName: "Merrill Lynch RPM Index", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 140, spread: 0, floor: 0, isUncapped: true, hasMultiplier: false, multiplierValue: null },
       { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 9.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false, hasMultiplier: false, multiplierValue: null }

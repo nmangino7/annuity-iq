@@ -13,6 +13,7 @@
     "@supabase/supabase-js": "^2.49.1"
   },
   "devDependencies": {
+    "puppeteer": "^24.37.5",
     "vite": "^6.3.5"
   }
 }

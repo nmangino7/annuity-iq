@@ -3,9 +3,12 @@ export const rilaProducts = [
   {
     id: 'allianz-index-advantage-nf-6',
     carrierId: 'allianz-life',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-21',
     name: 'Index Advantage+ NF (6-Year)',
     term: 6,
     accountOptions: [
+      // 1-Year Performance Strategy (caps)
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.75, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
@@ -13,11 +16,39 @@ export const rilaProducts = [
       { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.25, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.25, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'iShares MSCI EM ETF', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'iShares MSCI EM ETF', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'EURO STOXX 50', creditingMethod: 'Point-to-Point', term: 1, capRate: 26.50, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'EURO STOXX 50', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.25, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year Performance Strategy (uncapped / caps)
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: 65.00, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 8.70 },
-      { indexName: 'Russell 2000', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.20 }
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 6, capRate: 75.00, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Dual Precision Strategy (triggers)
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 8.70 },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 6.50 },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 5.20 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.20 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 7.20 },
+      // 1-Year Precision Strategy (triggers)
+      { indexName: 'S&P 500', creditingMethod: 'Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.30 },
+      { indexName: 'Russell 2000', creditingMethod: 'Precision Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.70 },
+      // 1-Year Guard Strategy (floor-based)
+      { indexName: 'S&P 500', creditingMethod: 'Guard (Floor)', term: 1, capRate: 12.00, participationRate: 100, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Guard (Floor)', term: 1, capRate: 16.50, participationRate: 100, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },
+      // 1-Year Protection Strategy (100% protection)
+      { indexName: 'S&P 500', creditingMethod: 'Protection Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 100, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 5.50 },
+      { indexName: 'Russell 2000', creditingMethod: 'Protection Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 100, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 6.00 },
+      // 6-Year Dual Precision Strategy (triggers)
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 6, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 39.00 },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 6, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 34.00 },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 6, capRate: null, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 30.00 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 6, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 43.00 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 6, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 36.00 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 6, capRate: null, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 32.00 }
     ],
     minimumPremium: 10000, maximumIssueAge: 85,
     surrenderSchedule: [8, 8, 7, 6, 5, 4],
@@ -31,6 +62,8 @@ export const rilaProducts = [
   {
     id: 'allianz-index-advantage-nf-3',
     carrierId: 'allianz-life',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-21',
     name: 'Index Advantage+ NF (3-Year)',
     term: 3,
     accountOptions: [
@@ -38,13 +71,21 @@ export const rilaProducts = [
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 40.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 28.00, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 70.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 45.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 45.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 37.00, participationRate: 100, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 3-Year Dual Precision Triggers
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 3, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 23.00 },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 3, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 19.00 },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Precision Trigger', term: 3, capRate: null, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 16.00 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 3, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 27.00 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 3, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 21.00 },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Precision Trigger', term: 3, capRate: null, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 17.00 }
     ],
     minimumPremium: 10000, maximumIssueAge: 85,
     surrenderSchedule: [8, 8, 7, 6, 5, 4],
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
     deathBenefit: 'Account Value',
-    highlights: ['3-year crediting terms', 'No product fee', 'Up to 85% S&P 500 3-year cap'],
+    highlights: ['3-year crediting terms', 'No product fee', 'Up to 85% S&P 500 3-year cap', 'Dual Precision trigger strategies'],
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/registered-index-linked-annuities/index-advantage-plus-nf/rates",
     lastRateUpdate: '2026-02-21'
   },

@@ -3,6 +3,8 @@ export const fiaProducts = [
   {
     id: "allianz-222-plus",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Allianz 222+ Annuity",
     surrenderPeriod: 10,
     surrenderSchedule: [9.3, 9.3, 8.3, 7.3, 6.25, 5.25, 4.2, 3.15, 2.1, 1.05, 0],
@@ -42,7 +44,7 @@ export const fiaProducts = [
         triggerRate: 3.65
       },
       {
-        indexName: "Bloomberg US Dynamic Balance IIII",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 85,
@@ -60,10 +62,19 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "S&P 500 Futures",
+        indexName: "BlackRock iBLD Claria",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 45,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500 Futures Daily RC 5%",
+        creditingMethod: "2-Year Multi-Year Point-to-Point",
+        capRate: null,
+        participationRate: 120,
         spread: 0,
         floor: 0,
         isUncapped: true
@@ -71,7 +82,7 @@ export const fiaProducts = [
     ],
     incomeRiderAvailable: true,
     highlights: ["PIV bonus structure (45% premium + 150% interest)", "60-day rate lock feature", "Multiple uncapped index strategies"],
-    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/222-plus",
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/222/rates",
     lastRateUpdate: "2026-02-21"
   },
 
@@ -79,6 +90,8 @@ export const fiaProducts = [
   {
     id: "allianz-benefit-control-plus",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Allianz Benefit Control+ Annuity",
     surrenderPeriod: 10,
     surrenderSchedule: [9.3, 9.3, 8.3, 7.3, 6.25, 5.25, 4.2, 3.15, 2.1, 1.05, 0],
@@ -118,7 +131,7 @@ export const fiaProducts = [
         triggerRate: 3.15
       },
       {
-        indexName: "Bloomberg US Dynamic Balance IIII",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 75,
@@ -134,11 +147,29 @@ export const fiaProducts = [
         spread: 0,
         floor: 0,
         isUncapped: true
+      },
+      {
+        indexName: "BlackRock iBLD Claria",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 90,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "S&P 500 Futures Daily RC 5%",
+        creditingMethod: "2-Year Multi-Year Point-to-Point",
+        capRate: null,
+        participationRate: 105,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
       }
     ],
     incomeRiderAvailable: true,
     highlights: ["Lifetime income benefit rider", "PIV bonus options (Accelerated or Balanced)", "Multiple uncapped index strategies"],
-    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/Benefit-Control-Plus",
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/benefit-control/rates",
     lastRateUpdate: "2026-02-21"
   },
 
@@ -544,7 +575,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -817,7 +848,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -1281,7 +1312,7 @@ export const fiaProducts = [
         triggerRate: 5.25
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -1646,7 +1677,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -1683,7 +1714,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -1776,7 +1807,7 @@ export const fiaProducts = [
         triggerRate: 6.00
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -1947,7 +1978,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -2105,7 +2136,7 @@ export const fiaProducts = [
         triggerRate: 4.75
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 275,
@@ -2190,7 +2221,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 165,
@@ -2285,7 +2316,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 275,
@@ -2397,7 +2428,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -2509,7 +2540,7 @@ export const fiaProducts = [
         triggerRate: 5.25
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -2610,7 +2641,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 180,
@@ -2648,7 +2679,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 210,
@@ -2723,7 +2754,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -2968,7 +2999,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -3063,7 +3094,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 300,
@@ -3776,7 +3807,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -3832,7 +3863,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 210,
@@ -3878,7 +3909,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -4095,7 +4126,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 225,
@@ -4234,7 +4265,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 275,
@@ -4298,7 +4329,7 @@ export const fiaProducts = [
         isUncapped: true
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 200,
@@ -4495,7 +4526,7 @@ export const fiaProducts = [
         triggerRate: 5.75
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 175,
@@ -4533,7 +4564,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 250,
@@ -4730,7 +4761,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 210,
@@ -4863,7 +4894,7 @@ export const fiaProducts = [
         isUncapped: false
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 190,
@@ -4921,7 +4952,7 @@ export const fiaProducts = [
         triggerRate: 5.50
       },
       {
-        indexName: "Bloomberg US Dynamic Balance III",
+        indexName: "Bloomberg US Dynamic Balance II",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
         participationRate: 180,
@@ -8140,7 +8171,7 @@ export const fiaProducts = [
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 8.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 50, spread: 0, floor: 0, isUncapped: true },
       { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 2.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "Bloomberg US Dynamic Balance III", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 150, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 150, spread: 0, floor: 0, isUncapped: true },
       { indexName: "Credit Suisse Momentum Allocator", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 120, spread: 0, floor: 0, isUncapped: true },
       { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 5.00 }
     ],
@@ -8165,7 +8196,7 @@ export const fiaProducts = [
     indexStrategies: [
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
       { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 45, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "Bloomberg US Dynamic Balance III", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 135, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 135, spread: 0, floor: 0, isUncapped: true },
       { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 4.25 }
     ],
     incomeRiderAvailable: true,
