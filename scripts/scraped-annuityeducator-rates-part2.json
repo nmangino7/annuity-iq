@@ -1,0 +1,816 @@
+{
+  "source": "annuityeducator.com",
+  "scrapeDate": "2026-02-21",
+  "carriers": {
+    "corebridge": {
+      "carrierName": "Corebridge Financial Inc. (American General)",
+      "amBest": "A",
+      "fitch": "A+",
+      "sp": "A+",
+      "moodys": "A2",
+      "comdex": 80,
+      "products": [
+        {
+          "name": "Power 5 Protector",
+          "type": "Fixed Index Annuity",
+          "term": 5,
+          "minimumPremium": 25000,
+          "maximumPremium": 2000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [8, 7, 6, 5, 4],
+          "fixedAccountRate": 4.3,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 60, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.4, "rateType": "trigger"},
+            {"index": "S&P 500", "method": "5-Year PTP Cap", "rate": 65, "rateType": "cap"},
+            {"index": "PIMCO Global Optima", "method": "Annual PTP", "rate": 70, "rateType": "participation"},
+            {"index": "PIMCO Global Optima", "method": "Biennial PTP", "rate": 100, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Annual PTP", "rate": 110, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Biennial PTP", "rate": 140, "rateType": "participation"},
+            {"index": "AQR DynamiQ Allocation", "method": "Annual PTP", "rate": 235, "rateType": "participation"},
+            {"index": "AQR DynamiQ Allocation", "method": "Biennial PTP", "rate": 315, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-5-protector"
+        },
+        {
+          "name": "Power 7 Protector",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "minimumPremium": 25000,
+          "maximumPremium": 2000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [8, 7, 6, 5, 4, 3, 2],
+          "fixedAccountRate": 4.3,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 60, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.4, "rateType": "trigger"},
+            {"index": "PIMCO Global Optima", "method": "Annual PTP", "rate": 70, "rateType": "participation"},
+            {"index": "PIMCO Global Optima", "method": "Biennial PTP", "rate": 100, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Annual PTP", "rate": 110, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Biennial PTP", "rate": 140, "rateType": "participation"},
+            {"index": "AQR DynamiQ Allocation", "method": "Annual PTP", "rate": 235, "rateType": "participation"},
+            {"index": "AQR DynamiQ Allocation", "method": "Biennial PTP", "rate": 315, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-7-protector"
+        },
+        {
+          "name": "Power 10 Protector",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 2000000,
+          "maxIssueAge": 75,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 4.3,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 60, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.4, "rateType": "trigger"},
+            {"index": "PIMCO Global Optima", "method": "Annual PTP", "rate": 70, "rateType": "participation"},
+            {"index": "PIMCO Global Optima", "method": "Biennial PTP", "rate": 100, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Annual PTP", "rate": 110, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Biennial PTP", "rate": 170, "rateType": "participation"},
+            {"index": "AQR DynamiQ Allocation", "method": "Annual PTP", "rate": 235, "rateType": "participation"},
+            {"index": "AQR DynamiQ Allocation", "method": "Biennial PTP", "rate": 315, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-10-protector"
+        },
+        {
+          "name": "Power Select Builder",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 2000000,
+          "maxIssueAge": 78,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 4.05,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.0, "rateType": "trigger"},
+            {"index": "S&P 500", "method": "Biennial PTP", "rate": 45, "rateType": "participation"},
+            {"index": "Russell 2000", "method": "Annual PTP", "rate": 35, "rateType": "participation"},
+            {"index": "PIMCO Global Optima", "method": "Annual PTP", "rate": 70, "rateType": "participation"},
+            {"index": "PIMCO Global Optima", "method": "Biennial PTP", "rate": 80, "rateType": "participation"},
+            {"index": "ML Strategic Balanced", "method": "Annual PTP", "rate": 110, "rateType": "participation"},
+            {"index": "Dimensional US Foundations", "method": "Annual PTP", "rate": 250, "rateType": "participation"},
+            {"index": "Dimensional US Foundations", "method": "Biennial PTP", "rate": 340, "rateType": "participation"},
+            {"index": "AB All Market", "method": "Annual PTP", "rate": 235, "rateType": "participation"},
+            {"index": "AB All Market", "method": "Biennial PTP", "rate": 340, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-select-builder"
+        }
+      ]
+    },
+    "fg": {
+      "carrierName": "Fidelity & Guaranty Life Insurance Company",
+      "amBest": "A",
+      "fitch": "A-",
+      "sp": "A-",
+      "moodys": "A3",
+      "comdex": 79,
+      "products": [
+        {
+          "name": "Prosperity Elite 7 Enhancement",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "premiumBonus": 4,
+          "minimumPremium": 10000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "riderFee": 0.6,
+          "riderName": "GMDB Prosperity Elite Enhancement Package",
+          "surrenderSchedule": [10, 9, 8, 7, 6, 5, 4],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 6.25, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Average Cap", "rate": 6.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.25, "rateType": "cap"},
+            {"index": "Gold", "method": "Annual PTP Cap", "rate": 7.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 4.25, "rateType": "trigger"},
+            {"index": "GS Global Factor", "method": "Annual PTP", "rate": 145, "rateType": "participation"},
+            {"index": "GS Global Factor", "method": "Biennial PTP", "rate": 255, "rateType": "participation"},
+            {"index": "CIBC Balanced Asset 5", "method": "Annual PTP", "rate": 140, "rateType": "participation"},
+            {"index": "CIBC Balanced Asset 5", "method": "Biennial PTP", "rate": 240, "rateType": "participation"},
+            {"index": "Barclays Trailblazer Sectors 5", "method": "Biennial PTP", "rate": 190, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/prosperity-elite-7-enhancement"
+        },
+        {
+          "name": "Prosperity Elite 10 Enhancement",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "premiumBonus": 6,
+          "minimumPremium": 10000,
+          "maximumPremium": 1000000,
+          "riderFee": 0.6,
+          "surrenderSchedule": [12, 11, 10, 9, 8, 7, 6, 5, 4, 3],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 6.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Average Cap", "rate": 6.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.3, "rateType": "cap"},
+            {"index": "Gold", "method": "Annual PTP Cap", "rate": 8.25, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 4.5, "rateType": "trigger"},
+            {"index": "GS Global Factor", "method": "Annual PTP", "rate": 150, "rateType": "participation"},
+            {"index": "GS Global Factor", "method": "Biennial PTP", "rate": 260, "rateType": "participation"},
+            {"index": "CIBC Balanced Asset 5", "method": "Annual PTP", "rate": 145, "rateType": "participation"},
+            {"index": "CIBC Balanced Asset 5", "method": "Biennial PTP", "rate": 245, "rateType": "participation"},
+            {"index": "Barclays Trailblazer Sectors 5", "method": "Biennial PTP", "rate": 195, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/prosperity-elite-10-enhancement"
+        },
+        {
+          "name": "Prosperity Elite 14 Enhancement",
+          "type": "Fixed Index Annuity",
+          "term": 14,
+          "premiumBonus": 7,
+          "minimumPremium": 10000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "riderFee": 0.6,
+          "surrenderSchedule": [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 6.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Average Cap", "rate": 7.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.35, "rateType": "cap"},
+            {"index": "Gold", "method": "Annual PTP Cap", "rate": 8.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 4.75, "rateType": "trigger"},
+            {"index": "GS Global Factor", "method": "Annual PTP", "rate": 155, "rateType": "participation"},
+            {"index": "GS Global Factor", "method": "Biennial PTP", "rate": 265, "rateType": "participation"},
+            {"index": "CIBC Balanced Asset 5", "method": "Annual PTP", "rate": 150, "rateType": "participation"},
+            {"index": "CIBC Balanced Asset 5", "method": "Biennial PTP", "rate": 250, "rateType": "participation"},
+            {"index": "Barclays Trailblazer Sectors 5", "method": "Biennial PTP", "rate": 200, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/prosperity-elite-14-enhancement"
+        },
+        {
+          "name": "Power Accumulator 7",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "minimumPremium": 10000,
+          "maximumPremium": 2500000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "iShares Core S&P 500", "method": "Annual PTP Cap", "rate": 7.25, "rateType": "cap"},
+            {"index": "iShares Core S&P 500", "method": "Biennial PTP Cap", "rate": 14.25, "rateType": "cap"},
+            {"index": "Balanced Asset 10", "method": "Annual PTP", "rate": 90, "rateType": "participation"},
+            {"index": "Balanced Asset 5", "method": "Annual PTP", "rate": 225, "rateType": "participation"},
+            {"index": "Balanced Asset 5", "method": "Biennial PTP", "rate": 285, "rateType": "participation"},
+            {"index": "BlackRock Market Advantage", "method": "Annual PTP", "rate": 180, "rateType": "participation"},
+            {"index": "BlackRock Market Advantage", "method": "Biennial PTP", "rate": 220, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity Allocator", "method": "Annual PTP", "rate": 115, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity Allocator", "method": "Biennial PTP", "rate": 130, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/power-accumulator-7"
+        },
+        {
+          "name": "Power Accumulator 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 10000,
+          "maximumPremium": 2500000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [12, 11, 10, 9, 8, 7, 6, 5, 4, 3],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "iShares Core S&P 500", "method": "Annual PTP Cap", "rate": 7.5, "rateType": "cap"},
+            {"index": "iShares Core S&P 500", "method": "Biennial PTP Cap", "rate": 14.25, "rateType": "cap"},
+            {"index": "Balanced Asset 10", "method": "Annual PTP", "rate": 95, "rateType": "participation"},
+            {"index": "Balanced Asset 5", "method": "Annual PTP", "rate": 230, "rateType": "participation"},
+            {"index": "Balanced Asset 5", "method": "Biennial PTP", "rate": 290, "rateType": "participation"},
+            {"index": "BlackRock Market Advantage", "method": "Annual PTP", "rate": 185, "rateType": "participation"},
+            {"index": "BlackRock Market Advantage", "method": "Biennial PTP", "rate": 225, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity Allocator", "method": "Annual PTP", "rate": 105, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity Allocator", "method": "Biennial PTP", "rate": 135, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/power-accumulator-10"
+        },
+        {
+          "name": "Accumulator Plus 7",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "minimumPremium": 10000,
+          "maximumPremium": 2500000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 7.25, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Average Cap", "rate": 7.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 50, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 5.25, "rateType": "trigger"},
+            {"index": "GS Global Factor", "method": "Annual PTP", "rate": 165, "rateType": "participation"},
+            {"index": "GS Global Factor", "method": "Biennial PTP", "rate": 245, "rateType": "participation"},
+            {"index": "Barclays Trailblazer Sectors 5", "method": "Biennial PTP", "rate": 230, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity", "method": "Annual PTP", "rate": 70, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity", "method": "Biennial PTP", "rate": 105, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/accumulatorplus-7"
+        },
+        {
+          "name": "Accumulator Plus 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 10000,
+          "maximumPremium": 2500000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [12, 11, 10, 9, 8, 7, 6, 5, 4, 3],
+          "fixedAccountRate": 3.75,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 7.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.55, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Average Cap", "rate": 7.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 50, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 5.5, "rateType": "trigger"},
+            {"index": "GS Global Factor", "method": "Annual PTP", "rate": 170, "rateType": "participation"},
+            {"index": "GS Global Factor", "method": "Biennial PTP", "rate": 250, "rateType": "participation"},
+            {"index": "Barclays Trailblazer Sectors 5", "method": "Biennial PTP", "rate": 235, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity", "method": "Annual PTP", "rate": 75, "rateType": "participation"},
+            {"index": "Morgan Stanley US Equity", "method": "Biennial PTP", "rate": 130, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/fidelity-guaranty-life-insurance-company/fixed-index/accumulatorplus-10"
+        }
+      ]
+    },
+    "globalAtlantic": {
+      "carrierName": "Global Atlantic Financial Group",
+      "amBest": "A",
+      "fitch": "A",
+      "sp": "A",
+      "moodys": "A2",
+      "comdex": 78,
+      "products": [
+        {
+          "name": "ForeAccumulation II 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 4.0,
+          "growthAcceleratorFee": 1.25,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (w/Growth Accelerator)", "rate": 11.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 6.25, "rateType": "trigger"},
+            {"index": "S&P 500", "method": "Performance Trigger (w/Growth Accelerator)", "rate": 6.5, "rateType": "trigger"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap", "rate": 8.75, "rateType": "cap"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap (w/Growth Accelerator)", "rate": 11.25, "rateType": "cap"},
+            {"index": "BlackRock Diversa", "method": "Annual PTP Cap", "rate": 15.75, "rateType": "cap"},
+            {"index": "BlackRock Diversa", "method": "Annual PTP", "rate": 140, "rateType": "participation"},
+            {"index": "BlackRock Diversa", "method": "Annual PTP (w/Growth Accelerator)", "rate": 160, "rateType": "participation"},
+            {"index": "BlackRock Diversa", "method": "Biennial PTP", "rate": 215, "rateType": "participation"},
+            {"index": "BlackRock Diversa", "method": "Biennial PTP (w/Growth Accelerator)", "rate": 235, "rateType": "participation"},
+            {"index": "Franklin US", "method": "Annual PTP", "rate": 130, "rateType": "participation"},
+            {"index": "Franklin US", "method": "Annual PTP (w/Growth Accelerator)", "rate": 160, "rateType": "participation"},
+            {"index": "Franklin US", "method": "Biennial PTP", "rate": 190, "rateType": "participation"},
+            {"index": "Franklin US", "method": "Biennial PTP (w/Growth Accelerator)", "rate": 230, "rateType": "participation"},
+            {"index": "PIMCO Balanced", "method": "Annual PTP", "rate": 185, "rateType": "participation"},
+            {"index": "PIMCO Balanced", "method": "Annual PTP (w/Growth Accelerator)", "rate": 230, "rateType": "participation"},
+            {"index": "PIMCO Balanced", "method": "Biennial PTP", "rate": 275, "rateType": "participation"},
+            {"index": "PIMCO Balanced", "method": "Biennial PTP (w/Growth Accelerator)", "rate": 335, "rateType": "participation"},
+            {"index": "JP Morgan Cross-Asset", "method": "Annual PTP", "rate": 130, "rateType": "participation"},
+            {"index": "JP Morgan Cross-Asset", "method": "Biennial PTP", "rate": 190, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/global-atlantic-financial-group/fixed-index/foreaccumulation-ii-10"
+        },
+        {
+          "name": "ForeAccumulation II 7",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [8, 8, 7, 6, 5, 4, 3],
+          "fixedAccountRate": 4.0,
+          "growthAcceleratorFee": 1.25,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (w/Growth Accelerator)", "rate": 11.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 6.5, "rateType": "trigger"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap", "rate": 9.5, "rateType": "cap"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap (w/Growth Accelerator)", "rate": 11.75, "rateType": "cap"},
+            {"index": "BlackRock Diversa", "method": "Annual PTP Cap", "rate": 16.0, "rateType": "cap"},
+            {"index": "BlackRock Diversa", "method": "Annual PTP", "rate": 145, "rateType": "participation"},
+            {"index": "BlackRock Diversa", "method": "Annual PTP (w/Growth Accelerator)", "rate": 160, "rateType": "participation"},
+            {"index": "PIMCO Balanced", "method": "Annual PTP", "rate": 195, "rateType": "participation"},
+            {"index": "PIMCO Balanced", "method": "Annual PTP (w/Growth Accelerator)", "rate": 230, "rateType": "participation"},
+            {"index": "Franklin US", "method": "Annual PTP", "rate": 140, "rateType": "participation"},
+            {"index": "Franklin US", "method": "Annual PTP (w/Growth Accelerator)", "rate": 160, "rateType": "participation"},
+            {"index": "JP Morgan Cross-Asset", "method": "Annual PTP", "rate": 140, "rateType": "participation"},
+            {"index": "JP Morgan Cross-Asset", "method": "Annual PTP (w/Growth Accelerator)", "rate": 160, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/global-atlantic-financial-group/fixed-index/foreaccumulation-ii-7"
+        }
+      ]
+    },
+    "jackson": {
+      "carrierName": "Jackson National Life Insurance Company",
+      "amBest": "A",
+      "fitch": "A",
+      "sp": "A",
+      "moodys": "A3",
+      "comdex": 76,
+      "products": [
+        {
+          "name": "Market Protector 7",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "mva": true,
+          "surrenderSchedule": [9, 8, 7, 7, 6, 5, 4],
+          "fixedAccountRate": 4.45,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 8.15, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation (2% spread)", "rate": 65, "rateType": "participation", "spread": 2.0},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.05, "rateType": "trigger"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap", "rate": 11.55, "rateType": "cap"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Participation (2% spread)", "rate": 73, "rateType": "participation", "spread": 2.0},
+            {"index": "MSCI EAFE", "method": "Performance Trigger", "rate": 9.3, "rateType": "trigger"}
+          ],
+          "riders": [
+            {"name": "Income Accelerator LIB (Single)", "fee": 1.1},
+            {"name": "Income Accelerator LIB (Joint)", "fee": 1.25}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/jackson-national-life-insurance-company/fixed-index/market-protector-7"
+        },
+        {
+          "name": "Market Protector 5",
+          "type": "Fixed Index Annuity",
+          "term": 5,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "mva": true,
+          "surrenderSchedule": [9, 8.25, 7.25, 6.5, 5.5],
+          "fixedAccountRate": 4.4,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 8.1, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation (2% spread)", "rate": 64, "rateType": "participation", "spread": 2.0},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.0, "rateType": "trigger"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap", "rate": 11.5, "rateType": "cap"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Participation (2% spread)", "rate": 72, "rateType": "participation", "spread": 2.0},
+            {"index": "MSCI EAFE", "method": "Performance Trigger", "rate": 9.25, "rateType": "trigger"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/jackson-national-life-insurance-company/fixed-index/market-protector-5"
+        }
+      ]
+    },
+    "protective": {
+      "carrierName": "Protective Life Insurance Company",
+      "amBest": "A+",
+      "sp": "AA-",
+      "moodys": "A1",
+      "comdex": 92,
+      "products": [
+        {
+          "name": "Protective Asset Builder II 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 10000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 3.65,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 7.4, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 42, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 6.2, "rateType": "trigger"},
+            {"index": "J.P. Morgan Mojave", "method": "Annual PTP", "rate": 140, "rateType": "participation"},
+            {"index": "Citi Flexible Allocation 6 ER", "method": "Biennial PTP", "rate": 180, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/protective-life-insurance-company/fixed-index/protective-asset-builder-ii-10"
+        },
+        {
+          "name": "Protective Income Builder",
+          "type": "Fixed Index Annuity",
+          "term": 7,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 85,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 3.15,
+          "riders": [
+            {"name": "Protective Level Income Rider", "fee": 1.0},
+            {"name": "Protective Rising Income Rider", "fee": 1.0}
+          ],
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 6.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 4.0, "rateType": "trigger"},
+            {"index": "Citi Flexible Allocation 6 ER", "method": "Biennial PTP", "rate": 100, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/protective-life-insurance-company/fixed-index/protective-income-builder"
+        }
+      ]
+    },
+    "massmutualAscend": {
+      "carrierName": "MassMutual Ascend Life Insurance Company",
+      "amBest": "A++",
+      "sp": "AA",
+      "moodys": "Aa3",
+      "comdex": 97,
+      "products": [
+        {
+          "name": "Index Summit 6",
+          "type": "Fixed Index / RILA",
+          "term": 6,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [8, 7, 6, 5, 4, 3],
+          "fixedAccountRate": 3.65,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap (0% Floor)", "rate": 6.25, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (10% Buffer)", "rate": 17.0, "rateType": "cap", "buffer": 10},
+            {"index": "S&P 500", "method": "Annual PTP Cap (-10% Floor)", "rate": 13.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (50% Downside)", "rate": 14.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation (10% Buffer)", "rate": 95, "rateType": "participation", "buffer": 10},
+            {"index": "S&P 500", "method": "Performance Trigger (10% Buffer)", "rate": 10.0, "rateType": "trigger", "buffer": 10},
+            {"index": "Russell 2000", "method": "Annual PTP Cap (10% Buffer)", "rate": 24.0, "rateType": "cap", "buffer": 10},
+            {"index": "Russell 2000", "method": "Annual PTP Cap (20% Buffer)", "rate": 14.5, "rateType": "cap", "buffer": 20},
+            {"index": "First Trust Barclays Edge", "method": "Annual PTP Participation", "rate": 140, "rateType": "participation"},
+            {"index": "S&P 500", "method": "3-Year PTP Participation (10% Buffer)", "rate": 100, "rateType": "participation", "buffer": 10},
+            {"index": "S&P 500", "method": "6-Year PTP Participation (10% Buffer)", "rate": 90, "rateType": "participation", "buffer": 10}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/great-american-life-insurance-company/fixed-index/index-summit-6"
+        },
+        {
+          "name": "Index Summit 6 Pro",
+          "type": "Fixed Index / RILA",
+          "term": 6,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 8, 7, 6, 5, 4],
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap (10% Buffer)", "rate": 23.25, "rateType": "cap", "buffer": 10},
+            {"index": "S&P 500", "method": "Annual PTP Cap (-10% Floor)", "rate": 16.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (0% Floor)", "rate": 8.5, "rateType": "cap"},
+            {"index": "Russell 2000", "method": "Annual PTP Cap (10% Buffer)", "rate": 30.0, "rateType": "cap", "buffer": 10},
+            {"index": "Russell 2000", "method": "Annual PTP Cap (20% Buffer)", "rate": 18.25, "rateType": "cap", "buffer": 20},
+            {"index": "First Trust Barclays Edge", "method": "Annual PTP (10% Buffer)", "rate": 145, "rateType": "participation", "buffer": 10},
+            {"index": "First Trust Barclays Edge", "method": "Annual PTP (50% Downside)", "rate": 180, "rateType": "participation"},
+            {"index": "Gold Shares", "method": "Annual PTP Cap (-10% Floor)", "rate": 25.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "3-Year PTP Participation (10% Buffer)", "rate": 110, "rateType": "participation", "buffer": 10},
+            {"index": "S&P 500", "method": "6-Year PTP Participation (10% Buffer)", "rate": 105, "rateType": "participation", "buffer": 10}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/great-american-life-insurance-company/fixed-index/index-summit-6-pro"
+        },
+        {
+          "name": "Safe Return",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 4.25,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 6.75, "rateType": "cap"},
+            {"index": "iShares US Real Estate", "method": "Annual PTP Cap", "rate": 10.0, "rateType": "cap"},
+            {"index": "S&P 500 Average DRC", "method": "Annual PTP Participation", "rate": 60, "rateType": "participation"},
+            {"index": "First Trust Barclays Edge", "method": "Annual PTP", "rate": 145, "rateType": "participation"}
+          ],
+          "riders": [
+            {"name": "Income Ascender Rider", "fee": 1.1}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/great-american-life-insurance-company/fixed-index/safe-return"
+        }
+      ]
+    },
+    "americanEquity": {
+      "carrierName": "American Equity Investment Life Insurance Company",
+      "amBest": "A",
+      "fitch": "A",
+      "sp": "A",
+      "comdex": 75,
+      "products": [
+        {
+          "name": "American Equity AssetShield 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 5000,
+          "maximumPremium": 1500000,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [12, 12, 11, 10, 9, 8, 7, 5, 4, 2],
+          "fixedAccountRate": 3.8,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 9.25, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (w/Fee)", "rate": 11.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Cap", "rate": 2.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 40, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Annual PTP Participation (w/Fee)", "rate": 55, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 5.75, "rateType": "trigger"},
+            {"index": "S&P 500 Advantage 15%", "method": "Performance Trigger", "rate": 8.25, "rateType": "trigger"},
+            {"index": "S&P 500 Dividend Aristocrats", "method": "Annual PTP", "rate": 100, "rateType": "participation"},
+            {"index": "S&P 500 Dividend Aristocrats", "method": "Biennial PTP", "rate": 180, "rateType": "participation"},
+            {"index": "BlackRock Adaptive", "method": "Annual PTP", "rate": 105, "rateType": "participation"},
+            {"index": "BlackRock Adaptive", "method": "Biennial PTP", "rate": 135, "rateType": "participation"},
+            {"index": "SG Global Sentiment", "method": "Annual PTP", "rate": 205, "rateType": "participation"},
+            {"index": "SG Global Sentiment", "method": "Biennial PTP", "rate": 325, "rateType": "participation"},
+            {"index": "UBS Tech Edge", "method": "Annual PTP", "rate": 205, "rateType": "participation"},
+            {"index": "UBS Tech Edge", "method": "Biennial PTP", "rate": 325, "rateType": "participation"},
+            {"index": "BofA Destinations", "method": "Annual PTP", "rate": 205, "rateType": "participation"},
+            {"index": "BofA Destinations", "method": "Biennial PTP", "rate": 325, "rateType": "participation"},
+            {"index": "BNPP Patriot Technology", "method": "Annual PTP", "rate": 90, "rateType": "participation"},
+            {"index": "BNPP Patriot Technology", "method": "Biennial PTP", "rate": 125, "rateType": "participation"},
+            {"index": "S&P 500 Advantage", "method": "Annual PTP Cap", "rate": 11.0, "rateType": "cap"},
+            {"index": "S&P 500 Advantage", "method": "Biennial PTP Cap", "rate": 35.0, "rateType": "cap"},
+            {"index": "NYSE Premier", "method": "Annual PTP Cap", "rate": 11.0, "rateType": "cap"},
+            {"index": "NYSE Premier", "method": "Biennial PTP Cap", "rate": 35.0, "rateType": "cap"},
+            {"index": "Nasdaq Premier", "method": "Annual PTP Cap", "rate": 11.0, "rateType": "cap"},
+            {"index": "Nasdaq Premier", "method": "Biennial PTP Cap", "rate": 35.0, "rateType": "cap"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/american-equity-investment-life-insurance-company/fixed-index/assetshield-10"
+        },
+        {
+          "name": "American Equity IncomeShield 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 5000,
+          "maximumPremium": 1500000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "riderFee": 1.2,
+          "riderName": "IncomeShield LIBR",
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 3.5,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 5.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 42, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Biennial PTP", "rate": 55, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Biennial PTP Cap", "rate": 12.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 5.0, "rateType": "trigger"},
+            {"index": "S&P 500 Advantage 15%", "method": "Performance Trigger", "rate": 7.0, "rateType": "trigger"},
+            {"index": "BlackRock Adaptive", "method": "Annual PTP", "rate": 165, "rateType": "participation"},
+            {"index": "BlackRock Adaptive", "method": "Biennial PTP", "rate": 245, "rateType": "participation"},
+            {"index": "S&P 500 Dividend Aristocrats", "method": "Annual PTP", "rate": 160, "rateType": "participation"},
+            {"index": "S&P 500 Dividend Aristocrats", "method": "Biennial PTP", "rate": 225, "rateType": "participation"},
+            {"index": "S&P 500 Advantage", "method": "Annual PTP Cap", "rate": 9.0, "rateType": "cap"},
+            {"index": "S&P 500 Advantage", "method": "Biennial PTP Cap", "rate": 25.0, "rateType": "cap"},
+            {"index": "NYSE Premier", "method": "Annual PTP Cap", "rate": 9.0, "rateType": "cap"},
+            {"index": "Nasdaq Premier", "method": "Annual PTP Cap", "rate": 9.0, "rateType": "cap"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/american-equity-investment-life-insurance-company/fixed-index/american-equity-incomeshield-10"
+        }
+      ]
+    },
+    "delawareLife": {
+      "carrierName": "Delaware Life Insurance Company",
+      "amBest": "A-",
+      "fitch": "A-",
+      "sp": "A-",
+      "comdex": 56,
+      "products": [
+        {
+          "name": "Target Growth 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [10, 10, 10, 10, 10, 9, 8, 7, 6, 5],
+          "fixedAccountRate": 4.6,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap (w/Bailout)", "rate": 9.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 55, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 7.25, "rateType": "trigger"},
+            {"index": "Precision Portfolio Election", "method": "Annual PTP Cap", "rate": 11.0, "rateType": "cap"},
+            {"index": "First Trust Capital Strength Barclays 10%", "method": "Annual PTP", "rate": 95, "rateType": "participation"},
+            {"index": "Franklin SG Select", "method": "Annual PTP", "rate": 175, "rateType": "participation"},
+            {"index": "Goldman Sachs Canopy", "method": "Annual PTP", "rate": 110, "rateType": "participation"},
+            {"index": "S&P 500 Dynamic Intraday TCA", "method": "Annual PTP", "rate": 75, "rateType": "participation"},
+            {"index": "Nasdaq-100 Intraday Elite 15%", "method": "Annual PTP", "rate": 70, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/delaware-life/fixed-index/target-growth-10"
+        },
+        {
+          "name": "Momentum Growth",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 4.5,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual Flexible Cap", "rate": 9.3, "rateType": "cap"},
+            {"index": "S&P 500 Dynamic Intraday TCA", "method": "Annual PTP", "rate": 65, "rateType": "participation"},
+            {"index": "Nasdaq-100 Volatility Control 12%", "method": "Annual PTP", "rate": 70, "rateType": "participation"},
+            {"index": "Barclays Aries", "method": "Annual PTP", "rate": 95, "rateType": "participation"},
+            {"index": "BlackRock US Equity Bitcoin Balanced Risk 12%", "method": "Annual PTP", "rate": 55, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/delaware-life/fixed-index/momentum-growth"
+        },
+        {
+          "name": "Target Income 10",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "freeWithdrawal": 10,
+          "riderFee": 1.05,
+          "surrenderSchedule": [10, 10, 10, 10, 10, 9, 8, 7, 6, 5],
+          "fixedAccountRate": 3.4,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 5.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 35, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Performance Trigger", "rate": 5.0, "rateType": "trigger"},
+            {"index": "Janus Henderson Adaptive", "method": "Annual PTP", "rate": 105, "rateType": "participation"},
+            {"index": "Franklin SG Select Advantage", "method": "Annual PTP", "rate": 90, "rateType": "participation"},
+            {"index": "First Trust Capital Strength", "method": "Annual PTP", "rate": 65, "rateType": "participation"},
+            {"index": "Invesco QQQ ETF", "method": "Annual PTP Cap", "rate": 5.75, "rateType": "cap"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/delaware-life/fixed-index/target-income-10"
+        }
+      ]
+    },
+    "allianz": {
+      "carrierName": "Allianz Life Insurance Company of North America",
+      "amBest": "A+",
+      "sp": "AA",
+      "moodys": "Aa3",
+      "comdex": 96,
+      "products": [
+        {
+          "name": "Allianz 222 Annuity",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 20000,
+          "maximumPremium": 1000000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "interestBonusFactor": 150,
+          "surrenderSchedule": [10, 10, 10, 9, 8, 6, 5, 4, 3, 1],
+          "fixedAccountRate": 2.8,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 4.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 1.7, "rateType": "cap"},
+            {"index": "BlackRock iBLD Claria ER", "method": "Annual PTP", "rate": 100, "rateType": "participation"},
+            {"index": "Bloomberg US Dynamic Balance II ER", "method": "Annual PTP", "rate": 85, "rateType": "participation"},
+            {"index": "PIMCO Tactical Balanced ER", "method": "Annual PTP", "rate": 80, "rateType": "participation"},
+            {"index": "Bloomberg US Dynamic Balance II ER", "method": "2-Year PTP", "rate": 135, "rateType": "participation"},
+            {"index": "PIMCO Tactical Balanced ER", "method": "2-Year PTP", "rate": 130, "rateType": "participation"},
+            {"index": "S&P 500 Futures Daily RC 5%", "method": "2-Year PTP", "rate": 145, "rateType": "participation"},
+            {"index": "Bloomberg US Dynamic Balance II ER", "method": "5-Year PTP", "rate": 230, "rateType": "participation"},
+            {"index": "PIMCO Tactical Balanced ER", "method": "5-Year PTP", "rate": 230, "rateType": "participation"},
+            {"index": "S&P 500 Futures Daily RC 5%", "method": "5-Year PTP", "rate": 250, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/allianz-life-insurance-company-of-north-america/fixed-index/allianz-222-annuity"
+        },
+        {
+          "name": "Allianz Accumulation Advantage",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 20000,
+          "maximumPremium": 2000000,
+          "maxIssueAge": 80,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "fixedAccountRate": 3.8,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 7.5, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Monthly Sum Cap", "rate": 2.0, "rateType": "cap"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/allianz-life-insurance-company-of-north-america/fixed-index/allianz-accumulation-advantage"
+        }
+      ]
+    },
+    "securityBenefit": {
+      "carrierName": "Security Benefit Life Insurance Company",
+      "amBest": "A-",
+      "fitch": "A-",
+      "sp": "A-",
+      "comdex": 56,
+      "products": [
+        {
+          "name": "Strategic Growth Annuity",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [12, 12, 11, 11, 10, 9, 8, 7, 6, 4],
+          "fixedAccountRate": 4.75,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 11.75, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Participation", "rate": 91, "rateType": "participation"},
+            {"index": "S&P 500", "method": "Biennial PTP", "rate": 122, "rateType": "participation"},
+            {"index": "S&P MARC 5%", "method": "Annual PTP", "rate": 262, "rateType": "participation"},
+            {"index": "S&P MARC 5%", "method": "Biennial PTP", "rate": 335, "rateType": "participation"},
+            {"index": "Morgan Stanley Global Equity", "method": "Annual PTP", "rate": 210, "rateType": "participation"},
+            {"index": "Morgan Stanley Global Equity", "method": "Biennial PTP", "rate": 330, "rateType": "participation"},
+            {"index": "Morningstar Wide Moat Focus", "method": "Annual PTP", "rate": 170, "rateType": "participation"},
+            {"index": "Morningstar Wide Moat Focus", "method": "Biennial PTP", "rate": 245, "rateType": "participation"},
+            {"index": "UBS Market Pioneers", "method": "Annual PTP", "rate": 215, "rateType": "participation"},
+            {"index": "UBS Market Pioneers", "method": "Biennial PTP", "rate": 280, "rateType": "participation"},
+            {"index": "UBS Multi Asset", "method": "Annual PTP", "rate": 245, "rateType": "participation"},
+            {"index": "UBS Multi Asset", "method": "Biennial PTP", "rate": 350, "rateType": "participation"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap", "rate": 14.5, "rateType": "cap"},
+            {"index": "Nasdaq-100", "method": "Annual PTP Cap", "rate": 12.1, "rateType": "cap"},
+            {"index": "Russell 2000", "method": "Annual PTP Cap", "rate": 13.3, "rateType": "cap"},
+            {"index": "S&P 500 Dynamic Intraday TCA", "method": "Annual PTP", "rate": 90, "rateType": "participation"},
+            {"index": "S&P 500 Dynamic Intraday TCA", "method": "Biennial PTP", "rate": 130, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/security-benefit-life-insurance-company/fixed-index/strategic-growth-annuity"
+        },
+        {
+          "name": "Strategic Growth Plus Annuity",
+          "type": "Fixed Index Annuity",
+          "term": 10,
+          "premiumBonus": 13,
+          "minimumPremium": 25000,
+          "maximumPremium": 1000000,
+          "freeWithdrawal": 10,
+          "surrenderSchedule": [12, 12, 11, 11, 10, 9, 8, 7, 6, 4],
+          "fixedAccountRate": 3.0,
+          "strategies": [
+            {"index": "S&P 500", "method": "Annual PTP Cap", "rate": 6.0, "rateType": "cap"},
+            {"index": "S&P 500", "method": "Annual PTP Cap (Buy Up)", "rate": 7.75, "rateType": "cap"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap", "rate": 6.0, "rateType": "cap"},
+            {"index": "MSCI EAFE", "method": "Annual PTP Cap (Buy Up)", "rate": 8.0, "rateType": "cap"},
+            {"index": "Nasdaq-100", "method": "Annual PTP Cap", "rate": 5.75, "rateType": "cap"},
+            {"index": "Nasdaq-100", "method": "Annual PTP Cap (Buy Up)", "rate": 7.85, "rateType": "cap"},
+            {"index": "Russell 2000", "method": "Annual PTP Cap", "rate": 6.25, "rateType": "cap"},
+            {"index": "Russell 2000", "method": "Annual PTP Cap (Buy Up)", "rate": 8.6, "rateType": "cap"},
+            {"index": "S&P MARC 5%", "method": "Annual PTP", "rate": 125, "rateType": "participation"},
+            {"index": "S&P MARC 5%", "method": "Annual PTP (Buy Up)", "rate": 168, "rateType": "participation"},
+            {"index": "S&P MARC 5%", "method": "Biennial PTP (Buy Up)", "rate": 212, "rateType": "participation"},
+            {"index": "UBS Multi Asset", "method": "Annual PTP (Buy Up)", "rate": 155, "rateType": "participation"},
+            {"index": "UBS Multi Asset", "method": "Biennial PTP (Buy Up)", "rate": 215, "rateType": "participation"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/security-benefit-life-insurance-company/fixed-index/strategic-growth-plus-annuity"
+        }
+      ]
+    }
+  }
+}
