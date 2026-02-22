@@ -1,5 +1,5 @@
 import { getProduct, getBenchmarks } from '../data/index.js';
-import { pct, ratingBadge, currency, benchmarkGauge, getTopRate, getTopParticipation } from '../utils/formatters.js';
+import { pct, ratingBadge, currency, benchmarkGauge, getTopRate, getTopParticipation, verifyBadge, verifyBanner } from '../utils/formatters.js';
 
 export function renderProductDetail(id, type) {
   const product = getProduct(id);
@@ -276,17 +276,7 @@ export function renderProductDetail(id, type) {
           </div>
         ` : ''}
 
-        ${product.ratesVerified ? `
-          <div class="mt-4 flex items-center gap-2 px-3 py-2 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-lg">
-            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            <span class="text-sm text-emerald-700 dark:text-emerald-300"><strong>Verified</strong> &mdash; Rates confirmed from carrier source on ${product.lastVerifiedDate || 'N/A'}</span>
-          </div>
-        ` : `
-          <div class="mt-4 flex items-start gap-2 px-3 py-2 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg">
-            <svg class="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-            <span class="text-sm text-amber-700 dark:text-amber-300"><strong>Unverified Rates</strong> &mdash; Rates shown are estimates based on publicly available data and may not reflect current carrier rates. Verify with your carrier or financial advisor before making decisions.</span>
-          </div>
-        `}
+        <div class="mt-4">${verifyBanner(product)}</div>
 
         ${detailHTML}
       </div>

@@ -61,6 +61,9 @@ export const iulProducts = [
   {
     id: "nationwide-iul-accumulator-ii",
     carrierId: "nationwide",
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-02-21',
+    verificationNote: 'S&P 500 cap rate and uncapped spread verified via lifeinsurancerecommendations.com',
     name: "IUL Accumulator II 2020",
     maxIllustratedRate: 6.42,
     indexAccounts: [
@@ -389,6 +392,9 @@ export const iulProducts = [
   {
     id: "lincoln-wealthbuilder-iul",
     carrierId: "lincoln-financial",
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-02-21',
+    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com (WealthAccumulator 2)',
     name: "WealthBuilder IUL 2.0",
     maxIllustratedRate: 6.35,
     indexAccounts: [
@@ -661,6 +667,9 @@ export const iulProducts = [
   {
     id: "penn-mutual-accumulation-builder",
     carrierId: "penn-mutual",
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-02-21',
+    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com',
     name: "Accumulation Builder IUL",
     maxIllustratedRate: 6.18,
     indexAccounts: [
@@ -860,13 +869,16 @@ export const iulProducts = [
   {
     id: "american-general-max-accumulator-plus",
     carrierId: "american-general",
-    name: "Max Accumulator+ IUL",
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-02-21',
+    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com',
+    name: "Max Accumulator+ III IUL",
     maxIllustratedRate: 6.52,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 11.00,
+        capRate: 11.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -974,13 +986,16 @@ export const iulProducts = [
   {
     id: "protective-indexed-choice-ul",
     carrierId: "protective-life",
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-02-21',
+    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com',
     name: "Indexed Choice UL",
     maxIllustratedRate: 6.08,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.25,
+        capRate: 9.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -2572,13 +2587,16 @@ export const iulProducts = [
   {
     id: "mutual-of-omaha-income-advantage",
     carrierId: "mutual-of-omaha",
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-02-21',
+    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com',
     name: "Income Advantage IUL",
     maxIllustratedRate: 6.20,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.75,
+        capRate: 10.00,
         participationRate: 100,
         spread: 0,
         floor: 0,
