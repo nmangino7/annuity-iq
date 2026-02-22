@@ -125,81 +125,122 @@ export const rilaProducts = [
     lastRateUpdate: '2026-02-03'
   },
   // ── 4. Brighthouse Shield Level 6 (1yr) ──
-  {
+{
     id: 'brighthouse-shield-6-1yr',
+    ratesVerified: 'partial',
+    verificationNote: 'Rates from Shield Level Select Advisory annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'brighthouse-financial',
     name: 'Shield Level 6 (1-Year)',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.25, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.75, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 23.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.50, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 25000, maximumIssueAge: 85,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['10%, 15%, and 20% buffer options', '1-year point-to-point crediting', '6-year contract term'],
-    lastRateUpdate: '2025-01-15'
+    highlights: ['12 account options across 4 indices', 'MSCI EAFE cap 23.00% (10% shield)', 'Russell 2000 cap 22.00%', '10%, 15%, 25% shield levels'],
+    sourceUrl: "https://www.brighthousefinancial.com/products/annuities/shield-annuities",
+    lastRateUpdate: '2026-02-08'
   },
   // ── 5. Brighthouse Shield Level 6 (3yr) ──
-  {
+{
     id: 'brighthouse-shield-6-3yr',
+    ratesVerified: 'partial',
+    verificationNote: 'Rates from Shield Level Select Advisory 3yr data annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'brighthouse-financial',
     name: 'Shield Level 6 (3-Year)',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 45.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 38.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 32.00, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 55.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 100.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 70.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 90.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 65.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 3, capRate: 65.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 3, capRate: 45.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 3, capRate: 140.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 3, capRate: 100.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 25000, maximumIssueAge: 85,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['3-year point-to-point crediting', 'Higher caps for longer term', 'Up to 25% buffer'],
-    lastRateUpdate: '2025-01-15'
+    highlights: ['3-year point-to-point crediting', 'S&P 500 3yr cap 100%', 'MSCI EAFE 3yr cap 140%', '4 indices with 2 shield levels each'],
+    lastRateUpdate: '2026-02-08'
   },
   // ── 6. Brighthouse Shield Level 10 ──
-  {
+{
     id: 'brighthouse-shield-10',
+    ratesVerified: 'partial',
+    verificationNote: 'Step Rate Edge and PTP caps from Shield Level Select Advisory annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'brighthouse-financial',
     name: 'Shield Level 10',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 8.25 },
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 7.25 },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.50 },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 9.25 },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 7.50 }
     ],
     minimumPremium: 20000, maximumIssueAge: 85,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['Step Rate crediting method', 'Dual Direction option', 'Multiple crediting approaches'],
+    highlights: ['Step Rate Edge: earn set rate if index >= 0%', 'S&P 500 step rate 8.25% (Shield 10)', 'Russell 2000 step rate 10.50%', 'Multiple crediting approaches'],
     sourceUrl: "https://www.brighthousefinancial.com/products/annuities/shield-annuities",
-    lastRateUpdate: '2025-01-15'
+    lastRateUpdate: '2026-02-08'
   },
   // ── 7. Equitable SCS PLUS (6yr, 10% buffer) ──
-  {
+{
     id: 'equitable-scs-plus-6yr',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'equitable',
-    name: 'Structured Capital Strategies PLUS (6-Year)',
+    name: 'Structured Capital Strategies PLUS 21 (Series B)',
     term: 6,
     accountOptions: [
       { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 9.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 6.50, participationRate: null, bufferLevel: 40, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.00, participationRate: null, bufferLevel: 40, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 7.00, participationRate: null, bufferLevel: 40, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 6.00, participationRate: null, bufferLevel: 40, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI Emerging Markets', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI Emerging Markets', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'EURO STOXX 50', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'EURO STOXX 50', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500 Enhanced', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: 125, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 25000, maximumIssueAge: 80,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
     deathBenefit: 'Account Value',
-    highlights: ['10%, 20%, and 30% buffer options', 'Largest RILA in the market', '6 index choices'],
-    sourceUrl: "https://equitable.com/annuities/variable-annuities/performance-cap-rates",
-    lastRateUpdate: '2025-01-15'
+    highlights: ['21 account options across 7 indices', '#1 RILA provider — $50B+ in sales', '10-40% buffer levels', 'Enhanced 125% participation option', 'MSCI Emerging Markets and EURO STOXX 50 access'],
+    sourceUrl: "https://annuityeducator.com/reviews/equitable-financial-life-insurance-company/fixed-index/structured-capital-strategies-plus-21-series-b",
+    lastRateUpdate: '2026-02-08'
   },
   // ── 8. Equitable SCS PLUS (3yr) ──
   {
@@ -275,42 +316,59 @@ export const rilaProducts = [
     lastRateUpdate: '2025-01-15'
   },
   // ── 12. Lincoln Level Advantage B-Share ──
-  {
+{
     id: 'lincoln-level-advantage-b',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'lincoln-financial',
-    name: 'Level Advantage B-Share',
+    name: 'Level Advantage 2 B-Share',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 7.00, participationRate: null, bufferLevel: 100, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Capital Strength Net Fee', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Capital Strength Net Fee', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.75, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'First Trust American Leadership', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'First Trust American Leadership', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Capital Group Global Growth Equity ETF', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Capital Group Global Growth Equity ETF', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Capital Group Growth ETF', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Capital Group Growth ETF', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 10000, maximumIssueAge: 80,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['Lower minimum premium ($10K)', 'B-Share pricing', 'Standard buffer options'],
-    sourceUrl: "https://www.lincolnfinancial.com/public/microsite/leveladvantage/ratescenter",
-    lastRateUpdate: '2025-01-15'
+    highlights: ['S&P 500 cap 16.00% (10% buffer)', 'MSCI EAFE cap 20.00%', '100% full protection option at 7.00%', '6 index families including Capital Group ETFs', 'Low $10K minimum premium'],
+    sourceUrl: "https://annuityeducator.com/reviews/lincoln-national-life-insurance-company/fixed-index/lincoln-level-advantage-2-b-share",
+    lastRateUpdate: '2026-02-08'
   },
   // ── 13. Nationwide Defined Protection (6yr) ──
-  {
+{
     id: 'nationwide-defined-protection-6yr',
+    ratesVerified: 'partial',
+    verificationNote: 'Rates cross-referenced from Nationwide Defender (advisory) annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'nationwide',
     name: 'Defined Protection (6-Year)',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.75, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P MidCap 400', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
     ],
     minimumPremium: 25000, maximumIssueAge: 80,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['Up to 25% buffer protection', '5 index options', 'A+ rated carrier'],
+    highlights: ['S&P MidCap 400 cap 22.00%', 'Russell 2000 cap 19.50%', '6 index choices', 'A+ rated carrier'],
     sourceUrl: "https://www.nationwide.com/personal/investing/annuities/registered-index-linked",
-    lastRateUpdate: '2025-01-15'
+    lastRateUpdate: '2026-02-08'
   },
   // ── 14. Nationwide Defined Protection (3yr) ──
   {
@@ -684,21 +742,33 @@ export const rilaProducts = [
     lastRateUpdate: '2025-01-15'
   },
   // ── 34. Principal Structured Index ──
-  {
+{
     id: 'principal-structured-index',
+    ratesVerified: 'partial',
+    verificationNote: 'S&P 500 caps and participation rates verified from annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
     carrierId: 'principal-financial',
-    name: 'Structured Index',
+    name: 'Strategic Outcomes',
     term: 6,
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.75, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.50, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 70, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 80, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 60, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: true },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 7.00, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 102, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 105, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 130, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 90, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
     ],
     minimumPremium: 25000, maximumIssueAge: 80,
     withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
     deathBenefit: 'Account Value',
-    highlights: ['Principal Financial Group', 'Solid A+ rated', 'Simple structure'],
-    lastRateUpdate: '2025-01-15'
+    highlights: ['S&P 500 1yr cap 13.00% (10% buffer)', 'MSCI EAFE 130% 6yr participation', 'Dual Directional option', 'Floor strategy with -10% floor', 'Principal Financial Group A+ rated'],
+    sourceUrl: "https://annuityeducator.com/reviews/principal-life-insurance-company/fixed-index/principal-strategic-outcomes-annuity",
+    lastRateUpdate: '2026-02-08'
   },
   // ── 35. Securian Buffer Shield 6 ──
   {
@@ -789,14 +859,37 @@ export const rilaProducts = [
   { id: 'transamerica-structured-3yr', carrierId: 'transamerica', name: 'Structured Index Advantage (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 44.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 53.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['3-year term', 'Higher cap potential', 'Transamerica strength'], lastRateUpdate: '2025-01-15' },
   { id: 'symetra-accumulator-rila-3yr', carrierId: 'symetra', name: 'Accumulator RILA (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 45.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: null, participationRate: 130, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 54.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 15000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['3-year uncapped option', '$15K minimum', 'Symetra strength'], lastRateUpdate: '2025-01-15' },
   // ── 49–55. Floor-type products ──
-  { id: 'jackson-market-link-floor-6yr', carrierId: 'jackson-national', name: 'Market Link Pro II Floor (6-Year)', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 9.00, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -20, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.50, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 }, deathBenefit: 'Account Value', highlights: ['Floor-based downside protection', 'Known maximum loss', 'Loss capped at floor level'], lastRateUpdate: '2025-01-15' },
+{ id: 'jackson-market-link-floor-6yr',
+    ratesVerified: 'partial',
+    verificationNote: 'Floor rates from Market Link Pro III annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
+    carrierId: 'jackson-national', name: 'Market Link Pro Floor (6-Year)', term: 6, accountOptions: [
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.75, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },
+      { indexName: 'MSCI Emerging Markets', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.25, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false }
+    ], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 }, deathBenefit: 'Account Value', highlights: ['Floor-based downside protection', 'Maximum loss limited to -10%', '5 index options including EM', 'MSCI EAFE floor cap 19.50%'], lastRateUpdate: '2026-02-08' },
   { id: 'equitable-scs-floor-6yr', carrierId: 'equitable', name: 'SCS PLUS Floor (6-Year)', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 9.50, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -20, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },{ indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Floor protection strategy', 'Maximum loss known upfront', '4 index choices'], lastRateUpdate: '2025-01-15' },
   { id: 'prudential-flexguard-floor', carrierId: 'prudential', name: 'FlexGuard Floor', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 9.25, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -15, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.00, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Floor strategy from Prudential', 'Max loss of 10% or 15%', 'Complementary to buffer products'], lastRateUpdate: '2025-01-15' },
   { id: 'brighthouse-shield-floor-6', carrierId: 'brighthouse-financial', name: 'Shield Level Floor 6', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.75, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.75, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -20, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.25, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 }, deathBenefit: 'Account Value', highlights: ['Floor-based Brighthouse product', '-10% and -20% floor levels', 'Known max downside'], lastRateUpdate: '2025-01-15' },
   // ── 53–60. Dual Direction and Step Rate products ──
   { id: 'allianz-index-advantage-dual', carrierId: 'allianz-life', name: 'Index Advantage Dual Direction', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Dual Direction', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Dual Direction — earn on down markets too', 'Earn cap even if market is negative', 'Unique crediting approach'], lastRateUpdate: '2025-01-15' },
   { id: 'nationwide-step-rate-rila', carrierId: 'nationwide', name: 'Defined Protection Step Rate', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 }, deathBenefit: 'Account Value', highlights: ['Step Rate crediting method', 'Earn set rate if index is positive', 'Nationwide backing'], lastRateUpdate: '2025-01-15' },
-  { id: 'equitable-scs-dual-direction', carrierId: 'equitable', name: 'SCS Dual Direction', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 10.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Dual Direction', term: 1, capRate: 13.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'MSCI EAFE', creditingMethod: 'Dual Direction', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Earn returns in up AND down markets', 'Dual Direction across 3 indices', 'Equitable brand strength'], lastRateUpdate: '2025-01-15' },
+{ id: 'equitable-scs-dual-direction',
+    ratesVerified: 'partial',
+    verificationNote: 'Dual Direction cap rates verified from SCS Plus 21 Series B annuityeducator.com (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
+    carrierId: 'equitable', name: 'SCS Dual Direction', term: 6, accountOptions: [
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 7.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Direction', term: 1, capRate: 15.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Dual Direction', term: 1, capRate: 9.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Dual Direction', term: 1, capRate: 13.20, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Nasdaq-100', creditingMethod: 'Dual Direction', term: 1, capRate: 9.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Dual Direction', term: 1, capRate: 10.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Dual Direction', term: 1, capRate: 5.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+    ], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Earn returns in up AND down markets', 'Dual Direction across 4 indices', '10% and 15% buffer options', 'Russell 2000 dual cap 15.00%'], lastRateUpdate: '2026-02-08' },
   // ── 56–62. ESG and specialty index products ──
   { id: 'lincoln-level-advantage-esg', carrierId: 'lincoln-financial', name: 'Level Advantage ESG', term: 6, accountOptions: [{ indexName: 'S&P 500 ESG', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'S&P 500 ESG', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 90, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['ESG-focused index strategy', 'S&P 500 ESG Index', 'Socially responsible investing'], lastRateUpdate: '2025-01-15' },
   { id: 'pacific-life-odyssey-esg', carrierId: 'pacific-life', name: 'Pacific Odyssey ESG', term: 6, accountOptions: [{ indexName: 'S&P 500 ESG', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Bloomberg US Aggregate Bond', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['ESG and Bond index options', 'Lower volatility Bond strategy', 'Pacific Life strength'], lastRateUpdate: '2025-01-15' },
@@ -815,12 +908,23 @@ export const rilaProducts = [
   // ── 68–75. More carrier combos ──
   { id: 'securian-buffer-shield-3', carrierId: 'securian', name: 'Buffer Shield 3', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 44.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 3, capRate: 50.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 20000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['3-year term', 'Nasdaq exposure', 'Securian Financial'], lastRateUpdate: '2025-01-15' },
   { id: 'john-hancock-protected-growth-3yr', carrierId: 'john-hancock', name: 'Protected Growth RILA (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 43.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 51.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['3-year crediting', 'Manulife-backed', 'Higher potential returns'], lastRateUpdate: '2025-01-15' },
-  { id: 'principal-structured-index-3yr', carrierId: 'principal-financial', name: 'Structured Index (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 40.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 32.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['Principal Financial', '3-year multi-year caps', 'Up to 20% buffer'], lastRateUpdate: '2025-01-15' },
+  { id: 'principal-structured-index-3yr',
+    ratesVerified: 'partial',
+    verificationNote: 'Product confirmed on annuityeducator.com. 1yr and 6yr data verified.',
+    lastVerifiedDate: '2026-02-21', carrierId: 'principal-financial', name: 'Structured Index (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 40.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 32.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['Principal Financial', '3-year multi-year caps', 'Up to 20% buffer'], lastRateUpdate: '2025-01-15' },
   { id: 'massmutual-structured-rila-3yr', carrierId: 'massmutual', name: 'Structured RILA (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 42.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 50.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Greater of AV or ROP', highlights: ['MassMutual mutual company', 'A++ AM Best', '3-year ROP death benefit'], lastRateUpdate: '2025-01-15' },
   { id: 'mutual-of-omaha-indexed-shield-3yr', carrierId: 'mutual-of-omaha', name: 'Indexed Shield (3-Year)', term: 3, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 39.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 3, capRate: 47.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 20000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['3-year Mutual of Omaha', 'Trusted brand', 'Conservative approach'], lastRateUpdate: '2025-01-15' },
   { id: 'american-national-value-index-1yr', carrierId: 'american-national', name: 'Value Index RILA (1-Year)', term: 1, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 15000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 0 }, deathBenefit: 'Account Value', highlights: ['1-year renewable', 'No surrender charges', '$15K minimum'], lastRateUpdate: '2025-01-15' },
   // ── 74-78. Additional high-buffer products ──
-  { id: 'equitable-scs-plus-30-buffer', carrierId: 'equitable', name: 'SCS PLUS 30% Buffer', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Maximum 30% buffer protection', 'Conservative with upside', 'Industry-leading buffer'], lastRateUpdate: '2025-01-15' },
+{ id: 'equitable-scs-plus-30-buffer',
+    ratesVerified: 'partial',
+    verificationNote: 'Rates interpolated from verified SCS Plus 21 20% and 40% buffer data (annuityeducator.com Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
+    carrierId: 'equitable', name: 'SCS PLUS 30% Buffer', term: 6, accountOptions: [
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 8.00, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 7.25, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+    ], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Maximum 30% buffer protection', 'Conservative with upside', 'SCS Plus 21 product family'], lastRateUpdate: '2026-02-08' },
   { id: 'nationwide-defined-protection-25-buffer', carrierId: 'nationwide', name: 'Defined Protection 25% Buffer', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 }, deathBenefit: 'Account Value', highlights: ['25% buffer for conservative clients', 'Nationwide strength', 'Meaningful downside protection'], lastRateUpdate: '2025-01-15' },
   { id: 'prudential-flexguard-25-buffer', carrierId: 'prudential', name: 'FlexGuard 25% Buffer', term: 6, accountOptions: [{ indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.50, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },{ indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.25, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false }], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['25% buffer from Prudential', '3 index choices at 25%', 'Lower cap, more protection'], lastRateUpdate: '2025-01-15' },
   // ── RiverSource Structured Solutions 2 ──
@@ -839,7 +943,11 @@ export const rilaProducts = [
     { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
   ], minimumPremium: 10000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 }, deathBenefit: 'Account Value', highlights: ['3-year commitment option', 'Lower surrender charges', 'Dual direction and contingent return options', 'Ameriprise advisor distribution'], lastRateUpdate: '2026-02-01' },
   // ── Prudential FlexGuard 2.0 ──
-  { id: 'prudential-flexguard-2', carrierId: 'prudential', name: 'FlexGuard 2.0', term: 6, accountOptions: [
+  { id: 'prudential-flexguard-2',
+    ratesVerified: 'partial',
+    verificationNote: 'S&P 500 10% buffer cap ~17.50-17.75% confirmed from annuityeducator.com FlexGuard 2.0 (Feb 2026)',
+    lastVerifiedDate: '2026-02-21',
+    carrierId: 'prudential', name: 'FlexGuard 2.0', term: 6, accountOptions: [
     { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
     { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
     { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
