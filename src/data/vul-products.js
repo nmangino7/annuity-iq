@@ -5,7 +5,7 @@
 export const vulProducts = [
   // ── Lincoln Financial (8 products) ─────────────────────────────────
   {
-    id: 'lincoln-assetedge-vul', carrierId: 'lincoln-financial', name: 'AssetEdge VUL',
+    id: 'lincoln-assetedge-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'AssetEdge VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.90, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -21,7 +21,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'lincoln-assetedge-exec-vul', carrierId: 'lincoln-financial', name: 'AssetEdge Exec VUL',
+    id: 'lincoln-assetedge-exec-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'AssetEdge Exec VUL',
     policyType: 'Accumulation', minimumFaceAmount: 250000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.60, adminFeeMonthly: 12.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -37,7 +37,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'lincoln-assetedge-svul', carrierId: 'lincoln-financial', name: 'AssetEdge SVUL',
+    id: 'lincoln-assetedge-svul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'AssetEdge SVUL',
     policyType: 'Hybrid', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'CVAT', meCharge: 0.85, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 10,
@@ -53,7 +53,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'lincoln-vulone', carrierId: 'lincoln-financial', name: 'VULONE',
+    id: 'lincoln-vulone', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'VULONE',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -71,7 +71,7 @@ export const vulProducts = [
 
   // ── Prudential (7 products) ────────────────────────────────────────
   {
-    id: 'prudential-vul-protector', carrierId: 'prudential', name: 'VUL Protector',
+    id: 'prudential-vul-protector', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'VUL Protector',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -87,7 +87,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'prudential-vul-accumulator', carrierId: 'prudential', name: 'VUL Accumulator Plus',
+    id: 'prudential-vul-accumulator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'VUL Accumulator Plus',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.85, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -103,7 +103,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'prudential-survivorship-vul', carrierId: 'prudential', name: 'PruLife Survivorship VUL',
+    id: 'prudential-survivorship-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'PruLife Survivorship VUL',
     policyType: 'Protection', minimumFaceAmount: 250000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 12.00,
     costOfInsurance: 'Current scale joint', surrenderPeriod: 15,
@@ -121,7 +121,7 @@ export const vulProducts = [
 
   // ── John Hancock (6 products) ──────────────────────────────────────
   {
-    id: 'john-hancock-accumulation-vul', carrierId: 'john-hancock', name: 'Accumulation VUL 21',
+    id: 'john-hancock-accumulation-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'john-hancock', name: 'Accumulation VUL 21',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -137,7 +137,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'john-hancock-protection-vul', carrierId: 'john-hancock', name: 'Protection VUL',
+    id: 'john-hancock-protection-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'john-hancock', name: 'Protection VUL',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -153,7 +153,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'john-hancock-vitality-vul', carrierId: 'john-hancock', name: 'Vitality VUL',
+    id: 'john-hancock-vitality-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'john-hancock', name: 'Vitality VUL',
     policyType: 'Hybrid', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.85, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale with Vitality discount', surrenderPeriod: 15,
@@ -171,7 +171,7 @@ export const vulProducts = [
 
   // ── Pacific Life (5 products) ──────────────────────────────────────
   {
-    id: 'pacific-select-vul', carrierId: 'pacific-life', name: 'Pacific Select VUL',
+    id: 'pacific-select-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Select VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -187,7 +187,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'pacific-premier-vul', carrierId: 'pacific-life', name: 'Pacific Premier VUL',
+    id: 'pacific-premier-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Premier VUL',
     policyType: 'Accumulation', minimumFaceAmount: 250000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.55, adminFeeMonthly: 12.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -203,7 +203,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'pacific-protection-vul', carrierId: 'pacific-life', name: 'Pacific Protector VUL',
+    id: 'pacific-protection-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Protector VUL',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -221,7 +221,7 @@ export const vulProducts = [
 
   // ── Nationwide (4 products) ────────────────────────────────────────
   {
-    id: 'nationwide-vul-accumulator', carrierId: 'nationwide', name: 'Nationwide VUL Accumulator',
+    id: 'nationwide-vul-accumulator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'Nationwide VUL Accumulator',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -237,7 +237,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'nationwide-navigator-vul', carrierId: 'nationwide', name: 'Navigator VUL',
+    id: 'nationwide-navigator-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'Navigator VUL',
     policyType: 'Hybrid', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'CVAT', meCharge: 0.85, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -255,7 +255,7 @@ export const vulProducts = [
 
   // ── Transamerica (4 products) ──────────────────────────────────────
   {
-    id: 'transamerica-vul-foundation', carrierId: 'transamerica', name: 'Financial Foundation VUL',
+    id: 'transamerica-vul-foundation', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Financial Foundation VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -271,7 +271,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'transamerica-vul-protector', carrierId: 'transamerica', name: 'TransProtect VUL',
+    id: 'transamerica-vul-protector', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'TransProtect VUL',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -289,7 +289,7 @@ export const vulProducts = [
 
   // ── Mass Mutual (3 products) ───────────────────────────────────────
   {
-    id: 'massmutual-apex-vul', carrierId: 'massmutual', name: 'Apex VUL',
+    id: 'massmutual-apex-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'massmutual', name: 'Apex VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale with dividend participation', surrenderPeriod: 15,
@@ -305,7 +305,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'massmutual-survivorship-vul', carrierId: 'massmutual', name: 'Survivorship VUL',
+    id: 'massmutual-survivorship-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'massmutual', name: 'Survivorship VUL',
     policyType: 'Protection', minimumFaceAmount: 500000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.55, adminFeeMonthly: 15.00,
     costOfInsurance: 'Current scale joint', surrenderPeriod: 15,
@@ -323,7 +323,7 @@ export const vulProducts = [
 
   // ── Protective (3 products) ────────────────────────────────────────
   {
-    id: 'protective-vul-advantage', carrierId: 'protective-life', name: 'Protective Advantage VUL',
+    id: 'protective-vul-advantage', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'protective-life', name: 'Protective Advantage VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -338,7 +338,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'protective-lifetime-vul', carrierId: 'protective-life', name: 'Protective Lifetime VUL',
+    id: 'protective-lifetime-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'protective-life', name: 'Protective Lifetime VUL',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -355,7 +355,7 @@ export const vulProducts = [
 
   // ── New York Life (3 products) ─────────────────────────────────────
   {
-    id: 'nyl-premium-vul', carrierId: 'new-york-life', name: 'NYL Premium VUL',
+    id: 'nyl-premium-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'new-york-life', name: 'NYL Premium VUL',
     policyType: 'Accumulation', minimumFaceAmount: 250000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.60, adminFeeMonthly: 12.00,
     costOfInsurance: 'Current scale with dividends', surrenderPeriod: 15,
@@ -371,7 +371,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'nyl-protection-vul', carrierId: 'new-york-life', name: 'NYL LifeProtect VUL',
+    id: 'nyl-protection-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'new-york-life', name: 'NYL LifeProtect VUL',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -389,7 +389,7 @@ export const vulProducts = [
 
   // ── Corebridge/AIG (3 products) ────────────────────────────────────
   {
-    id: 'corebridge-vul-accumulator', carrierId: 'corebridge-financial', name: 'Corebridge VUL Accumulator',
+    id: 'corebridge-vul-accumulator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'corebridge-financial', name: 'Corebridge VUL Accumulator',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.85, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -404,7 +404,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'corebridge-vul-protector', carrierId: 'corebridge-financial', name: 'Corebridge VUL Protector',
+    id: 'corebridge-vul-protector', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'corebridge-financial', name: 'Corebridge VUL Protector',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -421,7 +421,7 @@ export const vulProducts = [
 
   // ── Principal (3 products) ─────────────────────────────────────────
   {
-    id: 'principal-vul-accumulator', carrierId: 'principal-financial', name: 'Principal VUL Accumulator',
+    id: 'principal-vul-accumulator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'principal-financial', name: 'Principal VUL Accumulator',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -436,7 +436,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'principal-vul-protector', carrierId: 'principal-financial', name: 'Principal VUL Protector',
+    id: 'principal-vul-protector', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'principal-financial', name: 'Principal VUL Protector',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -453,7 +453,7 @@ export const vulProducts = [
 
   // ── Security Benefit (2 products) ──────────────────────────────────
   {
-    id: 'security-benefit-tpfg-vul', carrierId: 'security-benefit', name: 'TPFG VUL',
+    id: 'security-benefit-tpfg-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'security-benefit', name: 'TPFG VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.50, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -468,7 +468,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'security-benefit-total-vul', carrierId: 'security-benefit', name: 'Total Value VUL',
+    id: 'security-benefit-total-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'security-benefit', name: 'Total Value VUL',
     policyType: 'Hybrid', minimumFaceAmount: 75000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -485,7 +485,7 @@ export const vulProducts = [
 
   // ── Equitable (3 products) ───────────────────────────────────────
   {
-    id: 'equitable-vul-optimizer', carrierId: 'equitable', name: 'VUL Optimizer',
+    id: 'equitable-vul-optimizer', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'equitable', name: 'VUL Optimizer',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -501,7 +501,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'equitable-vul-incentive-life-protect', carrierId: 'equitable', name: 'VUL Incentive Life Protect',
+    id: 'equitable-vul-incentive-life-protect', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'equitable', name: 'VUL Incentive Life Protect',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -517,7 +517,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'equitable-survivorship-vul', carrierId: 'equitable', name: 'Survivorship VUL',
+    id: 'equitable-survivorship-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'equitable', name: 'Survivorship VUL',
     policyType: 'Protection', minimumFaceAmount: 500000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.50, adminFeeMonthly: 15.00,
     costOfInsurance: 'Current scale joint', surrenderPeriod: 15,
@@ -535,7 +535,7 @@ export const vulProducts = [
 
   // ── Penn Mutual (3 products) ─────────────────────────────────────
   {
-    id: 'penn-mutual-diversified-advantage-vul', carrierId: 'penn-mutual', name: 'Diversified Advantage VUL',
+    id: 'penn-mutual-diversified-advantage-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'penn-mutual', name: 'Diversified Advantage VUL',
     policyType: 'Accumulation', minimumFaceAmount: 50000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale with dividends', surrenderPeriod: 15,
@@ -551,7 +551,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'penn-mutual-accumulation-vul', carrierId: 'penn-mutual', name: 'Accumulation VUL',
+    id: 'penn-mutual-accumulation-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'penn-mutual', name: 'Accumulation VUL',
     policyType: 'Accumulation', minimumFaceAmount: 50000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -567,7 +567,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'penn-mutual-protection-vul', carrierId: 'penn-mutual', name: 'Protection VUL',
+    id: 'penn-mutual-protection-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'penn-mutual', name: 'Protection VUL',
     policyType: 'Protection', minimumFaceAmount: 50000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -585,7 +585,7 @@ export const vulProducts = [
 
   // ── Pacific Life (2 more products) ────────────────────────────────
   {
-    id: 'pacific-select-exec-vul', carrierId: 'pacific-life', name: 'Pacific Select Exec VUL',
+    id: 'pacific-select-exec-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Select Exec VUL',
     policyType: 'Accumulation', minimumFaceAmount: 1000000, maximumIssueAge: 70,
     targetPremiumBasis: 'Guideline', meCharge: 0.40, adminFeeMonthly: 15.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -601,7 +601,7 @@ export const vulProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'pacific-protector-plus-vul', carrierId: 'pacific-life', name: 'Pacific Protector Plus VUL',
+    id: 'pacific-protector-plus-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Protector Plus VUL',
     policyType: 'Hybrid', minimumFaceAmount: 50000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.60, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -619,7 +619,7 @@ export const vulProducts = [
 
   // ── Nationwide VUL Accumulator ─────────────────────────────────────
   {
-    id: 'nationwide-vul-accumulator', carrierId: 'nationwide', name: 'VUL Accumulator II',
+    id: 'nationwide-vul-accumulator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'VUL Accumulator II',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 9.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -637,7 +637,7 @@ export const vulProducts = [
 
   // ── Nationwide Survivorship VUL ────────────────────────────────────
   {
-    id: 'nationwide-survivorship-vul', carrierId: 'nationwide', name: 'Survivorship VUL',
+    id: 'nationwide-survivorship-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'Survivorship VUL',
     policyType: 'Survivorship', minimumFaceAmount: 250000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.55, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -655,7 +655,7 @@ export const vulProducts = [
 
   // ── Allianz Life Pro+ Variable UL ──────────────────────────────────
   {
-    id: 'allianz-life-pro-plus-vul', carrierId: 'allianz-life', name: 'Life Pro+ Variable UL',
+    id: 'allianz-life-pro-plus-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'allianz-life', name: 'Life Pro+ Variable UL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 10.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -673,7 +673,7 @@ export const vulProducts = [
 
   // ── Athene VUL Accumulator ─────────────────────────────────────────
   {
-    id: 'athene-vul-accumulator', carrierId: 'athene', name: 'Athene Accumulator VUL',
+    id: 'athene-vul-accumulator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'athene', name: 'Athene Accumulator VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -691,7 +691,7 @@ export const vulProducts = [
 
   // ── Brighthouse Financial SmartGuard VUL ───────────────────────────
   {
-    id: 'brighthouse-smartguard-vul', carrierId: 'brighthouse-financial', name: 'SmartGuard VUL',
+    id: 'brighthouse-smartguard-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'brighthouse-financial', name: 'SmartGuard VUL',
     policyType: 'Hybrid', minimumFaceAmount: 75000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -708,7 +708,7 @@ export const vulProducts = [
 
   // ── Brighthouse Survivorship VUL ───────────────────────────────────
   {
-    id: 'brighthouse-survivorship-vul', carrierId: 'brighthouse-financial', name: 'SmartGuard Survivorship VUL',
+    id: 'brighthouse-survivorship-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'brighthouse-financial', name: 'SmartGuard Survivorship VUL',
     policyType: 'Survivorship', minimumFaceAmount: 500000, maximumIssueAge: 85,
     targetPremiumBasis: 'Guideline', meCharge: 0.50, adminFeeMonthly: 12.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -725,7 +725,7 @@ export const vulProducts = [
 
   // ── Global Atlantic Lifetime Builder VUL ───────────────────────────
   {
-    id: 'global-atlantic-lifetime-builder-vul', carrierId: 'global-atlantic', name: 'Lifetime Builder VUL',
+    id: 'global-atlantic-lifetime-builder-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'global-atlantic', name: 'Lifetime Builder VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 9.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -743,7 +743,7 @@ export const vulProducts = [
 
   // ── Securian VUL Foundation ────────────────────────────────────────
   {
-    id: 'securian-vul-foundation', carrierId: 'securian', name: 'VUL Foundation',
+    id: 'securian-vul-foundation', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'securian', name: 'VUL Foundation',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -761,7 +761,7 @@ export const vulProducts = [
 
   // ── Ameritas VUL Advisor ───────────────────────────────────────────
   {
-    id: 'ameritas-vul-advisor', carrierId: 'ameritas', name: 'VUL Advisor',
+    id: 'ameritas-vul-advisor', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'ameritas', name: 'VUL Advisor',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.55, adminFeeMonthly: 7.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -778,7 +778,7 @@ export const vulProducts = [
 
   // ── Mutual of Omaha VUL ────────────────────────────────────────────
   {
-    id: 'mutual-of-omaha-vul', carrierId: 'mutual-of-omaha', name: 'Accumulation VUL',
+    id: 'mutual-of-omaha-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'mutual-of-omaha', name: 'Accumulation VUL',
     policyType: 'Accumulation', minimumFaceAmount: 75000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -796,7 +796,7 @@ export const vulProducts = [
 
   // ── Symetra VUL ────────────────────────────────────────────────────
   {
-    id: 'symetra-vul', carrierId: 'symetra', name: 'Symetra Accumulator VUL',
+    id: 'symetra-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'symetra', name: 'Symetra Accumulator VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.65, adminFeeMonthly: 7.50,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -814,7 +814,7 @@ export const vulProducts = [
 
   // ── American National VUL ──────────────────────────────────────────
   {
-    id: 'american-national-vul', carrierId: 'american-national', name: 'ANICO VUL',
+    id: 'american-national-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'american-national', name: 'ANICO VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 9.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -831,7 +831,7 @@ export const vulProducts = [
 
   // ── RiverSource VUL ────────────────────────────────────────────────
   {
-    id: 'riversource-vul', carrierId: 'riversource', name: 'RiverSource VUL',
+    id: 'riversource-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'riversource', name: 'RiverSource VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 80,
     targetPremiumBasis: 'Guideline', meCharge: 0.70, adminFeeMonthly: 8.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -848,7 +848,7 @@ export const vulProducts = [
 
   // ── Jackson National VUL ───────────────────────────────────────────
   {
-    id: 'jackson-vul', carrierId: 'jackson-national', name: 'Jackson VUL',
+    id: 'jackson-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'jackson-national', name: 'Jackson VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.75, adminFeeMonthly: 9.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,
@@ -866,7 +866,7 @@ export const vulProducts = [
 
   // ── North American VUL ─────────────────────────────────────────────
   {
-    id: 'north-american-vul', carrierId: 'north-american', name: 'NAC Accumulation VUL',
+    id: 'north-american-vul', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'north-american', name: 'NAC Accumulation VUL',
     policyType: 'Accumulation', minimumFaceAmount: 100000, maximumIssueAge: 75,
     targetPremiumBasis: 'Guideline', meCharge: 0.80, adminFeeMonthly: 9.00,
     costOfInsurance: 'Current scale', surrenderPeriod: 15,

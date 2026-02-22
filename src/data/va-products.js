@@ -5,7 +5,7 @@
 export const vaProducts = [
   // ── Jackson National (12 products) ─────────────────────────────────
   {
-    id: 'jackson-perspective-ii', carrierId: 'jackson-national', name: 'Perspective II',
+    id: 'jackson-perspective-ii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'jackson-national', name: 'Perspective II',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.15, adminFee: 0.15, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.15, max: 2.25 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -25,7 +25,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'jackson-elite-access', carrierId: 'jackson-national', name: 'Elite Access',
+    id: 'jackson-elite-access', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'jackson-national', name: 'Elite Access',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [8, 8, 7, 6, 5, 4, 3, 0],
     meCharge: 1.40, adminFee: 0.15, totalAnnualCharge: 1.55,
     fundExpenseRange: { min: 0.20, max: 2.40 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -43,7 +43,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'jackson-perspective-advisory', carrierId: 'jackson-national', name: 'Perspective Advisory',
+    id: 'jackson-perspective-advisory', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'jackson-national', name: 'Perspective Advisory',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.60, adminFee: 0.10, totalAnnualCharge: 0.70,
     fundExpenseRange: { min: 0.10, max: 1.80 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -60,7 +60,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'jackson-marker-plus', carrierId: 'jackson-national', name: 'Marker Plus',
+    id: 'jackson-marker-plus', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'jackson-national', name: 'Marker Plus',
     contractType: 'L-Share', surrenderPeriod: 4, surrenderSchedule: [8, 7, 6, 5, 0],
     meCharge: 1.55, adminFee: 0.15, totalAnnualCharge: 1.70,
     fundExpenseRange: { min: 0.15, max: 2.25 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -79,7 +79,7 @@ export const vaProducts = [
 
   // ── Lincoln National (10 products) ─────────────────────────────────
   {
-    id: 'lincoln-choiceplus-assurance', carrierId: 'lincoln-financial', name: 'ChoicePlus Assurance',
+    id: 'lincoln-choiceplus-assurance', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'ChoicePlus Assurance',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [8, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.10, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.10, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -98,7 +98,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'lincoln-american-legacy', carrierId: 'lincoln-financial', name: 'American Legacy',
+    id: 'lincoln-american-legacy', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'American Legacy',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [7, 7, 6, 5, 4, 3, 0],
     meCharge: 1.20, adminFee: 0.10, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.12, max: 2.00 }, minimumPremium: 25000, maximumIssueAge: 80,
@@ -115,7 +115,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'lincoln-choice-advisory', carrierId: 'lincoln-financial', name: 'ChoicePlus Advisory',
+    id: 'lincoln-choice-advisory', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'ChoicePlus Advisory',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.55, adminFee: 0.10, totalAnnualCharge: 0.65,
     fundExpenseRange: { min: 0.08, max: 1.80 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -130,7 +130,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'lincoln-investor-advantage', carrierId: 'lincoln-financial', name: 'Investor Advantage',
+    id: 'lincoln-investor-advantage', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'lincoln-financial', name: 'Investor Advantage',
     contractType: 'I-Share', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.65, adminFee: 0.10, totalAnnualCharge: 0.75,
     fundExpenseRange: { min: 0.10, max: 1.90 }, minimumPremium: 50000, maximumIssueAge: 80,
@@ -147,7 +147,7 @@ export const vaProducts = [
 
   // ── Prudential (8 products) ────────────────────────────────────────
   {
-    id: 'prudential-premier-investment', carrierId: 'prudential', name: 'Premier Investment',
+    id: 'prudential-premier-investment', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'Premier Investment',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
     meCharge: 0.95, adminFee: 0.15, totalAnnualCharge: 1.10,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -166,7 +166,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'prudential-defined-income', carrierId: 'prudential', name: 'Defined Income',
+    id: 'prudential-defined-income', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'Defined Income',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.15, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.12, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -183,7 +183,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'prudential-b-share-advantage', carrierId: 'prudential', name: 'B-Share Advantage',
+    id: 'prudential-b-share-advantage', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'B-Share Advantage',
     contractType: 'B-Share', surrenderPeriod: 5, surrenderSchedule: [6, 5, 4, 3, 2, 0],
     meCharge: 1.35, adminFee: 0.15, totalAnnualCharge: 1.50,
     fundExpenseRange: { min: 0.15, max: 2.20 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -200,7 +200,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'prudential-advisory-va', carrierId: 'prudential', name: 'Advisory VA',
+    id: 'prudential-advisory-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'prudential', name: 'Advisory VA',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.55, adminFee: 0.10, totalAnnualCharge: 0.65,
     fundExpenseRange: { min: 0.08, max: 1.75 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -217,7 +217,7 @@ export const vaProducts = [
 
   // ── Pacific Life (6 products) ──────────────────────────────────────
   {
-    id: 'pacific-odyssey', carrierId: 'pacific-life', name: 'Pacific Odyssey',
+    id: 'pacific-odyssey', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Odyssey',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [8, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.15, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.12, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -235,7 +235,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'pacific-choice', carrierId: 'pacific-life', name: 'Pacific Choice',
+    id: 'pacific-choice', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Choice',
     contractType: 'L-Share', surrenderPeriod: 4, surrenderSchedule: [8, 7, 6, 5, 0],
     meCharge: 1.45, adminFee: 0.15, totalAnnualCharge: 1.60,
     fundExpenseRange: { min: 0.15, max: 2.20 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -252,7 +252,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'pacific-frontiers-ii', carrierId: 'pacific-life', name: 'Pacific Frontiers II',
+    id: 'pacific-frontiers-ii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'pacific-life', name: 'Pacific Frontiers II',
     contractType: 'B-Share', surrenderPeriod: 8, surrenderSchedule: [8, 8, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.15, adminFee: 0.10, totalAnnualCharge: 1.25,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 25000, maximumIssueAge: 80,
@@ -272,7 +272,7 @@ export const vaProducts = [
 
   // ── Nationwide (6 products) ────────────────────────────────────────
   {
-    id: 'nationwide-destination-navigator', carrierId: 'nationwide', name: 'Destination Navigator 2.0',
+    id: 'nationwide-destination-navigator', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'Destination Navigator 2.0',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.10, adminFee: 0.20, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.15, max: 2.25 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -290,7 +290,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'nationwide-monument-advisor', carrierId: 'nationwide', name: 'Monument Advisor',
+    id: 'nationwide-monument-advisor', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'Monument Advisor',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.65, adminFee: 0.10, totalAnnualCharge: 0.75,
     fundExpenseRange: { min: 0.08, max: 1.80 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -305,7 +305,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'nationwide-destination-b-20', carrierId: 'nationwide', name: 'Destination B 2.0',
+    id: 'nationwide-destination-b-20', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'nationwide', name: 'Destination B 2.0',
     contractType: 'B-Share', surrenderPeriod: 5, surrenderSchedule: [6, 5, 4, 3, 2, 0],
     meCharge: 1.40, adminFee: 0.15, totalAnnualCharge: 1.55,
     fundExpenseRange: { min: 0.15, max: 2.20 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -324,7 +324,7 @@ export const vaProducts = [
 
   // ── Brighthouse Financial (5 products) ─────────────────────────────
   {
-    id: 'brighthouse-series-va', carrierId: 'brighthouse-financial', name: 'Series VA with FlexChoice Access',
+    id: 'brighthouse-series-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'brighthouse-financial', name: 'Series VA with FlexChoice Access',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.15, totalAnnualCharge: 1.40,
     fundExpenseRange: { min: 0.12, max: 2.10 }, minimumPremium: 25000, maximumIssueAge: 80,
@@ -341,7 +341,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'brighthouse-shield-va', carrierId: 'brighthouse-financial', name: 'Shield Level VA',
+    id: 'brighthouse-shield-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'brighthouse-financial', name: 'Shield Level VA',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
     meCharge: 1.15, adminFee: 0.10, totalAnnualCharge: 1.25,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -357,7 +357,7 @@ export const vaProducts = [
 
   // ── Transamerica (5 products) ──────────────────────────────────────
   {
-    id: 'transamerica-financial-foundation', carrierId: 'transamerica', name: 'Financial Foundation',
+    id: 'transamerica-financial-foundation', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Financial Foundation',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.15, totalAnnualCharge: 1.40,
     fundExpenseRange: { min: 0.15, max: 2.15 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -374,7 +374,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'transamerica-monument-ii', carrierId: 'transamerica', name: 'Monument II',
+    id: 'transamerica-monument-ii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Monument II',
     contractType: 'L-Share', surrenderPeriod: 3, surrenderSchedule: [7, 5, 3, 0],
     meCharge: 1.55, adminFee: 0.15, totalAnnualCharge: 1.70,
     fundExpenseRange: { min: 0.15, max: 2.30 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -391,7 +391,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'transamerica-advisor-elite', carrierId: 'transamerica', name: 'Advisor Elite',
+    id: 'transamerica-advisor-elite', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Advisor Elite',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.60, adminFee: 0.10, totalAnnualCharge: 0.70,
     fundExpenseRange: { min: 0.10, max: 1.85 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -406,7 +406,7 @@ export const vaProducts = [
 
   // ── Protective (4 products) ────────────────────────────────────────
   {
-    id: 'protective-investment-series', carrierId: 'protective-life', name: 'Investment Series',
+    id: 'protective-investment-series', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'protective-life', name: 'Investment Series',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.15, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.12, max: 2.05 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -422,7 +422,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'protective-dimensions-gold', carrierId: 'protective-life', name: 'Dimensions Gold',
+    id: 'protective-dimensions-gold', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'protective-life', name: 'Dimensions Gold',
     contractType: 'B-Share', surrenderPeriod: 5, surrenderSchedule: [6, 5, 4, 3, 2, 0],
     meCharge: 1.35, adminFee: 0.15, totalAnnualCharge: 1.50,
     fundExpenseRange: { min: 0.15, max: 2.15 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -440,7 +440,7 @@ export const vaProducts = [
 
   // ── John Hancock (4 products) ──────────────────────────────────────
   {
-    id: 'john-hancock-vitality-va', carrierId: 'john-hancock', name: 'Vitality VA',
+    id: 'john-hancock-vitality-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'john-hancock', name: 'Vitality VA',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.30, adminFee: 0.15, totalAnnualCharge: 1.45,
     fundExpenseRange: { min: 0.15, max: 2.20 }, minimumPremium: 10000, maximumIssueAge: 80,
@@ -458,7 +458,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'john-hancock-accumulation-va', carrierId: 'john-hancock', name: 'Accumulation VA',
+    id: 'john-hancock-accumulation-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'john-hancock', name: 'Accumulation VA',
     contractType: 'I-Share', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.65, adminFee: 0.10, totalAnnualCharge: 0.75,
     fundExpenseRange: { min: 0.10, max: 1.80 }, minimumPremium: 50000, maximumIssueAge: 85,
@@ -475,7 +475,7 @@ export const vaProducts = [
 
   // ── Mass Mutual (4 products) ───────────────────────────────────────
   {
-    id: 'massmutual-transitions-select-ii', carrierId: 'massmutual', name: 'Transitions Select II',
+    id: 'massmutual-transitions-select-ii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'massmutual', name: 'Transitions Select II',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.10, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.12, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -492,7 +492,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'massmutual-encore', carrierId: 'massmutual', name: 'Encore Retirement',
+    id: 'massmutual-encore', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'massmutual', name: 'Encore Retirement',
     contractType: 'L-Share', surrenderPeriod: 4, surrenderSchedule: [7, 6, 5, 4, 0],
     meCharge: 1.50, adminFee: 0.15, totalAnnualCharge: 1.65,
     fundExpenseRange: { min: 0.15, max: 2.25 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -511,7 +511,7 @@ export const vaProducts = [
 
   // ── Corebridge/AIG (4 products) ────────────────────────────────────
   {
-    id: 'corebridge-polaris-platinum', carrierId: 'corebridge-financial', name: 'Polaris Platinum III',
+    id: 'corebridge-polaris-platinum', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'corebridge-financial', name: 'Polaris Platinum III',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [8, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.35, adminFee: 0.15, totalAnnualCharge: 1.50,
     fundExpenseRange: { min: 0.15, max: 2.20 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -528,7 +528,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'corebridge-polaris-choice-iv', carrierId: 'corebridge-financial', name: 'Polaris Choice IV',
+    id: 'corebridge-polaris-choice-iv', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'corebridge-financial', name: 'Polaris Choice IV',
     contractType: 'L-Share', surrenderPeriod: 4, surrenderSchedule: [8, 6, 4, 2, 0],
     meCharge: 1.55, adminFee: 0.15, totalAnnualCharge: 1.70,
     fundExpenseRange: { min: 0.15, max: 2.30 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -546,7 +546,7 @@ export const vaProducts = [
 
   // ── Great American (3 products) ────────────────────────────────────
   {
-    id: 'great-american-legend-7', carrierId: 'great-american', name: 'Legend 7',
+    id: 'great-american-legend-7', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'great-american', name: 'Legend 7',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [8, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.30, adminFee: 0.15, totalAnnualCharge: 1.45,
     fundExpenseRange: { min: 0.15, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -563,7 +563,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'great-american-legend-advisory', carrierId: 'great-american', name: 'Legend Advisory',
+    id: 'great-american-legend-advisory', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'great-american', name: 'Legend Advisory',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.60, adminFee: 0.10, totalAnnualCharge: 0.70,
     fundExpenseRange: { min: 0.10, max: 1.80 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -578,7 +578,7 @@ export const vaProducts = [
 
   // ── Security Benefit (3 products) ──────────────────────────────────
   {
-    id: 'security-benefit-tpfg-va', carrierId: 'security-benefit', name: 'TPFG VA',
+    id: 'security-benefit-tpfg-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'security-benefit', name: 'TPFG VA',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.55, adminFee: 0.10, totalAnnualCharge: 0.65,
     fundExpenseRange: { min: 0.08, max: 1.50 }, minimumPremium: 5000, maximumIssueAge: 90,
@@ -590,7 +590,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'security-benefit-total-value', carrierId: 'security-benefit', name: 'Total Value',
+    id: 'security-benefit-total-value', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'security-benefit', name: 'Total Value',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.15, totalAnnualCharge: 1.40,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -606,7 +606,7 @@ export const vaProducts = [
 
   // ── Global Atlantic (2 products) ───────────────────────────────────
   {
-    id: 'global-atlantic-flexshield-va', carrierId: 'global-atlantic', name: 'FlexShield VA',
+    id: 'global-atlantic-flexshield-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'global-atlantic', name: 'FlexShield VA',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.15, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.12, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -623,7 +623,7 @@ export const vaProducts = [
 
   // ── New York Life (2 products) ─────────────────────────────────────
   {
-    id: 'nyl-premier-variable-annuity', carrierId: 'new-york-life', name: 'Premier Variable Annuity',
+    id: 'nyl-premier-variable-annuity', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'new-york-life', name: 'Premier Variable Annuity',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.10, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.10, max: 1.95 }, minimumPremium: 25000, maximumIssueAge: 80,
@@ -643,7 +643,7 @@ export const vaProducts = [
 
   // ── Principal (2 products) ─────────────────────────────────────────
   {
-    id: 'principal-variable-annuity', carrierId: 'principal-financial', name: 'Principal Variable Annuity',
+    id: 'principal-variable-annuity', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'principal-financial', name: 'Principal Variable Annuity',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.10, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.12, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -657,7 +657,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'principal-advisory-va', carrierId: 'principal-financial', name: 'Principal Advisory VA',
+    id: 'principal-advisory-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'principal-financial', name: 'Principal Advisory VA',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.60, adminFee: 0.10, totalAnnualCharge: 0.70,
     fundExpenseRange: { min: 0.08, max: 1.75 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -671,7 +671,7 @@ export const vaProducts = [
 
   // ── F&G (2 products) ──────────────────────────────────────────────
   {
-    id: 'fandg-performance-va', carrierId: 'fandg', name: 'Performance Variable Annuity',
+    id: 'fandg-performance-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'fandg', name: 'Performance Variable Annuity',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.30, adminFee: 0.15, totalAnnualCharge: 1.45,
     fundExpenseRange: { min: 0.15, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -688,7 +688,7 @@ export const vaProducts = [
 
   // ── Symetra (2 products) ──────────────────────────────────────────
   {
-    id: 'symetra-va-select', carrierId: 'symetra', name: 'VA Select',
+    id: 'symetra-va-select', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'symetra', name: 'VA Select',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.10, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.12, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -705,7 +705,7 @@ export const vaProducts = [
 
   // ── RiverSource (Ameriprise) (3 products) ────────────────────────────
   {
-    id: 'riversource-rava-apex', carrierId: 'riversource', name: 'RAVA Apex',
+    id: 'riversource-rava-apex', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'riversource', name: 'RAVA Apex',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 7, 6, 5, 4, 2, 0],
     meCharge: 1.05, adminFee: 0.00, totalAnnualCharge: 1.05,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 5000, maximumIssueAge: 90,
@@ -723,7 +723,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'riversource-rava-vista', carrierId: 'riversource', name: 'RAVA Vista',
+    id: 'riversource-rava-vista', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'riversource', name: 'RAVA Vista',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 7, 6, 5, 4, 2, 0],
     meCharge: 1.20, adminFee: 0.00, totalAnnualCharge: 1.20,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 5000, maximumIssueAge: 90,
@@ -740,7 +740,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'riversource-rava-5-advantage', carrierId: 'riversource', name: 'RAVA 5 Advantage',
+    id: 'riversource-rava-5-advantage', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'riversource', name: 'RAVA 5 Advantage',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 7, 6, 5, 4, 2, 0],
     meCharge: 1.10, adminFee: 0.00, totalAnnualCharge: 1.10,
     fundExpenseRange: { min: 0.10, max: 2.00 }, minimumPremium: 5000, maximumIssueAge: 90,
@@ -760,7 +760,7 @@ export const vaProducts = [
 
   // ── TIAA (3 products) ─────────────────────────────────────────────
   {
-    id: 'tiaa-intelligent-va', carrierId: 'tiaa', name: 'Intelligent Variable Annuity',
+    id: 'tiaa-intelligent-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'tiaa', name: 'Intelligent Variable Annuity',
     contractType: 'No-Load', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.50, adminFee: 0.00, totalAnnualCharge: 0.50,
     fundExpenseRange: { min: 0.10, max: 0.85 }, minimumPremium: 2500, maximumIssueAge: 90,
@@ -774,7 +774,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'tiaa-cref-variable-annuity', carrierId: 'tiaa', name: 'CREF Variable Annuity',
+    id: 'tiaa-cref-variable-annuity', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'tiaa', name: 'CREF Variable Annuity',
     contractType: 'No-Load', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.24, adminFee: 0.00, totalAnnualCharge: 0.24,
     fundExpenseRange: { min: 0.16, max: 0.44 }, minimumPremium: 0, maximumIssueAge: 99,
@@ -790,7 +790,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'tiaa-real-estate-account', carrierId: 'tiaa', name: 'TIAA Real Estate Account',
+    id: 'tiaa-real-estate-account', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'tiaa', name: 'TIAA Real Estate Account',
     contractType: 'No-Load', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.52, adminFee: 0.00, totalAnnualCharge: 0.52,
     fundExpenseRange: { min: 0.52, max: 0.52 }, minimumPremium: 0, maximumIssueAge: 99,
@@ -806,7 +806,7 @@ export const vaProducts = [
 
   // ── Fidelity (2 products) ─────────────────────────────────────────
   {
-    id: 'fidelity-personal-retirement-annuity', carrierId: 'fidelity-life', name: 'Personal Retirement Annuity (FPRA)',
+    id: 'fidelity-personal-retirement-annuity', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'fidelity-life', name: 'Personal Retirement Annuity (FPRA)',
     contractType: 'No-Load', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.25, adminFee: 0.00, totalAnnualCharge: 0.25,
     fundExpenseRange: { min: 0.10, max: 1.20 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -820,7 +820,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'fidelity-retirement-reserves', carrierId: 'fidelity-life', name: 'Retirement Reserves',
+    id: 'fidelity-retirement-reserves', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'fidelity-life', name: 'Retirement Reserves',
     contractType: 'No-Load', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.50, adminFee: 0.00, totalAnnualCharge: 0.50,
     fundExpenseRange: { min: 0.15, max: 1.35 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -837,7 +837,7 @@ export const vaProducts = [
 
   // ── Empower / Great-West (2 products) ─────────────────────────────
   {
-    id: 'empower-securefoundation-ii', carrierId: 'empower', name: 'SecureFoundation II',
+    id: 'empower-securefoundation-ii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'empower', name: 'SecureFoundation II',
     contractType: 'Group VA', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.65, adminFee: 0.00, totalAnnualCharge: 0.65,
     fundExpenseRange: { min: 0.15, max: 1.50 }, minimumPremium: 0, maximumIssueAge: 99,
@@ -853,7 +853,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'empower-managed-income', carrierId: 'empower', name: 'Managed Income VA',
+    id: 'empower-managed-income', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'empower', name: 'Managed Income VA',
     contractType: 'Group VA', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.55, adminFee: 0.10, totalAnnualCharge: 0.65,
     fundExpenseRange: { min: 0.10, max: 1.25 }, minimumPremium: 0, maximumIssueAge: 99,
@@ -871,7 +871,7 @@ export const vaProducts = [
 
   // ── Equitable (2 more products) ───────────────────────────────────
   {
-    id: 'equitable-accumulator-select', carrierId: 'equitable', name: 'Accumulator Select',
+    id: 'equitable-accumulator-select', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'equitable', name: 'Accumulator Select',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
     meCharge: 1.10, adminFee: 0.00, totalAnnualCharge: 1.10,
     fundExpenseRange: { min: 0.15, max: 2.10 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -889,7 +889,7 @@ export const vaProducts = [
     lastRateUpdate: '2026-02-01'
   },
   {
-    id: 'equitable-investment-edge', carrierId: 'equitable', name: 'Investment Edge',
+    id: 'equitable-investment-edge', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'equitable', name: 'Investment Edge',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.55, adminFee: 0.10, totalAnnualCharge: 0.65,
     fundExpenseRange: { min: 0.10, max: 1.50 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -906,7 +906,7 @@ export const vaProducts = [
 
   // ── Transamerica B-Share Variable Annuity ──────────────────────────
   {
-    id: 'transamerica-bshare-va', carrierId: 'transamerica', name: 'Transamerica Variable Annuity B-Share',
+    id: 'transamerica-bshare-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Transamerica Variable Annuity B-Share',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.15, adminFee: 0.15, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.20, max: 2.00 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -926,7 +926,7 @@ export const vaProducts = [
 
   // ── Transamerica Principium IV ─────────────────────────────────────
   {
-    id: 'transamerica-principium-iv', carrierId: 'transamerica', name: 'Principium IV',
+    id: 'transamerica-principium-iv', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Principium IV',
     contractType: 'B-Share', surrenderPeriod: 5, surrenderSchedule: [6, 5, 4, 3, 2, 0],
     meCharge: 0.85, adminFee: 0.10, totalAnnualCharge: 0.95,
     fundExpenseRange: { min: 0.15, max: 1.80 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -945,7 +945,7 @@ export const vaProducts = [
 
   // ── Transamerica Axiom III ─────────────────────────────────────────
   {
-    id: 'transamerica-axiom-iii', carrierId: 'transamerica', name: 'Axiom III',
+    id: 'transamerica-axiom-iii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Axiom III',
     contractType: 'B-Share', surrenderPeriod: 5, surrenderSchedule: [5, 5, 4, 3, 2, 0],
     meCharge: 1.00, adminFee: 0.10, totalAnnualCharge: 1.10,
     fundExpenseRange: { min: 0.15, max: 1.90 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -965,7 +965,7 @@ export const vaProducts = [
 
   // ── Transamerica I-Share II ────────────────────────────────────────
   {
-    id: 'transamerica-ishare-ii', carrierId: 'transamerica', name: 'I-Share II',
+    id: 'transamerica-ishare-ii', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'I-Share II',
     contractType: 'I-Share', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.20, adminFee: 0.05, totalAnnualCharge: 0.25,
     fundExpenseRange: { min: 0.10, max: 1.50 }, minimumPremium: 25000, maximumIssueAge: 85,
@@ -982,7 +982,7 @@ export const vaProducts = [
 
   // ── Transamerica Inspire Variable Annuity ──────────────────────────
   {
-    id: 'transamerica-inspire', carrierId: 'transamerica', name: 'Inspire Variable Annuity',
+    id: 'transamerica-inspire', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'transamerica', name: 'Inspire Variable Annuity',
     contractType: 'Advisory', surrenderPeriod: 0, surrenderSchedule: [],
     meCharge: 0.45, adminFee: 0.10, totalAnnualCharge: 0.55,
     fundExpenseRange: { min: 0.10, max: 1.60 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -1001,7 +1001,7 @@ export const vaProducts = [
 
   // ── Jackson National Perspective L-Flex ─────────────────────────────
   {
-    id: 'jackson-perspective-l-flex', carrierId: 'jackson-national', name: 'Perspective L-Flex',
+    id: 'jackson-perspective-l-flex', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'jackson-national', name: 'Perspective L-Flex',
     contractType: 'L-Share', surrenderPeriod: 3, surrenderSchedule: [8, 6, 4, 0],
     meCharge: 1.65, adminFee: 0.15, totalAnnualCharge: 1.80,
     fundExpenseRange: { min: 0.15, max: 2.25 }, minimumPremium: 5000, maximumIssueAge: 85,
@@ -1021,7 +1021,7 @@ export const vaProducts = [
 
   // ── North American Charter Plus VA ──────────────────────────────────
   {
-    id: 'nac-charter-plus-va', carrierId: 'north-american', name: 'Charter Plus Variable Annuity',
+    id: 'nac-charter-plus-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'north-american', name: 'Charter Plus Variable Annuity',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.25, adminFee: 0.15, totalAnnualCharge: 1.40,
     fundExpenseRange: { min: 0.20, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -1040,7 +1040,7 @@ export const vaProducts = [
 
   // ── Allianz Life Variable Annuity ──────────────────────────────────
   {
-    id: 'allianz-life-va', carrierId: 'allianz-life', name: 'Allianz Index Advantage VA',
+    id: 'allianz-life-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'allianz-life', name: 'Allianz Index Advantage VA',
     contractType: 'B-Share', surrenderPeriod: 6, surrenderSchedule: [7, 6, 5, 4, 3, 2, 0],
     meCharge: 0.95, adminFee: 0.10, totalAnnualCharge: 1.05,
     fundExpenseRange: { min: 0.15, max: 1.85 }, minimumPremium: 10000, maximumIssueAge: 80,
@@ -1059,7 +1059,7 @@ export const vaProducts = [
 
   // ── Athene VA ──────────────────────────────────────────────────────
   {
-    id: 'athene-agility-va', carrierId: 'athene', name: 'Athene Agility',
+    id: 'athene-agility-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'athene', name: 'Athene Agility',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.10, adminFee: 0.15, totalAnnualCharge: 1.25,
     fundExpenseRange: { min: 0.15, max: 1.90 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -1079,7 +1079,7 @@ export const vaProducts = [
 
   // ── American Equity VA ─────────────────────────────────────────────
   {
-    id: 'american-equity-advantage-va', carrierId: 'american-equity', name: 'AE Advantage VA',
+    id: 'american-equity-advantage-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'american-equity', name: 'AE Advantage VA',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [8, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.20, adminFee: 0.15, totalAnnualCharge: 1.35,
     fundExpenseRange: { min: 0.20, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -1097,7 +1097,7 @@ export const vaProducts = [
 
   // ── Securian VA ────────────────────────────────────────────────────
   {
-    id: 'securian-eclipse-va', carrierId: 'securian', name: 'Eclipse VA',
+    id: 'securian-eclipse-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'securian', name: 'Eclipse VA',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 6, 5, 4, 3, 2, 1, 0],
     meCharge: 1.05, adminFee: 0.10, totalAnnualCharge: 1.15,
     fundExpenseRange: { min: 0.15, max: 1.85 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -1116,7 +1116,7 @@ export const vaProducts = [
 
   // ── Midland National VA ────────────────────────────────────────────
   {
-    id: 'midland-national-va', carrierId: 'midland-national', name: 'Midland Variable Annuity',
+    id: 'midland-national-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'midland-national', name: 'Midland Variable Annuity',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.15, adminFee: 0.15, totalAnnualCharge: 1.30,
     fundExpenseRange: { min: 0.20, max: 2.00 }, minimumPremium: 10000, maximumIssueAge: 85,
@@ -1134,7 +1134,7 @@ export const vaProducts = [
 
   // ── Delaware Life VA ───────────────────────────────────────────────
   {
-    id: 'delaware-life-va', carrierId: 'delaware-life', name: 'Retirement Income Secure VA',
+    id: 'delaware-life-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'delaware-life', name: 'Retirement Income Secure VA',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 6, 5, 4, 3, 2, 1, 0],
     meCharge: 1.10, adminFee: 0.10, totalAnnualCharge: 1.20,
     fundExpenseRange: { min: 0.15, max: 1.90 }, minimumPremium: 15000, maximumIssueAge: 85,
@@ -1153,7 +1153,7 @@ export const vaProducts = [
 
   // ── Global Atlantic VA ─────────────────────────────────────────────
   {
-    id: 'global-atlantic-forefront-va', carrierId: 'global-atlantic', name: 'ForeFront VA',
+    id: 'global-atlantic-forefront-va', ratesVerified: 'partial', verificationNote: 'Subaccount returns verified from public fund data (Morningstar, Fidelity, Vanguard, T. Rowe Price, PIMCO, DFA). Product fees/structure unverified.', lastVerifiedDate: '2026-02-21', carrierId: 'global-atlantic', name: 'ForeFront VA',
     contractType: 'B-Share', surrenderPeriod: 7, surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
     meCharge: 1.10, adminFee: 0.10, totalAnnualCharge: 1.20,
     fundExpenseRange: { min: 0.15, max: 1.85 }, minimumPremium: 10000, maximumIssueAge: 85,
