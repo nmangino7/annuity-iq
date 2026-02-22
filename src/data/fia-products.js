@@ -588,45 +588,30 @@ export const fiaProducts = [
   {
     id: "fg-accumulator-plus",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "F&G Accumulator Plus",
     surrenderPeriod: 7,
-    surrenderSchedule: [8, 8, 7, 6, 5, 4, 3, 0],
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 0],
     minimumPremium: 10000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.75,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.75,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 2.75,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "Barclays Atlas 5",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 260,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      }
+      { indexName: "iShares Core S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "iShares Core S&P 500", creditingMethod: "Biennial Point-to-Point", capRate: 14.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Balanced Asset 5", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 225, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Balanced Asset 5", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 285, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Balanced Asset 10", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 90, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "BlackRock Market Advantage", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 180, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "BlackRock Market Advantage", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 220, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Morgan Stanley US Equity Allocator", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 115, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Morgan Stanley US Equity Allocator", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 130, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: false,
-    highlights: ["Accumulation focused", "7-year surrender period"],
+    highlights: ["iShares S&P 500 cap 7.25% (annual), 14.25% (biennial)", "Balanced Asset 5 PR 225/285%, BlackRock MA 180/220% PR", "Fixed 3.75%, no bonus, $10K minimum", "7-year surrender, accumulation-focused"],
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
@@ -1455,7 +1440,7 @@ export const fiaProducts = [
     lastVerifiedDate: "2026-02-21",
     name: "Symetra Edge Elite 5",
     surrenderPeriod: 5,
-    surrenderSchedule: [7, 6, 5, 4, 3, 0],
+    surrenderSchedule: [9, 9, 8, 7, 6, 0],
     minimumPremium: 25000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
@@ -1463,55 +1448,21 @@ export const fiaProducts = [
     freeWithdrawalPercent: 10,
     fixedAccountRate: 4.30,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.25,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 50,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        triggerRate: 7.25
-      },
-      {
-        indexName: "Nasdaq-100",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.75,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "JP Morgan ETF Efficiente 5",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 145,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 9.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 50, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 70, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.25 },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 9.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Nasdaq-100", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.75 },
+      { indexName: "JP Morgan ETF Efficiente 5", creditingMethod: "Annual Point-to-Point", capRate: 18.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "JP Morgan ETF Efficiente 5", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 145, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "JP Morgan ETF Efficiente 5", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 220, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Putnam Dynamic Low Volatility", creditingMethod: "Annual Point-to-Point", capRate: 18.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Putnam Dynamic Low Volatility", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 185, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Putnam Dynamic Low Volatility", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 265, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: false,
-    highlights: ["S&P 500 cap 9.25%, Fixed 4.30%", "JP Morgan ETF Efficiente cap 18.00%", "Putnam Dynamic Low Vol cap 18.00%", "5-year surrender, $25K minimum"],
+    highlights: ["S&P 500 cap 9.25%, Nasdaq-100 cap 9.75%", "JP Morgan Efficiente cap 18%, Putnam cap 18%", "Putnam 2yr PR 265%, JP Morgan 2yr PR 220%", "Fixed 4.30%, 5-year surrender, $25K minimum"],
     sourceUrl: "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-5",
     lastRateUpdate: "2026-02-21"
   },
@@ -1801,45 +1752,30 @@ export const fiaProducts = [
   {
     id: "ameritas-accumulation-7",
     carrierId: "ameritas",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Ameritas Accumulation 7",
     surrenderPeriod: 7,
-    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2, 0],
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 0],
     minimumPremium: 10000,
     maximumIssueAge: 85,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.85,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.50,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 2.75,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "Russell 2000",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 8.00,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 9.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Monthly Average", capRate: 10.80, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 3.05, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 9.70, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Monthly Average", capRate: 11.80, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 8.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "MSCI EAFE", creditingMethod: "Monthly Average", capRate: 15.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500 Sector Rotator DRC2 5%", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 175, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500 Sector Rotator DRC2 5%", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 225, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: false,
-    highlights: ["7-year surrender", "Accumulation focused with high caps"],
+    highlights: ["S&P 500 cap 9.00%, Russell 2000 cap 9.70%", "MSCI EAFE Monthly Avg 15.50% cap", "Sector Rotator PR 175/225%", "Fixed 4.85%, 7-year surrender, $10K minimum"],
     lastRateUpdate: "2026-02-01"
   },
 
@@ -2303,46 +2239,27 @@ export const fiaProducts = [
   {
     id: "allianz-core-income-7",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Allianz Core Income 7",
     surrenderPeriod: 7,
-    surrenderSchedule: [8, 8, 7, 6, 5, 4, 3, 0],
-    minimumPremium: 20000,
+    surrenderSchedule: [9, 8, 7, 6, 5, 4, 3, 0],
+    minimumPremium: 10000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.60,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 8.50,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "Bloomberg US Dynamic Balance II",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 165,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        triggerRate: 6.00
-      }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 4.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 4.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 4.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: 3.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 90, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "2-Year Point-to-Point", capRate: null, participationRate: 135, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: true,
-    highlights: ["7-year surrender with income focus", "Performance trigger option"],
+    highlights: ["Income-focused — Core Income Benefit rider 1.25% fee", "S&P 500 cap 4.00%, Russell 2000 cap 4.25%", "Bloomberg 2yr 135% PR, fixed 2.60%", "Low caps reflect built-in income rider cost"],
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -2726,64 +2643,21 @@ export const fiaProducts = [
     freeWithdrawalPercent: 10,
     fixedAccountRate: 2.50,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 4.00,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 1.50,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        triggerRate: 3.50
-      },
-      {
-        indexName: "BlackRock iBld Claria",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 90,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "Bloomberg US Dynamic Balance II",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 75,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "PIMCO Tactical Balanced",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 70,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 4.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 1.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 3.50 },
+      { indexName: "BlackRock iBld Claria", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 90, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 75, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "2-Year Point-to-Point", capRate: null, participationRate: 120, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Bloomberg US Dynamic Balance II", creditingMethod: "5-Year Point-to-Point", capRate: null, participationRate: 210, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "PIMCO Tactical Balanced", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 70, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "PIMCO Tactical Balanced", creditingMethod: "2-Year Point-to-Point", capRate: null, participationRate: 115, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "PIMCO Tactical Balanced", creditingMethod: "5-Year Point-to-Point", capRate: null, participationRate: 205, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500 Futures Daily RC 5%", creditingMethod: "2-Year Point-to-Point", capRate: null, participationRate: 130, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500 Futures Daily RC 5%", creditingMethod: "5-Year Point-to-Point", capRate: null, participationRate: 225, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: true,
-    highlights: ["25% PIV premium bonus", "Income-focused design (S&P cap 4.00%)", "BlackRock iBld Claria 90% PR", "#1 best-selling FIA in market (Allianz)"],
+    highlights: ["25% PIV premium bonus — #1 selling FIA in market", "Income-focused design (S&P cap 4.00%, fixed 2.50%)", "Bloomberg 5yr 210% PR, PIMCO 5yr 205% PR", "0% allocation charge, S&P Futures 5yr 225% PR"],
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
@@ -2849,54 +2723,31 @@ export const fiaProducts = [
   {
     id: "athene-performance-elite-plus",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Athene Performance Elite Plus",
     surrenderPeriod: 10,
-    surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 25000,
+    surrenderSchedule: [12, 12, 12, 11, 10, 9, 8, 7, 6, 4, 0],
+    minimumPremium: 10000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 8.0,
+    premiumBonus: 16.0,
     freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.90,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 7.50,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "BNP Paribas Multi Asset Diversified 5",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 340,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Monthly Sum",
-        capRate: 2.25,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "Bloomberg US Dynamic Balance II",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 250,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 5.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 60, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "BNP Paribas Multi-Asset", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 130, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "BNP Paribas Multi-Asset", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 180, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "AI Powered US Equity", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 107, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "AI Powered US Equity", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 140, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Nasdaq FC", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 77, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Nasdaq FC", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 120, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500 FC", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 60, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500 FC", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 80, spread: 0, floor: 0, isUncapped: true }
     ],
     incomeRiderAvailable: true,
-    highlights: ["8% premium bonus", "High participation on volatility-controlled indices"],
+    highlights: ["16% premium bonus — one of the highest available", "S&P 500 cap 5.50% (base), 8.00% (with 0.95% fee)", "BNP Paribas Multi-Asset 130/180% PR (base)", "Fixed 2.90%, MVA, $10K minimum"],
     sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
@@ -3719,6 +3570,8 @@ export const fiaProducts = [
   {
     id: "brighthouse-shield-level-pay-plus",
     carrierId: "brighthouse-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-21",
     name: "Brighthouse Shield Level Pay Plus",
     surrenderPeriod: 10,
     surrenderSchedule: [8, 8, 7, 6, 5, 5, 4, 3, 2, 1, 0],
@@ -3728,45 +3581,21 @@ export const fiaProducts = [
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
     indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 11.00,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "Russell 2000",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 10.75,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "MSCI EAFE",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 10.50,
-        participationRate: 100,
-        spread: 0,
-        floor: -10,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 15.00,
-        participationRate: 100,
-        spread: 0,
-        floor: -20,
-        isUncapped: false
-      }
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 10.00, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.50, participationRate: 100, spread: 0, floor: -25, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 14.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 9.00, participationRate: 100, spread: 0, floor: -25, isUncapped: false },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 13.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 10.50, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 8.00, participationRate: 100, spread: 0, floor: -25, isUncapped: false },
+      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
+      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 9.50, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
+      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 7.00, participationRate: 100, spread: 0, floor: -25, isUncapped: false }
     ],
     incomeRiderAvailable: true,
-    highlights: ["Buffer product with income rider", "Higher caps with -10% and -20% buffers"],
+    highlights: ["RILA — S&P 500 cap 12% (10% buffer), 10% (15% buffer)", "Russell 2000 cap 14% (10% buffer)", "Nasdaq-100 cap 13% (10% buffer)", "SEC EDGAR verified rates (Dec 2024 filing)"],
     lastRateUpdate: "2026-02-01"
   },
 

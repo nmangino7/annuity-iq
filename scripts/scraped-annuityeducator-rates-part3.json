@@ -1,0 +1,829 @@
+{
+  "scrapeDate": "2026-02-21",
+  "source": "annuityeducator.com",
+  "notes": "Data scraped from annuityeducator.com product review pages. Pacific Life and Nassau Life pages were inaccessible (404/redirect). Sammons Financial subsidiaries (North American, Midland National) already scraped. John Hancock has no FIA products on site. Some products (Principal, Transamerica, Equitable) are RILAs rather than traditional FIAs. Band 2/High Band rates used where multiple bands shown.",
+  "carriers": {
+    "Symetra": {
+      "carrierName": "Symetra Life Insurance Company",
+      "amBestRating": "A",
+      "spRating": "A",
+      "moodysRating": "A1",
+      "comdex": 81,
+      "founded": 1957,
+      "products": [
+        {
+          "productName": "Symetra Edge Elite 5",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 5,
+          "surrenderSchedule": [9, 9, 8, 7, 6],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": true,
+          "minPremium": 25000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-5",
+          "indexOptions": {
+            "band1": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.15%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "8.75%"},
+              {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "45%"},
+              {"name": "2-Year S&P 500 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "60%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "16%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "130%"},
+              {"name": "2-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "200%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Cap", "type": "Point to Point Annual", "capRate": "16%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "165%"},
+              {"name": "2-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "240%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Enhanced Participation Rate", "type": "Point to Point Annual", "participationRate": "160%", "enhanced": true},
+              {"name": "2-Year JP Morgan ETF Efficiente 5 PTP Enhanced Participation Rate", "type": "Point to Point Biennial", "participationRate": "240%", "enhanced": true},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Enhanced Participation Rate", "type": "Point to Point Annual", "participationRate": "200%", "enhanced": true},
+              {"name": "2-Year Putnam Dynamic Low Volatility ER PTP Enhanced Participation Rate", "type": "Point to Point Biennial", "participationRate": "300%", "enhanced": true},
+              {"name": "1-Year S&P 500 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7%"},
+              {"name": "1-Year Nasdaq-100 PTP Cap", "type": "Point to Point Annual", "capRate": "9.25%"},
+              {"name": "1-Year Nasdaq-100 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7.5%"}
+            ],
+            "band2": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.30%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "9.25%"},
+              {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "50%"},
+              {"name": "2-Year S&P 500 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "70%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "18%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "145%"},
+              {"name": "2-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "220%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Cap", "type": "Point to Point Annual", "capRate": "18%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "185%"},
+              {"name": "2-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "265%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Enhanced Participation Rate", "type": "Point to Point Annual", "participationRate": "175%", "enhanced": true},
+              {"name": "2-Year JP Morgan ETF Efficiente 5 PTP Enhanced Participation Rate", "type": "Point to Point Biennial", "participationRate": "260%", "enhanced": true},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Enhanced Participation Rate", "type": "Point to Point Annual", "participationRate": "220%", "enhanced": true},
+              {"name": "2-Year Putnam Dynamic Low Volatility ER PTP Enhanced Participation Rate", "type": "Point to Point Biennial", "participationRate": "320%", "enhanced": true},
+              {"name": "1-Year S&P 500 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7.25%"},
+              {"name": "1-Year Nasdaq-100 PTP Cap", "type": "Point to Point Annual", "capRate": "9.75%"},
+              {"name": "1-Year Nasdaq-100 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7.75%"}
+            ]
+          }
+        },
+        {
+          "productName": "Symetra Edge Elite 7",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": true,
+          "minPremium": 25000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-7",
+          "indexOptions": {
+            "band1": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.15%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "8.75%"},
+              {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "45%"},
+              {"name": "2-Year S&P 500 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "60%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "16%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "130%"},
+              {"name": "2-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "200%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Cap", "type": "Point to Point Annual", "capRate": "16%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "165%"},
+              {"name": "2-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "240%"},
+              {"name": "1-Year S&P 500 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7%"},
+              {"name": "1-Year Nasdaq-100 PTP Cap", "type": "Point to Point Annual", "capRate": "9.25%"},
+              {"name": "1-Year Nasdaq-100 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7.5%"}
+            ],
+            "band2": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.30%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "9.25%"},
+              {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "50%"},
+              {"name": "2-Year S&P 500 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "70%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "18%"},
+              {"name": "1-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "145%"},
+              {"name": "2-Year JP Morgan ETF Efficiente 5 PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "220%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Cap", "type": "Point to Point Annual", "capRate": "18%"},
+              {"name": "1-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "185%"},
+              {"name": "2-Year Putnam Dynamic Low Volatility ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "265%"},
+              {"name": "1-Year S&P 500 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7.25%"},
+              {"name": "1-Year Nasdaq-100 PTP Cap", "type": "Point to Point Annual", "capRate": "9.75%"},
+              {"name": "1-Year Nasdaq-100 Performance Trigger", "type": "Performance Triggered Annual", "triggerRate": "7.75%"}
+            ]
+          }
+        },
+        {
+          "productName": "Symetra Income Edge",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [8, 8, 7, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 10000,
+          "maxPremium": 1500000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "Symetra GLWB Rider Level option", "inbuilt": true, "fee": "1.20% annually"},
+            {"name": "Symetra GLWB Rider with Increasing option", "inbuilt": true, "fee": "1.20% annually"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-income-edge",
+          "indexOptions": {
+            "band1": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.00%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "5.00%"},
+              {"name": "1-Year JPMorgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "15.75%"}
+            ],
+            "band2": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.15%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "5.25%"},
+              {"name": "1-Year JPMorgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "16.00%"}
+            ]
+          }
+        },
+        {
+          "productName": "Symetra Income Edge Plus",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [8, 8, 7, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 10000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "Symetra Income Edge Plus GLWB Rider Level option", "inbuilt": true, "fee": "1.20% annually"},
+            {"name": "Symetra Income Edge Plus GLWB Rider with Automatic Increase option", "inbuilt": true, "fee": "1.20% annually"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-income-edge-plus",
+          "indexOptions": {
+            "band1": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "2.85%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "4.60%"},
+              {"name": "1-Year Nasdaq-100 PTP Cap", "type": "Point to Point Annual", "capRate": "5.00%"},
+              {"name": "1-Year J.P. Morgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "10.00%"},
+              {"name": "1-Year S&P 500 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "4.25%"},
+              {"name": "1-Year Nasdaq-100 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "4.25%"}
+            ],
+            "band2": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.20%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "5.25%"},
+              {"name": "1-Year Nasdaq-100 PTP Cap", "type": "Point to Point Annual", "capRate": "5.75%"},
+              {"name": "1-Year J.P. Morgan ETF Efficiente 5 PTP Cap", "type": "Point to Point Annual", "capRate": "16.00%"},
+              {"name": "1-Year S&P 500 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "4.75%"},
+              {"name": "1-Year Nasdaq-100 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "4.75%"}
+            ]
+          }
+        },
+        {
+          "productName": "Symetra Prestige",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "freeWithdrawal": "7%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 25000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 80,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-prestige",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.85%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "10.50%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "45%"},
+            {"name": "1-Year SG Columbia Global Market States PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "155%"},
+            {"name": "2-Year SG Columbia Global Market States PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "230%"}
+          ]
+        }
+      ]
+    },
+    "Integrity Life": {
+      "carrierName": "Integrity Life Insurance Company",
+      "amBestRating": "A+",
+      "spRating": "AA-",
+      "moodysRating": "Aa3",
+      "comdex": 95,
+      "founded": 1888,
+      "products": [
+        {
+          "productName": "Indextra 7",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 15000,
+          "maxPremium": 1000000,
+          "maxPremiumNotes": "$1,000,000 (Age 18-75), $750,000 (Age 76-85)",
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "Indextra GLWB Rider", "inbuilt": false, "fee": "0.95% annually (1.50% max)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/integrity-life-insurance-company/fixed-index/indextra-series-7",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.05%"},
+            {"name": "7-Year Fixed Multi-Year Account", "type": "Fixed", "rate": "3.75%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "7.25%"},
+            {"name": "1-Year S&P 500 PTP Cap Lock", "type": "Point to Point Annual", "capRate": "6.00%"},
+            {"name": "1-Year S&P 500 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "7.15%"},
+            {"name": "1-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "135%"},
+            {"name": "2-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "195%"},
+            {"name": "3-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "250%"},
+            {"name": "1-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "112%"},
+            {"name": "2-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "155%"},
+            {"name": "3-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "185%"}
+          ]
+        },
+        {
+          "productName": "Indextra 5",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 5,
+          "surrenderSchedule": [9, 9, 8, 7, 6],
+          "freeWithdrawal": "10%",
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 15000,
+          "maxPremium": 1000000,
+          "maxPremiumNotes": "$1,000,000 (Age 18-75), $750,000 (Age 76-85)",
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "Indextra GLWB Rider", "inbuilt": false, "fee": "0.95% annually (1.50% max)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/integrity-life-insurance-company/fixed-index/indextra-series-5",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.00%"},
+            {"name": "5-Year Fixed Multi-Year Account", "type": "Fixed", "rate": "3.75%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "7.25%"},
+            {"name": "1-Year S&P 500 PTP Cap Lock", "type": "Point to Point Annual", "capRate": "6.00%"},
+            {"name": "1-Year S&P 500 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "7.00%"},
+            {"name": "1-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "130%"},
+            {"name": "2-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "180%"},
+            {"name": "1-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "107%"},
+            {"name": "2-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "145%"}
+          ]
+        },
+        {
+          "productName": "Indextra 7 - Two",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 15000,
+          "maxPremium": 1000000,
+          "maxPremiumNotes": "$1,000,000 (Age 18-75), $750,000 (Age 76-85)",
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "Indextra GLWB Rider", "inbuilt": false, "fee": "0.95% annually (1.50% max)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/integrity-life-insurance-company/fixed-index/indextra-series-7-two",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.15%"},
+            {"name": "7-Year Fixed Multi-Year Account", "type": "Fixed", "rate": "3.85%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "8.50%"},
+            {"name": "1-Year S&P 500 PTP Cap Lock", "type": "Point to Point Annual", "capRate": "6.25%"},
+            {"name": "1-Year S&P 500 Performance Triggered", "type": "Performance Triggered Annual", "triggerRate": "7.25%"},
+            {"name": "1-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "140%"},
+            {"name": "2-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "200%"},
+            {"name": "3-Year GS Momentum Builder Multi-Asset Class PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "255%"},
+            {"name": "1-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "115%"},
+            {"name": "2-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "160%"},
+            {"name": "3-Year J.P. Morgan Strategic Balanced PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "190%"}
+          ]
+        }
+      ]
+    },
+    "Ameritas": {
+      "carrierName": "Ameritas Life Insurance Corp.",
+      "amBestRating": "A",
+      "spRating": "A+",
+      "comdex": 78,
+      "founded": 1887,
+      "products": [
+        {
+          "productName": "Ameritas ApexAdvantage (Legacy Marketing Group)",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 25000,
+          "maxPremium": 2000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "FutureNow Rider Level", "inbuilt": false, "fee": "1.25% annually (2.50% after 10 years, 2.50% max)"},
+            {"name": "FutureNow Rider Increasing", "inbuilt": false, "fee": "1.25% annually (2.50% after 10 years)"},
+            {"name": "FutureNow Rider Increasing With Booster", "inbuilt": false, "fee": "1.35% annually (2.50% after 10 years)"},
+            {"name": "FutureNow Rider Level With Booster", "inbuilt": false, "fee": "1.35% annually (2.50% after 10 years)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/ameritas-life-insurance-corp/fixed-index/ameritas-legacy-marketing-group-apexadvantage",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.70%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "5.95%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "40%"},
+            {"name": "1-Year S&P 500 IQ PTP Cap", "type": "Point to Point Annual", "capRate": "8.75%"},
+            {"name": "1-Year S&P 500 IQ PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "53%"},
+            {"name": "1-Year S&P MARC 5% ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "155%"},
+            {"name": "2-Year S&P MARC 5% ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "210%"},
+            {"name": "1-Year BNPP US Governance Multi Asset PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "150%"},
+            {"name": "2-Year BNPP US Governance Multi Asset PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "230%"},
+            {"name": "1-Year US Innovative Leaders 5 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "140%"}
+          ]
+        },
+        {
+          "productName": "Ameritas Accumulation 7 Index",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation & Legacy",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "flexiblePremium": true,
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 10000,
+          "maxPremium": 2000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "riders": [
+            {"name": "Enhanced Death Benefit Rider", "inbuilt": false, "fee": "N/A"},
+            {"name": "Enhanced Death Benefit Plus Rider", "inbuilt": false, "fee": "0.10% annually (0.50% max)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/ameritas-life-insurance-corp/fixed-index/ameritas-accumulation-7-index",
+          "indexOptions": {
+            "band1": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.25%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "7.80%"},
+              {"name": "1-Year S&P 500 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "8.40%"},
+              {"name": "1-Year S&P 500 PTP Monthly Sum Cap", "type": "Point to Point Annual Monthly Sum", "capRate": "2.70%"},
+              {"name": "1-Year Russell 2000 PTP Cap", "type": "Point to Point Annual", "capRate": "8.40%"},
+              {"name": "1-Year Russell 2000 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "9.85%"},
+              {"name": "1-Year MSCI EAFE PTP Cap", "type": "Point to Point Annual", "capRate": "7.25%"},
+              {"name": "1-Year MSCI EAFE PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "10.80%"},
+              {"name": "1-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "150%"},
+              {"name": "2-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "200%"}
+            ],
+            "band2": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.60%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "8.40%"},
+              {"name": "1-Year S&P 500 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "9.90%"},
+              {"name": "1-Year S&P 500 PTP Monthly Sum Cap", "type": "Point to Point Annual Monthly Sum", "capRate": "2.90%"},
+              {"name": "1-Year Russell 2000 PTP Cap", "type": "Point to Point Annual", "capRate": "9.20%"},
+              {"name": "1-Year Russell 2000 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "11.00%"},
+              {"name": "1-Year MSCI EAFE PTP Cap", "type": "Point to Point Annual", "capRate": "8.10%"},
+              {"name": "1-Year MSCI EAFE PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "13.40%"},
+              {"name": "1-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "165%"},
+              {"name": "2-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "215%"}
+            ],
+            "band3": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.80%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "8.85%"},
+              {"name": "1-Year S&P 500 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "10.70%"},
+              {"name": "1-Year S&P 500 PTP Monthly Sum Cap", "type": "Point to Point Annual Monthly Sum", "capRate": "3.00%"},
+              {"name": "1-Year Russell 2000 PTP Cap", "type": "Point to Point Annual", "capRate": "9.60%"},
+              {"name": "1-Year Russell 2000 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "11.70%"},
+              {"name": "1-Year MSCI EAFE PTP Cap", "type": "Point to Point Annual", "capRate": "8.60%"},
+              {"name": "1-Year MSCI EAFE PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "14.75%"},
+              {"name": "1-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "170%"},
+              {"name": "2-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "220%"}
+            ],
+            "band4": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "4.85%"},
+              {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "9.00%"},
+              {"name": "1-Year S&P 500 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "10.80%"},
+              {"name": "1-Year S&P 500 PTP Monthly Sum Cap", "type": "Point to Point Annual Monthly Sum", "capRate": "3.05%"},
+              {"name": "1-Year Russell 2000 PTP Cap", "type": "Point to Point Annual", "capRate": "9.70%"},
+              {"name": "1-Year Russell 2000 PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "11.80%"},
+              {"name": "1-Year MSCI EAFE PTP Cap", "type": "Point to Point Annual", "capRate": "8.75%"},
+              {"name": "1-Year MSCI EAFE PTP Monthly Average Cap", "type": "Point to Point Annual Monthly Average", "capRate": "15.50%"},
+              {"name": "1-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "175%"},
+              {"name": "2-Year S&P 500 Sector Rotator DRC2 5% ER PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "225%"}
+            ]
+          }
+        }
+      ]
+    },
+    "Brighthouse Financial": {
+      "carrierName": "Brighthouse Life Insurance Company",
+      "amBestRating": "A",
+      "spRating": "A",
+      "moodysRating": "A3",
+      "comdex": 74,
+      "founded": 1863,
+      "products": [
+        {
+          "productName": "SecureAdvantage 6-Year",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 6,
+          "surrenderSchedule": [8, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 50000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 80,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/brighthouse-life-insurance-company/fixed-index/secureadvantage",
+          "indexOptions": {
+            "band1": [
+              {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.75%"},
+              {"name": "6-Year S&P 500 PTP Annual Sum Cap", "type": "Point to Point 6-Year Annual Sum", "capRate": "11.50%"},
+              {"name": "6-Year S&P 500 PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "60%"},
+              {"name": "6-Year S&P 500 PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "70%"},
+              {"name": "6-Year Russell 2000 PTP Annual Sum Cap", "type": "Point to Point 6-Year Annual Sum", "capRate": "11.00%"},
+              {"name": "6-Year Russell 2000 PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "55%"},
+              {"name": "6-Year Russell 2000 PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "65%"},
+              {"name": "6-Year UBS truVol US Target Sectors PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "175%"},
+              {"name": "6-Year UBS truVol US Target Sectors PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "185%"}
+            ],
+            "band2": [
+              {"name": "6-Year S&P 500 PTP Annual Sum Cap", "type": "Point to Point 6-Year Annual Sum", "capRate": "12.00%"},
+              {"name": "6-Year S&P 500 PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "70%"},
+              {"name": "6-Year S&P 500 PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "80%"},
+              {"name": "6-Year Russell 2000 PTP Annual Sum Cap", "type": "Point to Point 6-Year Annual Sum", "capRate": "11.50%"},
+              {"name": "6-Year Russell 2000 PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "65%"},
+              {"name": "6-Year Russell 2000 PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "75%"},
+              {"name": "6-Year UBS truVol US Target Sectors PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "185%"},
+              {"name": "6-Year UBS truVol US Target Sectors PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "195%"}
+            ],
+            "band3": [
+              {"name": "6-Year S&P 500 PTP Annual Sum Cap", "type": "Point to Point 6-Year Annual Sum", "capRate": "12.25%"},
+              {"name": "6-Year S&P 500 PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "75%"},
+              {"name": "6-Year S&P 500 PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "85%"},
+              {"name": "6-Year Russell 2000 PTP Annual Sum Cap", "type": "Point to Point 6-Year Annual Sum", "capRate": "11.75%"},
+              {"name": "6-Year Russell 2000 PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "70%"},
+              {"name": "6-Year Russell 2000 PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "80%"},
+              {"name": "6-Year UBS truVol US Target Sectors PTP Annual Sum Participation Rate", "type": "Point to Point 6-Year Annual Sum", "participationRate": "190%"},
+              {"name": "6-Year UBS truVol US Target Sectors PTP Participation Rate", "type": "Point to Point 6-Year", "participationRate": "200%"}
+            ]
+          }
+        }
+      ]
+    },
+    "Prudential": {
+      "carrierName": "Pruco Life Insurance Company (Prudential)",
+      "amBestRating": "A+",
+      "spRating": "AA-",
+      "moodysRating": "Aa3",
+      "comdex": 94,
+      "founded": 1971,
+      "products": [
+        {
+          "productName": "SurePath 7",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 25000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/pruco-life-insurance-company/fixed-index/surepath-7",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.00%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "8.75%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "25%"},
+            {"name": "3-Year S&P 500 PTP Cap", "type": "Point to Point Triennial", "capRate": "25%"},
+            {"name": "3-Year S&P 500 PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "35%"},
+            {"name": "1-Year MSCI EAFE PTP Cap", "type": "Point to Point Annual", "capRate": "7.50%"},
+            {"name": "1-Year MSCI EAFE PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "25%"},
+            {"name": "3-Year MSCI EAFE PTP Cap", "type": "Point to Point Triennial", "capRate": "25%"},
+            {"name": "3-Year MSCI EAFE PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "35%"},
+            {"name": "1-Year Goldman Sachs Voyager PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "165%"},
+            {"name": "2-Year Goldman Sachs Voyager PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "195%"},
+            {"name": "3-Year Goldman Sachs Voyager PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "225%"},
+            {"name": "1-Year J.P. Morgan AQUA PTP Cap", "type": "Point to Point Annual", "capRate": "10.50%"},
+            {"name": "1-Year J.P. Morgan AQUA PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "90%"},
+            {"name": "2-Year J.P. Morgan AQUA PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "145%"},
+            {"name": "3-Year J.P. Morgan AQUA PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "160%"},
+            {"name": "1-Year Dimensional US Innovation PTP Cap", "type": "Point to Point Annual", "capRate": "13.50%"},
+            {"name": "1-Year Dimensional US Innovation PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "95%"},
+            {"name": "2-Year Dimensional US Innovation PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "150%"},
+            {"name": "3-Year Dimensional US Innovation PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "170%"},
+            {"name": "1-Year PGIM Quant US Multi-Asset Positioning PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "120%"},
+            {"name": "2-Year PGIM Quant US Multi-Asset Positioning PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "170%"},
+            {"name": "3-Year PGIM Quant US Multi-Asset Positioning PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "210%"},
+            {"name": "1-Year Franklin Spotlight PTP Cap", "type": "Point to Point Annual", "capRate": "13.50%"},
+            {"name": "1-Year Franklin Spotlight PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "95%"},
+            {"name": "2-Year Franklin Spotlight PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "150%"},
+            {"name": "3-Year Franklin Spotlight PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "170%"}
+          ]
+        },
+        {
+          "productName": "SurePath 10",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 10,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 25000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/pruco-life-insurance-company/fixed-index/surepath-10",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.00%"},
+            {"name": "1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "9.00%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "30%"},
+            {"name": "3-Year S&P 500 PTP Cap", "type": "Point to Point Triennial", "capRate": "28%"},
+            {"name": "3-Year S&P 500 PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "40%"},
+            {"name": "1-Year MSCI EAFE PTP Cap", "type": "Point to Point Annual", "capRate": "7.75%"},
+            {"name": "1-Year MSCI EAFE PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "30%"},
+            {"name": "3-Year MSCI EAFE PTP Cap", "type": "Point to Point Triennial", "capRate": "28%"},
+            {"name": "3-Year MSCI EAFE PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "40%"},
+            {"name": "1-Year Goldman Sachs Voyager PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "180%"},
+            {"name": "2-Year Goldman Sachs Voyager PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "200%"},
+            {"name": "3-Year Goldman Sachs Voyager PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "230%"},
+            {"name": "1-Year J.P. Morgan AQUA PTP Cap", "type": "Point to Point Annual", "capRate": "11.00%"},
+            {"name": "1-Year J.P. Morgan AQUA PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "97%"},
+            {"name": "2-Year J.P. Morgan AQUA PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "150%"},
+            {"name": "3-Year J.P. Morgan AQUA PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "165%"},
+            {"name": "1-Year Dimensional US Innovation PTP Cap", "type": "Point to Point Annual", "capRate": "14.00%"},
+            {"name": "1-Year Dimensional US Innovation PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "99%"},
+            {"name": "2-Year Dimensional US Innovation PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "155%"},
+            {"name": "3-Year Dimensional US Innovation PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "175%"},
+            {"name": "1-Year Franklin Spotlight PTP Cap", "type": "Point to Point Annual", "capRate": "14.00%"},
+            {"name": "1-Year Franklin Spotlight PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "99%"},
+            {"name": "2-Year Franklin Spotlight PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "155%"},
+            {"name": "3-Year Franklin Spotlight PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "175%"},
+            {"name": "1-Year PGIM Quant US Multi-Asset Positioning PTP Participation Rate", "type": "Point to Point Annual", "participationRate": "130%"},
+            {"name": "2-Year PGIM Quant US Multi-Asset Positioning PTP Participation Rate", "type": "Point to Point Biennial", "participationRate": "180%"},
+            {"name": "3-Year PGIM Quant US Multi-Asset Positioning PTP Participation Rate", "type": "Point to Point Triennial", "participationRate": "220%"}
+          ]
+        }
+      ]
+    },
+    "National Western Life": {
+      "carrierName": "National Western Life Insurance Company",
+      "amBestRating": "A-",
+      "spRating": "A-",
+      "comdex": 61,
+      "founded": 1956,
+      "products": [
+        {
+          "productName": "NWL Impact 7",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [10, 10, 10, 9, 8, 7, 6],
+          "freeWithdrawal": "10%",
+          "flexiblePremium": true,
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 2000,
+          "minPremiumNotes": "$2,000 (qualified), $5,000 (non-qualified)",
+          "maxPremium": 1000000,
+          "maxIssueAge": 80,
+          "premiumBonus": "5%",
+          "riders": [
+            {"name": "Income Outlook Plus 5 NH", "inbuilt": false, "fee": "1.50% annually (2.00% max)"},
+            {"name": "Income Outlook NH", "inbuilt": false, "fee": "1.00% annually (2.00% max, limited to interest)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/national-western-life-insurance-company/fixed-index/nwl-impact-7",
+          "indexOptions": [
+            {"name": "Option B: 1-Year Fixed Account", "type": "Fixed", "rate": "3.15%"},
+            {"name": "Option A: 1-Year S&P 500 PTP Monthly Average Participation Rate with Asset Fee", "type": "Point to Point Annual Monthly Average", "participationRate": "65%"},
+            {"name": "Option U: 1-Year S&P 500 LV DRC 5% ER PTP Participation Rate with Asset Fee", "type": "Point to Point Annual", "participationRate": "123%"}
+          ]
+        },
+        {
+          "productName": "NWL Impact 10",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Lifetime Income",
+          "surrenderPeriod": 10,
+          "surrenderSchedule": [10, 10, 10, 10, 10, 9, 8, 6, 4, 2],
+          "freeWithdrawal": "10%",
+          "flexiblePremium": true,
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 2000,
+          "minPremiumNotes": "$2,000 (qualified), $5,000 (non-qualified)",
+          "maxPremium": 1000000,
+          "maxIssueAge": 80,
+          "premiumBonus": "7%",
+          "riders": [
+            {"name": "Income Outlook Plus 5 NH", "inbuilt": false, "fee": "1.50% annually (2.00% max)"},
+            {"name": "Income Outlook NH", "inbuilt": false, "fee": "1.00% annually (2.00% max, limited to interest)"}
+          ],
+          "sourceUrl": "https://annuityeducator.com/reviews/national-western-life-insurance-company/fixed-index/nwl-impact-10",
+          "indexOptions": [
+            {"name": "Option B: 1-Year Fixed Account", "type": "Fixed", "rate": "3.00%"},
+            {"name": "Option A: 1-Year S&P 500 PTP Monthly Average Participation Rate with Asset Fee", "type": "Point to Point Annual Monthly Average", "participationRate": "57%"},
+            {"name": "Option U: 1-Year S&P 500 LV DRC 5% ER PTP Participation Rate with Asset Fee", "type": "Point to Point Annual", "participationRate": "109%"}
+          ]
+        },
+        {
+          "productName": "NWL Core Dynamic",
+          "productType": "Fixed Index Annuity",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 7,
+          "surrenderSchedule": [9, 9, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10% (cumulative to 20% if none taken in previous year)",
+          "flexiblePremium": true,
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 5000,
+          "minPremiumNotes": "$5,000 (qualified), $10,000 (non-qualified)",
+          "maxPremium": 1000000,
+          "maxIssueAge": 90,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/national-western-life-insurance-company/fixed-index/nwl-core-dynamic",
+          "indexOptions": [
+            {"name": "Option B: 1-Year Fixed Account", "type": "Fixed", "rate": "2.10%"},
+            {"name": "Option J: 1-Year S&P 500 PTP Cap", "type": "Point to Point Annual", "capRate": "4.00%"},
+            {"name": "Option D: 1-Year S&P 500 PTP Monthly Sum Cap", "type": "Point to Point Annual Monthly Sum", "capRate": "1.50%"},
+            {"name": "Option A: 1-Year S&P 500 PTP Monthly Average Participation Rate with Asset Fee", "type": "Point to Point Annual Monthly Average", "participationRate": "20%", "spread": "6%"},
+            {"name": "Option U: 1-Year S&P 500 LV DRC 5% ER PTP Participation Rate with Asset Fee", "type": "Point to Point Annual", "participationRate": "75%"}
+          ]
+        }
+      ]
+    },
+    "Principal": {
+      "carrierName": "Principal Life Insurance Company",
+      "amBestRating": "A+",
+      "spRating": "A+",
+      "moodysRating": "A1",
+      "comdex": 90,
+      "founded": 1879,
+      "products": [
+        {
+          "productName": "Principal Strategic Outcomes Annuity",
+          "productType": "Registered Index-Linked Annuity (RILA)",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 6,
+          "surrenderSchedule": [8, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "mva": true,
+          "returnOfPremium": false,
+          "minPremium": 20000,
+          "maxPremium": 2000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "sourceUrl": "https://annuityeducator.com/reviews/principal-life-insurance-company/fixed-index/principal-strategic-outcomes-annuity",
+          "indexOptions": [
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.00%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate (no buffer)", "type": "Point to Point Annual", "participationRate": "35%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate with -10% Floor", "type": "Point to Point Annual", "participationRate": "60%", "floor": "-10%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate with Cap with 10% Buffer", "type": "Point to Point Annual", "participationRate": "100%", "capRate": "13%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 PTP Participation Rate with Cap with 20% Buffer", "type": "Point to Point Annual", "participationRate": "100%", "capRate": "8.5%", "buffer": "20%"},
+            {"name": "1-Year Russell 2000 PTP Participation Rate with 10% Buffer", "type": "Point to Point Annual", "participationRate": "70%", "buffer": "10%"},
+            {"name": "1-Year MSCI EAFE PTP Participation Rate with 10% Buffer", "type": "Point to Point Annual", "participationRate": "80%", "buffer": "10%"},
+            {"name": "1-Year Nasdaq-100 PTP Cap with 20% Buffer", "type": "Point to Point Annual", "capRate": "10%", "participationRate": "100%", "buffer": "20%"},
+            {"name": "2-Year S&P 500 PTP Participation Rate with 10% Buffer", "type": "Point to Point Biennial", "participationRate": "85%", "buffer": "10%"},
+            {"name": "6-Year S&P 500 PTP Participation Rate with 10% Buffer", "type": "Point to Point 6-Year", "participationRate": "102%", "buffer": "10%"},
+            {"name": "6-Year S&P 500 PTP Participation Rate with 20% Buffer", "type": "Point to Point 6-Year", "participationRate": "92%", "buffer": "20%"},
+            {"name": "6-Year S&P 500 PTP Participation Rate with 0% Buffer", "type": "Point to Point 6-Year", "participationRate": "110%", "buffer": "0%"},
+            {"name": "6-Year Russell 2000 PTP Participation Rate with 10% Buffer", "type": "Point to Point 6-Year", "participationRate": "105%", "buffer": "10%"},
+            {"name": "6-Year Russell 2000 PTP Participation Rate with 20% Buffer", "type": "Point to Point 6-Year", "participationRate": "95%", "buffer": "20%"},
+            {"name": "6-Year Russell 2000 PTP Participation Rate with 0% Buffer", "type": "Point to Point 6-Year", "participationRate": "120%", "buffer": "0%"},
+            {"name": "6-Year MSCI EAFE PTP Participation Rate with 10% Buffer", "type": "Point to Point 6-Year", "participationRate": "130%", "buffer": "10%"},
+            {"name": "6-Year Nasdaq-100 PTP Participation Rate with 10% Buffer", "type": "Point to Point 6-Year", "participationRate": "90%", "buffer": "10%"},
+            {"name": "6-Year Nasdaq-100 PTP Participation Rate with 20% Buffer", "type": "Point to Point 6-Year", "participationRate": "80%", "buffer": "20%"},
+            {"name": "6-Year SG Smart Climate PTP Participation Rate with 10% Buffer", "type": "Point to Point 6-Year", "participationRate": "180%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 Peak Buffer Participation Rate with Cap with 20% Buffer (Dual Directional)", "type": "Dual Directional Annual", "participationRate": "100%", "capRate": "7%", "buffer": "20%"},
+            {"name": "6-Year S&P 500 Peak Buffer Participation Rate with 20% Buffer (Dual Directional)", "type": "Dual Directional 6-Year", "participationRate": "85%", "buffer": "20%"}
+          ]
+        }
+      ]
+    },
+    "Transamerica": {
+      "carrierName": "Transamerica Financial Life Insurance Company",
+      "amBestRating": "A",
+      "spRating": "A+",
+      "moodysRating": "A1",
+      "comdex": 84,
+      "founded": 1928,
+      "products": [
+        {
+          "productName": "Transamerica Structured Index Advantage Annuity NY",
+          "productType": "Registered Index-Linked Annuity (RILA)",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 6,
+          "surrenderSchedule": [8, 8, 7, 6, 5, 4],
+          "freeWithdrawal": "10%",
+          "flexiblePremium": true,
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 25000,
+          "maxPremium": 1000000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "availableStates": ["NY"],
+          "sourceUrl": "https://annuityeducator.com/reviews/transamerica-financial-life-insurance-company/fixed-index/transamerica-structured-index-advantage-annuity-ny",
+          "indexOptions": [
+            {"name": "Performance Lock Account", "type": "Fixed", "rate": "3.50%"},
+            {"name": "1-Year Fixed Account", "type": "Fixed", "rate": "3.50%"},
+            {"name": "Fixed Holding Account", "type": "Fixed", "rate": "2.50%"},
+            {"name": "1-Year S&P 500 PTP Cap with 10% Buffer", "type": "Point to Point Annual", "capRate": "15.75%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 PTP Cap with 15% Buffer", "type": "Point to Point Annual", "capRate": "12.00%", "buffer": "15%"},
+            {"name": "2-Year S&P 500 PTP Cap with 10% Buffer", "type": "Point to Point Biennial", "capRate": "28.00%", "buffer": "10%"},
+            {"name": "2-Year S&P 500 PTP Cap with 15% Buffer", "type": "Point to Point Biennial", "capRate": "24.00%", "buffer": "15%"},
+            {"name": "6-Year S&P 500 PTP Cap with 10% Buffer", "type": "Point to Point 6-Year", "capRate": "200.00%", "buffer": "10%"},
+            {"name": "6-Year S&P 500 PTP Cap with 20% Buffer", "type": "Point to Point 6-Year", "capRate": "90.00%", "buffer": "20%"},
+            {"name": "1-Year S&P 500 Triple Edge Advantage with 10% Buffer", "type": "Triple Edge Advantage Annual", "triggerRate": "5.00%", "buffer": "10%"},
+            {"name": "2-Year S&P 500 Triple Edge Advantage with 10% Buffer", "type": "Triple Edge Advantage Biennial", "triggerRate": "10.00%", "buffer": "10%"},
+            {"name": "6-Year S&P 500 Triple Edge Advantage with 10% Buffer", "type": "Triple Edge Advantage 6-Year", "triggerRate": "30.00%", "buffer": "10%"}
+          ]
+        }
+      ]
+    },
+    "Equitable": {
+      "carrierName": "Equitable Financial Life Insurance Company of America",
+      "amBestRating": "A",
+      "spRating": "A+",
+      "moodysRating": "A1",
+      "comdex": 84,
+      "founded": 1859,
+      "products": [
+        {
+          "productName": "Investment Edge 21 Series B",
+          "productType": "Registered Index-Linked Annuity (RILA)",
+          "purpose": "Accumulation",
+          "surrenderPeriod": 5,
+          "surrenderSchedule": [6, 6, 5, 4, 3],
+          "freeWithdrawal": "10%",
+          "flexiblePremium": true,
+          "mva": false,
+          "returnOfPremium": false,
+          "minPremium": 10000,
+          "maxPremium": 1500000,
+          "maxIssueAge": 85,
+          "premiumBonus": null,
+          "annualFee": "$50 (waived if AV >= $50,000)",
+          "sourceUrl": "https://annuityeducator.com/reviews/equitable-financial-life-insurance-company/fixed-index/investment-edge-series-b",
+          "indexOptions": [
+            {"name": "1-Year S&P 500 PTP Cap 10% Buffer", "type": "Point to Point Annual", "capRate": "17%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 PTP Cap 15% Buffer", "type": "Point to Point Annual", "capRate": "13.5%", "buffer": "15%"},
+            {"name": "1-Year S&P 500 PTP Cap 20% Buffer", "type": "Point to Point Annual", "capRate": "11%", "buffer": "20%"},
+            {"name": "1-Year S&P 500 PTP Cap 40% Buffer", "type": "Point to Point Annual", "capRate": "8%", "buffer": "40%"},
+            {"name": "1-Year Russell 2000 PTP Cap 10% Buffer", "type": "Point to Point Annual", "capRate": "24%", "buffer": "10%"},
+            {"name": "1-Year Russell 2000 PTP Cap 15% Buffer", "type": "Point to Point Annual", "capRate": "18%", "buffer": "15%"},
+            {"name": "1-Year Russell 2000 PTP Cap 20% Buffer", "type": "Point to Point Annual", "capRate": "15%", "buffer": "20%"},
+            {"name": "1-Year Russell 2000 PTP Cap 40% Buffer", "type": "Point to Point Annual", "capRate": "10%", "buffer": "40%"},
+            {"name": "1-Year MSCI EAFE PTP Cap 10% Buffer", "type": "Point to Point Annual", "capRate": "20%", "buffer": "10%"},
+            {"name": "1-Year MSCI EAFE PTP Cap 15% Buffer", "type": "Point to Point Annual", "capRate": "14.5%", "buffer": "15%"},
+            {"name": "1-Year MSCI EAFE PTP Cap 20% Buffer", "type": "Point to Point Annual", "capRate": "12%", "buffer": "20%"},
+            {"name": "1-Year MSCI EAFE PTP Cap 40% Buffer", "type": "Point to Point Annual", "capRate": "8.5%", "buffer": "40%"},
+            {"name": "1-Year Nasdaq-100 PTP Cap 10% Buffer", "type": "Point to Point Annual", "capRate": "19.5%", "buffer": "10%"},
+            {"name": "1-Year Nasdaq-100 PTP Cap 15% Buffer", "type": "Point to Point Annual", "capRate": "15.5%", "buffer": "15%"},
+            {"name": "1-Year Nasdaq-100 PTP Cap 20% Buffer", "type": "Point to Point Annual", "capRate": "13%", "buffer": "20%"},
+            {"name": "1-Year Nasdaq-100 PTP Cap 40% Buffer", "type": "Point to Point Annual", "capRate": "9%", "buffer": "40%"},
+            {"name": "1-Year MSCI Emerging Markets PTP Cap 10% Buffer", "type": "Point to Point Annual", "capRate": "26.5%", "buffer": "10%"},
+            {"name": "1-Year MSCI Emerging Markets PTP Cap 15% Buffer", "type": "Point to Point Annual", "capRate": "17.5%", "buffer": "15%"},
+            {"name": "1-Year S&P 500 Dual Direction Cap 10% Buffer", "type": "Dual Directional Annual", "capRate": "13%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 Dual Direction Cap 15% Buffer", "type": "Dual Directional Annual", "capRate": "9%", "buffer": "15%"},
+            {"name": "1-Year S&P 500 Dual Direction Cap 20% Buffer", "type": "Dual Directional Annual", "capRate": "6.5%", "buffer": "20%"},
+            {"name": "1-Year Russell 2000 Dual Direction Cap 10% Buffer", "type": "Dual Directional Annual", "capRate": "18.5%", "buffer": "10%"},
+            {"name": "1-Year Russell 2000 Dual Direction Cap 15% Buffer", "type": "Dual Directional Annual", "capRate": "12%", "buffer": "15%"},
+            {"name": "1-Year Russell 2000 Dual Direction Cap 20% Buffer", "type": "Dual Directional Annual", "capRate": "7.5%", "buffer": "20%"},
+            {"name": "1-Year MSCI EAFE Dual Direction Cap 10% Buffer", "type": "Dual Directional Annual", "capRate": "13%", "buffer": "10%"},
+            {"name": "1-Year MSCI EAFE Dual Direction Cap 15% Buffer", "type": "Dual Directional Annual", "capRate": "7.5%", "buffer": "15%"},
+            {"name": "1-Year MSCI EAFE Dual Direction Cap 20% Buffer", "type": "Dual Directional Annual", "capRate": "5.1%", "buffer": "20%"},
+            {"name": "1-Year Nasdaq-100 Dual Direction Cap 10% Buffer", "type": "Dual Directional Annual", "capRate": "16%", "buffer": "10%"},
+            {"name": "1-Year Nasdaq-100 Dual Direction Cap 15% Buffer", "type": "Dual Directional Annual", "capRate": "11.5%", "buffer": "15%"},
+            {"name": "1-Year Nasdaq-100 Dual Direction Cap 20% Buffer", "type": "Dual Directional Annual", "capRate": "8%", "buffer": "20%"},
+            {"name": "1-Year S&P 500 Dual Step Up 10% Buffer", "type": "Dual Direction Trigger Annual", "triggerRate": "9%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 Dual Step Up 15% Buffer", "type": "Dual Direction Trigger Annual", "triggerRate": "7.5%", "buffer": "15%"},
+            {"name": "1-Year S&P 500 Dual Step Up 20% Buffer", "type": "Dual Direction Trigger Annual", "triggerRate": "6.6%", "buffer": "20%"},
+            {"name": "1-Year S&P 500 Step Up 10% Buffer", "type": "Performance Triggered Annual", "triggerRate": "11%", "buffer": "10%"},
+            {"name": "1-Year S&P 500 Step Up 15% Buffer", "type": "Performance Triggered Annual", "triggerRate": "10%", "buffer": "15%"},
+            {"name": "1-Year S&P 500 Growth Multiplier Participation Rate", "type": "Point to Point Annual", "participationRate": "110%"},
+            {"name": "5-Year S&P 500 Growth Multiplier Participation Rate", "type": "Point to Point 5-Year", "participationRate": "115%"}
+          ]
+        }
+      ]
+    }
+  },
+  "carriersNotFound": {
+    "Pacific Life": "Product pages returned 404 errors. URLs found in search but pages not accessible.",
+    "Eagle Life": "No FIA-specific product review pages found on annuityeducator.com. Only carrier overview page exists.",
+    "Sammons Financial": "Subsidiaries (North American, Midland National) already scraped in previous batches.",
+    "John Hancock": "No FIA products listed on annuityeducator.com.",
+    "Nassau Life": "Product pages redirect to general pages. Data not accessible.",
+    "Prudential (additional)": "FlexGuard and FlexGuard 2.0 are RILAs/variable products, not traditional FIAs. SurePath Income is an income-focused FIA but was not separately scraped."
+  }
+}
