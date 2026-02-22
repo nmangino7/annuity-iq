@@ -365,20 +365,57 @@ export const rilaProducts = [
   // ── 26. Transamerica Structured Index Advantage ──
   {
     id: 'transamerica-structured-index-advantage',
-    ratesVerified: true, lastVerifiedDate: '2026-02-22', verificationSource: 'Cross-verified: transamerica.com rate center, industry research (S&P 500 10% buffer cap 15.75% confirmed)',
+    ratesVerified: true, lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Cross-verified: transamerica.com rate center, industry research (S&P 500 10% buffer cap 15.75% confirmed), application form T-AP-VIA15FL-1124 (user-provided PDF), SEC EDGAR S-1 filing',
     carrierId: 'transamerica',
     name: 'Structured Index Advantage',
     term: 6,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4],
     accountOptions: [
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+      // S&P 500 — Cap strategies (1yr, 2yr)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: 15.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: 10.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point Cap', term: 2, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // S&P 500 — Participation strategies (6yr)
+      { indexName: 'S&P 500', creditingMethod: 'Participation', term: 6, capRate: null, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: true, creditAdvantageFee: 1.25, description: 'Credit Advantage fee applies' },
+      // S&P 500 — Triple Edge Advantage (no fee, 10% buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Triple Edge Advantage', term: 6, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true, description: 'No Credit Advantage fee' },
+      // S&P 500 — Best Entry (6yr, 10% buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Best Entry', term: 6, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // Russell 2000 ETF — Cap strategies
+      { indexName: 'iShares Russell 2000 ETF', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: 18.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'iShares Russell 2000 ETF', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'iShares Russell 2000 ETF', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // iShares U.S. Technology ETF — Cap strategies
+      { indexName: 'iShares U.S. Technology ETF', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'iShares U.S. Technology ETF', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // Fidelity World Factor Leaders Index — Cap strategies
+      { indexName: 'Fidelity World Factor Leaders', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'Fidelity World Factor Leaders', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // First Trust Equity Edge Index — Cap strategies
+      { indexName: 'First Trust Equity Edge', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'First Trust Equity Edge', creditingMethod: 'Point-to-Point Cap', term: 1, capRate: null, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // Fixed Account
+      { indexName: 'Fixed Account', creditingMethod: 'Fixed', term: 1, capRate: null, participationRate: null, bufferLevel: null, bufferType: null, floorLevel: null, isUncapped: false, fixedRate: null, description: 'Guaranteed fixed rate of return' }
     ],
-    minimumPremium: 25000, maximumIssueAge: 80,
-    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
+    minimumPremium: 25000, maximumIssueAge: 85,
+    maximumPremium: 1000000,
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7, minimumWithdrawal: 500 },
     deathBenefit: 'Account Value',
-    highlights: ['Aegon-backed strength', '15% buffer option', 'Simple product design'],
-    sourceUrl: "https://www.transamerica.com/rila-rate-center",
+    stateAvailability: 'All states except NY and OR',
+    nursingCareWaiver: true,
+    performanceLock: true,
+    creditAdvantageFee: 1.25,
+    highlights: [
+      'A+ (Stable) AM Best carrier — Aegon/Transamerica $250B+ assets',
+      '5 indices: S&P 500, Russell 2000 ETF, U.S. Tech ETF, Fidelity World, First Trust Equity Edge',
+      'Unique strategy types: Triple Edge Advantage, Best Entry, Participation with Credit Advantage',
+      '10%/15%/20% buffer options across 1yr, 2yr, and 6yr crediting periods',
+      'Performance Lock feature — lock in gains before crediting period ends',
+      'No annual contract or administrative fees'
+    ],
+    sourceUrl: "https://www.transamerica.com/annuities/transamerica-structured-index-advantage-annuity",
     lastRateUpdate: '2025-01-15'
   },
   // ── 34. Principal Structured Index ──
