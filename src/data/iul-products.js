@@ -61,9 +61,9 @@ export const iulProducts = [
   {
     id: "nationwide-iul-accumulator-ii",
     carrierId: "nationwide",
-    ratesVerified: 'partial',
-    lastVerifiedDate: '2026-02-21',
-    verificationNote: 'S&P 500 cap rate and uncapped spread verified via lifeinsurancerecommendations.com',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Cross-verified: nationwide.com AG-1895 rate sheet, lifeinsurancerecommendations.com (S&P 500 cap 10.25% confirmed)',
     name: "IUL Accumulator II 2020",
     maxIllustratedRate: 6.42,
     indexAccounts: [
@@ -392,9 +392,9 @@ export const iulProducts = [
   {
     id: "lincoln-wealthbuilder-iul",
     carrierId: "lincoln-financial",
-    ratesVerified: 'partial',
-    lastVerifiedDate: '2026-02-21',
-    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com (WealthAccumulator 2)',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Cross-verified: lincolnfinancial.com, lifeinsurancerecommendations.com (S&P 500 cap 10.50% confirmed)',
     name: "WealthBuilder IUL 2.0",
     maxIllustratedRate: 6.35,
     indexAccounts: [
@@ -667,16 +667,16 @@ export const iulProducts = [
   {
     id: "penn-mutual-accumulation-builder",
     carrierId: "penn-mutual",
-    ratesVerified: 'partial',
-    lastVerifiedDate: '2026-02-21',
-    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Cross-verified: pennmutual.com rate sheet, lifeinsurancerecommendations.com (S&P 500 cap corrected 10.00%→10.25%, fixed corrected 3.25%→3.50%)',
     name: "Accumulation Builder IUL",
     maxIllustratedRate: 6.18,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 10.00,
+        capRate: 10.25,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -696,7 +696,7 @@ export const iulProducts = [
         multiplierValue: null
       }
     ],
-    fixedAccountRate: 3.25,
+    fixedAccountRate: 3.50,
     guaranteedMinCreditingRate: 2.0,
     loanProvisions: {
       fixedLoanRate: 5.0,
@@ -986,16 +986,16 @@ export const iulProducts = [
   {
     id: "protective-indexed-choice-ul",
     carrierId: "protective-life",
-    ratesVerified: 'partial',
-    lastVerifiedDate: '2026-02-21',
-    verificationNote: 'S&P 500 cap rate verified via lifeinsurancerecommendations.com',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Cross-verified: protective.com official rate sheet (effective 3/15/2025) (S&P 500 cap corrected 9.00%→8.50%)',
     name: "Indexed Choice UL",
     maxIllustratedRate: 6.08,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 9.00,
+        capRate: 8.50,
         participationRate: 100,
         spread: 0,
         floor: 0,

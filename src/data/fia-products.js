@@ -628,11 +628,14 @@ export const fiaProducts = [
     guaranteedMinimumRate: 0.0,
     premiumBonus: 0.0,
     freeWithdrawalPercent: 10,
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Pacific Life official rate sheet - Pacific Index Foundation 2 NEW (rates effective 02/16/2026)',
     indexStrategies: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.25,
+        capRate: 7.55,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -640,27 +643,65 @@ export const fiaProducts = [
       },
       {
         indexName: "S&P 500",
-        creditingMethod: "Monthly Average",
+        creditingMethod: "Performance Triggered",
         capRate: null,
-        participationRate: 55,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 6.65
+      },
+      {
+        indexName: "Invesco QQQ Trust",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.55,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "iShares Russell 2000 ETF",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.55,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "MSCI EAFE",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.55,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "Barclays Large Cap Intraday VC10",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: true
       },
       {
-        indexName: "Credit Suisse Momentum",
+        indexName: "SG Nasdaq-100 Edge VC10",
         creditingMethod: "Annual Point-to-Point",
         capRate: null,
-        participationRate: 225,
+        participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: true
       }
     ],
+    fixedAccountRate: 3.80,
     incomeRiderAvailable: true,
-    highlights: ["Monthly average strategy available", "No premium bonus - higher caps"],
+    highlights: ["6 index strategies + fixed account", "Barclays VC10 and SG Nasdaq Edge uncapped", "QQQ and Russell 2000 options", "MSCI EAFE international exposure"],
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2026-02-22"
   },
 
   // ── 12. Pacific Index Protector ──────────────────────────────────────
@@ -8190,5 +8231,197 @@ export const fiaProducts = [
     highlights: ["Income-focused design", "Built-in income benefit", "Bloomberg Dynamic Balance 135% participation", "Pacific Life A+ AM Best rated"],
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-01"
+  },
+
+  // ── Pacific Index Foundation (10yr) — from official rate sheet 02/16/2026 ──
+  {
+    id: "pacific-index-foundation-10",
+    carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Pacific Life official rate sheet - Pacific Index Foundation (rates effective 02/16/2026)',
+    name: "Pacific Index Foundation (10-Year)",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.5,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    indexStrategies: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 6.25,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Triggered",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 6.50
+      },
+      {
+        indexName: "MSCI EAFE",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 6.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "MSCI EAFE",
+        creditingMethod: "Performance Triggered",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 6.25
+      }
+    ],
+    fixedAccountRate: 3.50,
+    incomeRiderAvailable: true,
+    highlights: ["Pacific Life A+ rated carrier", "Simple 2-index design (S&P 500 + MSCI EAFE)", "Performance Triggered option", "Low minimum premium", "Fixed account at 3.50%"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
+    lastRateUpdate: "2026-02-22"
+  },
+
+  // ── Pacific Index Foundation 2 (10yr) — from official rate sheet 02/16/2026 ──
+  {
+    id: "pacific-index-foundation-2-10yr",
+    carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Pacific Life official rate sheet - Pacific Index Foundation 2 NEW (rates effective 02/16/2026)',
+    name: "Pacific Index Foundation 2 (10-Year)",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.5,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    indexStrategies: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.60,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "Invesco QQQ Trust",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.60,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "iShares Russell 2000 ETF",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.60,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "MSCI EAFE",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.60,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "Barclays Large Cap Intraday VC10",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      },
+      {
+        indexName: "SG Nasdaq-100 Edge VC10",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      }
+    ],
+    fixedAccountRate: 3.85,
+    incomeRiderAvailable: true,
+    highlights: ["Pacific Life A+ rated carrier", "6 index strategies including QQQ and Russell 2000", "Barclays VC10 and SG Nasdaq Edge uncapped strategies", "10-year higher cap rates", "MSCI EAFE international exposure"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
+    lastRateUpdate: "2026-02-22"
+  },
+
+  // ── Pacific Index Edge (10yr) — from official rate sheet 02/16/2026 ──
+  {
+    id: "pacific-index-edge-10",
+    carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-22',
+    verificationSource: 'Pacific Life official rate sheet - Pacific Index Edge (rates effective 02/16/2026)',
+    name: "Pacific Index Edge (10-Year)",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    guaranteedMinimumRate: 0.5,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    indexStrategies: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Triggered",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        triggerRate: 8.50
+      },
+      {
+        indexName: "BlackRock Endura Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true
+      }
+    ],
+    fixedAccountRate: 4.75,
+    incomeRiderAvailable: true,
+    highlights: ["Pacific Life A+ rated carrier", "Highest S&P 500 cap in Pacific Life lineup at 10.00%", "BlackRock Endura uncapped strategy", "High 4.75% fixed account rate", "Performance Triggered alternative"],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
+    lastRateUpdate: "2026-02-22"
   }
 ];
