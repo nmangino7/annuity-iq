@@ -675,7 +675,7 @@ export const vulProducts = [
   // Verified M&E: current 0.45%, max 0.60%
   {
     id: 'northwestern-mutual-vcl',
-    carrierId: 'new-york-life', // NM not in carriers.js, proxy
+    carrierId: 'northwestern-mutual',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-27',
     verificationSource: 'SEC EDGAR 485BPOS Filing CIK 742277; Northwestern Mutual prospectus (direct quote: "current charge is at the annual rate of 0.45%, max 0.60%")',

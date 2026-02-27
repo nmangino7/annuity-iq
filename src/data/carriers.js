@@ -737,5 +737,41 @@ export const carriers = [
     totalAssets: "$10B",
     productCategories: ["fia", "glwb", "myga"],
     website: "https://www.silacins.com"
+  },
+  {
+    id: "northwestern-mutual",
+    name: "Northwestern Mutual Life Insurance Company",
+    shortName: "Northwestern Mutual",
+    ratings: {
+      amBest: { rating: "A++", outlook: "Stable" },
+      sAndP: { rating: "AA+", outlook: "Stable" },
+      moodys: { rating: "Aaa", outlook: "Stable" },
+      fitch: { rating: "AAA", outlook: "Stable" },
+      comdex: 99
+    },
+    yearsInBusiness: 167,
+    foundedYear: 1857,
+    headquarters: "Milwaukee, WI",
+    totalAssets: "$350B",
+    productCategories: ["whole-life", "term", "vul"],
+    website: "https://www.northwesternmutual.com"
+  },
+  {
+    id: "thrivent",
+    name: "Thrivent Financial for Lutherans",
+    shortName: "Thrivent",
+    ratings: {
+      amBest: { rating: "A++", outlook: "Stable" },
+      sAndP: { rating: "AA+", outlook: "Stable" },
+      moodys: null,
+      fitch: null,
+      comdex: 97
+    },
+    yearsInBusiness: 122,
+    foundedYear: 1902,
+    headquarters: "Minneapolis, MN",
+    totalAssets: "$180B",
+    productCategories: ["whole-life", "term", "iul", "vul"],
+    website: "https://www.thrivent.com"
   }
 ];

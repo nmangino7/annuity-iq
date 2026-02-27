@@ -1,0 +1,317 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Nationwide Deferred Annuity Contract List V1
+  description: |
+    This API will retrieve a list of contracts from Nationwide based on the user ID and the search terms.
+  contact:
+    name: Deferred Annuities
+    url: https://onyourside.sharepoint.com/sites/NationwideFinancial/SitePages/Annuities.aspx
+    email: ia.pallm.poc@nationwide.com
+
+servers:
+  - url: https://{env}.nwie.net/policy-management/deferred-annuity-contract-list/v1
+    description: Nationwide Internal
+    variables:
+      env:
+        enum:
+          - api-int
+          - api-int-stage
+          - api-int-test
+          - api-int-dev
+          - api-dev
+          - api-test
+        default: api-int
+  - url: https://{env}.nationwide.com/policy-management/deferred-annuity-contract-list/v1
+    description: Nationwide External
+    variables:
+      env:
+        enum:
+          - api
+          - api-stage
+        default: api
+
+tags:
+  - name: Contracts
+    description: retrieve a list of contracts.
+
+security:
+  - MyAPIKey: []
+  - nw_auth_external: []
+  - nw_auth_internal: []
+  - nw-saml-bearer: []
+
+paths:
+  /contracts:
+    get:
+      summary: retrieve contract list.
+      description: |
+        This resource will search the system to retrieve a list of contracts with the high level
+        summary that meets the search criteria under the given user.
+      parameters:
+        - $ref: "#/components/parameters/transaction_id_header"
+        - $ref: "#/components/parameters/client_id"
+        - $ref: "#/components/parameters/last_name"
+        - $ref: "#/components/parameters/first_name"
+        - $ref: "#/components/parameters/pagination_offset"
+        - $ref: "#/components/parameters/pagination_limit"
+      tags:
+        - Contracts
+      responses:
+        "200":
+          $ref: "#/components/responses/GetContractListResponse"
+        "400":
+          $ref: "#/components/responses/400StandardMessageResponse"
+        "401":
+          $ref: "#/components/responses/401StandardMessageResponse"
+        "403":
+          $ref: "#/components/responses/403StandardMessageResponse"
+        "404":
+          $ref: "#/components/responses/404StandardMessageResponse"
+        "429":
+          $ref: "#/components/responses/429StandardMessageResponse"
+        "500":
+          $ref: "#/components/responses/500StandardMessageResponse"
+        default:
+          $ref: "#/components/responses/DefaultStandardMessageResponse"
+
+components:
+  parameters:
+    transaction_id_header:
+      name: X-NW-Message-ID
+      in: header
+      required: true
+      description: A unique identification number for each transaction.
+      schema:
+        type: string
+    client_id:
+      name: client_id
+      in: header
+      required: true
+      description: The api key of the application.
+      schema:
+        type: string
+    last_name:
+      name: lastName
+      in: header
+      required: false
+      description: |
+        Primary owner or annuitant's last name of the search term. If the party is a non-natural
+        entity such as a company/firm, populate search term in the lastName.
+        The search string will be used to do a fuzzy search.
+      schema:
+        type: string
+    first_name:
+      name: firstName
+      in: header
+      required: false
+      description: |
+        Primary owner or annuitant's first name of the search term.
+        The search string will be used to do a fuzzy search.
+      schema:
+        type: string
+    pagination_offset:
+      name: offset
+      in: query
+      required: false
+      description: (Optional) _Pagination:_ Specifies where in the collection to begin returning results.
+      schema:
+        type: number
+    pagination_limit:
+      name: limit
+      in: query
+      required: false
+      description: (Optional) _Pagination:_ Specifies how many items to return in the result set. (Default = 20, Maximum = 100)
+      schema:
+        type: number
+
+  headers:
+    x-total-count:
+      description: Total number of records available.
+      schema:
+        type: number
+
+  securitySchemes:
+    MyAPIKey:
+      type: apiKey
+      description: The Client ID provided by NW's Developer Portal for your application.
+      in: header
+      name: client_id
+    nw-saml-bearer:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    nw_auth_internal:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://api-int.nwie.net/security-processing/enterprise-user-auth/v2/authorize
+          scopes: {}
+    nw_auth_external:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://api.nationwide.com/security-processing/enterprise-user-auth/v2/authorize
+          scopes: {}
+        authorizationCode:
+          authorizationUrl: https://api.nationwide.com/security-processing/enterprise-user-auth/v2/authorize
+          refreshUrl: https://api.nationwide.com/security-processing/enterprise-user-auth/v2/token
+          tokenUrl: https://apipartner.nationwide.com/security-processing/enterprise-user-auth/v2/token
+          scopes: {}
+
+  responses:
+    GetContractListResponse:
+      description: Successful retrieval of resource collection.
+      headers:
+        x-total-count:
+          $ref: "#/components/headers/x-total-count"
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              allOf:
+                - $ref: "#/components/schemas/GetContractListResult"
+
+    400StandardMessageResponse:
+      description: Input validation errored with StandardMessage containing error.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+    401StandardMessageResponse:
+      description: Proper user authentication credentials were not provided.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+    403StandardMessageResponse:
+      description: The user is not authorized to make this request.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+    404StandardMessageResponse:
+      description: The record or resource requested was not found.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+    429StandardMessageResponse:
+      description: Too many requests within defined time period.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+    500StandardMessageResponse:
+      description: There was a problem with either the network or the server.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+    DefaultStandardMessageResponse:
+      description: There was a problem. Please see the included message for more details.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/StandardMessage"
+
+  schemas:
+    StandardMessage:
+      type: object
+      required:
+        - developerMessage
+      properties:
+        userMessage:
+          type: string
+          description: User-friendly message for the Warning/Error.
+        developerMessage:
+          type: string
+          description: Developer information on the Warning/Error.
+        MessageId:
+          type: string
+          description: NW Message ID provided in the header and used in the API log.
+        code:
+          type: string
+          description: Code generated by the API to identify the specific error.
+        source:
+          type: string
+          description: The field or resource which triggered the message.
+        docs:
+          type: string
+          description: The URL to documentation that will provide more information.
+
+    GetContractListResult:
+      type: object
+      properties:
+        contractNumber:
+          type: string
+          description: Contract number.
+        issueDate:
+          type: string
+          description: Contract issue Date. Formatted as YYYY-MM-DD.
+          pattern: ([0-9]{4})-(?:[0-9]{2})-([0-9]{2})
+          example: "2023-01-01"
+        issueState:
+          type: string
+          description: Two letter abbreviation for the state the contract was issued.
+          example: OH
+        contractStatus:
+          type: string
+          description: |
+            Contract status. This API will only return policies that are active in the
+            source system. The valid active status are:
+            - ACTIVE.
+            - ACTNOBAL. It is a status for living benefit where the contract value is $0, but there is still
+              a benefit guarantee.
+            - PAYING. It is the status for contracts that are in annuitization phase.
+          enum:
+            - ACTIVE
+            - ACTNOBAL
+            - PAYING
+        taxQualification:
+          type: string
+          description: Type of Retirement Plan, based on tax deductibility.
+        totalContractValue:
+          type: string
+          description: Dollar amount value of contract as of last evaluation.
+          example: "100.00"
+        dailyTrackingValue:
+          type: string
+          description: Potential value or earnings of an elected strategy.
+          example: "100000.00"
+        productName:
+          type: string
+          description: Short name of the product.
+        productType:
+          type: string
+          description: Type of product.
+        ownerType:
+          type: string
+          description: |
+            Indicates whether the owner is a person or group/company.
+            - NATURAL. person
+            - NONNATURAL. company or group
+          enum:
+            - NATURAL
+            - NONNATURAL
+        owner:
+          $ref: "#/components/schemas/name"
+        annuitant:
+          $ref: "#/components/schemas/name"
+        contractSummaryHref:
+          type: string
+          description: The URL to retrieve the contract information for the given contract number.
+
+    name:
+      type: object
+      description: Contract primary owner's or annuitant's name if applicable.
+      properties:
+        lastName:
+          type: string
+          description: |
+            Last name of the primary owner/annuitant. If a search term represents a non-natural entity,
+            the company name will be returned in the lastName field.
+        firstName:
+          type: string
+          description: First name of the primary owner/annuitant.
