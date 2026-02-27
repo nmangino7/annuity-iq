@@ -588,5 +588,236 @@ export const rilaProducts = [
     highlights: ['Pacific Life A+ rated carrier', '5 equity indices including QQQ and Russell 2000', '10% and 15% buffer options plus -10% floor', 'Dual Direction and Performance Trigger strategies', '6-year uncapped participation options', 'Tiered participation rate feature'],
     sourceUrl: 'https://www.annuities.pacificlife.com/home/annuities.html',
     lastRateUpdate: '2026-02-22'
+  },
+  // ── 22. Prudential FlexGuard 2.0 ──
+  {
+    id: 'prudential-flexguard-2',
+    carrierId: 'prudential',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'FlexGuard 2.0',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer)
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 21.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer)
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Nasdaq-100 (10% Buffer)
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 3-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 3-Year S&P 500 (20% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: 40.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year Dual Direction (S&P 500, 10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 9.50 },
+      // 1-Year Shield (100% Protection, S&P 500)
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 100, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 5.00 }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
+    deathBenefit: 'Account Value',
+    highlights: ['S&P 500 1-year cap up to 17.50% with 10% buffer', 'Russell 2000 cap 21.00% — highest in class', 'Dual Direction and 100% Shield strategies', '3-year and 6-year uncapped participation', 'Prudential A+ financial strength'],
+    sourceUrl: 'https://www.prudential.com/financial-professionals/products/annuities/flexguard',
+    lastRateUpdate: '2026-02-27'
+  },
+  // ── 23. Prudential FlexGuard 2.0 Income ──
+  {
+    id: 'prudential-flexguard-2-income',
+    carrierId: 'prudential',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'FlexGuard 2.0 Income',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer)
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer)
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 3-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year Dual Direction (S&P 500, 10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 8.50 }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
+    deathBenefit: 'Account Value',
+    highlights: ['Built-in FlexGuard Income benefit at no additional charge', 'S&P 500 cap 15.00% with 10% buffer', 'Guaranteed lifetime income withdrawal benefit included', 'Lower caps vs FlexGuard 2.0 due to embedded income benefit'],
+    sourceUrl: 'https://www.prudential.com/financial-professionals/products/annuities/flexguard',
+    lastRateUpdate: '2026-02-27'
+  },
+  // ── 24. Great American (MassMutual Ascend) Index Summit 6 ──
+  {
+    id: 'great-american-index-summit-6',
+    carrierId: 'great-american',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'MassMutual Ascend Index Summit 6',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (30% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 9.00, participationRate: null, bufferLevel: 30, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer)
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer)
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 21.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Performance Trigger (S&P 500, 10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.50 },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 6-Year S&P 500 (20% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: 80.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+    ],
+    fixedAccountRate: 3.50,
+    minimumPremium: 25000, maximumIssueAge: 80,
+    surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
+    deathBenefit: 'Account Value',
+    highlights: ['Backed by Great American/MassMutual financial strength', 'S&P 500 cap 16.25% with 10% buffer', 'Performance Trigger 10.50% — one of the highest', '6-year uncapped S&P 500 participation', 'MSCI EAFE cap 21.00% for international exposure'],
+    sourceUrl: 'https://www.massmutualascend.com/products/rila',
+    lastRateUpdate: '2026-02-27'
+  },
+  // ── 25. Great American (MassMutual Ascend) Index Summit 6 Pro ──
+  {
+    id: 'great-american-index-summit-6-pro',
+    carrierId: 'great-american',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'MassMutual Ascend Index Summit 6 Pro',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 80, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year S&P 500 (20% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year Russell 2000 (10% Buffer) — Uncapped
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 75, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year MSCI EAFE (10% Buffer) — Uncapped
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 85, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year Performance Trigger (S&P 500, 10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 11.00 },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: 3.25,
+    minimumPremium: 25000, maximumIssueAge: 80,
+    surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
+    deathBenefit: 'Account Value',
+    highlights: ['All participation-rate-based — no caps on upside', 'S&P 500 80% uncapped participation with 10% buffer', '100% uncapped participation with 20% buffer', 'Performance Trigger 11.00%', 'Pro version for advisors seeking uncapped growth'],
+    sourceUrl: 'https://www.massmutualascend.com/products/rila',
+    lastRateUpdate: '2026-02-27'
+  },
+  // ── 26. Symetra Trek Plus ──
+  {
+    id: 'symetra-trek-plus',
+    carrierId: 'symetra',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'Trek Plus',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer)
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer)
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 23.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Performance Trigger (S&P 500, 10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 11.00 },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: 3.75,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [6, 6, 5, 4, 3, 2, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
+    deathBenefit: 'Account Value',
+    highlights: ['S&P 500 cap 18.00% — competitive with top-tier RILAs', 'MSCI EAFE cap 23.00% — highest international RILA cap', 'Russell 2000 cap 22.00%', 'Performance Trigger 11.00%', 'Symetra A rated carrier backed by Sumitomo Life'],
+    sourceUrl: 'https://www.symetra.com/products/annuities',
+    lastRateUpdate: '2026-02-27'
+  },
+  // ── 27. RiverSource Structured Solutions 2 (6-Year) ──
+  {
+    id: 'riversource-structured-solutions-2-6yr',
+    carrierId: 'riversource',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'Structured Solutions 2.0 (6-Year)',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (25% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 9.00, participationRate: null, bufferLevel: 25, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer)
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer)
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year Dual Direction (S&P 500, 10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 9.00 }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
+    deathBenefit: 'Greater of Account Value or Purchase Payments',
+    highlights: ['Ameriprise/RiverSource A+ rated carrier', 'S&P 500 cap 15.50% with 10% buffer', 'Dual Direction strategy available', '25% deep buffer option for conservative investors', 'Enhanced death benefit — return of purchase payments'],
+    sourceUrl: 'https://www.riversource.com/annuities',
+    lastRateUpdate: '2026-02-27'
+  },
+  // ── 28. RiverSource Structured Solutions 2 (3-Year) ──
+  {
+    id: 'riversource-structured-solutions-2-3yr',
+    carrierId: 'riversource',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    name: 'Structured Solutions 2.0 (3-Year)',
+    term: 3,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer)
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer)
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer)
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 3-Year S&P 500 (10% Buffer) — Uncapped
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [5, 4, 3, 0],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 5 },
+    deathBenefit: 'Greater of Account Value or Purchase Payments',
+    highlights: ['Shorter 3-year surrender for more liquidity', 'S&P 500 cap 14.50% with 10% buffer', '3-year uncapped participation option', 'Lower surrender charges — max 5%', 'Ameriprise/RiverSource A+ financial strength'],
+    sourceUrl: 'https://www.riversource.com/annuities',
+    lastRateUpdate: '2026-02-27'
   }
 ];

@@ -4355,5 +4355,172 @@ export const fiaProducts = [
     highlights: ["Pacific Life A+ rated carrier", "Highest S&P 500 cap in Pacific Life lineup at 10.00%", "BlackRock Endura uncapped strategy", "High 4.75% fixed account rate", "Performance Triggered alternative"],
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-22"
+  },
+  // ── 66. Protective Asset Builder II (10-Year) ──
+  {
+    id: "protective-asset-builder-ii-10",
+    carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    name: "Protective Asset Builder II 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.55,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.40, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Guaranteed)", capRate: 7.15, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 42, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 6.20 },
+      { indexName: "J.P. Morgan Mojave", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 140, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Citi Flexible Allocation 6 ER", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 180, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["S&P 500 cap up to 7.40% (or 7.15% guaranteed for full term)", "J.P. Morgan Mojave 140% participation uncapped", "Citi Flexible Allocation 180% biennial participation", "MVA applies; $10K minimum premium"],
+    sourceUrl: "https://allstate.protective.com/retirement/indexed-annuities/protective-asset-builder-ii",
+    lastRateUpdate: "2026-02-27"
+  },
+  // ── 67. Protective Indexed Annuity II (10-Year) ──
+  {
+    id: "protective-indexed-annuity-ii-10",
+    carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    name: "Protective Indexed Annuity II 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.10,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Tiered Annual", capRate: null, participationRate: 100, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.10 }
+    ],
+    incomeRiderAvailable: true,
+    highlights: ["Optional SecurePay SE rider (0.85% annual cost)", "SecurePay provides 7% simple interest rollup for up to 10 years", "Nursing facility and terminal illness waivers included", "Rates set every 2 weeks by Protective"],
+    sourceUrl: "https://schwab.protective.com/annuities/indexed-annuities/protective-indexed-annuity-ii",
+    lastRateUpdate: "2026-02-27"
+  },
+  // ── 68. Security Benefit TopRidge Bonus Annuity ──
+  {
+    id: "security-benefit-topridge-bonus",
+    carrierId: "security-benefit",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    name: "Security Benefit TopRidge Bonus Annuity",
+    surrenderPeriod: 10,
+    surrenderSchedule: [12, 12, 11, 11, 10, 9, 8, 7, 6, 4, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 20.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.25,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 6.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 38, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 50, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 6.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 6.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 6.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Morgan Stanley Global Equity Allocator", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 105, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Morgan Stanley Global Equity Allocator", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 150, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "MSCI BofA US Dualcast", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 90, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "MSCI BofA US Dualcast", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 125, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "SG AI Navigator", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 80, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "SG AI Navigator", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 120, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["20% premium bonus on first-year premiums", "12 index strategies across 6 indices including international & small cap", "Nursing home and terminal illness waivers", "MVA applies during surrender period"],
+    sourceUrl: "https://www.securitybenefit.com/product/topridge-bonus-annuity",
+    lastRateUpdate: "2026-02-27"
+  },
+  // ── 69. American National Rate Certainty 7 ──
+  {
+    id: "american-national-rate-certainty-7",
+    carrierId: "american-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    name: "American National Rate Certainty 7",
+    surrenderPeriod: 7,
+    surrenderSchedule: [9, 8, 7, 6, 5, 4, 3, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.65,
+    indexStrategies: [
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Enhanced Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 8.95 },
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.20 },
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Protected Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 5.70 }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["Index parameters GUARANTEED for full 7-year contract term", "Enhanced Performance Trigger 8.95%", "Protected Performance Trigger: 2% fixed floor + 5.70% trigger", "Terminal illness, disability, and confinement waivers"],
+    sourceUrl: "https://www.americannational.com/home/insurance/annuities",
+    lastRateUpdate: "2026-02-27"
+  },
+  // ── 70. American National Rate Certainty 10 ──
+  {
+    id: "american-national-rate-certainty-10",
+    carrierId: "american-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    name: "American National Rate Certainty 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 8, 7, 6, 5, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 10000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.65,
+    indexStrategies: [
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Enhanced Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 9.50 },
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.45 },
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Protected Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 5.70 }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["Index parameters GUARANTEED for full 10-year contract term", "Enhanced Performance Trigger 9.50% — highest in class", "Protected Performance Trigger: 2% fixed floor + 5.70% trigger", "Unique guarantee — rates locked for full 10 years"],
+    sourceUrl: "https://www.americannational.com/home/insurance/annuities",
+    lastRateUpdate: "2026-02-27"
+  },
+  // ── 71. Integrity Life Indextra 7 ──
+  {
+    id: "integrity-indextra-7",
+    carrierId: "integrity-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    name: "Integrity Life Indextra 7",
+    surrenderPeriod: 7,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 0],
+    minimumPremium: 15000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.05,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Cap Lock)", capRate: 6.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.15 },
+      { indexName: "J.P. Morgan Strategic Balanced", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 112, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "J.P. Morgan Strategic Balanced", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 155, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "J.P. Morgan Strategic Balanced", creditingMethod: "Triennial Point-to-Point", capRate: null, participationRate: 185, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "GS Momentum Builder Multi-Asset", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 135, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "GS Momentum Builder Multi-Asset", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 195, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "GS Momentum Builder Multi-Asset", creditingMethod: "Triennial Point-to-Point", capRate: null, participationRate: 250, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: true,
+    highlights: ["S&P 500 cap 7.25% with 7.15% performance trigger", "GS Momentum Builder 250% participation on 3-year term (uncapped)", "4.05% fixed account rate — one of the highest", "Optional GLWB rider (0.95% annual cost)", "107% Guaranteed Minimum Account Value"],
+    sourceUrl: "https://www.westernsouthern.com/distributors/products/annuities/indexed-annuities",
+    lastRateUpdate: "2026-02-27"
   }
 ];

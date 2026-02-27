@@ -3,6 +3,8 @@ export const glwbRiders = [
   {
     id: "nationwide-lifetime-income-rider-2",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Nationwide Lifetime Income Rider 2.0",
     attachedProduct: "Nationwide New Heights 12",
     riderFee: 1.10,
@@ -29,6 +31,8 @@ export const glwbRiders = [
   {
     id: "nationwide-lifetime-income-rider-3",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Nationwide Lifetime Income Rider 3.0",
     attachedProduct: "Nationwide New Heights 9",
     riderFee: 1.20,
@@ -55,6 +59,8 @@ export const glwbRiders = [
   {
     id: "fg-income-choice-10",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "F&G Income Choice 10",
     attachedProduct: "F&G Performance Pro 10",
     riderFee: 1.00,
@@ -81,6 +87,8 @@ export const glwbRiders = [
   {
     id: "fg-income-choice-14",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "F&G Income Choice 14",
     attachedProduct: "F&G Performance Pro 14",
     riderFee: 0.95,
@@ -107,6 +115,8 @@ export const glwbRiders = [
   {
     id: "athene-agility-income-rider",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Athene Agility Income Rider",
     attachedProduct: "Athene Agility 10",
     riderFee: 1.15,
@@ -133,6 +143,8 @@ export const glwbRiders = [
   {
     id: "athene-ascent-income-rider-pro",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Athene Ascent Income Rider Pro",
     attachedProduct: "Athene Ascent Pro 10",
     riderFee: 1.25,
@@ -159,6 +171,8 @@ export const glwbRiders = [
   {
     id: "north-american-income-pay-pro",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "North American Income Pay Pro",
     attachedProduct: "North American Charter Plus 14",
     riderFee: 1.10,
@@ -185,6 +199,8 @@ export const glwbRiders = [
   {
     id: "north-american-income-pay-select",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "North American Income Pay Select",
     attachedProduct: "North American BenefitSolutions 10",
     riderFee: 0.95,
@@ -211,6 +227,8 @@ export const glwbRiders = [
   {
     id: "midland-national-income-plus-10",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Midland National Income Plus 10",
     attachedProduct: "Midland National Oak Elite 10",
     riderFee: 1.05,
@@ -237,6 +255,8 @@ export const glwbRiders = [
   {
     id: "midland-national-income-plus-14",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Midland National Income Plus 14",
     attachedProduct: "Midland National Oak Elite 14",
     riderFee: 1.00,
@@ -263,6 +283,8 @@ export const glwbRiders = [
   {
     id: "great-american-legend-income-7",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Great American Legend Income 7",
     attachedProduct: "Great American Legend 7",
     riderFee: 1.15,
@@ -289,6 +311,8 @@ export const glwbRiders = [
   {
     id: "great-american-legend-income-10",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Great American Legend Income 10",
     attachedProduct: "Great American Legend 10",
     riderFee: 1.10,
@@ -315,6 +339,8 @@ export const glwbRiders = [
   {
     id: "eagle-life-incomewise",
     carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Eagle Life IncomeWise",
     attachedProduct: "Eagle Life IncomeMaximizer 10",
     riderFee: 0.95,
@@ -340,6 +366,8 @@ export const glwbRiders = [
   {
     id: "eagle-life-incomewise-plus",
     carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Eagle Life IncomeWise Plus",
     attachedProduct: "Eagle Life IncomeMaximizer 14",
     riderFee: 1.10,
@@ -365,6 +393,8 @@ export const glwbRiders = [
   {
     id: "american-equity-incomeshield-10",
     carrierId: "american-equity",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American Equity IncomeShield 10",
     attachedProduct: "American Equity AssetShield 10",
     riderFee: 1.10,
@@ -391,6 +421,8 @@ export const glwbRiders = [
   {
     id: "american-equity-incomeshield-14",
     carrierId: "american-equity",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American Equity IncomeShield 14",
     attachedProduct: "American Equity AssetShield 14",
     riderFee: 1.00,
@@ -417,6 +449,8 @@ export const glwbRiders = [
   {
     id: "securian-endure-income",
     carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Securian Endure Income",
     attachedProduct: "Securian Eclipse Accumulator 10",
     riderFee: 1.05,
@@ -443,6 +477,8 @@ export const glwbRiders = [
   {
     id: "securian-endure-income-plus",
     carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Securian Endure Income Plus",
     attachedProduct: "Securian Eclipse Advantage 14",
     riderFee: 1.20,
@@ -469,6 +505,8 @@ export const glwbRiders = [
   {
     id: "lincoln-lifetime-income-advantage",
     carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Lincoln Lifetime Income Advantage",
     attachedProduct: "Lincoln OptiBlend 10",
     riderFee: 1.15,
@@ -495,6 +533,8 @@ export const glwbRiders = [
   {
     id: "lincoln-lifetime-income-advantage-plus",
     carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Lincoln Lifetime Income Advantage Plus",
     attachedProduct: "Lincoln OptiBlend 14",
     riderFee: 1.25,
@@ -521,6 +561,8 @@ export const glwbRiders = [
   {
     id: "pacific-life-income-provider",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Pacific Life Income Provider",
     attachedProduct: "Pacific Life Pacific Index Choice",
     riderFee: 1.05,
@@ -547,6 +589,8 @@ export const glwbRiders = [
   {
     id: "pacific-life-income-provider-plus",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Pacific Life Income Provider Plus",
     attachedProduct: "Pacific Life Pacific Index Horizons",
     riderFee: 1.20,
@@ -573,6 +617,8 @@ export const glwbRiders = [
   {
     id: "jackson-lifeguard-freedom-flex",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Jackson LifeGuard Freedom Flex",
     attachedProduct: "Jackson Market Link Pro II",
     riderFee: 1.30,
@@ -599,6 +645,8 @@ export const glwbRiders = [
   {
     id: "jackson-lifeguard-freedom-net",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Jackson LifeGuard Freedom Net",
     attachedProduct: "Jackson Market Link Pro II 10",
     riderFee: 1.15,
@@ -625,6 +673,8 @@ export const glwbRiders = [
   {
     id: "protective-lifetime-income-benefit",
     carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Protective Lifetime Income Benefit",
     attachedProduct: "Protective Indexed Choice 10",
     riderFee: 1.00,
@@ -650,6 +700,8 @@ export const glwbRiders = [
   {
     id: "protective-lifetime-income-benefit-plus",
     carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Protective Lifetime Income Benefit Plus",
     attachedProduct: "Protective Indexed Choice 14",
     riderFee: 1.15,
@@ -675,6 +727,8 @@ export const glwbRiders = [
   {
     id: "corebridge-income-advantage",
     carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Corebridge Income Advantage",
     attachedProduct: "Corebridge Index Advantage+ 10",
     riderFee: 1.10,
@@ -700,6 +754,8 @@ export const glwbRiders = [
   {
     id: "corebridge-income-advantage-select",
     carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Corebridge Income Advantage Select",
     attachedProduct: "Corebridge Index Advantage+ NF",
     riderFee: 0.95,
@@ -725,6 +781,8 @@ export const glwbRiders = [
   {
     id: "global-atlantic-income-sustainer",
     carrierId: "global-atlantic",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Global Atlantic Income Sustainer",
     attachedProduct: "Global Atlantic ForeSight 10",
     riderFee: 1.10,
@@ -751,6 +809,8 @@ export const glwbRiders = [
   {
     id: "global-atlantic-income-sustainer-plus",
     carrierId: "global-atlantic",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Global Atlantic Income Sustainer Plus",
     attachedProduct: "Global Atlantic ForeSight Plus 14",
     riderFee: 1.25,
@@ -777,6 +837,8 @@ export const glwbRiders = [
   {
     id: "symetra-income-edge",
     carrierId: "symetra",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Symetra Income Edge",
     attachedProduct: "Symetra Accumulator Plus 10",
     riderFee: 0.95,
@@ -803,6 +865,8 @@ export const glwbRiders = [
   {
     id: "symetra-income-edge-plus",
     carrierId: "symetra",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Symetra Income Edge Plus",
     attachedProduct: "Symetra Accumulator Select 14",
     riderFee: 1.10,
@@ -829,6 +893,8 @@ export const glwbRiders = [
   {
     id: "transamerica-living-benefits-rider",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Transamerica Living Benefits Rider",
     attachedProduct: "Transamerica Index Foundation 10",
     riderFee: 1.15,
@@ -855,6 +921,8 @@ export const glwbRiders = [
   {
     id: "transamerica-living-benefits-rider-plus",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Transamerica Living Benefits Rider Plus",
     attachedProduct: "Transamerica Index Protector 14",
     riderFee: 1.30,
@@ -881,6 +949,8 @@ export const glwbRiders = [
   {
     id: "massmutual-retireease",
     carrierId: "massmutual",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "MassMutual RetireEase",
     attachedProduct: "MassMutual Stable Voyage 10",
     riderFee: 1.10,
@@ -907,6 +977,8 @@ export const glwbRiders = [
   {
     id: "massmutual-retireease-select",
     carrierId: "massmutual",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "MassMutual RetireEase Select",
     attachedProduct: "MassMutual Stable Voyage Select",
     riderFee: 1.20,
@@ -933,6 +1005,8 @@ export const glwbRiders = [
   {
     id: "brighthouse-income-shield",
     carrierId: "brighthouse-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Brighthouse Income Shield",
     attachedProduct: "Brighthouse Shield Annuity Flex",
     riderFee: 1.20,
@@ -958,6 +1032,8 @@ export const glwbRiders = [
   {
     id: "brighthouse-income-shield-level",
     carrierId: "brighthouse-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Brighthouse Income Shield Level",
     attachedProduct: "Brighthouse Shield Annuity Level 10",
     riderFee: 1.00,
@@ -983,6 +1059,8 @@ export const glwbRiders = [
   {
     id: "delaware-life-income-accelerator",
     carrierId: "delaware-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Delaware Life Income Accelerator",
     attachedProduct: "Delaware Life Retirement Income 10",
     riderFee: 1.05,
@@ -1008,6 +1086,8 @@ export const glwbRiders = [
   {
     id: "delaware-life-income-accelerator-plus",
     carrierId: "delaware-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Delaware Life Income Accelerator Plus",
     attachedProduct: "Delaware Life Retirement Income 14",
     riderFee: 1.15,
@@ -1033,6 +1113,8 @@ export const glwbRiders = [
   {
     id: "allianz-lifetime-income-plus",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Allianz Lifetime Income Plus",
     attachedProduct: "Allianz 222 Annuity",
     riderFee: 1.25,
@@ -1059,6 +1141,8 @@ export const glwbRiders = [
   {
     id: "allianz-protected-income-value",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Allianz Protected Income Value",
     attachedProduct: "Allianz Benefit Control Annuity",
     riderFee: 0.95,
@@ -1085,6 +1169,8 @@ export const glwbRiders = [
   {
     id: "sammons-retirement-income-max",
     carrierId: "sammons-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Sammons Retirement Income Max",
     attachedProduct: "Sammons StrategyMark 10",
     riderFee: 1.05,
@@ -1110,6 +1196,8 @@ export const glwbRiders = [
   {
     id: "gaig-income-architect",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Great American Income Architect",
     attachedProduct: "Great American Power 10 Protector",
     riderFee: 1.20,
@@ -1136,6 +1224,8 @@ export const glwbRiders = [
   {
     id: "integrity-income-foundation",
     carrierId: "integrity-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Integrity Income Foundation",
     attachedProduct: "Integrity Choice Index 10",
     riderFee: 0.85,
@@ -1161,6 +1251,8 @@ export const glwbRiders = [
   {
     id: "american-general-income-builder",
     carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Corebridge Income Builder",
     attachedProduct: "Corebridge Polaris Choice 14",
     riderFee: 1.15,
@@ -1186,6 +1278,8 @@ export const glwbRiders = [
   {
     id: "united-home-life-income-secure",
     carrierId: "integrity-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "United Home Life Income Secure",
     attachedProduct: "United Home Life Secure Accumulator 10",
     riderFee: 0.90,
@@ -1211,6 +1305,8 @@ export const glwbRiders = [
   {
     id: "guggenheim-income-protector",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Guggenheim Income Protector",
     attachedProduct: "Guggenheim TriVysta 10",
     riderFee: 1.10,
@@ -1237,6 +1333,8 @@ export const glwbRiders = [
   {
     id: "liberty-bankers-income-defender",
     carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Liberty Bankers Income Defender",
     attachedProduct: "Liberty Bankers Atlas 10",
     riderFee: 0.75,
@@ -1262,6 +1360,8 @@ export const glwbRiders = [
   {
     id: "american-national-income-vision",
     carrierId: "american-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American National Income Vision",
     attachedProduct: "American National Palladium 10",
     riderFee: 1.50,
@@ -1287,6 +1387,8 @@ export const glwbRiders = [
   {
     id: "allianz-income-multiplier",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Allianz Income Multiplier",
     attachedProduct: "Allianz 360 Annuity",
     riderFee: 1.30,
@@ -1313,6 +1415,8 @@ export const glwbRiders = [
   {
     id: "allianz-lifetime-income-benefit",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Allianz Lifetime Income Benefit",
     attachedProduct: "Allianz Core Income 7",
     riderFee: 1.10,
@@ -1339,6 +1443,8 @@ export const glwbRiders = [
   {
     id: "nationwide-destination-life-plus",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Nationwide Destination L.I.F.E. Plus",
     attachedProduct: "Nationwide Destination B 2.0",
     riderFee: 1.25,
@@ -1365,6 +1471,8 @@ export const glwbRiders = [
   {
     id: "nationwide-lifetime-income-rider-plus",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Nationwide Lifetime Income Rider Plus",
     attachedProduct: "Nationwide Defined Protection Annuity",
     riderFee: 1.15,
@@ -1391,6 +1499,8 @@ export const glwbRiders = [
   {
     id: "north-american-income-advantage-select",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "North American Income Advantage Select",
     attachedProduct: "North American Charter Plus 10",
     riderFee: 1.05,
@@ -1417,6 +1527,8 @@ export const glwbRiders = [
   {
     id: "midland-benefitstream-income",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Midland BenefitStream Income",
     attachedProduct: "Midland National BenefitStream Select",
     riderFee: 1.00,
@@ -1443,6 +1555,8 @@ export const glwbRiders = [
   {
     id: "athene-flex-advantage-income",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Athene Flex Advantage Income",
     attachedProduct: "Athene Performance Elite 10",
     riderFee: 1.20,
@@ -1469,6 +1583,8 @@ export const glwbRiders = [
   {
     id: "athene-income-ready",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Athene Income Ready",
     attachedProduct: "Athene MaxRate Plus 10",
     riderFee: 0.95,
@@ -1495,6 +1611,8 @@ export const glwbRiders = [
   {
     id: "fg-income-growth-10",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "F&G Income Growth 10",
     attachedProduct: "F&G Accumulator Plus 10",
     riderFee: 1.10,
@@ -1521,6 +1639,8 @@ export const glwbRiders = [
   {
     id: "fg-income-growth-14",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "F&G Income Growth 14",
     attachedProduct: "F&G Accumulator Plus 14",
     riderFee: 1.05,
@@ -1547,6 +1667,8 @@ export const glwbRiders = [
   {
     id: "pacific-peak-income-rider",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Pacific Peak Income Rider",
     attachedProduct: "Pacific Life Pacific Index Select",
     riderFee: 1.15,
@@ -1573,6 +1695,8 @@ export const glwbRiders = [
   {
     id: "pacific-income-rider-ii",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Pacific Income Rider II",
     attachedProduct: "Pacific Life Pacific Performance 14",
     riderFee: 1.00,
@@ -1599,6 +1723,8 @@ export const glwbRiders = [
   {
     id: "lincoln-i4life-advantage",
     carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Lincoln i4LIFE Advantage",
     attachedProduct: "Lincoln OptiBlend Select 10",
     riderFee: 1.20,
@@ -1625,6 +1751,8 @@ export const glwbRiders = [
   {
     id: "lincoln-smartincome",
     carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Lincoln SmartIncome",
     attachedProduct: "Lincoln MYGuarantee Plus 7",
     riderFee: 0.90,
@@ -1651,6 +1779,8 @@ export const glwbRiders = [
   {
     id: "great-american-safe-income-max",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Great American Safe Income Max",
     attachedProduct: "Great American American Valor 10",
     riderFee: 1.15,
@@ -1677,6 +1807,8 @@ export const glwbRiders = [
   {
     id: "great-american-income-protector-plus",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Great American Income Protector Plus",
     attachedProduct: "Great American Power Accumulator 14",
     riderFee: 1.05,
@@ -1703,6 +1835,8 @@ export const glwbRiders = [
   {
     id: "great-american-legend-income-rider",
     carrierId: "great-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Great American Legend Income Rider",
     attachedProduct: "Great American Legend 14",
     riderFee: 1.10,
@@ -1729,6 +1863,8 @@ export const glwbRiders = [
   {
     id: "jackson-lifeguard-freedom-flex-ii",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Jackson LifeGuard Freedom Flex II",
     attachedProduct: "Jackson Market Link Pro III",
     riderFee: 1.25,
@@ -1755,6 +1891,8 @@ export const glwbRiders = [
   {
     id: "jackson-lifeguard-freedom-net-plus",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Jackson LifeGuard Freedom Net Plus",
     attachedProduct: "Jackson Market Link Pro III Select",
     riderFee: 1.35,
@@ -1781,6 +1919,8 @@ export const glwbRiders = [
   {
     id: "global-atlantic-forepay-income",
     carrierId: "global-atlantic",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Global Atlantic ForePay Income",
     attachedProduct: "Global Atlantic ForeAccumulation II",
     riderFee: 1.10,
@@ -1807,6 +1947,8 @@ export const glwbRiders = [
   {
     id: "global-atlantic-forestar-income",
     carrierId: "global-atlantic",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Global Atlantic ForeStar Income",
     attachedProduct: "Global Atlantic ForeStar 7",
     riderFee: 1.00,
@@ -1833,6 +1975,8 @@ export const glwbRiders = [
   {
     id: "brighthouse-smartguard-income",
     carrierId: "brighthouse-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Brighthouse SmartGuard Income",
     attachedProduct: "Brighthouse SmartGuard Plus 10",
     riderFee: 1.15,
@@ -1858,6 +2002,8 @@ export const glwbRiders = [
   {
     id: "brighthouse-shield-level-income",
     carrierId: "brighthouse-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Brighthouse Shield Level Income",
     attachedProduct: "Brighthouse Shield Level Select 6",
     riderFee: 1.30,
@@ -1883,6 +2029,8 @@ export const glwbRiders = [
   {
     id: "transamerica-income-edge",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Transamerica Income Edge",
     attachedProduct: "Transamerica Index Foundation Plus 10",
     riderFee: 1.10,
@@ -1909,6 +2057,8 @@ export const glwbRiders = [
   {
     id: "transamerica-income-foundation-plus",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Transamerica Income Foundation Plus",
     attachedProduct: "Transamerica Index Protector Plus 14",
     riderFee: 1.00,
@@ -1935,6 +2085,8 @@ export const glwbRiders = [
   {
     id: "corebridge-polaris-income-iii",
     carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Corebridge Polaris Income III",
     attachedProduct: "Corebridge Polaris Platinum III",
     riderFee: 1.20,
@@ -1960,6 +2112,8 @@ export const glwbRiders = [
   {
     id: "corebridge-polaris-income-max",
     carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Corebridge Polaris Income Max",
     attachedProduct: "Corebridge Polaris Income Plus II",
     riderFee: 1.35,
@@ -1985,6 +2139,8 @@ export const glwbRiders = [
   {
     id: "delaware-life-income-builder",
     carrierId: "delaware-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Delaware Life Income Builder",
     attachedProduct: "Delaware Life Pinnacle Plus 10",
     riderFee: 1.10,
@@ -2010,6 +2166,8 @@ export const glwbRiders = [
   {
     id: "delaware-life-target-income-10",
     carrierId: "delaware-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Delaware Life Target Income 10",
     attachedProduct: "Delaware Life Retirement Optimizer 10",
     riderFee: 0.95,
@@ -2035,6 +2193,8 @@ export const glwbRiders = [
   {
     id: "symetra-income-builder",
     carrierId: "symetra",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Symetra Income Builder",
     attachedProduct: "Symetra Edge Pro 10",
     riderFee: 1.05,
@@ -2061,6 +2221,8 @@ export const glwbRiders = [
   {
     id: "symetra-lifestream-income",
     carrierId: "symetra",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Symetra LifeStream Income",
     attachedProduct: "Symetra LifeStream Plus 14",
     riderFee: 1.15,
@@ -2087,6 +2249,8 @@ export const glwbRiders = [
   {
     id: "integrity-pinnacle-income-select",
     carrierId: "integrity-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Integrity Pinnacle Income Select",
     attachedProduct: "Integrity Choice Index 14",
     riderFee: 1.00,
@@ -2112,6 +2276,8 @@ export const glwbRiders = [
   {
     id: "securian-income-advantage",
     carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Securian Income Advantage",
     attachedProduct: "Securian Eclipse Select 10",
     riderFee: 1.10,
@@ -2138,6 +2304,8 @@ export const glwbRiders = [
   {
     id: "securian-income-advantage-select",
     carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Securian Income Advantage Select",
     attachedProduct: "Securian Eclipse Protector 14",
     riderFee: 1.00,
@@ -2164,6 +2332,8 @@ export const glwbRiders = [
   {
     id: "american-equity-incomeshield-select",
     carrierId: "american-equity",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American Equity IncomeShield Select",
     attachedProduct: "American Equity WealthShield 10",
     riderFee: 1.05,
@@ -2190,6 +2360,8 @@ export const glwbRiders = [
   {
     id: "american-equity-incomeshield-plus",
     carrierId: "american-equity",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American Equity IncomeShield Plus",
     attachedProduct: "American Equity EstateShield 10",
     riderFee: 1.20,
@@ -2216,6 +2388,8 @@ export const glwbRiders = [
   {
     id: "protective-income-builder",
     carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Protective Income Builder",
     attachedProduct: "Protective Indexed Growth 10",
     riderFee: 1.05,
@@ -2241,6 +2415,8 @@ export const glwbRiders = [
   {
     id: "protective-income-builder-plus",
     carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Protective Income Builder Plus",
     attachedProduct: "Protective Indexed Growth Plus 14",
     riderFee: 1.20,
@@ -2266,6 +2442,8 @@ export const glwbRiders = [
   {
     id: "massmutual-retireease-plus",
     carrierId: "massmutual",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "MassMutual RetireEase Plus",
     attachedProduct: "MassMutual Stable Voyage Plus 10",
     riderFee: 1.30,
@@ -2292,6 +2470,8 @@ export const glwbRiders = [
   {
     id: "sammons-retirement-income-select",
     carrierId: "sammons-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Sammons Retirement Income Select",
     attachedProduct: "Sammons StrategyMark 14",
     riderFee: 1.10,
@@ -2317,6 +2497,8 @@ export const glwbRiders = [
   {
     id: "sammons-income-accelerator",
     carrierId: "sammons-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Sammons Income Accelerator",
     attachedProduct: "Sammons StrategyMark Pro 10",
     riderFee: 1.25,
@@ -2342,6 +2524,8 @@ export const glwbRiders = [
   {
     id: "eagle-life-incomewise-select",
     carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Eagle Life IncomeWise Select",
     attachedProduct: "Eagle Life IncomeMaximizer Select 10",
     riderFee: 1.00,
@@ -2367,6 +2551,8 @@ export const glwbRiders = [
   {
     id: "midland-national-income-select",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Midland National Income Select",
     attachedProduct: "Midland National Summit Bonus 10",
     riderFee: 1.10,
@@ -2393,6 +2579,8 @@ export const glwbRiders = [
   {
     id: "midland-national-income-select-14",
     carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Midland National Income Select 14",
     attachedProduct: "Midland National Summit Bonus 14",
     riderFee: 1.00,
@@ -2419,6 +2607,8 @@ export const glwbRiders = [
   {
     id: "north-american-income-pay-advantage",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "North American Income Pay Advantage",
     attachedProduct: "North American NAC VersaChoice 10",
     riderFee: 1.15,
@@ -2445,6 +2635,8 @@ export const glwbRiders = [
   {
     id: "american-national-income-vision-select",
     carrierId: "american-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American National Income Vision Select",
     attachedProduct: "American National Palladium Select 14",
     riderFee: 1.25,
@@ -2470,6 +2662,8 @@ export const glwbRiders = [
   {
     id: "american-national-income-vision-plus",
     carrierId: "american-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "American National Income Vision Plus",
     attachedProduct: "American National Palladium Plus 10",
     riderFee: 1.40,
@@ -2495,6 +2689,8 @@ export const glwbRiders = [
   {
     id: "guggenheim-income-protector-plus",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Guggenheim Income Protector Plus",
     attachedProduct: "Guggenheim TriVysta Plus 10",
     riderFee: 1.20,
@@ -2521,6 +2717,8 @@ export const glwbRiders = [
   {
     id: "guggenheim-income-protector-select",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Guggenheim Income Protector Select",
     attachedProduct: "Guggenheim TriVysta Select 14",
     riderFee: 1.00,
@@ -2547,6 +2745,8 @@ export const glwbRiders = [
   {
     id: "liberty-bankers-income-defender-plus",
     carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Liberty Bankers Income Defender Plus",
     attachedProduct: "Liberty Bankers Atlas Plus 14",
     riderFee: 0.85,
@@ -2572,6 +2772,8 @@ export const glwbRiders = [
   {
     id: "united-home-life-income-secure-plus",
     carrierId: "integrity-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "United Home Life Income Secure Plus",
     attachedProduct: "United Home Life Secure Accumulator 14",
     riderFee: 1.00,
@@ -2597,6 +2799,8 @@ export const glwbRiders = [
   {
     id: "integrity-income-foundation-plus",
     carrierId: "integrity-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Integrity Income Foundation Plus",
     attachedProduct: "Integrity Choice Index Plus 10",
     riderFee: 1.05,
@@ -2622,6 +2826,8 @@ export const glwbRiders = [
   {
     id: "allianz-income-multiplier-plus",
     carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Allianz Income Multiplier Plus",
     attachedProduct: "Allianz 360 Plus Annuity",
     riderFee: 1.40,
@@ -2648,6 +2854,8 @@ export const glwbRiders = [
   {
     id: "nationwide-peak-income-rider",
     carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Nationwide Peak Income Rider",
     attachedProduct: "Nationwide Peak 10",
     riderFee: 1.30,
@@ -2674,6 +2882,8 @@ export const glwbRiders = [
   {
     id: "fg-income-choice-select",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "F&G Income Choice Select",
     attachedProduct: "F&G Safe Income Plus 10",
     riderFee: 0.90,
@@ -2701,6 +2911,8 @@ export const glwbRiders = [
   {
     id: "jackson-lifeguard-freedom-flex",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "LifeGuard Freedom Flex DB",
     attachedProduct: "Jackson Perspective II",
     riderFee: 1.50,
@@ -2728,6 +2940,8 @@ export const glwbRiders = [
   {
     id: "jackson-lifeguard-freedom-6-net",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "LifeGuard Freedom 6 Net",
     attachedProduct: "Jackson Perspective Advisory",
     riderFee: 1.10,
@@ -2755,6 +2969,8 @@ export const glwbRiders = [
   {
     id: "jackson-life-pay",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Life Pay",
     attachedProduct: "Jackson Perspective II",
     riderFee: 0.60,
@@ -2782,6 +2998,8 @@ export const glwbRiders = [
   {
     id: "jackson-income-accelerator",
     carrierId: "jackson-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "IncomeAccelerator",
     attachedProduct: "Jackson MarketProtector III",
     riderFee: 0.95,
@@ -2809,6 +3027,8 @@ export const glwbRiders = [
   {
     id: "nac-income-pay-pro",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Pay Pro",
     attachedProduct: "NAC Performance Choice",
     riderFee: 1.00,
@@ -2836,6 +3056,8 @@ export const glwbRiders = [
   {
     id: "nac-income-pay-select",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Pay Select",
     attachedProduct: "NAC Safeguard Plus",
     riderFee: 0.75,
@@ -2863,6 +3085,8 @@ export const glwbRiders = [
   {
     id: "nac-benefit-solutions-lifetime",
     carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Benefit Solutions Lifetime Income",
     attachedProduct: "NAC Benefit Solutions II",
     riderFee: 1.10,
@@ -2890,6 +3114,8 @@ export const glwbRiders = [
   {
     id: "pacific-life-coreincome-5",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "CoreIncome 5",
     attachedProduct: "Pacific Index Choice",
     riderFee: 0.95,
@@ -2910,6 +3136,8 @@ export const glwbRiders = [
   {
     id: "pacific-life-coreincome-advantage",
     carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "CoreIncome Advantage",
     attachedProduct: "Pacific Secure Income",
     riderFee: 1.15,
@@ -2930,6 +3158,8 @@ export const glwbRiders = [
   {
     id: "transamerica-income-edge",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Edge",
     attachedProduct: "Transamerica Secure Retirement Index",
     riderFee: 1.05,
@@ -2950,6 +3180,8 @@ export const glwbRiders = [
   {
     id: "transamerica-income-accelerator",
     carrierId: "transamerica",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Accelerator",
     attachedProduct: "Transamerica Elite Edge Plus",
     riderFee: 1.20,
@@ -2970,6 +3202,8 @@ export const glwbRiders = [
   {
     id: "fg-safe-income-rider",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Safe Income Rider",
     attachedProduct: "F&G Safe Income Plus",
     riderFee: 0.95,
@@ -2990,6 +3224,8 @@ export const glwbRiders = [
   {
     id: "fg-accelerator-income-rider",
     carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Accelerator Income Rider",
     attachedProduct: "F&G Accelerator Plus 10",
     riderFee: 1.10,
@@ -3010,6 +3246,8 @@ export const glwbRiders = [
   {
     id: "athene-income-shield",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Shield",
     attachedProduct: "Athene Agility FIA",
     riderFee: 1.00,
@@ -3030,6 +3268,8 @@ export const glwbRiders = [
   {
     id: "athene-income-advantage",
     carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Advantage Plus",
     attachedProduct: "Athene Performance Elite",
     riderFee: 0.85,
@@ -3050,6 +3290,8 @@ export const glwbRiders = [
   {
     id: "american-equity-incomeshield",
     carrierId: "american-equity",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "IncomeShield Plus",
     attachedProduct: "AE AssetShield",
     riderFee: 1.05,
@@ -3070,6 +3312,8 @@ export const glwbRiders = [
   {
     id: "mutual-of-omaha-income-protector",
     carrierId: "mutual-of-omaha",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
     name: "Income Protector",
     attachedProduct: "Mutual of Omaha SecureAdvantage",
     riderFee: 0.95,

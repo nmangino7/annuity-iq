@@ -994,5 +994,46 @@ export const vaProducts = [
     ],
     sourceUrl: 'https://www.securitybenefit.com/individual/annuities/variable-annuities',
     lastRateUpdate: '2025-11-01'
+  },
+  // ── 17. Fidelity Personal Retirement Annuity (FPRA) ──
+  {
+    id: 'fidelity-fpra',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-27',
+    verificationSource: 'Fidelity.com, SEC EDGAR prospectus, SmartAsset, AnnuityGator',
+    carrierId: 'fidelity-life',
+    name: 'Fidelity Personal Retirement Annuity (FPRA)',
+    contractType: 'No-Load / Advisory',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.25,
+    adminFee: 0,
+    totalAnnualCharge: 0.25,
+    annualServiceCharge: 0,
+    meChargeByDeathBenefit: null,
+    fundFacilitationFee: 0,
+    fundExpenseRange: { min: 0.10, max: 2.07 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 10000,
+    maximumIssueAge: 90,
+    maximumIssueAgeByDB: null,
+    subaccountCount: 65,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Contract Value', type: 'Standard', annualCost: 0, description: 'Current contract value — no guaranteed minimum death benefit' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Lowest-cost VA on the market — only 0.25% M&E (0.10% at $1M+)',
+      'No surrender charges — 100% liquidity from day one',
+      '65+ Fidelity investment options including index funds',
+      'No income riders — pure accumulation and tax-deferral vehicle',
+      'Fidelity Investments — one of the largest financial services firms'
+    ],
+    sourceUrl: 'https://www.fidelity.com/annuities/personal-retirement-annuity/overview',
+    lastRateUpdate: '2026-02-27'
   }
 ];

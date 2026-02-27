@@ -1246,4 +1246,105 @@ export const iulProducts = [
     sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
     lastRateUpdate: "2026-02-22"
   },
+  // ── 20. Allianz Life Accumulator IUL ──
+  {
+    id: "allianz-accumulator-iul",
+    carrierId: "allianz-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-27",
+    verificationSource: "Allianz Life official rate sheet dated 2/3/2026, OgletreeFinancial.com, CPS Insurance, FMI Agent",
+    name: "Allianz Life Accumulator IUL",
+    maxIllustratedRate: null,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        triggerRate: 8.00
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Sum",
+        capRate: 3.60,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Bloomberg US Dynamic Balance III ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 185,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "PIMCO Tactical Balanced ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 180,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Blended Futures Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 95,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500 Futures Index ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 60,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 5.30,
+    guaranteedMinCreditingRate: 0.25,
+    loanProvisions: {
+      fixedLoanRate: 1.96,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing", "Return of Premium"],
+    riders: ["Chronic Illness Accelerated Benefit Rider", "Terminal Illness Rider"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 75,
+    highlights: [
+      "Bloomberg US Dynamic Balance III — 185% uncapped participation",
+      "PIMCO Tactical Balanced — 180% uncapped participation",
+      "S&P 500 trigger at 8.00% — earns 8% if index is flat or positive",
+      "5.30% fixed account rate — highest in IUL market",
+      "Three bonus tiers: Classic (1%), Bonused (15% multiplier), Select (40% multiplier)",
+      "Allianz Life — A+ AM Best, AA S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://www.allianzlife.com/what-we-offer/life-insurance/accumulator-indexed-universal-life",
+    lastRateUpdate: "2026-02-27"
+  }
 ];

@@ -105,8 +105,8 @@ export function renderVULExplorer() {
         <button onclick="window._applyVULFilters()" class="mt-3 px-4 py-1.5 bg-teal-600 text-white text-sm rounded-lg hover:bg-teal-700 transition-colors">Apply Filters</button>
       </div>
 
-      <!-- Table -->
-      <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+      <!-- Table or Empty State -->
+      <div id="vul-table-container" class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full text-sm data-table">
             <thead>
@@ -128,6 +128,38 @@ export function renderVULExplorer() {
           </table>
         </div>
         <div class="px-4 py-3 border-t border-slate-200 dark:border-slate-700 text-xs text-slate-400" id="vul-count"></div>
+      </div>
+      <div id="vul-empty-state" class="hidden bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+        <div class="py-16 px-8 text-center">
+          <div class="w-16 h-16 mx-auto rounded-full bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-700 dark:text-slate-200">VUL Products Coming Soon</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-md mx-auto">We're actively verifying M&E charges, COI structures, and subaccount data from SEC EDGAR prospectus filings for 20+ carriers. VUL data will be available in the next update.</p>
+          <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-xl mx-auto">
+            <div class="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
+              <div class="text-sm font-bold text-teal-600 dark:text-teal-400">Lincoln</div>
+              <div class="text-[10px] text-slate-400">VULone</div>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
+              <div class="text-sm font-bold text-teal-600 dark:text-teal-400">Equitable</div>
+              <div class="text-[10px] text-slate-400">Incentive Life</div>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
+              <div class="text-sm font-bold text-teal-600 dark:text-teal-400">Prudential</div>
+              <div class="text-[10px] text-slate-400">VUL Protector</div>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
+              <div class="text-sm font-bold text-teal-600 dark:text-teal-400">Protective</div>
+              <div class="text-[10px] text-slate-400">Investors Life</div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-center gap-4">
+            <a href="#/va" class="text-sm text-teal-600 dark:text-teal-400 hover:underline">Explore Variable Annuities</a>
+            <span class="text-slate-300 dark:text-slate-600">|</span>
+            <a href="#/iul" class="text-sm text-teal-600 dark:text-teal-400 hover:underline">Explore IUL Products</a>
+          </div>
+        </div>
       </div>
     </div>
   `;
@@ -385,7 +417,19 @@ function renderVULTable() {
   const tbody = document.getElementById('vul-table-body');
   const countEl = document.getElementById('vul-count');
   const summaryEl = document.getElementById('vul-summary-cards');
+  const emptyState = document.getElementById('vul-empty-state');
+  const tableContainer = document.getElementById('vul-table-container');
   if (!tbody) return;
+
+  // Toggle empty state vs table
+  if (allProducts.length === 0) {
+    if (emptyState) emptyState.classList.remove('hidden');
+    if (tableContainer) tableContainer.classList.add('hidden');
+    return;
+  } else {
+    if (emptyState) emptyState.classList.add('hidden');
+    if (tableContainer) tableContainer.classList.remove('hidden');
+  }
 
   // Summary
   if (summaryEl) {
