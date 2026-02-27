@@ -53,6 +53,7 @@ import { renderRILAExplorer, renderRILADetail } from './pages/RILAExplorer.js';
 import { renderVAExplorer, renderVADetail } from './pages/VAExplorer.js';
 import { renderVULExplorer, renderVULDetail } from './pages/VULExplorer.js';
 import { renderFundExplorer, renderFundDetail } from './pages/FundExplorer.js';
+import { renderPolicyLookup } from './pages/PolicyLookup.js';
 
 // ---------------------------------------------------------------------------
 // Register routes
@@ -90,6 +91,7 @@ registerRoute('/alerts', () => renderRateAlerts());
 registerRoute('/reports', () => renderReports());
 registerRoute('/watchlist', () => renderWatchlist());
 registerRoute('/screener', () => renderScreener());
+registerRoute('/policy-lookup', () => renderPolicyLookup());
 
 // ---------------------------------------------------------------------------
 // Auth initialization
