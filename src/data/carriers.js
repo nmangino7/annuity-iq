@@ -32,7 +32,7 @@ export const carriers = [
     foundedYear: 1928,
     headquarters: "Columbus, OH",
     totalAssets: "$280B",
-    productCategories: ["fia", "glwb", "iul", "va"],
+    productCategories: ["fia", "glwb", "iul", "va", "vul"],
     website: "https://www.nationwide.com"
   },
   {
@@ -122,7 +122,7 @@ export const carriers = [
     foundedYear: 1868,
     headquarters: "Newport Beach, CA",
     totalAssets: "$200B",
-    productCategories: ["fia", "glwb", "iul", "va"],
+    productCategories: ["fia", "glwb", "iul", "va", "vul"],
     website: "https://www.pacificlife.com"
   },
   {
@@ -158,7 +158,7 @@ export const carriers = [
     foundedYear: 1875,
     headquarters: "Newark, NJ",
     totalAssets: "$900B",
-    productCategories: ["fia", "iul", "va", "term", "whole-life"],
+    productCategories: ["fia", "iul", "va", "term", "whole-life", "vul"],
     website: "https://www.prudential.com"
   },
   {
@@ -176,7 +176,7 @@ export const carriers = [
     foundedYear: 1961,
     headquarters: "Lansing, MI",
     totalAssets: "$340B",
-    productCategories: ["fia", "glwb", "iul", "va", "rila"],
+    productCategories: ["fia", "glwb", "iul", "va", "rila", "vul"],
     website: "https://www.jackson.com"
   },
   {
@@ -230,7 +230,7 @@ export const carriers = [
     foundedYear: 1880,
     headquarters: "St. Paul, MN",
     totalAssets: "$95B",
-    productCategories: ["fia", "iul", "term", "whole-life"],
+    productCategories: ["fia", "iul", "term", "whole-life", "vul"],
     website: "https://www.securian.com"
   },
   {
@@ -266,7 +266,7 @@ export const carriers = [
     foundedYear: 2004,
     headquarters: "New York, NY",
     totalAssets: "$160B",
-    productCategories: ["fia", "glwb", "myga", "rila", "va"],
+    productCategories: ["fia", "glwb", "myga", "rila", "va", "vul"],
     website: "https://www.globalatlantic.com"
   },
   {
@@ -302,7 +302,7 @@ export const carriers = [
     foundedYear: 2017,
     headquarters: "Charlotte, NC",
     totalAssets: "$240B",
-    productCategories: ["fia", "glwb", "va"],
+    productCategories: ["fia", "glwb", "va", "vul"],
     website: "https://www.brighthousefinancial.com"
   },
   {
@@ -446,7 +446,7 @@ export const carriers = [
     foundedYear: 1909,
     headquarters: "Omaha, NE",
     totalAssets: "$45B",
-    productCategories: ["iul", "term", "whole-life"],
+    productCategories: ["iul", "term", "whole-life", "vul"],
     website: "https://www.mutualofomaha.com"
   },
   {
@@ -464,7 +464,7 @@ export const carriers = [
     foundedYear: 1921,
     headquarters: "Houston, TX",
     totalAssets: "$380B",
-    productCategories: ["fia", "glwb", "va", "iul"],
+    productCategories: ["fia", "glwb", "va", "iul", "vul"],
     website: "https://www.corebridgefinancial.com"
   },
   {
@@ -500,7 +500,7 @@ export const carriers = [
     foundedYear: 1887,
     headquarters: "Lincoln, NE",
     totalAssets: "$30B",
-    productCategories: ["fia", "iul", "term"],
+    productCategories: ["fia", "iul", "term", "vul"],
     website: "https://www.ameritas.com"
   },
   {
@@ -518,7 +518,7 @@ export const carriers = [
     foundedYear: 1862,
     headquarters: "Boston, MA",
     totalAssets: "$290B",
-    productCategories: ["iul", "term", "whole-life", "fia"],
+    productCategories: ["iul", "term", "whole-life", "fia", "vul"],
     website: "https://www.johnhancock.com"
   },
   {
@@ -608,7 +608,7 @@ export const carriers = [
     foundedYear: 1860,
     headquarters: "Houston, TX",
     totalAssets: "$180B",
-    productCategories: ["fia", "glwb", "iul", "va"],
+    productCategories: ["fia", "glwb", "iul", "va", "vul"],
     website: "https://www.corebridgefinancial.com"
   },
   {
@@ -644,7 +644,7 @@ export const carriers = [
     foundedYear: 1958,
     headquarters: "Minneapolis, MN",
     totalAssets: "$1.6T",
-    productCategories: ["va", "rila"],
+    productCategories: ["va", "rila", "vul"],
     website: "https://www.riversource.com"
   },
   {
