@@ -1627,6 +1627,273 @@ export const vulProducts = [
     ],
     sourceUrl: 'https://www.mutualofamerica.com',
     lastRateUpdate: '2019-11-14'
+  },
+
+  // =========================================================================
+  // NATIONWIDE - Innovator VUL
+  // =========================================================================
+  // Source: SEC EDGAR Filing CIK 1041357 - N-6 filed February 8, 2019
+  // https://www.sec.gov/Archives/edgar/data/1041357/000119312519037784/d705578dn6.htm
+  {
+    id: 'nationwide-innovator-vul',
+    carrierId: 'nationwide',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR N-6 Filing, CIK 1041357 (Nationwide VLI Separate Account-4), filed 2019-02-08',
+    name: 'Nationwide Innovator VUL',
+    // M&E CHARGE (Variable Account Asset Charge) - VERIFIED from SEC prospectus:
+    // Current: 0.50% annually of variable Cash Value
+    // Guaranteed max: 0.90% annually
+    meCharge: 0.50,
+    meChargeSchedule: {
+      guaranteed: {
+        allYears: 0.90
+      },
+      current: {
+        allYears: 0.50
+      }
+    },
+    premiumCharge: { upToTarget: 10, aboveTarget: 0 },
+    premiumChargeMax: { upToTarget: 12, aboveTarget: 12 },
+    adminFee: 5.00,
+    adminFeeType: 'monthly',
+    adminFeeMax: 10.00,
+    surrenderSchedule: {},
+    surrenderScheduleType: 'none',
+    productType: 'Flexible VUL',
+    deathBenefitOptions: ['Level', 'Increasing'],
+    hasIndexedAccounts: false,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    loanInterest: { current: 3.00, max: 3.50 },
+    minPremium: 50,
+    maxIssueAge: 85,
+    stateApprovals: 'Most states',
+    policyForm: 'Nationwide Innovator VUL',
+    issuer: 'Nationwide Life Insurance Company',
+    highlights: [
+      'No surrender charges — full liquidity from day one',
+      'Current M&E of 0.50% with max 0.90% guaranteed',
+      'Premium charge structure instead of surrender charges',
+      '10% premium charge on target premiums (current), 0% on excess',
+      'Part of the Nationwide variable life product family'
+    ],
+    sourceUrl: 'https://www.nationwide.com/financial-professionals/products/life/variable/',
+    lastRateUpdate: '2019-02-08'
+  },
+
+  // =========================================================================
+  // MASSMUTUAL - Variable Life Plus (VLP)
+  // =========================================================================
+  // Source: SEC EDGAR Filing CIK 836249 - 485BPOS filed April 25, 2025
+  // https://www.sec.gov/Archives/edgar/data/836249/000113322825004449/vlplsmm-efp9412_485bpos.htm
+  {
+    id: 'massmutual-variable-life-plus',
+    carrierId: 'massmutual',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR 485BPOS Filing, CIK 836249, filed 2025-04-25; Post-Effective Amendment No. 43',
+    name: 'MassMutual Variable Life Plus (VLP)',
+    // M&E CHARGE - VERIFIED from SEC prospectus:
+    // Current and Guaranteed: 0.40% annually (deducted daily from Separate Account net assets)
+    // This is locked — current equals maximum
+    meCharge: 0.40,
+    meChargeSchedule: {
+      guaranteed: {
+        allYears: 0.40
+      },
+      current: {
+        allYears: 0.40
+      }
+    },
+    premiumCharge: { current: 5.00, max: 7.50 },
+    adminFee: 12.00,
+    adminFeeType: 'monthly',
+    surrenderSchedule: {
+      year1: 100, year2: 90, year3: 80, year4: 70, year5: 60,
+      year6: 50, year7: 40, year8: 30, year9: 20, year10: 10,
+      year11: 8, year12: 6, year13: 4, year14: 2, year15: 0
+    },
+    surrenderScheduleType: 'percentOfTarget',
+    productType: 'Variable Whole Life',
+    deathBenefitOptions: ['Level', 'Increasing'],
+    hasIndexedAccounts: false,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    minPremium: 50,
+    maxIssueAge: 80,
+    stateApprovals: 'Most states',
+    policyForm: 'Variable Life Plus (VLP)',
+    issuer: 'Massachusetts Mutual Life Insurance Company',
+    highlights: [
+      'M&E of 0.40% is locked — current equals guaranteed maximum',
+      'Filed under Variable Life Separate Account I',
+      'SEC filing updated April 2025 (most current)',
+      '15-year surrender charge schedule',
+      'Participating mutual company — potential for dividends'
+    ],
+    sourceUrl: 'https://www.massmutual.com/product-performance/variable-universal-life',
+    lastRateUpdate: '2025-04-25'
+  },
+
+  // =========================================================================
+  // METLIFE - Group Variable Universal Life (Group VUL)
+  // =========================================================================
+  // Source: SEC EDGAR Filing CIK 858997 - 485BPOS filed April 22, 2022
+  // https://www.sec.gov/Archives/edgar/data/858997/000119312522111159/d428520d485bpos.htm
+  {
+    id: 'metlife-group-vul',
+    carrierId: 'metlife',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR 485BPOS Filing, CIK 858997, filed 2022-04-22; Metropolitan Life Separate Account UL',
+    name: 'MetLife Group Variable Universal Life',
+    // M&E CHARGE - VERIFIED from SEC prospectus:
+    // Current and Guaranteed: 0.90% annually (deducted daily from Separate Account)
+    meCharge: 0.90,
+    meChargeSchedule: {
+      guaranteed: {
+        allYears: 0.90
+      },
+      current: {
+        allYears: 0.90
+      }
+    },
+    adminFee: 5.00,
+    adminFeeType: 'monthly',
+    surrenderSchedule: {},
+    surrenderScheduleType: 'none',
+    productType: 'Group VUL',
+    deathBenefitOptions: ['Level', 'Increasing'],
+    hasIndexedAccounts: false,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    loanInterestSpread: 2.00,
+    minPremium: 25,
+    maxIssueAge: 80,
+    stateApprovals: 'Most states',
+    policyForm: 'MetLife Group VUL Certificates',
+    issuer: 'Metropolitan Life Insurance Company',
+    highlights: [
+      'Group VUL product for employer-sponsored plans',
+      'M&E of 0.90% — both current and guaranteed (locked)',
+      'MetLife spun off individual VUL to Brighthouse in 2017',
+      'No surrender charges for group product',
+      'Low $5/month admin fee'
+    ],
+    sourceUrl: 'https://www.metlife.com/variable-products-resources/product-performance-reports/metlife-life-products/',
+    lastRateUpdate: '2022-05-01'
+  },
+
+  // =========================================================================
+  // SYMETRA - Premier Variable Universal Life
+  // =========================================================================
+  // Source: SEC EDGAR Filing CIK 806180 - 485BPOS filed April 30, 2010
+  // https://www.sec.gov/Archives/edgar/data/806180/000119312510099707/d485bpos.htm
+  {
+    id: 'symetra-premier-vul',
+    carrierId: 'symetra',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR 485BPOS Filing, CIK 806180, filed 2010-04-30; Symetra Separate Account SL',
+    name: 'Symetra Premier Variable Universal Life',
+    // M&E CHARGE - VERIFIED from SEC prospectus:
+    // Current and Guaranteed: 0.75% annually (M&E Risk Charge)
+    // Plus Distribution Charge: 1.50% annually
+    // Total asset-based charges: 2.25% annually
+    meCharge: 0.75,
+    meChargeSchedule: {
+      guaranteed: {
+        allYears: 0.75
+      },
+      current: {
+        allYears: 0.75
+      }
+    },
+    distributionCharge: 1.50,
+    totalAssetCharge: 2.25,
+    premiumTax: 3.50,
+    adminFee: 8.00,
+    adminFeeType: 'monthly',
+    adminFeeNote: '0.025% monthly of Policy Value, capped at $8/month',
+    surrenderSchedule: {},
+    surrenderScheduleType: 'none',
+    productType: 'Flexible VUL',
+    deathBenefitOptions: ['Level', 'Increasing'],
+    hasIndexedAccounts: false,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    minPremium: 50,
+    maxIssueAge: 80,
+    stateApprovals: 'Most states',
+    policyForm: 'Symetra Premier VUL / Enhanced VUL',
+    issuer: 'Symetra Life Insurance Company',
+    highlights: [
+      'No surrender charges — full liquidity from day one',
+      'M&E of 0.75% plus 1.50% distribution charge (2.25% total asset charges)',
+      'Higher asset charges offset by zero surrender charges',
+      'Symetra acquired by Sumitomo Life in 2016',
+      'Admin fee based on 0.025% monthly of Policy Value (capped at $8)'
+    ],
+    sourceUrl: 'https://www.symetra.com',
+    lastRateUpdate: '2010-04-30'
+  },
+
+  // =========================================================================
+  // PACIFIC LIFE - Pacific Select Exec III
+  // =========================================================================
+  // Source: SEC EDGAR Filing CIK 832908 - 485BPOS filed April 16, 2024
+  // https://www.sec.gov/Archives/edgar/data/832908/000110465924047750/tm243399d1_485bpos.htm
+  {
+    id: 'pacific-life-select-exec-iii',
+    carrierId: 'pacific-life',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR 485BPOS Filing, CIK 832908, filed 2024-04-16; Post-Effective Amendment No. 60',
+    name: 'Pacific Life Select Exec III',
+    // M&E CHARGE - VERIFIED from SEC prospectus:
+    // Pacific Life uses a split structure:
+    // Asset Charge: 0.45% annually on first $25K AV, 0.05% on excess (current = guaranteed)
+    // Plus M&E Risk Face Amount Charge per $1,000 of coverage
+    meCharge: 0.45,
+    meChargeSchedule: {
+      guaranteed: {
+        assetCharge: { first25k: 0.45, excess: 0.05 }
+      },
+      current: {
+        assetCharge: { first25k: 0.45, excess: 0.05 }
+      }
+    },
+    premiumCharge: 2.50,
+    premiumTax: 2.35,
+    federalPremiumTax: 1.50,
+    adminFee: 7.50,
+    adminFeeType: 'monthly',
+    surrenderSchedule: {
+      year1: 52.90, year2: 45, year3: 40, year4: 35, year5: 30,
+      year6: 25, year7: 20, year8: 15, year9: 10, year10: 0
+    },
+    surrenderScheduleType: 'perThousand',
+    productType: 'Executive VUL',
+    deathBenefitOptions: ['Level (Option A)', 'Increasing (Option B)'],
+    hasIndexedAccounts: false,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    loanInterest: 2.75,
+    minPremium: 100,
+    maxIssueAge: 85,
+    stateApprovals: 'Most states',
+    policyForm: 'P04SE2 (issued on/after Nov 1, 2006)',
+    issuer: 'Pacific Life Insurance Company',
+    highlights: [
+      'Split M&E structure: 0.45% asset charge on first $25K, 0.05% on excess',
+      'Executive-focused VUL with competitive pricing for large policies',
+      'SEC filing updated April 2024',
+      'Asset charge drops dramatically above $25K accumulated value',
+      'Low loan interest rate of 2.75%'
+    ],
+    sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance/variable-universal-life-insurance.html',
+    lastRateUpdate: '2024-04-16'
   }
 
 ];

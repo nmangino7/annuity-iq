@@ -122,7 +122,7 @@ export const carriers = [
     foundedYear: 1868,
     headquarters: "Newport Beach, CA",
     totalAssets: "$200B",
-    productCategories: ["fia", "glwb", "iul", "va"],
+    productCategories: ["fia", "glwb", "iul", "va", "vul"],
     website: "https://www.pacificlife.com"
   },
   {
@@ -320,7 +320,7 @@ export const carriers = [
     foundedYear: 1851,
     headquarters: "Springfield, MA",
     totalAssets: "$780B",
-    productCategories: ["whole-life", "term", "iul", "va", "rila"],
+    productCategories: ["whole-life", "term", "iul", "va", "rila", "vul"],
     website: "https://www.massmutual.com"
   },
   {
@@ -410,7 +410,7 @@ export const carriers = [
     foundedYear: 1957,
     headquarters: "Bellevue, WA",
     totalAssets: "$50B",
-    productCategories: ["fia", "glwb", "myga", "va", "rila"],
+    productCategories: ["fia", "glwb", "myga", "va", "rila", "vul"],
     website: "https://www.symetra.com"
   },
   {
@@ -791,6 +791,24 @@ export const carriers = [
     totalAssets: "$90B",
     productCategories: ["whole-life", "term", "vul"],
     website: "https://www.guardianlife.com"
+  },
+  {
+    id: "metlife",
+    name: "Metropolitan Life Insurance Company",
+    shortName: "MetLife",
+    ratings: {
+      amBest: { rating: "A+", outlook: "Stable" },
+      sAndP: { rating: "AA-", outlook: "Stable" },
+      moodys: { rating: "Aa3", outlook: "Stable" },
+      fitch: { rating: "AA-", outlook: "Stable" },
+      comdex: 96
+    },
+    yearsInBusiness: 158,
+    foundedYear: 1868,
+    headquarters: "New York, NY",
+    totalAssets: "$750B",
+    productCategories: ["vul", "term", "whole-life"],
+    website: "https://www.metlife.com"
   },
   {
     id: "mutual-of-america",
