@@ -1035,5 +1035,1384 @@ export const vaProducts = [
     ],
     sourceUrl: 'https://www.fidelity.com/annuities/personal-retirement-annuity/overview',
     lastRateUpdate: '2026-02-27'
+  },
+
+  // ── 18. Vanguard Variable Annuity ──
+  {
+    id: 'vanguard-variable-annuity',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 866252, Vanguard.com, Kiplinger, Morningstar',
+    carrierId: 'vanguard',
+    name: 'Vanguard Variable Annuity',
+    contractType: 'No-Load / Direct',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.20,
+    adminFee: 0.10,
+    totalAnnualCharge: 0.30,
+    annualServiceCharge: 25,
+    serviceChargeWaivedAt: 25000,
+    fundExpenseRange: { min: 0.15, max: 0.44 },
+    minimumPremium: 5000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 30,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of contract value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Ultra-low 0.30% total annual charge (M&E 0.20% + admin 0.10%)',
+      'No surrender charges — full liquidity from day one',
+      'No commissions — sold direct by Vanguard',
+      'Low-cost Vanguard index funds with expenses 0.15%-0.44%',
+      'Among the lowest-cost VAs in the industry'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/866252/000119312520257572/d75620dn4.htm',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 19. Nationwide Monument Advisor ──
+  {
+    id: 'nationwide-monument-advisor',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 1005336, Nationwide/JeffNat.com, prospectus',
+    carrierId: 'nationwide',
+    name: 'Nationwide Monument Advisor',
+    contractType: 'No-Load / IOVA',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0,
+    adminFee: 0,
+    totalAnnualCharge: 0,
+    annualServiceCharge: 240,
+    flatMonthlyFee: 20,
+    fundExpenseRange: { min: 0.03, max: 1.50 },
+    minimumPremium: 25000,
+    minimumPremiumQualified: 10000,
+    maximumIssueAge: 85,
+    subaccountCount: 350,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Contract Value', type: 'Standard', annualCost: 0, description: 'Current contract value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Industry first flat-fee Investment Only Variable Annuity (IOVA)',
+      'No M&E charge — flat $20/month ($240/year) regardless of balance',
+      'No surrender charges — full liquidity',
+      '350+ investment options — largest fund lineup in VA market',
+      'Originally Jefferson National — acquired by Nationwide in 2017'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1005336/000119312521133206/d109569d485bpos.htm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 20. TIAA Intelligent Variable Annuity ──
+  {
+    id: 'tiaa-intelligent-va',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 1067490, TIAA.org, SmartAsset, AnnuityDigest',
+    carrierId: 'tiaa',
+    name: 'TIAA Intelligent Variable Annuity',
+    contractType: 'No-Load / Direct',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.40,
+    adminFee: 0,
+    totalAnnualCharge: 0.40,
+    meChargeByBalance: { under100k: 0.40, over100k: 0.25, over250k: 0.20, over500k: 0.15 },
+    annualServiceCharge: 15,
+    fundExpenseRange: { min: 0.20, max: 1.10 },
+    minimumPremium: 2500,
+    minimumPremiumQualified: 2500,
+    maximumIssueAge: 85,
+    subaccountCount: 45,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'GLWB Rider',
+        type: 'GMWB',
+        annualCost: 1.20,
+        description: 'Guaranteed Lifetime Withdrawal Benefit — 1.20% annual charge'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of contract value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'M&E charge tiers by balance: 0.40% (<$100K) down to 0.15% ($500K+)',
+      'No surrender charges — full liquidity from day one',
+      'Low minimum premium of $2,500',
+      'Optional GLWB rider available at 1.20%',
+      'Issued by TIAA-CREF Life Insurance Company'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1067490/000119312514076820/d681776d485apos.htm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 21. Equitable Investment Edge (Series B) ──
+  {
+    id: 'equitable-investment-edge-b',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 1537470, Equitable.com, SmartAsset prospectus review',
+    carrierId: 'equitable',
+    name: 'Equitable Investment Edge (Series B)',
+    contractType: 'B-Share',
+    surrenderPeriod: 6,
+    surrenderSchedule: [6, 5, 4, 3, 2, 1],
+    meCharge: 1.10,
+    adminFee: 0,
+    totalAnnualCharge: 1.10,
+    annualServiceCharge: 50,
+    serviceChargeWaivedAt: 100000,
+    fundExpenseRange: { min: 0.71, max: 1.00 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 80,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Enhanced', annualCost: 0.20, description: 'Return of purchase payments less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Combined M&E&A of 1.10% — competitive for B-share class',
+      'Segment investment options lower all-in costs vs traditional subaccounts',
+      'Optional Return of Premium death benefit at 0.20%',
+      '$50 annual contract fee waived at $100K+',
+      'Part of Equitable\'s Investment Edge family of products'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1537470/000119312521135891/d109166d497vpi.htm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 22. Equitable Investment Edge ADV ──
+  {
+    id: 'equitable-investment-edge-adv',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Equitable.com prospectus, SEC EDGAR CIK 1537470',
+    carrierId: 'equitable',
+    name: 'Equitable Investment Edge ADV',
+    contractType: 'Advisory / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.35,
+    adminFee: 0,
+    totalAnnualCharge: 0.35,
+    annualServiceCharge: 50,
+    serviceChargeWaivedAt: 100000,
+    fundExpenseRange: { min: 0.71, max: 1.00 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 80,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Enhanced', annualCost: 0.20, description: 'Return of purchase payments less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Advisory/fee-based version — ultra-low 0.35% M&E',
+      'No surrender charges — 100% liquidity',
+      'Designed for fee-based RIA and advisory practices',
+      'Same fund lineup as Series B at lower insurance cost',
+      'Segment investment options for downside protection without M&E'
+    ],
+    sourceUrl: 'https://equitable.com/financial-professionals/annuities/investment-edge-variable-annuity',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 23. MassMutual Transitions Select II ──
+  {
+    id: 'massmutual-transitions-select-ii',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'MassMutual.com, SmartAsset review, SEC EDGAR prospectus',
+    carrierId: 'massmutual',
+    name: 'MassMutual Transitions Select II',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.30,
+    adminFee: 0,
+    totalAnnualCharge: 1.30,
+    annualServiceCharge: 40,
+    serviceChargeWaivedAt: 100000,
+    fundExpenseRange: { min: 0.54, max: 2.59 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 10000,
+    maximumIssueAge: 75,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Issued by Massachusetts Mutual Life Insurance Company',
+      '1.30% combined M&E and administrative charge',
+      '$40 annual contract fee waived at $100K+',
+      'Max issue age 75',
+      '10% annual free withdrawal'
+    ],
+    sourceUrl: 'https://www.massmutual.com/product-performance/massmutual-transitions-select-ii',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 24. Schwab Genesis Variable Annuity (Protective Life) ──
+  {
+    id: 'schwab-genesis-va',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Schwab.com, Protective Life prospectus, BusinessWire announcement',
+    carrierId: 'protective',
+    name: 'Schwab Genesis Variable Annuity',
+    contractType: 'B-Share (Low-Cost)',
+    surrenderPeriod: 5,
+    surrenderSchedule: [5, 4, 3, 2, 1],
+    meCharge: 0.45,
+    adminFee: 0,
+    totalAnnualCharge: 0.45,
+    meChargeByBalance: { under500k: 0.45, over500k: 0.40, over1m: 0.35 },
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.03, max: 0.75 },
+    minimumPremium: 5000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'SecurePay Life (Single)',
+        type: 'GMWB',
+        annualCost: 1.10,
+        maxAnnualCost: 2.00,
+        description: 'Guaranteed lifetime withdrawal benefit — 1.10% of benefit base annually'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Purchase Payments', type: 'Enhanced', annualCost: 0.20, description: 'Total purchase payments less adjusted withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Among lowest-cost B-share VAs — only 0.45% M&E&A',
+      'Tiered pricing: 0.40% at $500K+, 0.35% at $1M+',
+      'Issued by Protective Life (PLICO) — distributed through Schwab',
+      'SecurePay Life GLWB available at 1.10%',
+      '5-year surrender period with low charges'
+    ],
+    sourceUrl: 'https://www.schwab.com/annuities/variable-annuities/schwab-genesis-variable-annuity',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 25. Schwab Genesis Advisory Variable Annuity ──
+  {
+    id: 'schwab-genesis-advisory-va',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Schwab.com, Protective Life prospectus, BusinessWire',
+    carrierId: 'protective',
+    name: 'Schwab Genesis Advisory Variable Annuity',
+    contractType: 'Advisory / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.25,
+    adminFee: 0,
+    totalAnnualCharge: 0.25,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.03, max: 0.75 },
+    minimumPremium: 5000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'SecurePay Life (Single)',
+        type: 'GMWB',
+        annualCost: 1.10,
+        maxAnnualCost: 2.00,
+        description: 'Guaranteed lifetime withdrawal benefit — 1.10% of benefit base annually'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Purchase Payments', type: 'Enhanced', annualCost: 0.20, description: 'Total purchase payments less adjusted withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Ultra-low 0.25% M&E&A — among cheapest VAs available',
+      'No surrender charges — 100% liquidity',
+      'Fee-based advisory version of Schwab Genesis',
+      'Issued by Protective Life (PLICO) — designed for RIAs',
+      'Morningstar average VA fee is 1.29% — this is 80% cheaper'
+    ],
+    sourceUrl: 'https://schwab.protective.com/annuities/variable-annuities/schwab-genesis-advisory',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 26. RiverSource RAVA 5 Advantage (7-Year) ──
+  {
+    id: 'riversource-rava5-advantage-7yr',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'RiverSource.com prospectus, Ameriprise, SEC EDGAR',
+    carrierId: 'riversource',
+    name: 'RiverSource RAVA 5 Advantage (7-Year)',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.10,
+    adminFee: 0,
+    totalAnnualCharge: 1.10,
+    annualServiceCharge: 50,
+    fundExpenseRange: { min: 0.30, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 2000,
+    maximumIssueAge: 85,
+    subaccountCount: 70,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'M&E of 1.10% for 7-year surrender class',
+      'Issued by RiverSource Life Insurance Company (Ameriprise)',
+      'Contracts offered on/after April 29, 2019',
+      'Optional death benefit riders available at additional cost',
+      '70+ sub-account investment options'
+    ],
+    sourceUrl: 'https://www.riversource.com/binaries/content/assets/riversource/1/6720.pdf',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 27. RiverSource RAVA 5 Advantage (10-Year) ──
+  {
+    id: 'riversource-rava5-advantage-10yr',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'RiverSource.com prospectus, Ameriprise, SEC EDGAR',
+    carrierId: 'riversource',
+    name: 'RiverSource RAVA 5 Advantage (10-Year)',
+    contractType: 'B-Share',
+    surrenderPeriod: 10,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4, 3, 2, 1, 1],
+    meCharge: 0.95,
+    adminFee: 0,
+    totalAnnualCharge: 0.95,
+    annualServiceCharge: 50,
+    fundExpenseRange: { min: 0.30, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 2000,
+    maximumIssueAge: 85,
+    subaccountCount: 70,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Lower M&E of 0.95% in exchange for 10-year surrender period',
+      'Issued by RiverSource Life Insurance Company (Ameriprise)',
+      'Same fund lineup as 7-year version at lower annual cost',
+      'Optional death benefit riders available',
+      'Better for long-term accumulation strategies'
+    ],
+    sourceUrl: 'https://www.riversource.com/binaries/content/assets/riversource/1/6720.pdf',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 28. Corebridge/VALIC Portfolio Director ──
+  {
+    id: 'corebridge-valic-portfolio-director',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 354912, Corebridge Financial, 403bCompare',
+    carrierId: 'corebridge',
+    name: 'Corebridge Portfolio Director (VALIC)',
+    contractType: 'Group VA / Employer Plan',
+    surrenderPeriod: 5,
+    surrenderSchedule: [5, 5, 5, 5, 5],
+    meCharge: 1.00,
+    adminFee: 0,
+    totalAnnualCharge: 1.00,
+    annualServiceCharge: 15,
+    meChargeByFund: { valicCompanyI: 1.00, valicCompanyII: 0.75, publicFunds: 1.00 },
+    fundExpenseRange: { min: 0.12, max: 1.15 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Interest Guaranteed', type: 'Standard', annualCost: 0, description: 'Death benefit guaranteed by contract during purchase period' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Group variable annuity for 401(a), 403(b), 457(b) plans',
+      'M&E varies by fund family: 0.75% (VALIC II) to 1.25%',
+      'Issued by The Variable Annuity Life Insurance Company (VALIC)',
+      'Now administered under Corebridge Financial (former AIG)',
+      '5% surrender charge on contributions within 60 months'
+    ],
+    sourceUrl: 'https://www.corebridgefinancial.com/rs/pd/portfolio-director',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 29. MetLife Preference Plus ──
+  {
+    id: 'metlife-preference-plus',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR, MetLife prospectus, Bogleheads review, SmartAsset',
+    carrierId: 'metlife',
+    name: 'MetLife Preference Plus Account',
+    contractType: 'Group VA / Employer Plan',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 1.25,
+    adminFee: 0,
+    totalAnnualCharge: 1.25,
+    annualServiceCharge: 30,
+    serviceChargeWaivedAt: 25000,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 40,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      '1.25% annual Separate Account charge (M&E)',
+      'No surrender charges — group annuity for employer plans',
+      'Issued by Metropolitan Life Insurance Company',
+      '$30 annual contract fee waived at $25K+',
+      'Available through employer-sponsored retirement plans'
+    ],
+    sourceUrl: 'https://www.metlife.com/ppa/',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 30. MetLife Financial Freedom Account ──
+  {
+    id: 'metlife-financial-freedom-account',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 744043, MetLife prospectus, 403bCompare',
+    carrierId: 'metlife',
+    name: 'MetLife Financial Freedom Account',
+    contractType: 'Group VA / Employer Plan',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.95,
+    adminFee: 0,
+    totalAnnualCharge: 0.95,
+    annualServiceCharge: 30,
+    serviceChargeWaivedAt: 25000,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 40,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      '0.95% annual Separate Account charge — lower than Preference Plus',
+      'No surrender charges — group variable annuity',
+      'Issued by Metropolitan Life Insurance Company',
+      'Available through employer-sponsored 403(b) and 457(b) plans',
+      '$30 annual contract fee waived at $25K+'
+    ],
+    sourceUrl: 'https://www.metlife.com/ffa/',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 31. Sun Life Masters (7-Year) ──
+  {
+    id: 'sun-life-masters-7yr',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SunLifeDistributors.com, SEC EDGAR CIK 853285, prospectus',
+    carrierId: 'sun-life',
+    name: 'Sun Life Masters Variable Annuity (7-Year)',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 6, 5, 4, 3, 2, 1],
+    meCharge: 1.35,
+    adminFee: 0,
+    totalAnnualCharge: 1.35,
+    annualServiceCharge: 30,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Sun Income Maximizer (Single)',
+        type: 'GMWB',
+        annualCost: 1.10,
+        maxAnnualCost: 1.75,
+        description: 'Guaranteed lifetime withdrawal benefit with annual step-up'
+      },
+      {
+        name: 'Sun Income Maximizer (Joint)',
+        type: 'GMWB',
+        annualCost: 1.30,
+        maxAnnualCost: 1.95,
+        description: 'Joint spousal GLWB coverage'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' },
+      { name: 'Maximum Anniversary Value', type: 'Enhanced', annualCost: 0.40, description: 'Highest anniversary account value' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      '1.35% insurance charge for 7-year surrender option',
+      'Sun Income Maximizer GLWB at 1.10% (1.75% max)',
+      'Maximum Anniversary Value death benefit at 0.40%',
+      'Issued by Sun Life Assurance Company of Canada (U.S.)',
+      'Distributed through Sun Life Financial Distributors'
+    ],
+    sourceUrl: 'https://www.sunlifedistributors.com/prodline/public/annuity/va/masters/en/masters_home.cfm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 32. Sun Life Masters (4-Year) ──
+  {
+    id: 'sun-life-masters-4yr',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SunLifeDistributors.com, SEC EDGAR CIK 853285, prospectus',
+    carrierId: 'sun-life',
+    name: 'Sun Life Masters Variable Annuity (4-Year)',
+    contractType: 'L-Share',
+    surrenderPeriod: 4,
+    surrenderSchedule: [8, 6, 4, 2],
+    meCharge: 1.65,
+    adminFee: 0,
+    totalAnnualCharge: 1.65,
+    annualServiceCharge: 30,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Sun Income Maximizer (Single)',
+        type: 'GMWB',
+        annualCost: 1.10,
+        maxAnnualCost: 1.75,
+        description: 'Guaranteed lifetime withdrawal benefit with annual step-up'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' },
+      { name: 'Maximum Anniversary Value', type: 'Enhanced', annualCost: 0.40, description: 'Highest anniversary account value' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      '1.65% insurance charge — higher M&E for shorter surrender',
+      'Only 4-year surrender period (L-Share class)',
+      'Same riders and death benefits as 7-year version',
+      'Better for clients who want liquidity sooner',
+      'Issued by Sun Life Assurance Company of Canada (U.S.)'
+    ],
+    sourceUrl: 'https://www.sunlifedistributors.com/prodline/public/annuity/va/masters/en/masters_home.cfm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 33. Global Atlantic ForeInvestors Choice (B-Share) ──
+  {
+    id: 'global-atlantic-foreinvestors-choice-b',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'GlobalAtlantic.com, AnnuityEdu review, SEC EDGAR prospectus',
+    carrierId: 'global-atlantic',
+    name: 'Global Atlantic ForeInvestors Choice (B-Share)',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 6, 5, 4, 3, 2, 1],
+    meCharge: 1.00,
+    adminFee: 0,
+    totalAnnualCharge: 1.00,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 95,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'Most states',
+    highlights: [
+      '1.00% combined M&E&A — below industry average of 1.25%',
+      'Nearly 100 investment options from top fund managers',
+      'B-Share, C-Share, and I-Share classes available',
+      'Issued by Forethought Life Insurance Company (Global Atlantic)',
+      '7-year declining surrender charge schedule'
+    ],
+    sourceUrl: 'https://www.globalatlantic.com/retirement-annuities/variable-annuities/foreinvestors-choice',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 34. Prudential FlexGuard ──
+  {
+    id: 'prudential-flexguard',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Prudential.com prospectus, SEC EDGAR, Bogleheads review',
+    carrierId: 'prudential',
+    name: 'Prudential FlexGuard Indexed Variable Annuity',
+    contractType: 'RILA / B-Share',
+    surrenderPeriod: 6,
+    surrenderSchedule: [6, 5, 4, 3, 2, 1],
+    meCharge: 1.30,
+    adminFee: 0,
+    totalAnnualCharge: 1.30,
+    meChargeNote: 'M&E&A applies only to variable subaccount allocations, not index-linked segments',
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.40, max: 1.20 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 10000,
+    maximumIssueAge: 85,
+    subaccountCount: 25,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Registered index-linked annuity (RILA) with buffer protection',
+      'M&E&A of 1.30% applies only to variable subaccounts — not index segments',
+      'Multiple index strategies with 10%/15%/20% buffer options',
+      'FlexGuard 2.0 launched Dec 2025 with new allocation options',
+      'Issued by Pruco Life Insurance Company (Prudential subsidiary)'
+    ],
+    sourceUrl: 'https://www.prudential.com/advisors/annuities/annuity-strategies/flexguard-indexed-variable-annuity',
+    lastRateUpdate: '2025-12-15'
+  },
+
+  // ── 35. Pacific Life Pacific Choice (5-Year) ──
+  {
+    id: 'pacific-life-pacific-choice-5yr',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'PacificLife.com prospectus PDF, BusinessWire launch announcement',
+    carrierId: 'pacific-life',
+    name: 'Pacific Life Pacific Choice (5-Year)',
+    contractType: 'B-Share',
+    surrenderPeriod: 5,
+    surrenderSchedule: [8, 7, 6, 5, 4],
+    meCharge: 1.20,
+    adminFee: 0,
+    totalAnnualCharge: 1.20,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.30, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 90,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'Most states',
+    highlights: [
+      '1.20% M&E&A for 5-year withdrawal charge option',
+      '90+ investment options from top fund managers',
+      'Balance tier discounts at $500K+',
+      'Issued by Pacific Life Insurance Company',
+      '3-year and no-surrender options also available at higher M&E'
+    ],
+    sourceUrl: 'https://www.pacificlife.com/content/dam/paclife/rsd/annuities/public/prospectuses-and-supplements/prospectus/pacific_choice_prospectus.pdf',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 36. Pacific Life Pacific Choice (No Surrender) ──
+  {
+    id: 'pacific-life-pacific-choice-nosurrender',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'PacificLife.com prospectus PDF, BusinessWire launch announcement',
+    carrierId: 'pacific-life',
+    name: 'Pacific Life Pacific Choice (No Surrender)',
+    contractType: 'C-Share / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 1.60,
+    adminFee: 0,
+    totalAnnualCharge: 1.60,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.30, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 90,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'Most states',
+    highlights: [
+      'No withdrawal charges — 100% liquidity from day one',
+      'Higher M&E of 1.60% is trade-off for no surrender period',
+      '90+ investment options from top fund managers',
+      'Same product family as Pacific Choice 5-Year',
+      'Issued by Pacific Life Insurance Company'
+    ],
+    sourceUrl: 'https://www.pacificlife.com/content/dam/paclife/rsd/annuities/public/prospectuses-and-supplements/prospectus/pacific_choice_prospectus.pdf',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 37. New York Life Premier Plus Variable Annuity II ──
+  {
+    id: 'nyl-premier-plus-va-ii',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'NewYorkLife.com, SEC EDGAR CIK 1209501, prospectus performance summary',
+    carrierId: 'new-york-life',
+    name: 'New York Life Premier Plus Variable Annuity II',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 6, 5, 4, 3, 2, 1],
+    meCharge: 1.60,
+    adminFee: 0,
+    totalAnnualCharge: 1.60,
+    meChargeAfterSurrender: 1.40,
+    annualServiceCharge: 30,
+    serviceChargeWaivedAt: 100000,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 75,
+    subaccountCount: 40,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'M&E 1.60% during surrender period, drops to 1.40% after',
+      'Unique M&E structure — can be based on premiums or accumulation value',
+      'Issued by New York Life Insurance and Annuity Corporation (NYLIAC)',
+      '$30 annual service fee waived at $100K+',
+      'Max issue age 75 (nonqualified)'
+    ],
+    sourceUrl: 'https://www.newyorklife.com/products/investments/annuities/variable-annuities/nyl-premier-plus-va-ii-prospectus',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 38. Lincoln American Legacy (B-Share) ──
+  {
+    id: 'lincoln-american-legacy-b',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'LincolnFinancial.com, AnnuityGator review, SEC EDGAR prospectus',
+    carrierId: 'lincoln',
+    name: 'Lincoln American Legacy (B-Share)',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [8, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.15,
+    adminFee: 0.10,
+    totalAnnualCharge: 1.25,
+    annualServiceCharge: 35,
+    serviceChargeWaivedAt: 50000,
+    fundExpenseRange: { min: 0.35, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 60,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      '1.25% total Separate Account expense (1.15% M&E + 0.10% admin)',
+      'Part of Lincoln American Legacy Suite — 7 versions available',
+      'Issued by The Lincoln National Life Insurance Company',
+      'Optional living benefit riders available at additional cost',
+      'One of the largest VA lineups in the industry'
+    ],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/individuals/products/annuities/variableannuities/americanlegacy',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 39. Symetra True Variable Annuity ──
+  {
+    id: 'symetra-true-va',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Symetra.com, SEC EDGAR CIK 912869, Symetra press release',
+    carrierId: 'symetra',
+    name: 'Symetra True Variable Annuity',
+    contractType: 'No-Load / Advisory',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.60,
+    adminFee: 0,
+    totalAnnualCharge: 0.60,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.30, max: 1.20 },
+    minimumPremium: 25000,
+    minimumPremiumQualified: 25000,
+    maximumIssueAge: 85,
+    subaccountCount: 45,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'Most states',
+    highlights: [
+      'Total M&E + admin + distribution fees of only 0.60% — lowest quartile',
+      'No surrender charges — full liquidity from day one',
+      'No front-end or back-end sales charges',
+      '$25,000 minimum investment',
+      'Issued by Symetra Life Insurance Company'
+    ],
+    sourceUrl: 'https://investors.symetra.com/news-releases/news-release-details/symetra-true-variable-annuity-offers-low-fees-tax-deferral-and',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 40. Protective Aspirations Variable Annuity ──
+  {
+    id: 'protective-aspirations-va',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Protective Life prospectus, Allstate/Protective website, 2024 product updates',
+    carrierId: 'protective',
+    name: 'Protective Aspirations Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [8, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.25,
+    adminFee: 0,
+    totalAnnualCharge: 1.25,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.35, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 55,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'SecurePay Protector (Single)',
+        type: 'GMWB',
+        annualCost: 1.50,
+        maxAnnualCost: 2.50,
+        rollupRate: 7.0,
+        description: '7% compounding rollup during accumulation. Fee increased to 1.50% effective Oct 2024.'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' },
+      { name: 'Maximum Daily Value', type: 'Enhanced', annualCost: 0.50, description: 'Highest daily account value — available up to age 77' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'SecurePay Protector with 7% compounding rollup at 1.50%',
+      'Maximum Daily Value death benefit at 0.50% — unique to market',
+      '2024 enhancements: advance payout options, SecurePay NH cap to 15%',
+      'Issued by Protective Life Insurance Company (PLICO)',
+      'Distributed through Allstate financial services'
+    ],
+    sourceUrl: 'https://allstate.protective.com/retirement/variable-annuities/protective-aspirations',
+    lastRateUpdate: '2024-10-07'
+  },
+
+  // ── 41. Protective Investors Benefit Advisory ──
+  {
+    id: 'protective-investors-benefit-advisory',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Protective Life website, SEC EDGAR, prospectus',
+    carrierId: 'protective',
+    name: 'Protective Investors Benefit Advisory Variable Annuity',
+    contractType: 'Advisory / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.40,
+    adminFee: 0,
+    totalAnnualCharge: 0.40,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.35, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 55,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'SecurePay Pro',
+        type: 'GMWB',
+        annualCost: 1.20,
+        description: 'Allows 1% additional withdrawal for advisory fees without impacting benefit base'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'Most states',
+    highlights: [
+      'Low 0.40% M&E — designed for fee-based advisory practices',
+      'No surrender charges — 100% liquidity',
+      'SecurePay Pro allows 1% advisory fee withdrawal without GLWB impact',
+      'Issued by Protective Life Insurance Company (PLICO)',
+      'SecurePay Life also available at 1.10% rider fee'
+    ],
+    sourceUrl: 'https://finpro.protective.com/retirement/variable-annuities/protective-investors-benefit-advisory',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 42. Allianz Index Advantage+ NY ──
+  {
+    id: 'allianz-index-advantage-plus-ny',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Allianz Life prospectus INYP-002, SEC EDGAR CIK 845775',
+    carrierId: 'allianz',
+    name: 'Allianz Index Advantage+ New York Variable Annuity',
+    contractType: 'RILA / B-Share',
+    surrenderPeriod: 6,
+    surrenderSchedule: [8, 7, 6, 5, 4, 3],
+    meCharge: 1.25,
+    adminFee: 0,
+    totalAnnualCharge: 1.25,
+    meChargeNote: 'M&E applies to variable investment option only — not index strategies',
+    annualServiceCharge: 50,
+    serviceChargeWaivedAt: 100000,
+    fundExpenseRange: { min: 0.50, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 10000,
+    maximumIssueAge: 85,
+    subaccountCount: 30,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Purchase Payments', type: 'Standard', annualCost: 0, description: 'Total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'New York only',
+    highlights: [
+      'Registered index-linked annuity (RILA) with index strategies',
+      '1.25% M&E charge applies to variable option only',
+      '6-year withdrawal charge schedule',
+      '$50 contract maintenance charge waived at $100K+',
+      'Issue ages 0-85'
+    ],
+    sourceUrl: 'https://www.allianzlife.com/new-york/annuities/registered-index-linked-annuities/index-advantage-plus-new-york',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 43. Protective Variable Annuity Investors Series ──
+  {
+    id: 'protective-va-investors-series',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Protective Life website, SEC EDGAR, prospectus',
+    carrierId: 'protective',
+    name: 'Protective Variable Annuity Investors Series',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.00,
+    adminFee: 0,
+    totalAnnualCharge: 1.00,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.35, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'Most states',
+    highlights: [
+      'Low 1.00% total annual charge — competitive base pricing',
+      'Manage volatility with managed risk investment options',
+      'Issued by Protective Life Insurance Company (PLICO)',
+      'Part of Protective\'s VA Investors family',
+      '7-year surrender period'
+    ],
+    sourceUrl: 'https://finpro.protective.com/retirement/variable-annuities/protective-variable-annuity-investors-series',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 44. Nationwide Destination Navigator 2.0 ──
+  {
+    id: 'nationwide-destination-navigator-2',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Nationwide.com, SEC EDGAR prospectus, NARIA product pages',
+    carrierId: 'nationwide',
+    name: 'Nationwide Destination Navigator 2.0',
+    contractType: 'Advisory / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.20,
+    adminFee: 0.05,
+    totalAnnualCharge: 0.25,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.15, max: 1.20 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 60,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Ultra-low 0.25% total M&E + admin (0.20% M&E + 0.05% admin)',
+      'No surrender charges — full liquidity',
+      'Advisory/fee-based version from Nationwide Advisory Solutions',
+      'Lifetime income guarantee available as optional rider',
+      '60+ investment options'
+    ],
+    sourceUrl: 'https://www.nationwide.com/nationwide-advisory/products/annuities/',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 45. Jackson Elite Access Advisory II ──
+  {
+    id: 'jackson-market-link-pro-ii',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Jackson.com, SEC EDGAR CIK 927730, Morningstar comparison',
+    carrierId: 'jackson',
+    name: 'Jackson Market Link Pro II',
+    contractType: 'RILA',
+    surrenderPeriod: 6,
+    surrenderSchedule: [6, 6, 5, 4, 3, 2],
+    meCharge: 0.90,
+    adminFee: 0.15,
+    totalAnnualCharge: 1.05,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.45, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 20,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Registered index-linked annuity with buffer protection',
+      '1.05% total base charge (0.90% M&E + 0.15% admin)',
+      'Multiple index strategies with various buffer levels',
+      'Issued by Jackson National Life Insurance Company',
+      '6-year surrender period'
+    ],
+    sourceUrl: 'https://www.jackson.com/annuities/variable-annuities.html',
+    lastRateUpdate: '2025-10-01'
+  },
+
+  // ── 46. Lincoln Investor Advantage (Advisory) ──
+  {
+    id: 'lincoln-investor-advantage',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'LincolnFinancial.com, SEC EDGAR, fact sheet',
+    carrierId: 'lincoln',
+    name: 'Lincoln Investor Advantage Variable Annuity',
+    contractType: 'Advisory / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.35,
+    adminFee: 0.10,
+    totalAnnualCharge: 0.45,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.35, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 60,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Low 0.45% total annual charge for advisory/fee-based practices',
+      'No surrender charges — 100% liquidity from day one',
+      'Designed for RIAs and fee-based financial advisors',
+      'Issued by The Lincoln National Life Insurance Company',
+      'Part of Lincoln\'s broad VA product suite'
+    ],
+    sourceUrl: 'https://www.lincolnfinancial.com/public/microsite/lincolninvestoradvantage',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 47. RiverSource Retirement Advisor Advantage ──
+  {
+    id: 'riversource-retirement-advisor-advantage',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'RiverSource.com prospectus PDF, Ameriprise, SEC EDGAR',
+    carrierId: 'riversource',
+    name: 'RiverSource Retirement Advisor Advantage',
+    contractType: 'Advisory / No-Load',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.40,
+    adminFee: 0,
+    totalAnnualCharge: 0.40,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.30, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 2000,
+    maximumIssueAge: 85,
+    subaccountCount: 70,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Advisory/fee-based VA with 0.40% M&E charge',
+      'No surrender charges — 100% liquidity',
+      'Same RiverSource fund lineup as RAVA products',
+      'Issued by RiverSource Life Insurance Company (Ameriprise)',
+      'May 1, 2025 prospectus — actively sold'
+    ],
+    sourceUrl: 'https://www.riversource.com/binaries/content/assets/riversource/1/6406.pdf',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 48. Empower SecureFoundation II ──
+  {
+    id: 'empower-securefoundation-ii',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Empower/Great-West prospectus, SEC EDGAR, IRI Council fact sheet',
+    carrierId: 'empower',
+    name: 'Empower SecureFoundation II Variable Annuity',
+    contractType: 'Group VA / Employer Plan',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.46,
+    adminFee: 0.02,
+    totalAnnualCharge: 0.48,
+    guaranteeBenefitFee: { current: 0.90, min: 0.70, max: 1.50 },
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.92, max: 1.00 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 12,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Guaranteed Lifetime Withdrawal Benefit',
+        type: 'GMWB',
+        annualCost: 0.90,
+        maxAnnualCost: 1.50,
+        description: 'Built-in guarantee benefit — income for life at 0.90% current (0.70%-1.50% range)'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Group VA for 401(a), 403(b), 457(b) employer-sponsored plans',
+      'Built-in GLWB at 0.90% current (max 1.50%)',
+      'Low 0.48% M&E + admin charge',
+      'Formerly Great-West SecureFoundation — rebranded under Empower',
+      'Target-date fund structure with built-in income guarantee'
+    ],
+    sourceUrl: 'https://iricouncil.org/wp-content/uploads/2018/10/Great-West-SFII-Fact-Sheet-August-2018.pdf',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 49. MetLife Financial Freedom Select (e-Class) ──
+  {
+    id: 'metlife-financial-freedom-select-e',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'SEC EDGAR CIK 744043, MetLife prospectus, 403bCompare',
+    carrierId: 'metlife',
+    name: 'MetLife Financial Freedom Select (e-Class)',
+    contractType: 'No-Load / Advisory',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.75,
+    adminFee: 0,
+    totalAnnualCharge: 0.75,
+    annualServiceCharge: 30,
+    serviceChargeWaivedAt: 25000,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'e-Class — no withdrawal charge version of Financial Freedom Select',
+      '0.75% Separate Account charge — lowest among MFFS share classes',
+      'No surrender charges — full liquidity',
+      'Issued by Metropolitan Life Insurance Company',
+      'Available through employer-sponsored 403(b) and TSA plans'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/744043/000119312522118861/d265216d497vpi.htm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 50. Protective Dimensions V Variable Annuity ──
+  {
+    id: 'protective-dimensions-v',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'Protective Life/Edward Jones website, SEC EDGAR, prospectus May 2024',
+    carrierId: 'protective',
+    name: 'Protective Dimensions V Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 6, 5, 4, 3, 2, 1],
+    meCharge: 1.20,
+    adminFee: 0,
+    totalAnnualCharge: 1.20,
+    annualServiceCharge: 35,
+    serviceChargeWaivedAt: 100000,
+    fundExpenseRange: { min: 0.35, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 50,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      '1.20% total base contract charge',
+      'Distributed through Edward Jones financial advisors',
+      'Issued by Protective Life Insurance Company (PLICO)',
+      'May 2024 prospectus with rate sheet supplements',
+      '7-year declining surrender charge schedule'
+    ],
+    sourceUrl: 'https://edward-jones.protective.com/retirement/variable-annuities/protective-dimensions-v-variable-annuity',
+    lastRateUpdate: '2024-05-01'
   }
 ];

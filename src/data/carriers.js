@@ -14,7 +14,7 @@ export const carriers = [
     foundedYear: 1896,
     headquarters: "Minneapolis, MN",
     totalAssets: "$260B",
-    productCategories: ["fia", "glwb", "iul"],
+    productCategories: ["fia", "glwb", "iul", "va"],
     website: "https://www.allianzlife.com"
   },
   {
@@ -807,7 +807,7 @@ export const carriers = [
     foundedYear: 1868,
     headquarters: "New York, NY",
     totalAssets: "$750B",
-    productCategories: ["vul", "term", "whole-life"],
+    productCategories: ["vul", "term", "whole-life", "va"],
     website: "https://www.metlife.com"
   },
   {
@@ -899,5 +899,41 @@ export const carriers = [
     totalAssets: "$175B",
     productCategories: ["vul", "term", "whole-life"],
     website: "https://www.statefarm.com"
+  },
+  {
+    id: "vanguard",
+    name: "Vanguard Group (Fidelity Investments Life Insurance Company issuer)",
+    shortName: "Vanguard",
+    ratings: {
+      amBest: null,
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: null
+    },
+    yearsInBusiness: 51,
+    foundedYear: 1975,
+    headquarters: "Malvern, PA",
+    totalAssets: "$9.3T AUM",
+    productCategories: ["va"],
+    website: "https://www.vanguard.com"
+  },
+  {
+    id: "sun-life",
+    name: "Sun Life Assurance Company of Canada",
+    shortName: "Sun Life Financial",
+    ratings: {
+      amBest: { rating: "A+", outlook: "Stable" },
+      sAndP: { rating: "AA-", outlook: "Stable" },
+      moodys: { rating: "Aa3", outlook: "Stable" },
+      fitch: null,
+      comdex: 92
+    },
+    yearsInBusiness: 160,
+    foundedYear: 1865,
+    headquarters: "Toronto, ON (U.S. office: Wellesley Hills, MA)",
+    totalAssets: "$420B CAD",
+    productCategories: ["va", "vul"],
+    website: "https://www.sunlife.com"
   }
 ];
