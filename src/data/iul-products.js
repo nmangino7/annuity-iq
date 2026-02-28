@@ -394,6 +394,7 @@ export const iulProducts = [
     carrierId: "john-hancock",
     ratesVerified: true,
     lastVerifiedDate: "2026-02-21",
+    discontinuedDate: '2021-06', // No longer offered for new sales — replaced by Accumulation IUL 21
     name: "Accumulation IUL 20",
     maxIllustratedRate: 6.50,
     indexAccounts: [

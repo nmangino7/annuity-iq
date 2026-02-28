@@ -16,6 +16,7 @@ export const vulProducts = [
     id: 'lincoln-vulone-2019',
     carrierId: 'lincoln-financial',
     ratesVerified: true,
+    discontinuedDate: '2024-12', // No longer offered for new sales
     lastVerifiedDate: '2026-02-27',
     verificationSource: 'SEC EDGAR N-6A Filing, CIK 1048607 (2019); Lincoln Financial product pages',
     name: 'Lincoln VULONE (2019)',
@@ -93,6 +94,7 @@ export const vulProducts = [
     id: 'lincoln-vulone-2021',
     carrierId: 'lincoln-financial',
     ratesVerified: true,
+    discontinuedDate: '2024-12', // No longer offered for new sales
     lastVerifiedDate: '2026-02-27',
     verificationSource: 'Lincoln Financial product pages; SEC EDGAR filing supplements; BusinessWire press release 2021-02-22',
     name: 'Lincoln VULONE (2021)',
@@ -251,6 +253,7 @@ export const vulProducts = [
     id: 'prudential-vul-protector-2021',
     carrierId: 'prudential',
     ratesVerified: true,
+    discontinuedDate: '2025-06', // No longer offered for new sales
     lastVerifiedDate: '2026-02-27',
     verificationSource: 'SEC EDGAR Filing CIK 851693 (Pruco Life); Prudential VUL Protector Fast Facts; prudential.com prospectus page',
     name: 'PruLife VUL Protector (2021)',
@@ -332,6 +335,7 @@ export const vulProducts = [
     id: 'principal-vul-income-iii',
     carrierId: 'principal-financial',
     ratesVerified: true,
+    discontinuedDate: '2020-01', // No longer offered for new sales
     lastVerifiedDate: '2026-02-27',
     verificationSource: 'SEC EDGAR CIK 768836 VUL illustration filing; Principal Financial advisor product pages',
     name: 'Principal Variable Universal Life Income III',
@@ -1247,6 +1251,7 @@ export const vulProducts = [
     id: 'guardian-park-avenue-vul-97',
     carrierId: 'guardian',
     ratesVerified: true,
+    discontinuedDate: '2018-01', // No longer offered for new sales
     lastVerifiedDate: '2026-02-28',
     verificationSource: 'SEC EDGAR Sample Calculation Filing, CIK 1043315; Guardian Separate Account M',
     name: 'Guardian Park Avenue VUL 97',
@@ -1532,6 +1537,7 @@ export const vulProducts = [
     id: 'aig-equibuilder-iii-vul',
     carrierId: 'corebridge-financial',
     ratesVerified: true,
+    discontinuedDate: '2015-01', // No longer offered for new sales
     lastVerifiedDate: '2026-02-28',
     verificationSource: 'SEC EDGAR 485BPOS Filing, CIK 1051485, filed 2025-04-28; AGL Separate Account VL-R',
     name: 'AIG EquiBuilder III VUL',
@@ -1794,6 +1800,7 @@ export const vulProducts = [
     id: 'symetra-premier-vul',
     carrierId: 'symetra',
     ratesVerified: true,
+    discontinuedDate: '2021-01', // No longer offered for new sales
     lastVerifiedDate: '2026-02-28',
     verificationSource: 'SEC EDGAR 485BPOS Filing, CIK 806180, filed 2010-04-30; Symetra Separate Account SL',
     name: 'Symetra Premier Variable Universal Life',
@@ -1904,6 +1911,7 @@ export const vulProducts = [
     shortName: 'NYLIAC VUL 2000 S2',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2010-01', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 906982 — 497VPU filed 2023',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.60 }],
@@ -1935,6 +1943,7 @@ export const vulProducts = [
     shortName: 'Vari-Vest V VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2022-03', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 770291 — 485BPOS filed 2019-04-25',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.75 }],
@@ -1971,6 +1980,7 @@ export const vulProducts = [
     shortName: 'Select*Life II VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2018-12', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 897899 — 485BPOS filed 2025-05-01',
     meChargeSchedule: {
       current: [
@@ -2049,6 +2059,7 @@ export const vulProducts = [
     shortName: 'Futurity Corporate VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2013-08', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 1020523 — 485BPOS filed 2025-04-29',
     meChargeSchedule: {
       current: [
@@ -2154,6 +2165,7 @@ export const vulProducts = [
     shortName: 'Thrivent VUL II',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2019-12', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 915756 — 485BPOS filed 2021',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.75 }],
@@ -2187,6 +2199,7 @@ export const vulProducts = [
     shortName: 'TIAA Intelligent VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2020-01', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 1141687 — N-6/485APOS',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.95, note: 'Sliding scale: 0.95% drops to 0.35% as cash value grows' }],
@@ -2222,6 +2235,7 @@ export const vulProducts = [
     productType: 'VUL',
     subType: 'COLI',
     ratesVerified: true,
+    discontinuedDate: '2019-06', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 1401960 — 485BPOS filed 2020',
     meChargeSchedule: {
       current: [
@@ -2260,6 +2274,7 @@ export const vulProducts = [
     productType: 'VUL',
     subType: 'COLI',
     ratesVerified: true,
+    discontinuedDate: '2018-12', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 917677 — prospectus filed 2016',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.60 }],
@@ -2291,6 +2306,7 @@ export const vulProducts = [
     productType: 'VUL',
     subType: 'COLI',
     ratesVerified: true,
+    discontinuedDate: '2013-08', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 1020523 — filing 2011',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.90 }],
@@ -2321,6 +2337,7 @@ export const vulProducts = [
     shortName: 'State Farm VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2008-09', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 1027856 — 485BPOS filed 2014; prospectus updated 2022',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.80 }],
@@ -2360,6 +2377,7 @@ export const vulProducts = [
     shortName: 'First Line 2 VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2018-12', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 917677 — filing 1998',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.75 }],
@@ -2393,6 +2411,7 @@ export const vulProducts = [
     shortName: 'Union Security VUL',
     productType: 'VUL',
     ratesVerified: true,
+    discontinuedDate: '2013-01', // No longer offered for new sales
     verificationSource: 'SEC EDGAR CIK 790531 — 485BPOS filed 2022',
     meChargeSchedule: {
       current: [{ years: '1+', rate: 0.90 }],
@@ -2458,6 +2477,7 @@ export const vulProducts = [
     name: 'PruLife VUL Protector (2018)',
     carrier: 'prudential',
     ratesVerified: true,
+    discontinuedDate: '2021-05', // No longer offered for new sales
     secCIK: '851693',
     meChargeSchedule: {
       guaranteed: [

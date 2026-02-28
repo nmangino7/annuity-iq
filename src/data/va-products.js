@@ -828,6 +828,7 @@ export const vaProducts = [
     id: 'prudential-premier-retirement-b',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-22',
+    discontinuedDate: '2016-08', // No longer offered for new sales — Prudential lists as legacy/discontinued product
     verificationSource: 'SEC EDGAR (Pruco Life) + Prudential.com prospectus + annuitygator.com',
     carrierId: 'prudential',
     name: 'Premier Retirement B Series',
@@ -1502,6 +1503,7 @@ export const vaProducts = [
     id: 'metlife-preference-plus',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-28',
+    discontinuedDate: '2013-10', // No longer offered for new sales — closed to new group sales 10/4/2013
     verificationSource: 'SEC EDGAR, MetLife prospectus, Bogleheads review, SmartAsset',
     carrierId: 'metlife',
     name: 'MetLife Preference Plus Account',
@@ -1542,6 +1544,7 @@ export const vaProducts = [
     id: 'metlife-financial-freedom-account',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-28',
+    discontinuedDate: '2013-10', // No longer offered for new sales — MetLife exited individual/retail VA market
     verificationSource: 'SEC EDGAR CIK 744043, MetLife prospectus, 403bCompare',
     carrierId: 'metlife',
     name: 'MetLife Financial Freedom Account',
@@ -1582,6 +1585,7 @@ export const vaProducts = [
     id: 'sun-life-masters-7yr',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-28',
+    discontinuedDate: '2011-12', // No longer offered for new sales — Sun Life exited US VA market effective 12/30/2011
     verificationSource: 'SunLifeDistributors.com, SEC EDGAR CIK 853285, prospectus',
     carrierId: 'sun-life',
     name: 'Sun Life Masters Variable Annuity (7-Year)',
@@ -1637,6 +1641,7 @@ export const vaProducts = [
     id: 'sun-life-masters-4yr',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-28',
+    discontinuedDate: '2011-12', // No longer offered for new sales — Sun Life exited US VA market effective 12/30/2011
     verificationSource: 'SunLifeDistributors.com, SEC EDGAR CIK 853285, prospectus',
     carrierId: 'sun-life',
     name: 'Sun Life Masters Variable Annuity (4-Year)',
@@ -1923,6 +1928,7 @@ export const vaProducts = [
     id: 'symetra-true-va',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-28',
+    discontinuedDate: '2020-01', // No longer offered for new sales — Symetra exited VA market; not in current product lineup
     verificationSource: 'Symetra.com, SEC EDGAR CIK 912869, Symetra press release',
     carrierId: 'symetra',
     name: 'Symetra True Variable Annuity',
@@ -2341,6 +2347,7 @@ export const vaProducts = [
     id: 'metlife-financial-freedom-select-e',
     ratesVerified: true,
     lastVerifiedDate: '2026-02-28',
+    discontinuedDate: '2013-10', // No longer offered for new sales — closed to new group sales 10/4/2013
     verificationSource: 'SEC EDGAR CIK 744043, MetLife prospectus, 403bCompare',
     carrierId: 'metlife',
     name: 'MetLife Financial Freedom Select (e-Class)',
