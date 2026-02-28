@@ -374,7 +374,7 @@ export const carriers = [
     foundedYear: 1929,
     headquarters: "Waltham, MA",
     totalAssets: "$40B",
-    productCategories: ["fia", "glwb", "va"],
+    productCategories: ["fia", "glwb", "va", "vul"],
     website: "https://www.delawarelife.com"
   },
   {
@@ -698,7 +698,7 @@ export const carriers = [
     foundedYear: 1891,
     headquarters: "Greenwood Village, CO",
     totalAssets: "$1.5T",
-    productCategories: ["va"],
+    productCategories: ["va", "vul"],
     website: "https://www.empower.com"
   },
   {
@@ -827,5 +827,77 @@ export const carriers = [
     totalAssets: "$25B",
     productCategories: ["vul", "va"],
     website: "https://www.mutualofamerica.com"
+  },
+  {
+    id: "ohio-national",
+    name: "Ohio National Life Assurance Corporation (AuguStar)",
+    shortName: "Ohio National (AuguStar)",
+    ratings: {
+      amBest: { rating: "A+", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: 85
+    },
+    yearsInBusiness: 47,
+    foundedYear: 1979,
+    headquarters: "Cincinnati, OH",
+    totalAssets: "$40B",
+    productCategories: ["vul", "va"],
+    website: "https://www.augustar.com"
+  },
+  {
+    id: "voya",
+    name: "ReliaStar Life Insurance Company (Voya Financial)",
+    shortName: "Voya / ReliaStar",
+    ratings: {
+      amBest: { rating: "A", outlook: "Stable" },
+      sAndP: { rating: "A", outlook: "Stable" },
+      moodys: null,
+      fitch: null,
+      comdex: 82
+    },
+    yearsInBusiness: 145,
+    foundedYear: 1880,
+    headquarters: "Minneapolis, MN",
+    totalAssets: "$500B",
+    productCategories: ["vul", "va"],
+    website: "https://www.voya.com"
+  },
+  {
+    id: "farmers-new-world",
+    name: "Farmers New World Life Insurance Company",
+    shortName: "Farmers (Zurich)",
+    ratings: {
+      amBest: { rating: "A", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: 80
+    },
+    yearsInBusiness: 62,
+    foundedYear: 1963,
+    headquarters: "Bellevue, WA",
+    totalAssets: "$15B",
+    productCategories: ["vul"],
+    website: "https://www.farmers.com"
+  },
+  {
+    id: "state-farm",
+    name: "State Farm Life Insurance Company",
+    shortName: "State Farm",
+    ratings: {
+      amBest: { rating: "A++", outlook: "Stable" },
+      sAndP: { rating: "AA", outlook: "Stable" },
+      moodys: { rating: "Aa1", outlook: "Stable" },
+      fitch: null,
+      comdex: 97
+    },
+    yearsInBusiness: 97,
+    foundedYear: 1929,
+    headquarters: "Bloomington, IL",
+    totalAssets: "$175B",
+    productCategories: ["vul", "term", "whole-life"],
+    website: "https://www.statefarm.com"
   }
 ];

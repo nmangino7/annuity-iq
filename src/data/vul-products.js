@@ -1894,6 +1894,628 @@ export const vulProducts = [
     ],
     sourceUrl: 'https://www.pacificlife.com/home/individuals/life-insurance/variable-universal-life-insurance.html',
     lastRateUpdate: '2024-04-16'
+  },
+
+  // ── Product 33: NYLIAC VUL 2000 (Series 2) ────────────────────────────
+  {
+    id: 'nyliac-vul-2000-series-2',
+    carrierId: 'new-york-life',
+    name: 'NYLIAC Variable Universal Life 2000 (Series 2)',
+    shortName: 'NYLIAC VUL 2000 S2',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 906982 — 497VPU filed 2023',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.60 }],
+      guaranteed: [{ years: '1+', rate: 0.90 }]
+    },
+    separateAccountAdminCharge: 0.10,
+    surrenderSchedule: null,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'Series 2 (issued on/after May 10, 2002)',
+    issuer: 'New York Life Insurance and Annuity Corporation',
+    highlights: [
+      'Low current M&E of 0.60% with max of 0.90%',
+      'Additional 0.10% separate account admin charge',
+      'Backed by New York Life (A++ AM Best, COMDEX 98)',
+      'Series 2 includes M&E risk charge; Series 1 does not',
+      'No longer offered for new sales — legacy product'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/906982/000119312523096148/d458674d497vpu.htm',
+    lastRateUpdate: '2023-04-14'
+  },
+
+  // ── Product 34: Ohio National / AuguStar Vari-Vest V ──────────────────
+  {
+    id: 'ohio-national-vari-vest-v',
+    carrierId: 'ohio-national',
+    name: 'Ohio National Vari-Vest V Variable Universal Life',
+    shortName: 'Vari-Vest V VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 770291 — 485BPOS filed 2019-04-25',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.75 }],
+      guaranteed: [{ years: '1+', rate: 0.75 }]
+    },
+    adminCharge: { monthly: 7.00 },
+    premiumExpenseCharge: '1.25% to 7.50%',
+    surrenderSchedule: {
+      type: 'Per $1,000 of face amount',
+      rates: '$7.32–$60.00 per $1,000 (20-year deferred sales + 8-year underwriting)',
+      freeWithdrawal: '10% of cash surrender value per year'
+    },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'Vari-Vest V',
+    issuer: 'Ohio National Life Assurance Corporation (now AuguStar)',
+    highlights: [
+      'Flat M&E rate of 0.75% — current equals guaranteed maximum',
+      'Company may reduce M&E but is not currently doing so',
+      'Two-component surrender charge structure (20-year + 8-year)',
+      'Free 10% of CSV withdrawal annually',
+      'Filing from 2019 — most recent 485BPOS available'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/770291/000119312519119911/d715873d485bpos.htm',
+    lastRateUpdate: '2019-04-25'
+  },
+
+  // ── Product 35: Voya / ReliaStar Select*Life II ───────────────────────
+  {
+    id: 'voya-reliastar-select-life-ii',
+    carrierId: 'voya',
+    name: 'ReliaStar Select*Life II Variable Universal Life',
+    shortName: 'Select*Life II VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 897899 — 485BPOS filed 2025-05-01',
+    meChargeSchedule: {
+      current: [
+        { years: '1-10', rate: 0.90 },
+        { years: '11+', rate: 0.00 }
+      ],
+      guaranteed: [
+        { years: '1-10', rate: 0.90 },
+        { years: '11+', rate: 0.00 }
+      ],
+      note: 'Rates for policies issued on/after Feb 17, 2004. Pre-2004: 0.90% yrs 1-10, 0.45% yr 11+'
+    },
+    adminCharge: { monthly: 10.00, maxMonthly: 10.00 },
+    surrenderSchedule: null,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'Select*Life II',
+    issuer: 'ReliaStar Life Insurance Company (Voya Financial)',
+    highlights: [
+      'M&E eliminated entirely after year 10 for post-2004 policies',
+      'Current M&E 0.90% in years 1-10, then 0.00%',
+      'Monthly admin $10.00 guaranteed not to exceed $10.00',
+      'No longer offered for new sales — legacy product',
+      'Most recent filing May 2025 confirms rates still current'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/897899/000089789925000044/selectlifeii485b.htm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── Product 36: Farmers LifeAccumulator VUL II ────────────────────────
+  {
+    id: 'farmers-life-accumulator-vul-ii',
+    carrierId: 'farmers-new-world',
+    name: 'Farmers LifeAccumulator Variable Universal Life II',
+    shortName: 'Farmers VUL II',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1089913 — 485BPOS filed 2025-05-01',
+    meChargeSchedule: {
+      current: [
+        { years: '1-10', rate: 0.70 },
+        { years: '11-20', rate: 0.30 },
+        { years: '21+', rate: 0.25 }
+      ],
+      guaranteed: [
+        { years: '1-10', rate: 0.70 },
+        { years: '11-20', rate: 0.30 },
+        { years: '21+', rate: 0.25 }
+      ]
+    },
+    adminCharge: { monthly: 7.00, maxMonthly: 10.00 },
+    surrenderSchedule: { type: 'Formula-based remaining monthly charges' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    loanSpread: 0.25,
+    stateApprovals: 'Most states',
+    policyForm: 'Farmers VUL II / LifeAccumulator',
+    issuer: 'Farmers New World Life Insurance Company',
+    highlights: [
+      'Declining M&E: 0.70% yrs 1-10, 0.30% yrs 11-20, 0.25% yr 21+',
+      'Current and guaranteed max M&E are the same',
+      'Low 0.25% loan interest spread',
+      'Backed by Zurich Insurance Group',
+      'Recent filing May 2025 confirms active product'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1089913/000089789925000016/fvuliifiling.htm',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── Product 37: Delaware Life Futurity Corporate VUL ──────────────────
+  {
+    id: 'delaware-life-futurity-corporate-vul',
+    carrierId: 'delaware-life',
+    name: 'Delaware Life Futurity Corporate Variable Universal Life',
+    shortName: 'Futurity Corporate VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1020523 — 485BPOS filed 2025-04-29',
+    meChargeSchedule: {
+      current: [
+        { years: '1-10', rate: 0.40 },
+        { years: '11-20', rate: 0.25 },
+        { years: '21+', rate: 0.20 }
+      ],
+      guaranteed: [{ years: '1+', rate: 0.60 }]
+    },
+    adminCharge: { monthly: 7.50, year1Monthly: 13.75, maxMonthly: 13.75 },
+    surrenderSchedule: null,
+    premiumLoadSchedule: 'Target: 8.75% yr 1, 7.25% yrs 2-4, 6.00% yrs 5-7; Excess: 2.25% yrs 1-7; None after yr 7',
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    loanInterest: 5.0,
+    stateApprovals: 'Most states',
+    policyForm: 'Futurity Corporate VUL',
+    issuer: 'Delaware Life Insurance Company',
+    highlights: [
+      'Very low declining M&E: 0.40%/0.25%/0.20% by decade',
+      'Guaranteed max M&E only 0.60% — among lowest in market',
+      'No back-end surrender charges — front-end premium loads instead',
+      'Originally Sun Life product, now Delaware Life',
+      'Recent filing April 2025 confirms active product'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1020523/000119312525103376/d827524d485bpos.htm',
+    lastRateUpdate: '2025-04-29'
+  },
+
+  // ── Product 38: Thrivent Accumulation VUL ──────────────────────────────
+  {
+    id: 'thrivent-accumulation-vul',
+    carrierId: 'thrivent',
+    name: 'Thrivent Accumulation Variable Universal Life',
+    shortName: 'Thrivent Accum VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1039305 — 485BPOS filed 2025-04-30',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.40 }],
+      guaranteed: [{ years: '1+', rate: 1.00 }]
+    },
+    adminCharge: { monthly: 9.00 },
+    monthlyUnitCharge: '$0.00-$0.49 per $1,000 of face (first 15 years)',
+    surrenderSchedule: null,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    loanInterest: 4.0,
+    minFaceAmount: 100000,
+    stateApprovals: 'Available to Thrivent members',
+    policyForm: 'Thrivent Accumulation VUL',
+    issuer: 'Thrivent Financial for Lutherans',
+    highlights: [
+      'Low current M&E of 0.40% flat across all years',
+      'Large spread: current 0.40% vs guaranteed max 1.00%',
+      'Available only to Thrivent members (fraternal benefit society)',
+      'A++ AM Best rated carrier (COMDEX 97)',
+      'Recent filing April 2025 confirms active product'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1039305/000119312525096551/d915296d485bpos.htm',
+    lastRateUpdate: '2025-04-30'
+  },
+
+  // ── Product 39: Securian VUL Survivor ─────────────────────────────────
+  {
+    id: 'securian-vul-survivor',
+    carrierId: 'securian',
+    name: 'Securian Variable Universal Life Survivor',
+    shortName: 'Securian VUL Survivor',
+    productType: 'VUL',
+    subType: 'Survivorship',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1405415 — 485BPOS filed 2025-04-28',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.80 }],
+      guaranteed: [{ years: '1+', rate: 0.90 }]
+    },
+    adminCharge: { monthly: 20.00, maxMonthly: 30.00 },
+    policyIssueCharge: '$0.18-$1.44 per $1,000 of face (first 10 years)',
+    surrenderSchedule: null,
+    hasFixedAccount: true,
+    hasFixedIndexedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'VUL Survivor',
+    issuer: 'Minnesota Life Insurance Company (Securian Financial)',
+    highlights: [
+      'Survivorship (second-to-die) variable universal life policy',
+      'Current M&E 0.80% flat, guaranteed max 0.90%',
+      'Includes Fixed Indexed Account options',
+      'Monthly policy charge $20 current, $30 max',
+      'Recent filing April 2025 confirms active product'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1405415/000119312525099400/d921670d485bpos.htm',
+    lastRateUpdate: '2025-04-28'
+  },
+
+  // ── Product 40: Thrivent VUL II ───────────────────────────────────────
+  {
+    id: 'thrivent-vul-ii',
+    carrierId: 'thrivent',
+    name: 'Thrivent Financial Variable Universal Life II',
+    shortName: 'Thrivent VUL II',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 915756 — 485BPOS filed 2021',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.75 }],
+      guaranteed: [{ years: '1+', rate: 0.75 }]
+    },
+    adminCharge: { monthly: 10.00, maxMonthly: 15.00 },
+    premiumLoad: '5% (face < $250K), 4% (face >= $250K)',
+    surrenderSchedule: { type: 'Decrease charges first 10 years, varies by age/sex/risk class' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    minFaceAmount: 100000,
+    stateApprovals: 'Available to Thrivent members',
+    policyForm: 'Thrivent VUL II',
+    issuer: 'Thrivent Financial for Lutherans',
+    highlights: [
+      'Flat M&E of 0.75% — current equals guaranteed maximum',
+      'Lower M&E than Accumulation VUL max but higher current',
+      'No longer sold to new applicants (issued 2008-2019)',
+      'Existing policyholders may continue making premium payments',
+      'Decrease charges apply during first 10 policy years'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/915756/000119312521131489/d123256d485bpos.htm',
+    lastRateUpdate: '2021-04-30'
+  },
+
+  // ── Product 41: TIAA-CREF Intelligent Life VUL ────────────────────────
+  {
+    id: 'tiaa-cref-intelligent-life-vul',
+    carrierId: 'tiaa',
+    name: 'TIAA-CREF Intelligent Life Variable Universal Life',
+    shortName: 'TIAA Intelligent VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1141687 — N-6/485APOS',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.95, note: 'Sliding scale: 0.95% drops to 0.35% as cash value grows' }],
+      guaranteed: [{ years: '1+', rate: 0.95 }],
+      note: 'Tiered by cash value — starts at 0.95% and decreases to 0.35% at highest cash value thresholds'
+    },
+    adminCharge: { monthly: 0, note: 'Waived for insureds over age 18' },
+    premiumLoad: 'None — no-load product (only state premium taxes deducted)',
+    surrenderSchedule: null,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    minFaceAmount: 100000,
+    stateApprovals: 'Most states',
+    policyForm: 'Intelligent Life VUL',
+    issuer: 'TIAA-CREF Life Insurance Company',
+    highlights: [
+      'No-load VUL — no surrender charges, no premium loads',
+      'M&E slides from 0.95% down to 0.35% as cash value grows',
+      'Backed by TIAA (A++ AM Best, COMDEX 99)',
+      'No longer sold — TIAA stopped new life insurance sales in 2020',
+      'Among the lowest all-in cost VUL products in the market'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1141687/000119312514040680/d671944d485apos.htm',
+    lastRateUpdate: '2020-05-01'
+  },
+
+  // ── Product 42: Great-West / Empower Executive Benefit VUL II ─────────
+  {
+    id: 'great-west-executive-benefit-vul-ii',
+    carrierId: 'empower',
+    name: 'Great-West Executive Benefit Variable Universal Life II',
+    shortName: 'Exec Benefit VUL II',
+    productType: 'VUL',
+    subType: 'COLI',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1401960 — 485BPOS filed 2020',
+    meChargeSchedule: {
+      current: [
+        { years: '1-20', rate: 0.50 },
+        { years: '21+', rate: 0.10 }
+      ],
+      guaranteed: [{ years: '1+', rate: 0.90 }]
+    },
+    adminCharge: { monthly: 'Varies' },
+    premiumExpenseCharge: 'Max 10% (6.5% sales + 3.5% tax). Current: 2.5% target + 1.0% excess yrs 1-10',
+    surrenderSchedule: null,
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    minLoanAmount: 500,
+    minFaceAmount: 100000,
+    stateApprovals: 'Most states',
+    policyForm: 'Executive Benefit VUL II (COLI)',
+    issuer: 'Great-West Life & Annuity Insurance Company of New York (now Empower)',
+    highlights: [
+      'Low M&E: 0.50% yrs 1-20, drops to 0.10% yr 21+',
+      'No surrender charges',
+      'COLI product designed for corporate-owned life insurance',
+      'Guaranteed max M&E 0.90%',
+      'Administration transferred to Protective Life'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1401960/000168386320003938/f3525d1.htm',
+    lastRateUpdate: '2020-04-28'
+  },
+
+  // ── Product 43: Voya Corporate VUL ────────────────────────────────────
+  {
+    id: 'voya-corporate-vul',
+    carrierId: 'voya',
+    name: 'Voya Corporate Variable Universal Life',
+    shortName: 'Voya Corporate VUL',
+    productType: 'VUL',
+    subType: 'COLI',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 917677 — prospectus filed 2016',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.60 }],
+      guaranteed: [{ years: '1+', rate: 0.60, note: 'Varies by underwriting type and policy year' }]
+    },
+    surrenderSchedule: { type: 'Per policy schedule' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'Voya Corporate VUL',
+    issuer: 'Security Life of Denver Insurance Company (now Resolution Life)',
+    highlights: [
+      'Corporate-owned VUL with 0.60% annual M&E charge',
+      'Issued by Security Life of Denver (Voya subsidiary)',
+      'Voya sold life insurance business to Resolution Life in 2021',
+      'No longer offered for new sales',
+      'M&E varies by underwriting type and policy year'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/917677/000091767716000081/cvulprosandsai.pdf',
+    lastRateUpdate: '2016-05-01'
+  },
+
+  // ── Product 44: Sun Life Executive VUL ────────────────────────────────
+  {
+    id: 'sun-life-executive-vul',
+    carrierId: 'delaware-life',
+    name: 'Sun Executive Variable Universal Life',
+    shortName: 'Sun Executive VUL',
+    productType: 'VUL',
+    subType: 'COLI',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1020523 — filing 2011',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.90 }],
+      guaranteed: [{ years: '1+', rate: 0.90 }]
+    },
+    surrenderSchedule: { type: 'Per policy schedule with Deferred Expense Load' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'Sun Executive VUL',
+    issuer: 'Sun Life Assurance Company of Canada (U.S.) — now Delaware Life',
+    highlights: [
+      'Flat M&E rate of 0.90% — current equals guaranteed maximum',
+      'Corporate-sponsored VUL product',
+      'Originally Sun Life, now administered by Delaware Life',
+      'Deferred expense load on first-year premiums',
+      'Legacy product — no longer offered for new sales'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1020523/000102052311000004/file.htm',
+    lastRateUpdate: '2011-05-01'
+  },
+
+  // ── Product 45: State Farm VUL ────────────────────────────────────────
+  {
+    id: 'state-farm-vul',
+    carrierId: 'state-farm',
+    name: 'State Farm Variable Universal Life Insurance',
+    shortName: 'State Farm VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 1027856 — 485BPOS filed 2014; prospectus updated 2022',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.80 }],
+      guaranteed: [{ years: '1+', rate: 0.80 }]
+    },
+    adminCharge: { monthly: 8.00, maxMonthly: 8.00 },
+    premiumLoad: '5% of premium',
+    annualAdminFee: '$30/year (waived if total premiums >= $50,000)',
+    surrenderSchedule: {
+      type: 'Per $1,000 of face for 10 years',
+      maxRate: '$21 per $1,000 (ages 70-80)',
+      note: 'Increases yrs 1-2, level yrs 3-6, decreases yrs 7-10 to zero'
+    },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    minFaceAmount: 10000,
+    maxIssueAge: 80,
+    stateApprovals: 'Most states',
+    policyForm: 'Series 97035, 97085, A97035, 97036',
+    issuer: 'State Farm Life Insurance Company',
+    highlights: [
+      'Flat M&E rate of 0.80% annually',
+      'Backed by State Farm (A++ AM Best, COMDEX 97)',
+      'Discontinued for new sales in 2008',
+      'State Farm now distributes Pacific Life VUL for new sales',
+      '10-year surrender charge schedule, max $21 per $1,000'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1027856/000119312514172785/d702565d485bpos.htm',
+    lastRateUpdate: '2022-05-01'
+  },
+
+  // ── Product 46: Voya First Line 2 VUL ────────────────────────────────
+  {
+    id: 'voya-first-line-2-vul',
+    carrierId: 'voya',
+    name: 'Security Life First Line 2 Variable Universal Life',
+    shortName: 'First Line 2 VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 917677 — filing 1998',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.75 }],
+      guaranteed: [{ years: '1+', rate: 0.75 }]
+    },
+    adminCharge: { monthly: 3.00, perThousand: 0.0125 },
+    initialPolicyCharge: '$10/month',
+    premiumLoad: '2.25% (ages 0-49), 3.25% (ages 50-59), 4.25% (ages 60-85)',
+    surrenderSchedule: { type: 'Per policy schedule by age' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'First Line 2',
+    issuer: 'Security Life of Denver Insurance Company (now Resolution Life)',
+    highlights: [
+      'Flat M&E rate of 0.75% — current equals guaranteed',
+      'Age-tiered premium sales load (2.25% to 4.25%)',
+      'No longer offered for new sales — legacy product',
+      'Issued by Security Life of Denver (now Resolution Life)',
+      'Initial policy charge of $10/month in addition to admin charges'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/917677/0000950109-98-000113.txt',
+    lastRateUpdate: '1998-01-01'
+  },
+
+  // ── Product 47: Union Security VUL ────────────────────────────────────
+  {
+    id: 'union-security-vul',
+    carrierId: 'delaware-life',
+    name: 'Union Security Variable Universal Life',
+    shortName: 'Union Security VUL',
+    productType: 'VUL',
+    ratesVerified: true,
+    verificationSource: 'SEC EDGAR CIK 790531 — 485BPOS filed 2022',
+    meChargeSchedule: {
+      current: [{ years: '1+', rate: 0.90 }],
+      guaranteed: [{ years: '1+', rate: 0.90 }]
+    },
+    surrenderSchedule: { type: 'Per policy schedule' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'Union Security VUL',
+    issuer: 'Union Security Insurance Company (Sun Life subsidiary)',
+    highlights: [
+      'Flat M&E rate of 0.90% — current equals guaranteed',
+      'Issued by Union Security Insurance Company',
+      'Sun Life subsidiary — now part of Delaware Life',
+      'Legacy product — no longer offered for new sales',
+      'Confirmed in 2022 SEC filing'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/790531/000079053122000022/usicvul220regtofile.htm',
+    lastRateUpdate: '2022-05-01'
+  },
+
+  // ── Product 48 ──────────────────────────────────────────────────────────
+  {
+    id: 'equitable-vul-optimizer',
+    name: 'Equitable VUL Optimizer',
+    carrier: 'equitable',
+    ratesVerified: true,
+    secCIK: '771726',
+    meChargeSchedule: {
+      guaranteed: [
+        { years: '1-10', rate: 1.00 },
+        { years: '11+', rate: 0.50 }
+      ],
+      current: [
+        { years: 'All', rate: 0.60 }
+      ]
+    },
+    adminCharge: { monthly: '$15 yr 1, $10 after (currently $0 after age 100)' },
+    premiumCharge: { guaranteed: '6%', current: '4% after 2x target premium' },
+    surrenderSchedule: { type: 'Yes — per policy schedule' },
+    hasFixedAccount: true,
+    hasIndexedAccount: true,
+    marketStabilizerOption: { current: '0.40%', guaranteed: '1.65%' },
+    loanOptions: ['Standard', 'Preferred'],
+    stateApprovals: 'Most states',
+    policyForm: 'ICC15-100 / 15-100 (Series 166)',
+    issuer: 'Equitable Financial Life Insurance Company',
+    highlights: [
+      'Guaranteed max M&E 1.00% yrs 1-10, drops to 0.50% yr 11+',
+      'Current M&E approximately 0.60% across all years',
+      'Includes Market Stabilizer Option (MSO) at 0.40% current',
+      'Customer Loyalty Credit offsets monthly charges',
+      'Premium charge 4% current (6% guaranteed)'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/771726/000119312515412382/d22341dex9926mii.htm',
+    lastRateUpdate: '2021-05-01'
+  },
+
+  // ── Product 49 ──────────────────────────────────────────────────────────
+  {
+    id: 'prudential-vul-protector-2018',
+    name: 'PruLife VUL Protector (2018)',
+    carrier: 'prudential',
+    ratesVerified: true,
+    secCIK: '851693',
+    meChargeSchedule: {
+      guaranteed: [
+        { years: 'All', rate: 0.45 }
+      ],
+      current: [
+        { years: 'All', rate: 0.25 }
+      ]
+    },
+    adminCharge: { monthly: 'Per policy schedule' },
+    surrenderSchedule: { type: 'Yes — per policy schedule' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'VULPR-2018 / ICC18 VULPR-2018',
+    issuer: 'Pruco Life Insurance Company',
+    highlights: [
+      'Very low current M&E of 0.25% — flat all years',
+      'Guaranteed max only 0.45% — among lowest in industry',
+      'Protection-oriented VUL with competitive charges',
+      'Part of PruLife VUL Protector series',
+      'Issued by Pruco Life Insurance Company (Prudential subsidiary)'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/851693/000085169318000042/plvulp18regtofile.htm',
+    lastRateUpdate: '2021-06-01'
+  },
+
+  // ── Product 50 ──────────────────────────────────────────────────────────
+  {
+    id: 'nyliac-corpexec-vul-ii',
+    name: 'NYLIAC CorpExec VUL II',
+    carrier: 'new-york-life',
+    ratesVerified: true,
+    secCIK: '1018042',
+    meChargeSchedule: {
+      guaranteed: [
+        { years: 'All', rate: 0.90 }
+      ],
+      current: [
+        { years: 'All', rate: 0.25 }
+      ]
+    },
+    adminCharge: { monthly: 'Per policy schedule' },
+    surrenderSchedule: { type: 'Per COLI policy schedule' },
+    hasFixedAccount: true,
+    loanOptions: ['Standard'],
+    stateApprovals: 'Most states',
+    policyForm: 'NYLIAC CorpExec VUL II (CEVUL2)',
+    issuer: 'New York Life Insurance and Annuity Corporation (NYLIAC)',
+    highlights: [
+      'Extremely low current M&E of 0.25% — flat all years',
+      'Guaranteed max 0.90% provides significant pricing cushion',
+      'Corporate-Owned Life Insurance (COLI) product',
+      'Issued by NYLIAC — subsidiary of New York Life',
+      'Designed for executive benefit and key person programs'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1018042/000119312522101404/d255027d485bpos.htm',
+    lastRateUpdate: '2022-04-01'
   }
 
 ];
