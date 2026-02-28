@@ -32,7 +32,7 @@ export const carriers = [
     foundedYear: 1928,
     headquarters: "Columbus, OH",
     totalAssets: "$280B",
-    productCategories: ["fia", "glwb", "iul", "va"],
+    productCategories: ["fia", "glwb", "iul", "va", "vul"],
     website: "https://www.nationwide.com"
   },
   {
@@ -302,7 +302,7 @@ export const carriers = [
     foundedYear: 2017,
     headquarters: "Charlotte, NC",
     totalAssets: "$240B",
-    productCategories: ["fia", "glwb", "va"],
+    productCategories: ["fia", "glwb", "va", "vul"],
     website: "https://www.brighthousefinancial.com"
   },
   {
@@ -464,7 +464,7 @@ export const carriers = [
     foundedYear: 1921,
     headquarters: "Houston, TX",
     totalAssets: "$380B",
-    productCategories: ["fia", "glwb", "va", "iul"],
+    productCategories: ["fia", "glwb", "va", "iul", "vul"],
     website: "https://www.corebridgefinancial.com"
   },
   {
@@ -773,5 +773,41 @@ export const carriers = [
     totalAssets: "$180B",
     productCategories: ["whole-life", "term", "iul", "vul"],
     website: "https://www.thrivent.com"
+  },
+  {
+    id: "guardian",
+    name: "Guardian Life Insurance Company of America",
+    shortName: "Guardian",
+    ratings: {
+      amBest: { rating: "A++", outlook: "Stable" },
+      sAndP: { rating: "AA+", outlook: "Stable" },
+      moodys: null,
+      fitch: null,
+      comdex: 97
+    },
+    yearsInBusiness: 164,
+    foundedYear: 1860,
+    headquarters: "New York, NY",
+    totalAssets: "$90B",
+    productCategories: ["whole-life", "term", "vul"],
+    website: "https://www.guardianlife.com"
+  },
+  {
+    id: "mutual-of-america",
+    name: "Mutual of America Life Insurance Company",
+    shortName: "Mutual of America",
+    ratings: {
+      amBest: { rating: "A+", outlook: "Stable" },
+      sAndP: { rating: "A+", outlook: "Stable" },
+      moodys: null,
+      fitch: null,
+      comdex: 89
+    },
+    yearsInBusiness: 81,
+    foundedYear: 1945,
+    headquarters: "New York, NY",
+    totalAssets: "$25B",
+    productCategories: ["vul", "va"],
+    website: "https://www.mutualofamerica.com"
   }
 ];
