@@ -1,5 +1,5 @@
 import { getProduct, getBenchmarks } from '../data/index.js';
-import { pct, ratingBadge, currency, benchmarkGauge, getTopRate, getTopParticipation, verifyBadge, verifyBanner } from '../utils/formatters.js';
+import { pct, ratingBadge, currency, benchmarkGauge, getTopRate, getTopParticipation, verifyBadge, verifyBanner, statusBadge, statusBanner } from '../utils/formatters.js';
 
 export function renderProductDetail(id, type) {
   const product = getProduct(id);
@@ -277,6 +277,7 @@ export function renderProductDetail(id, type) {
         ` : ''}
 
         <div class="mt-4">${verifyBanner(product)}</div>
+        <div class="mt-2">${statusBanner(product)}</div>
 
         ${detailHTML}
       </div>

@@ -3,7 +3,7 @@
 // =============================================================================
 
 import { getVAProducts, getSubaccounts } from '../data/index.js';
-import { pct, ratingBadge, currency, verifyBadge, verifyBanner } from '../utils/formatters.js';
+import { pct, ratingBadge, currency, verifyBadge, verifyBanner, statusBadge, statusBanner } from '../utils/formatters.js';
 import { state, addToCompare, removeFromCompare } from '../state.js';
 
 let sortKey = 'subaccountCount';
@@ -209,6 +209,7 @@ export function renderVADetail(id) {
       ` : ''}
 
       ${verifyBanner(p)}
+      ${statusBanner(p)}
 
       <!-- Key Metrics -->
       <div class="grid grid-cols-2 md:grid-cols-6 gap-3">
@@ -485,7 +486,7 @@ function renderVATable() {
           onchange="this.checked ? window.app.addToCompare({id:'${p.id}',name:'${p.name}',type:'va'}) : window.app.removeFromCompare('${p.id}')">
       </td>
       <td class="px-3 py-2.5 cursor-pointer" onclick="location.hash='/va/${p.id}'">
-        <div class="font-medium text-violet-600 dark:text-violet-400 hover:underline">${p.name}${verifyBadge(p)}</div>
+        <div class="font-medium text-violet-600 dark:text-violet-400 hover:underline">${p.name}${verifyBadge(p)}${statusBadge(p)}</div>
       </td>
       <td class="px-3 py-2.5 text-slate-600 dark:text-slate-300">${p.carrierName}</td>
       <td class="px-3 py-2.5 text-center">${ratingBadge(p.amBest)}</td>

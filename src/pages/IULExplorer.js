@@ -1,5 +1,5 @@
 import { getIULProducts, getBenchmarks } from '../data/index.js';
-import { pct, ratingBadge, benchmarkGauge, getTopRate, getTopParticipation, verifyBadge } from '../utils/formatters.js';
+import { pct, ratingBadge, benchmarkGauge, getTopRate, getTopParticipation, verifyBadge, statusBadge } from '../utils/formatters.js';
 import { state, addToCompare, removeFromCompare } from '../state.js';
 
 let sortKey = 'topCap';
@@ -159,7 +159,7 @@ function renderTable() {
           onchange="this.checked ? window.app.addToCompare({id:'${p.id}',name:'${p.name}',type:'iul'}) : window.app.removeFromCompare('${p.id}')">
       </td>
       <td class="px-3 py-2.5 cursor-pointer" onclick="location.hash='/iul/${p.id}'">
-        <div class="font-medium text-blue-600 dark:text-blue-400 hover:underline">${p.name}${verifyBadge(p)}</div>
+        <div class="font-medium text-blue-600 dark:text-blue-400 hover:underline">${p.name}${verifyBadge(p)}${statusBadge(p)}</div>
       </td>
       <td class="px-3 py-2.5">${p.carrierName}</td>
       <td class="px-3 py-2.5 text-center">${ratingBadge(p.amBest)}</td>

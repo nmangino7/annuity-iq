@@ -1,5 +1,5 @@
 import { getGLWBRiders, getBenchmarks } from '../data/index.js';
-import { pct, ratingBadge, benchmarkGauge, verifyBadge } from '../utils/formatters.js';
+import { pct, ratingBadge, benchmarkGauge, verifyBadge, statusBadge } from '../utils/formatters.js';
 import { state, addToCompare, removeFromCompare } from '../state.js';
 
 let sortKey = 'wd65';
@@ -154,7 +154,7 @@ function renderTable() {
           onchange="this.checked ? window.app.addToCompare({id:'${r.id}',name:'${r.name}',type:'glwb'}) : window.app.removeFromCompare('${r.id}')">
       </td>
       <td class="px-3 py-2.5 cursor-pointer" onclick="location.hash='/glwb/${r.id}'">
-        <div class="font-medium text-blue-600 dark:text-blue-400 hover:underline">${r.name}${verifyBadge(r)}</div>
+        <div class="font-medium text-blue-600 dark:text-blue-400 hover:underline">${r.name}${verifyBadge(r)}${statusBadge(r)}</div>
         <div class="text-xs text-slate-400">${r.attachedProduct}</div>
       </td>
       <td class="px-3 py-2.5">${r.carrierName}</td>

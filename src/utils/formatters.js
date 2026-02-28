@@ -93,6 +93,31 @@ export function verifyBanner(product) {
   </div>`;
 }
 
+export function statusBadge(product) {
+  if (product.discontinuedDate) {
+    const year = product.discontinuedDate.split('-')[0];
+    return ` <span title="Discontinued ${year} — no longer offered for new sales" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-[10px] font-semibold rounded-full align-middle">Discontinued ${year}</span>`;
+  }
+  return ' <span title="Currently available for new sales" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-semibold rounded-full align-middle">Active</span>';
+}
+
+export function statusBanner(product) {
+  if (product.discontinuedDate) {
+    const date = product.discontinuedDate;
+    const [year, month] = date.split('-');
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const formatted = `${monthNames[parseInt(month, 10) - 1]} ${year}`;
+    return `<div class="flex items-center gap-2 px-3 py-2 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+      <svg class="w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+      <span class="text-sm text-red-700 dark:text-red-300"><strong>Discontinued ${year}</strong> &mdash; No longer offered for new sales since ${formatted}. Shown for historical reference.</span>
+    </div>`;
+  }
+  return `<div class="flex items-center gap-2 px-3 py-2 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-lg">
+    <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span class="text-sm text-emerald-700 dark:text-emerald-300"><strong>Active</strong> &mdash; Currently available for new sales</span>
+  </div>`;
+}
+
 export function truncate(str, len = 30) {
   if (!str) return '';
   return str.length > len ? str.slice(0, len) + '...' : str;
