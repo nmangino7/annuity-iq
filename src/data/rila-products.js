@@ -9,7 +9,7 @@ export const rilaProducts = [
     term: 6,
     accountOptions: [
       // 1-Year Performance (10% Buffer)
-      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
       { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
@@ -523,23 +523,8 @@ export const rilaProducts = [
     lastRateUpdate: '2026-01-15'
   },
 
-  // ── Athene Amplify (6-Year) ────────────────────────────────────────
-  { id: 'athene-amplify-6yr', ratesVerified: true, lastVerifiedDate: '2026-02-22', verificationSource: 'Cross-verified: athene.com Amplify 2.0 NF rate sheet (S&P 500 10% buffer cap corrected 16.50%→17.00%)', carrierId: 'athene', name: 'Amplify (6-Year)', term: 6, accountOptions: [
-    { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
-    { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
-  ], minimumPremium: 20000, maximumIssueAge: 80, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 }, deathBenefit: 'Account Value', highlights: ['Apollo-backed carrier', 'Uncapped S&P option', '5 index choices', 'Nasdaq-100 access'], lastRateUpdate: '2026-02-01' },
-
-  // ── Corebridge Index Frontier 7 ────────────────────────────────────
-  { id: 'corebridge-index-frontier-7', ratesVerified: true, lastVerifiedDate: '2026-02-22', verificationSource: 'Cross-verified: corebridgefinancial.com, annuityeducator.com (S&P 500 10% buffer cap 16.00% confirmed)', carrierId: 'corebridge-financial', name: 'Index Frontier 7', term: 6, accountOptions: [
-    { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
-    { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
-  ], minimumPremium: 25000, maximumIssueAge: 85, withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 }, deathBenefit: 'Account Value', highlights: ['Corebridge (formerly AIG)', '4 index options', '10% and 20% buffer levels', '$25K minimum'], lastRateUpdate: '2026-02-01' },
+  // Athene Amplify (6-Year) duplicate removed — already exists as athene-amplify above
+  // Corebridge Index Frontier 7 removed — wrong product name; Corebridge RILA is MarketLock (already in file)
   // ── Pacific Life Protective Growth (from official rate sheet 02/16/2026) ──
   {
     id: 'pacific-protective-growth',

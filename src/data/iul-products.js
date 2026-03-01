@@ -274,7 +274,7 @@ export const iulProducts = [
     ratesVerified: true,
     lastVerifiedDate: '2026-02-22',
     verificationSource: 'Cross-verified: lincolnfinancial.com, lifeinsurancerecommendations.com (S&P 500 cap 10.50% confirmed)',
-    name: "WealthBuilder IUL 2.0",
+    name: "WealthBuilder IUL",
     maxIllustratedRate: 6.35,
     indexAccounts: [
       {
@@ -328,45 +328,25 @@ export const iulProducts = [
     lastRateUpdate: "2026-02-01"
   },
 
-  // 9. Prudential PruLife Index Advantage
+  // 9. Prudential PruLife Index Advantage (DISCONTINUED Aug 2024 — replaced by Momentum IUL)
   {
     id: "prudential-prulife-index-advantage",
     carrierId: "prudential",
-    ratesVerified: true,
-    lastVerifiedDate: "2026-02-21",
-    name: "PruLife Index Advantage",
+    discontinuedDate: "2024-08",
+    ratesVerified: 'partial',
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Last known rates before discontinuation. Replaced by Prudential Momentum IUL.",
+    name: "PruLife Index Advantage UL",
     maxIllustratedRate: 6.28,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 8.75,
+        capRate: 10.75,
         participationRate: 100,
         spread: 0,
         floor: 0,
         isUncapped: false,
-        hasMultiplier: false,
-        multiplierValue: null
-      },
-      {
-        indexName: "NASDAQ-100",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.25,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        hasMultiplier: false,
-        multiplierValue: null
-      },
-      {
-        indexName: "Pru Dynamic Multi-Index",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 125,
-        spread: 0,
-        floor: 0,
-        isUncapped: true,
         hasMultiplier: false,
         multiplierValue: null
       }
@@ -383,9 +363,9 @@ export const iulProducts = [
     riders: ["Accelerated Benefit Rider", "IncomeFlex", "Overloan Protection"],
     minimumFaceAmount: 100000,
     maximumIssueAge: 80,
-    highlights: ["Top-tier carrier financial strength", "NASDAQ-100 index option", "IncomeFlex guaranteed income rider"],
+    highlights: ["DISCONTINUED — replaced by Momentum IUL (Aug 2024)", "Last cap rate was 10.75%", "IncomeFlex guaranteed income rider"],
     sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",
-    lastRateUpdate: "2026-02-01"
+    lastRateUpdate: "2024-08-18"
   },
 
   // 11. John Hancock Accumulation IUL 20
@@ -706,19 +686,21 @@ export const iulProducts = [
     lastRateUpdate: "2026-02-01"
   },
 
-  // 53. Lincoln WealthAccumulate IUL
+  // 53. Lincoln WealthAccumulate 2 IUL (DISCONTINUED — sunset Aug 2025, replaced by WealthBuilder IUL)
   {
     id: "lincoln-wealthaccumulate-iul",
     carrierId: "lincoln-financial",
-    ratesVerified: true,
-    lastVerifiedDate: "2026-02-21",
-    name: "WealthAccumulate IUL",
+    discontinuedDate: "2025-08",
+    ratesVerified: 'partial',
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Last known rates before sunset. 90-day transition ended Aug 10, 2025. Replaced by WealthBuilder IUL.",
+    name: "WealthAccumulate 2 IUL",
     maxIllustratedRate: 6.68,
     indexAccounts: [
       {
         indexName: "S&P 500",
         creditingMethod: "Annual Point-to-Point",
-        capRate: 9.5,
+        capRate: 10.50,
         participationRate: 100,
         spread: 0,
         floor: 0,
@@ -1187,7 +1169,7 @@ export const iulProducts = [
     carrierId: "prudential",
     ratesVerified: true,
     lastVerifiedDate: "2026-02-22",
-    verificationSource: "LifeInsuranceRecommendations.com (cap 10.25% confirmed) + Prudential.com + FMI Agent",
+    verificationSource: "LifeInsuranceRecommendations.com + Prudential.com + FMI Agent. Fixed rate corrected to 5.15% per Prudential rate sheet.",
     name: "Momentum IUL",
     maxIllustratedRate: 6.50,
     indexAccounts: [
@@ -1225,7 +1207,7 @@ export const iulProducts = [
         multiplierValue: null
       }
     ],
-    fixedAccountRate: 3.00,
+    fixedAccountRate: 5.15,
     guaranteedMinCreditingRate: 1.0,
     loanProvisions: {
       fixedLoanRate: 5.0,
@@ -1241,7 +1223,7 @@ export const iulProducts = [
       "Exclusive Goldman Sachs Voyager Index — uncapped participation",
       "10.25% S&P 500 cap rate — competitive in market",
       "60% uncapped S&P 500 participation — unlimited upside",
-      "Replaces PruLife Index Advantage UL (being phased out)",
+      "5.15% fixed account rate — among highest in industry",
       "Prudential — AA- S&P, A1 Moody's, Aa3 Fitch"
     ],
     sourceUrl: "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/indexed-universal-life-insurance",

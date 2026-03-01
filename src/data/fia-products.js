@@ -1020,7 +1020,7 @@ export const fiaProducts = [
     minimumPremium: 25000,
     maximumIssueAge: 80,
     guaranteedMinimumRate: 0.0,
-    premiumBonus: 12.0,
+    premiumBonus: 0,
     freeWithdrawalPercent: 10,
     fixedAccountRate: 4.60,
     indexStrategies: [

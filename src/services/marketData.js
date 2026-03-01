@@ -359,10 +359,10 @@ class MarketDataService {
 
   // ── API Key Management ──────────────────────────────────────────────────
   _getApiKey() {
-    // Check localStorage first, then env variable
+    // Check localStorage first, then env variable, then built-in default
     return localStorage.getItem('annuityiq_fmp_key') ||
            (typeof import.meta !== 'undefined' ? import.meta.env?.VITE_FMP_API_KEY : null) ||
-           null;
+           'MGqaqp0CxBvz7Rz8rLUh8exwdBcm8eAj';
   }
 
   setApiKey(key) {
