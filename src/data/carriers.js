@@ -212,7 +212,7 @@ export const carriers = [
     foundedYear: 1906,
     headquarters: "Sioux Falls, SD",
     totalAssets: "$48B",
-    productCategories: ["fia", "glwb", "iul", "myga"],
+    productCategories: ["fia", "glwb", "iul", "myga", "rila"],
     website: "https://www.midlandnational.com"
   },
   {
@@ -302,7 +302,7 @@ export const carriers = [
     foundedYear: 2017,
     headquarters: "Charlotte, NC",
     totalAssets: "$240B",
-    productCategories: ["fia", "glwb", "va", "vul"],
+    productCategories: ["fia", "glwb", "va", "vul", "rila"],
     website: "https://www.brighthousefinancial.com"
   },
   {
@@ -500,7 +500,7 @@ export const carriers = [
     foundedYear: 1887,
     headquarters: "Lincoln, NE",
     totalAssets: "$30B",
-    productCategories: ["fia", "iul", "term", "vul"],
+    productCategories: ["fia", "iul", "term", "va", "vul"],
     website: "https://www.ameritas.com"
   },
   {
@@ -1007,5 +1007,41 @@ export const carriers = [
     totalAssets: "$26B",
     productCategories: ["fia", "glwb", "myga"],
     website: "https://nfg.com"
+  },
+  {
+    id: "trustage",
+    name: "TruStage Financial Group (CUNA Mutual)",
+    shortName: "TruStage",
+    ratings: {
+      amBest: { rating: "A", outlook: "Stable" },
+      sAndP: { rating: "A+", outlook: "Stable" },
+      moodys: null,
+      fitch: null,
+      comdex: 82
+    },
+    yearsInBusiness: 90,
+    foundedYear: 1935,
+    headquarters: "Madison, WI",
+    totalAssets: "$30B",
+    productCategories: ["fia", "rila"],
+    website: "https://www.trustage.com"
+  },
+  {
+    id: "equitrust",
+    name: "EquiTrust Life Insurance Company",
+    shortName: "EquiTrust",
+    ratings: {
+      amBest: { rating: "B++", outlook: "Stable" },
+      sAndP: { rating: "A-", outlook: "Stable" },
+      moodys: null,
+      fitch: { rating: "A-", outlook: "Stable" },
+      comdex: 51
+    },
+    yearsInBusiness: 30,
+    foundedYear: 1996,
+    headquarters: "West Des Moines, IA",
+    totalAssets: "$27B",
+    productCategories: ["fia", "glwb", "myga"],
+    website: "https://www.equitrust.com"
   }
 ];

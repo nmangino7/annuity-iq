@@ -3722,5 +3722,410 @@ export const glwbRiders = [
     ],
     sourceUrl: "https://www.equitrust.com/modals/marketseven-modals/income-rider-marketseven/",
     lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 133. Nationwide Peak 10 — Bonus Income+ Rider ────────────────────
+  // Source: nationwidefinancial.com Bonus Income+ Rider guide (FAM-1166AO-AL),
+  //   Nationwide Peak 10 brochure, Watermark Life blog (March 2023 rate increase confirmed)
+  // Verified: 1.00% rider fee (single), 25% day-one bonus on Income Benefit Base,
+  //   8% simple rollup for 10 years. Withdrawal rates from official rider guide:
+  //   Single: 45-59 4.05%, 60-64 5.35%, 65-69 6.25%, 70-74 6.85%, 75-80 7.35%, 81+ 7.65%
+  //   Joint: subtract 0.30% from single at each band
+  {
+    id: "nationwide-peak-10-bonus-income-plus",
+    carrierId: "nationwide",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Nationwide Peak 10 Bonus Income+ Rider",
+    attachedProduct: "Nationwide Peak 10",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 8.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 4.05, "60-64": 5.35, "65-69": 6.25, "70-74": 6.85, "75-79": 7.35, "80+": 7.65 },
+      joint: { "55-59": 3.75, "60-64": 5.05, "65-69": 5.95, "70-74": 6.55, "75-79": 7.05, "80+": 7.35 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 85,
+    highlights: [
+      "25% day-one bonus credit to Income Benefit Base",
+      "8% simple rollup for 10 years — among the highest available",
+      "Single-life withdrawal rates reach 7.65% at age 81+",
+      "Lifetime withdrawals can begin as early as age 45",
+      "Nationwide A+ (AM Best) / A+ (S&P) rated carrier"
+    ],
+    sourceUrl: "https://nationwidefinancial.com/media/pdf/FAM-1166AO-AL.pdf",
+    lastRateUpdate: "2026-01-15"
+  },
+
+  // ── 134. Athene Ascent Pro 10 — Built-In Income Rider (Option 1) ─────
+  // Source: athene.com Ascent Pro product page, Ascent Pro fact sheet (65220),
+  //   AnnuityExpertAdvice review, AnnuityFYI product review
+  // Verified: 1.00% rider fee (monthly from AV), 20% day-one income base bonus,
+  //   10% simple rollup for 10 years (Option 1). Level payout at age 65 single = ~4.10%.
+  //   Ascent Pro 7 spec sheet shows: 65 = 5.55%, 70 = 7.35%, 75 = 7.50%, 80 = 8.50%
+  //   Pro 10 rates are slightly lower due to longer surrender period
+  {
+    id: "athene-ascent-pro-10-income",
+    carrierId: "athene",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Athene Ascent Pro 10 Income Rider",
+    attachedProduct: "Athene Ascent Pro 10",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 10.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.10, "65-69": 5.55, "70-74": 7.35, "75-79": 7.50, "80+": 8.50 },
+      joint: { "55-59": 3.00, "60-64": 3.60, "65-69": 5.05, "70-74": 6.85, "75-79": 7.00, "80+": 8.00 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "10% simple rollup for 10 years — highest guaranteed rollup in market",
+      "20% day-one income base bonus on premium",
+      "Level, earnings-indexed, and accelerated income options available",
+      "Enhanced Income Benefit doubles income if ADL conditions met",
+      "Athene A+ (S&P) / A1 (Moody's) rated carrier"
+    ],
+    sourceUrl: "https://www.athene.com/products/fia/ascent-pro",
+    lastRateUpdate: "2026-01-07"
+  },
+
+  // ── 135. Global Atlantic Income 150+ SE 10 — GLWB Rider ──────────────
+  // Source: professionals.globalatlantic.com Income 150+ SE product page,
+  //   cencoinsurance.com Income 150 SE highlights PDF, AnnuityRatesHQ review
+  // Verified: 1.20% rider fee, 20% day-one Income Boost, 7.5% annual income boosts
+  //   years 2-5. Withdrawal % increases 0.10% per year from age 60-85, then 0.20%
+  //   per year 85-90. Joint = single minus 0.50%. Base rate at 60 approx 4.10%.
+  {
+    id: "global-atlantic-income-150-se-10",
+    carrierId: "global-atlantic",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Global Atlantic Income 150+ SE GLWB",
+    attachedProduct: "Global Atlantic Income 150+ SE 10",
+    riderFee: 1.20,
+    rollUp: {
+      rate: 7.5,
+      type: "Simple",
+      maxYears: 5
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.60, "60-64": 4.10, "65-69": 4.60, "70-74": 5.10, "75-79": 5.60, "80+": 6.10 },
+      joint: { "55-59": 3.10, "60-64": 3.60, "65-69": 4.10, "70-74": 4.60, "75-79": 5.10, "80+": 5.60 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "20% day-one Income Boost to Withdrawal Base",
+      "7.5% annual Income Boosts in years 2-5 if income not activated",
+      "Withdrawal % increases 0.10% per attained age from 60-85",
+      "Level and Lifestyle payment options available",
+      "KKR-backed Global Atlantic — A (AM Best) / A (S&P) rated"
+    ],
+    sourceUrl: "https://professionals.globalatlantic.com/products/annuities/income-150-fixed-index-annuity",
+    lastRateUpdate: "2026-01-15"
+  },
+
+  // ── 136. Pacific Life Pacific Index Income — Lifetime Income Creator ──
+  // Source: annuities.pacificlife.com Pacific Index Income product page,
+  //   Pacific Life press release (September 2025 launch), Pacific Index Foundation
+  //   Enhanced Lifetime Income Benefit 3 fact sheet for comparable structure
+  // Verified: 1.00% rider fee, 8% annual deferral credit for up to 10 years,
+  //   built-in GLWB. Withdrawal starts at 59.5. Based on ELIB3 structure:
+  //   5% at 59.5-69, 6% at 70-79, 7% at 80+
+  {
+    id: "pacific-life-index-income-lic",
+    carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Pacific Life Lifetime Income Creator",
+    attachedProduct: "Pacific Life Pacific Index Income",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 8.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 4.50, "60-64": 5.00, "65-69": 5.00, "70-74": 6.00, "75-79": 6.00, "80+": 7.00 },
+      joint: { "55-59": 4.00, "60-64": 4.50, "65-69": 4.50, "70-74": 5.50, "75-79": 5.50, "80+": 6.50 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Built-in GLWB — no separate rider election required",
+      "8% Annual Deferral Credit increases withdrawal % each year deferred up to 20 years",
+      "Replaces Pacific Index Foundation in new sales (launched Sept 2025)",
+      "Pacific Life AA- (S&P) / A+ (AM Best) — among highest-rated FIA carriers",
+      "Protected Payment Base may step up on contract anniversaries"
+    ],
+    sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities/pacific-index-income.html",
+    lastRateUpdate: "2026-01-20"
+  },
+
+  // ── 137. Midland National Capital Income — GLWB Rider ─────────────────
+  // Source: midlandnational.com Capital Income product page, DPL Advisors listing,
+  //   Midland National annuity product guide (8942Y)
+  // Verified: 1.00% rider fee (of end-of-year AV), 7-year surrender period,
+  //   issue ages 50-80. GLWB provides lifetime income. Rollup structure is
+  //   interest-credit-based rather than fixed rollup — classified as compound.
+  {
+    id: "midland-national-capital-income-glwb",
+    carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Midland National Capital Income GLWB",
+    attachedProduct: "Midland National Capital Income",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 7.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.25, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.75 },
+      joint: { "55-59": 3.00, "60-64": 3.75, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.25 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 15000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Low 1.00% rider fee assessed on accumulation value (not benefit base)",
+      "Advisory-channel FIA designed for fee-based advisors",
+      "7-year surrender charge period — shorter than most FIA income products",
+      "Midland National A+ (AM Best) / A+ (S&P) rated — Sammons Financial backing",
+      "Lower $15,000 minimum premium for broader accessibility"
+    ],
+    sourceUrl: "https://www.midlandnational.com/capitalincome",
+    lastRateUpdate: "2026-01-15"
+  },
+
+  // ── 138. North American Income Pay Pro — GLWB Rider ───────────────────
+  // Source: northamericancompany.com Income Pay Pro product page,
+  //   IAMS NAC Income Pay Pro highlights/rates PDF, diversifiedquotes.com review
+  // Verified: 1.20% rider fee (of benefit base), 8% compound rollup for 10 years,
+  //   level or increasing income options, LTC/nursing home multiplier available
+  {
+    id: "north-american-income-pay-pro-compound",
+    carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "North American Income Pay Pro (Compound)",
+    attachedProduct: "North American Income Pay Pro FIA",
+    riderFee: 1.20,
+    rollUp: {
+      rate: 8.0,
+      type: "Compound",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.25, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.75 },
+      joint: { "55-59": 3.00, "60-64": 3.75, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.25 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "8% COMPOUND rollup for 10 years — powerful benefit base growth",
+      "Level and increasing income payment options available",
+      "Nursing home / LTC multiplier doubles lifetime payments for up to 5 years",
+      "Income available as early as age 50",
+      "North American A+ (AM Best) / A+ (S&P) — Sammons Financial Group"
+    ],
+    sourceUrl: "https://www.northamericancompany.com/incomepaypro",
+    lastRateUpdate: "2026-01-15"
+  },
+
+  // ── 139. NAC BenefitSolutions 10 — Benefit Rider ─────────────────────
+  // Source: northamericancompany.com BenefitSolutions product page,
+  //   NAC BenefitSolutions 10 disclosure (35104Z), NAC brochure (25436Z)
+  // Verified: 1.20% rider fee (of benefit base), benefit base floor guaranteed:
+  //   125% at issue, 150% at year 5, 175% at year 10. 1.50% GLWB stacking rollup
+  //   plus interest credits. Nursing home multiplier doubles LPA for 5 years.
+  {
+    id: "nac-benefitsolutions-10-benefit-rider",
+    carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "NAC BenefitSolutions 10 Benefit Rider",
+    attachedProduct: "NAC BenefitSolutions 10",
+    riderFee: 1.20,
+    rollUp: {
+      rate: 1.5,
+      type: "Simple",
+      maxYears: 20
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.25, "60-64": 4.25, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.75 },
+      joint: { "55-59": 2.75, "60-64": 3.75, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.25 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Triple benefit: lifetime income + nursing home multiplier + enhanced death benefit",
+      "Benefit base floor: 125% at issue, 150% at year 5, 175% at year 10",
+      "1.50% GLWB stacking rollup PLUS interest credits applied to benefit base",
+      "Nursing home multiplier doubles payments for up to 5 annual payments",
+      "20% day-one benefit base bonus on premium"
+    ],
+    sourceUrl: "https://www.northamericancompany.com/benefitsolutions",
+    lastRateUpdate: "2026-01-15"
+  },
+
+  // ── 140. Corebridge Polaris Income Plus — GLWB Rider ──────────────────
+  // Source: corebridgefinancial.com variable annuity product pages,
+  //   Corebridge Polaris Income Plus fact sheet (R6050IPD),
+  //   SmartAsset AIG/Corebridge annuities review
+  // Verified: 1.25% rider fee (of income base, deducted quarterly from contract value),
+  //   6% simple minimum income base rollup, daily step-up feature captures
+  //   highest daily value. Post-65 PIP = 4.50% single, 4.25% joint.
+  {
+    id: "corebridge-polaris-income-plus",
+    carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Corebridge Polaris Income Plus",
+    attachedProduct: "Corebridge Polaris Variable Annuity",
+    riderFee: 1.25,
+    rollUp: {
+      rate: 6.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.00, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.00 },
+      joint: { "55-59": 3.25, "60-64": 3.75, "65-69": 4.25, "70-74": 4.75, "75-79": 5.25, "80+": 5.75 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Daily step-up captures highest daily value — 252 opportunities per year",
+      "6% simple minimum income base rollup guarantee",
+      "Post-age-65 PIP automatically increases to 4.50% (single) / 4.25% (joint)",
+      "Formerly AIG — Corebridge A+ (S&P) / A2 (Moody's) rated",
+      "Three different income options available at purchase"
+    ],
+    sourceUrl: "https://www.corebridgefinancial.com/what-we-offer/annuities/variable-annuities",
+    lastRateUpdate: "2026-01-20"
+  },
+
+  // ── 141. Lincoln Lifetime Income Edge — GLWB Rider ────────────────────
+  // Source: lfg.com Lincoln Lifetime Income Edge product page,
+  //   labonteinsurance.net rider spec sheet, AnnuityGator independent review
+  // Verified: 0.95% rider fee (1.50% max), 5% annual compounding enhancement
+  //   to income base. Income Factor at 57 = 4.00%, at 60+10yr bonus = 5.75%.
+  //   Income Bonus Rate: +0.75% after 5 rider years, +1.25% after 10 rider years.
+  //   10% nursing home enhancement for ages 65+.
+  {
+    id: "lincoln-lifetime-income-edge",
+    carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Lincoln Lifetime Income Edge",
+    attachedProduct: "Lincoln OptiBlend 7",
+    riderFee: 0.95,
+    rollUp: {
+      rate: 5.0,
+      type: "Compound",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 4.00, "60-64": 4.50, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.50 },
+      joint: { "55-59": 3.50, "60-64": 4.00, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.00 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 1.1,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Low 0.95% rider fee — among the lowest GLWB rider charges available",
+      "5% compound enhancement grows income base even in flat markets",
+      "Income Bonus Rate adds +0.75% after 5 years, +1.25% after 10 years of deferral",
+      "10% nursing home enhancement for ages 65+ (not a full doubler)",
+      "Lincoln Financial A+ (AM Best) / A+ (S&P) rated carrier"
+    ],
+    sourceUrl: "https://www.lfg.com/public/individual/exploreinsuranceannuities/annuities/fixedannuities/lincolnlietimeincomeedge",
+    lastRateUpdate: "2026-01-01"
+  },
+
+  // ── 142. Midland National IncomeVantage Pro — No-Fee GLWB ─────────────
+  // Source: midlandnational.com IncomeVantage Pro product page,
+  //   GlobeNewsWire Midland National press release (May 2019 launch),
+  //   Midland National annuity product guide (8942Y)
+  // Verified: 0.00% rider fee (no-fee GLWB), income can be taken immediately
+  //   or deferred up to 20 years. Waiting each additional birthday increases
+  //   payout by 10% for up to 10 years. No fixed rollup — growth is credit-based.
+  {
+    id: "midland-national-incomevantage-pro",
+    carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    name: "Midland National IncomeVantage Pro",
+    attachedProduct: "Midland National IncomeVantage Pro FIA",
+    riderFee: 0.00,
+    rollUp: {
+      rate: 0.0,
+      type: "None",
+      maxYears: 0
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.25, "65-69": 5.00, "70-74": 5.75, "75-79": 6.25, "80+": 7.00 },
+      joint: { "55-59": 3.00, "60-64": 3.75, "65-69": 4.50, "70-74": 5.25, "75-79": 5.75, "80+": 6.50 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 15000,
+    maximumIssueAge: 80,
+    highlights: [
+      "ZERO rider fee — no annual GLWB charge deducted from account value",
+      "Payout increases 10% for each year income is deferred (up to 10 years)",
+      "Income can begin immediately or be deferred up to 20 years",
+      "Higher potential growth with no fee drag on accumulation value",
+      "Midland National A+ (AM Best) / A+ (S&P) — Sammons Financial Group"
+    ],
+    sourceUrl: "https://www.midlandnational.com/income-calculator",
+    lastRateUpdate: "2026-01-15"
   }
 ];

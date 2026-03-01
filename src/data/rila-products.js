@@ -1245,5 +1245,361 @@ export const rilaProducts = [
     highlights: ['Enhanced rates vs standard Strategic Outcomes', 'MSCI EAFE 155% uncapped 6yr participation — industry leading', 'SG Smart Climate 205% uncapped 6yr participation — ESG investing', 'S&P 500 125% uncapped 6yr participation', 'Floor strategy with -10% floor and 70% participation', 'Principal Financial Group A+ rated carrier'],
     sourceUrl: 'https://annuityeducator.com/reviews/principal-life-insurance-company/fixed-index/principal-strategic-outcomes-annuity-with-rate-enhancement',
     lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Brighthouse Shield Level Pay Plus II ───
+  {
+    id: 'brighthouse-shield-pay-plus-ii',
+    carrierId: 'brighthouse-financial',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'Shield Level Pay Plus II',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 14.25% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 10.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.75, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Step Rate 10.50%
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.50 },
+      // 1-Year Russell 2000 (10% Buffer) — 17.75% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 17.00% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Nasdaq-100 (10% Buffer) — 14.50% Cap
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 100% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 6-Year S&P 500 (20% Buffer) — Uncapped 90% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 90, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 7 },
+    deathBenefit: 'Account Value',
+    highlights: ['Flexible premium — add money after initial purchase', 'Optional lifetime income rider available', 'Step Rate crediting for consistent returns in flat/positive markets', '6-year uncapped S&P 500 participation at 100%', 'Multiple buffer levels: 10%, 15%, 20%', 'Brighthouse Financial A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/brighthouse-life-insurance-company/rila/brighthouse-shield-level-pay-plus-ii',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Brighthouse Shield Level II 3-Year ───
+  {
+    id: 'brighthouse-shield-ii-3yr',
+    carrierId: 'brighthouse-financial',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'Shield Level II 3-Year',
+    term: 3,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 14.25% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 11.00% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Step Rate 10.75%
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.75 },
+      // 1-Year Russell 2000 (10% Buffer) — 18.00% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 17.50% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 3-Year S&P 500 (10% Buffer) — Uncapped 100% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 3-Year S&P 500 (20% Buffer) — Uncapped 85% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 3, capRate: null, participationRate: 85, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [6, 5, 4],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
+    deathBenefit: 'Account Value',
+    highlights: ['Shorter 3-year surrender period', 'S&P 500 uncapped 3-year participation at 100%', 'Step Rate option for flat/positive market returns', 'Multiple buffer levels: 10%, 15%, 20%', 'Single premium RILA with lower commitment period', 'Brighthouse Financial A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/brighthouse-life-insurance-company/rila/brighthouse-shield-level-ii-3-year',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Brighthouse Shield Level II Advisory ───
+  {
+    id: 'brighthouse-shield-ii-advisory',
+    carrierId: 'brighthouse-financial',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'Shield Level II Advisory',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 16.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 12.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.75, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Step Rate 12.00%
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.00 },
+      // 1-Year Russell 2000 (10% Buffer) — 20.50% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 19.50% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 115% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 115, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 6-Year S&P 500 (20% Buffer) — Uncapped 100% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [],
+    withdrawalProvisions: { freeWithdrawalPercent: 100, penaltyRate: 0 },
+    deathBenefit: 'Account Value',
+    highlights: ['No surrender charges — fee-based/advisory', 'Higher caps and participation vs commission-based version', '16.50% S&P 500 1yr cap with 10% buffer', '115% uncapped 6yr S&P 500 participation', 'Designed for RIA/fee-based advisor platforms', 'Brighthouse Financial A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/brighthouse-life-insurance-company/rila/brighthouse-shield-level-ii-advisory',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Jackson Market Link Pro III ───
+  {
+    id: 'jackson-market-link-pro-iii',
+    carrierId: 'jackson-national',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'Market Link Pro III (6-Year)',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 18.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 13.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer) — 10.25% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Performance Trigger 10.75%
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.75 },
+      // 1-Year Russell 2000 (10% Buffer) — 26.75% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 26.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 22.00% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 22.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Nasdaq-100 (10% Buffer) — 18.25% Cap
+      { indexName: 'Nasdaq-100', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 135% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 135, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year S&P 500 (-10% Floor) — 10.25% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.25, participationRate: null, bufferLevel: null, bufferType: 'Floor', floorLevel: -10, isUncapped: false }
+    ],
+    fixedAccountRate: 3.25,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
+    deathBenefit: 'Account Value',
+    highlights: ['Newest Jackson RILA — launched May 2025', 'Industry-leading 18.75% S&P 500 1yr cap with 10% buffer', '26.75% Russell 2000 1yr cap — among highest available', '135% uncapped 6yr S&P 500 participation', 'Floor strategy available with -10% floor', 'Performance Trigger option for flat/positive markets', 'Jackson National A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/jackson-national-life-insurance-company/rila/jackson-market-link-pro-iii',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Jackson Market Link Pro Advisory III ───
+  {
+    id: 'jackson-market-link-pro-advisory-iii',
+    carrierId: 'jackson-national',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'Market Link Pro Advisory III (6-Year)',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 21.25% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 21.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 15.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.75, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer) — 12.00% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.00, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Performance Trigger 12.25%
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.25 },
+      // 1-Year Russell 2000 (10% Buffer) — 29.50% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 29.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 24.50% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 24.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 155% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 155, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: 3.50,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [],
+    withdrawalProvisions: { freeWithdrawalPercent: 100, penaltyRate: 0 },
+    deathBenefit: 'Account Value',
+    highlights: ['No surrender charges — fee-based/advisory', 'Higher caps than commission version: 21.25% S&P 500 1yr', '29.50% Russell 2000 1yr cap — among highest in market', '155% uncapped 6yr S&P 500 participation', 'Designed for RIA/fee-based advisor platforms', 'Jackson National A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/jackson-national-life-insurance-company/rila/jackson-market-link-pro-advisory-iii',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Midland National LiveWell Dynamic 2.0 ───
+  {
+    id: 'midland-livewell-dynamic-2',
+    carrierId: 'midland-national',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'LiveWell Dynamic 2.0',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 17.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer) — 12.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Performance Trigger 11.50%
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 11.50 },
+      // 1-Year Russell 2000 (10% Buffer) — 23.00% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 23.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 19.50% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 125% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 125, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 6-Year S&P 500 (20% Buffer) — Uncapped 110% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 110, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year S&P 500 Dual Direction (10% Buffer) — 11.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 11.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+    ],
+    fixedAccountRate: 3.15,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
+    deathBenefit: 'Account Value',
+    highlights: ['Enhanced version of original LiveWell Dynamic', '17.50% S&P 500 1yr cap with 10% buffer', 'Dual Direction option — earn positive in down markets within buffer', '125% uncapped 6yr S&P 500 participation', 'Performance Trigger for consistent returns', 'Sammons Financial / Midland National A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/midland-national-life-insurance-company/rila/midland-national-livewell-dynamic-2-0',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Midland National LiveWell Dynamic (Original) ───
+  {
+    id: 'midland-livewell-dynamic',
+    carrierId: 'midland-national',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'LiveWell Dynamic',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 15.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 15.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (20% Buffer) — 11.25% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 11.25, participationRate: null, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year Russell 2000 (10% Buffer) — 20.50% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 17.50% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 115% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 115, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year S&P 500 (10% Buffer) — Performance Trigger 10.25%
+      { indexName: 'S&P 500', creditingMethod: 'Performance Trigger', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.25 }
+    ],
+    fixedAccountRate: 3.00,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 8 },
+    deathBenefit: 'Account Value',
+    highlights: ['Original LiveWell Dynamic RILA from Midland National', '15.75% S&P 500 1yr cap with 10% buffer', '115% uncapped 6yr S&P 500 participation', 'Available in limited states — check availability', 'Performance Trigger for flat/positive markets', 'Sammons Financial / Midland National A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/midland-national-life-insurance-company/rila/midland-national-livewell-dynamic',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Equitable SCS PLUS 21 NY Series B ───
+  {
+    id: 'equitable-scs-plus-21-ny-b',
+    carrierId: 'equitable',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'equitable.com',
+    name: 'Structured Capital Strategies PLUS 21 NY Series B',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 14.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 14.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 10.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 10.75, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Step Rate 10.00%
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 10.00 },
+      // 1-Year Russell 2000 (10% Buffer) — 18.25% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 18.25, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 16.50% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 100% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year S&P 500 Dual Direction (10% Buffer) — 10.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 10.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [6, 6, 5, 4, 3, 2],
+    withdrawalProvisions: { freeWithdrawalPercent: 10, penaltyRate: 6 },
+    deathBenefit: 'Account Value',
+    highlights: ['New York approved version of SCS PLUS 21', 'Dual Direction option — earn positive in down markets within buffer', 'Step Rate for consistent returns regardless of market direction', 'Multiple buffer levels: 10%, 15%, 20%', '100% uncapped 6yr S&P 500 participation', 'Equitable A+ rated carrier — largest RILA provider'],
+    sourceUrl: 'https://www.equitable.com/selling/annuities/structured-capital-strategies',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Equitable Investment Edge 21 Advisory Series B ───
+  {
+    id: 'equitable-investment-edge-21-advisory-b',
+    carrierId: 'equitable',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'equitable.com',
+    name: 'Investment Edge 21 Advisory Series B',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 17.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 17.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 13.00% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Step Rate 12.50%
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.50 },
+      // 1-Year Russell 2000 (10% Buffer) — 21.50% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 21.50, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 19.75% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 120% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 120, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 1-Year S&P 500 Dual Direction (10% Buffer) — 13.00% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Dual Direction', term: 1, capRate: 13.00, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [],
+    withdrawalProvisions: { freeWithdrawalPercent: 100, penaltyRate: 0 },
+    deathBenefit: 'Account Value',
+    highlights: ['No surrender charges — fee-based/advisory version', 'Higher caps vs commission version: 17.50% S&P 500 1yr', 'Dual Direction with 13.00% cap — earn in down markets', '120% uncapped 6yr S&P 500 participation', 'Designed for RIA/fee-based advisor platforms', 'Equitable A+ rated carrier — largest RILA provider'],
+    sourceUrl: 'https://www.equitable.com/selling/annuities/investment-edge',
+    lastRateUpdate: '2026-02-28'
+  },
+
+  // ─── Brighthouse Shield Level Pay Plus II Advisory ───
+  {
+    id: 'brighthouse-shield-pay-plus-ii-advisory',
+    carrierId: 'brighthouse-financial',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-02-28',
+    verificationSource: 'annuityeducator.com',
+    name: 'Shield Level Pay Plus II Advisory',
+    term: 6,
+    accountOptions: [
+      // 1-Year S&P 500 (10% Buffer) — 16.75% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 16.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (15% Buffer) — 12.50% Cap
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 1, capRate: 12.50, participationRate: null, bufferLevel: 15, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year S&P 500 (10% Buffer) — Step Rate 12.25%
+      { indexName: 'S&P 500', creditingMethod: 'Step Rate', term: 1, capRate: null, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false, triggerRate: 12.25 },
+      // 1-Year Russell 2000 (10% Buffer) — 20.75% Cap
+      { indexName: 'Russell 2000', creditingMethod: 'Point-to-Point', term: 1, capRate: 20.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 1-Year MSCI EAFE (10% Buffer) — 19.75% Cap
+      { indexName: 'MSCI EAFE', creditingMethod: 'Point-to-Point', term: 1, capRate: 19.75, participationRate: null, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: false },
+      // 6-Year S&P 500 (10% Buffer) — Uncapped 115% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 115, bufferLevel: 10, bufferType: 'Buffer', floorLevel: null, isUncapped: true },
+      // 6-Year S&P 500 (20% Buffer) — Uncapped 100% Participation
+      { indexName: 'S&P 500', creditingMethod: 'Point-to-Point', term: 6, capRate: null, participationRate: 100, bufferLevel: 20, bufferType: 'Buffer', floorLevel: null, isUncapped: true }
+    ],
+    fixedAccountRate: null,
+    minimumPremium: 25000, maximumIssueAge: 85,
+    surrenderSchedule: [],
+    withdrawalProvisions: { freeWithdrawalPercent: 100, penaltyRate: 0 },
+    deathBenefit: 'Account Value',
+    highlights: ['No surrender charges — fee-based/advisory', 'Flexible premium — add money after initial purchase', 'Optional lifetime income rider available', 'Higher caps: 16.75% S&P 500 1yr with 10% buffer', '115% uncapped 6yr S&P 500 participation', 'Designed for RIA/fee-based advisor platforms', 'Brighthouse Financial A+ rated carrier'],
+    sourceUrl: 'https://annuityeducator.com/reviews/brighthouse-life-insurance-company/rila/brighthouse-shield-level-pay-plus-ii-advisory',
+    lastRateUpdate: '2026-02-28'
   }
 ];

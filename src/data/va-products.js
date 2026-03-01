@@ -2421,5 +2421,513 @@ export const vaProducts = [
     ],
     sourceUrl: 'https://edward-jones.protective.com/retirement/variable-annuities/protective-dimensions-v-variable-annuity',
     lastRateUpdate: '2024-05-01'
+  },
+
+  // ── 51. Ameritas Advisor No-Load Variable Annuity ──
+  {
+    id: 'ameritas-advisor-no-load-va',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'Ameritas.com, AnnuityGator review, DPL Financial Partners fact sheet, SEC EDGAR',
+    carrierId: 'ameritas',
+    name: 'Ameritas Advisor No-Load Variable Annuity',
+    contractType: 'No-Load / Advisory',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0.45,
+    meChargeMax: 0.80,
+    adminFee: 0,
+    totalAnnualCharge: 0.45,
+    annualServiceCharge: 40,
+    serviceChargeWaivedAt: 50000,
+    fundExpenseRange: { min: 0.15, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 10000,
+    maximumIssueAge: 85,
+    subaccountCount: 73,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Guaranteed Lifetime Withdrawal Benefit 2 (Single)',
+        type: 'GMWB',
+        annualCost: 1.25,
+        maxAnnualCost: 2.00,
+        description: 'Guaranteed lifetime withdrawal benefit — 1.25% of benefit base annually (2.00% max)'
+      },
+      {
+        name: 'Guaranteed Lifetime Withdrawal Benefit 2 (Joint)',
+        type: 'GMWB',
+        annualCost: 1.50,
+        maxAnnualCost: 2.50,
+        description: 'Joint spousal GLWB coverage — 1.50% of benefit base annually (2.50% max)'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Ultra-low 0.45% M&E charge (0.80% guaranteed max) — among lowest no-load VAs',
+      'No surrender charges — 100% liquidity from day one',
+      '73+ investment options including Vanguard, DFA, and American Funds',
+      'IRS Private Letter Ruling allows advisory fee deduction without tax event (up to 1.5%)',
+      'Issued by Ameritas Life Insurance Corp. — A AM Best rated'
+    ],
+    sourceUrl: 'https://www.ameritas.com/industry-professionals/annuities/variable/no-load/',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 52. Delaware Life Accelerator Prime Variable Annuity ──
+  {
+    id: 'delaware-life-accelerator-prime',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'DelawareLife.com, SEC EDGAR CIK 853285, Barrons Top 100 Annuities, InsuranceNewsNet',
+    carrierId: 'delaware-life',
+    name: 'Delaware Life Accelerator Prime Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [8, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.10,
+    adminFee: 0.25,
+    totalAnnualCharge: 1.35,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 96,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Income Boost GLWB',
+        type: 'GMWB',
+        annualCost: 1.35,
+        rollupRate: 6.0,
+        rollupYears: 10,
+        description: '6% simple bonus on benefit base for 10 years. Open architecture with 96 fund options. Annual step-up potential.'
+      },
+      {
+        name: 'Income Control GLWB',
+        type: 'GMWB',
+        annualCost: 1.35,
+        rollupRate: 7.0,
+        rollupYears: 10,
+        description: '7% simple bonus on benefit base for 10 years. Higher income guarantees with 25 eligible fund options.'
+      },
+      {
+        name: 'Armor Flex Seven (GMAB)',
+        type: 'GMAB',
+        annualCost: 0.60,
+        description: '10% or 20% downside buffer over 7-year protection period. Broad fund access.'
+      },
+      {
+        name: 'Armor Flex Ten (GMAB)',
+        type: 'GMAB',
+        annualCost: 0.60,
+        description: '10% or 20% downside buffer over 10-year protection period.'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' },
+      { name: 'Highest Anniversary Value', type: 'Enhanced', annualCost: 0.25, description: 'Highest annual anniversary value locked in annually' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Named to Barrons Top 100 Annuities list for 5 consecutive years',
+      '96 fund options from 20 asset managers (American Funds, Goldman Sachs, T. Rowe Price, etc.)',
+      'Income Boost rider with 6% bonus for 10 years + annual step-up',
+      'Armor Flex riders provide unique GMAB buffer protection (10%/20%)',
+      'Issued by Delaware Life Insurance Company — A- AM Best'
+    ],
+    sourceUrl: 'https://www.delawarelife.com/product/accelerator-prime',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 53. Penn Mutual Smart Foundation Prime Variable Annuity ──
+  {
+    id: 'penn-mutual-smart-foundation-prime',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'PennMutual.com, SEC EDGAR CIK 702184, SmartAsset review, LegalClarity analysis',
+    carrierId: 'penn-mutual',
+    name: 'Penn Mutual Smart Foundation Prime Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [8, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.25,
+    adminFee: 0.15,
+    totalAnnualCharge: 1.40,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.36, max: 1.29 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 55,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Guaranteed Growth and Income Benefit (Single)',
+        type: 'GMWB',
+        annualCost: 1.25,
+        maxAnnualCost: 2.00,
+        description: 'Guaranteed lifetime withdrawal benefit with annual step-up potential.'
+      },
+      {
+        name: 'Guaranteed Growth and Income Benefit (Joint)',
+        type: 'GMWB',
+        annualCost: 1.40,
+        maxAnnualCost: 2.00,
+        description: 'Joint spousal lifetime withdrawal guarantee.'
+      },
+      {
+        name: 'Guaranteed Minimum Accumulation Benefit',
+        type: 'GMAB',
+        annualCost: 0.75,
+        description: 'Guarantees return of first-year premiums at end of 10-year period regardless of market outcomes.'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      '1.40% combined M&E + admin charge (1.25% + 0.15%)',
+      '55+ Penn Series Fund investment options with 5 Lifestyle Asset Allocation funds',
+      'GMAB rider guarantees principal after 10 years at 0.75%',
+      'Fixed account option available within the variable annuity',
+      'Penn Mutual — A+ AM Best, A+ S&P, founded 1847'
+    ],
+    sourceUrl: 'https://gateway.pennmutual.com/products-performance/annuities/smart-foundation-variable-annuities',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 54. Principal Lifetime Income Solutions II Variable Annuity ──
+  {
+    id: 'principal-lifetime-income-solutions-ii',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'Principal.com, SEC EDGAR CIK 9713, Retirement Income Journal, prospectus supplement',
+    carrierId: 'principal-financial',
+    name: 'Principal Lifetime Income Solutions II Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 6,
+    surrenderSchedule: [6, 5, 4, 3, 2, 1],
+    meCharge: 1.25,
+    meChargeMax: 1.50,
+    adminFee: 0,
+    totalAnnualCharge: 1.25,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.19, max: 0.65 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 80,
+    subaccountCount: 15,
+    subaccountIds: [],
+    livingBenefits: [
+      {
+        name: 'Target Income Protector',
+        type: 'GMWB',
+        annualCost: 1.25,
+        maxAnnualCost: 2.00,
+        description: 'Mandatory GMWB rider with guaranteed lifetime withdrawals. Target-date fund structure. 1.25% current (2.00% max).'
+      },
+      {
+        name: 'Flexible Income Protector',
+        type: 'GMWB',
+        annualCost: 1.05,
+        maxAnnualCost: 2.00,
+        description: 'Alternative GMWB rider with more flexible investment options. 1.05% current (2.00% max).'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Enhanced', annualCost: 0.25, description: 'Total premiums less withdrawals — 0.25% annual charge' },
+      { name: 'Stepped-Up Value', type: 'Enhanced', annualCost: 0.35, description: 'Highest anniversary value with annual step-up — 0.35% annual charge' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Income-focused VA — GMWB rider is mandatory (Target or Flexible Income Protector)',
+      'Low underlying fund expenses: 0.19%-0.65% (managed asset allocation accounts)',
+      'M&E of 1.25% (max 1.50%) — competitive for income-focused product',
+      'Principal Variable Contracts funds with automatic rebalancing',
+      'Principal Financial — A+ AM Best, A+ S&P, $300B+ AUM'
+    ],
+    sourceUrl: 'https://www.principal.com/individuals/invest-retire/annuities/principal-lifetime-income-solutions-ii-variable-annuity',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 55. Ohio National ONcore Premier Variable Annuity ──
+  {
+    id: 'ohio-national-oncore-premier',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'SEC EDGAR CIK 73981 (485APOS + 497), AnnuityDigest review, Ohio National/AuguStar website',
+    carrierId: 'ohio-national',
+    name: 'Ohio National ONcore Premier Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [6, 5, 4, 3, 3, 2, 1],
+    meCharge: 1.15,
+    adminFee: 0,
+    totalAnnualCharge: 1.15,
+    meChargeBreakdown: { mortalityRisk: 0.65, expenseRisk: 0.50 },
+    annualServiceCharge: 30,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 60,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      '1.15% M&E charge (0.65% mortality + 0.50% expense) — competitive B-share pricing',
+      '$30 annual contract fee — among lowest in the industry',
+      '60+ subaccount options from Ohio National Fund and third-party managers',
+      'Optional GLWB and GMIB riders available at additional cost',
+      'Issued by Ohio National (now AuguStar) — A+ AM Best rated'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/73981/000095015208001334/l30197ae485apos.htm',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 56. Voya Opportunity Plus Variable Annuity ──
+  {
+    id: 'voya-opportunity-plus',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'SEC EDGAR CIK 103007, K-12 Financial Advisors independent review, 403bCompare, Morningstar',
+    carrierId: 'voya',
+    name: 'Voya Opportunity Plus Variable Annuity',
+    contractType: 'Group VA / Employer Plan',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 6, 5, 4, 3, 2, 1],
+    meCharge: 1.00,
+    adminFee: 0,
+    adminFeeReserved: 0.25,
+    totalAnnualCharge: 1.00,
+    annualServiceCharge: 30,
+    fundExpenseRange: { min: 0.30, max: 1.50 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 55,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      '1.00% M&E charge — admin fee of 0.25% reserved but not currently assessed',
+      'Group variable annuity for 403(b) and 457(b) employer-sponsored plans',
+      'Issued by Voya Retirement Insurance and Annuity Company (VRIAC)',
+      'Rolling surrender charges based on purchase payment date',
+      'Formerly ING/Aetna Life Insurance and Annuity Company'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/103007/000092598116000127/combooppluspro.pdf',
+    lastRateUpdate: '2025-05-01'
+  },
+
+  // ── 57. Mutual of America Separate Account No. 2 (TDA) ──
+  {
+    id: 'mutual-of-america-sep-acct-2',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'SEC EDGAR CIK 743415, MutualOfAmerica.com, DC Gary brochure/prospectus',
+    carrierId: 'mutual-of-america',
+    name: 'Mutual of America Separate Account No. 2 (TDA)',
+    contractType: 'Group VA / Employer Plan',
+    surrenderPeriod: 0,
+    surrenderSchedule: [],
+    meCharge: 0,
+    adminFee: 0.60,
+    distributionExpenseCharge: 0.55,
+    expenseRiskCharge: 0.20,
+    totalAnnualCharge: 1.35,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.30, max: 1.00 },
+    minimumPremium: 0,
+    minimumPremiumQualified: 0,
+    maximumIssueAge: 85,
+    subaccountCount: 30,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Standard', type: 'Standard', annualCost: 0, description: 'Account value at time of death' }
+    ],
+    freeWithdrawalPercent: 100,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'No surrender charges — full liquidity from day one',
+      'No sales commissions — group annuity for nonprofits and government employers',
+      '1.35% total Separate Account annual expense (admin 0.60% + distribution 0.55% + expense risk 0.20%)',
+      'Reduced fee tiers available based on total plan assets',
+      'Mutual of America — A+ AM Best, A+ S&P, dedicated to nonprofit sector'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/743415/000119312520307030/d99398d485apos.htm',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 58. Penn Mutual Diversifier II Variable Annuity ──
+  {
+    id: 'penn-mutual-diversifier-ii',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'PennMutual.com prospectus PDF, SEC EDGAR CIK 702184, AnnuityDigest, SmartAsset review',
+    carrierId: 'penn-mutual',
+    name: 'Penn Mutual Diversifier II Variable Annuity',
+    contractType: 'B-Share',
+    surrenderPeriod: 7,
+    surrenderSchedule: [7, 7, 6, 5, 4, 3, 2],
+    meCharge: 1.25,
+    adminFee: 0.15,
+    totalAnnualCharge: 1.40,
+    annualServiceCharge: 0,
+    fundExpenseRange: { min: 0.36, max: 1.29 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 45,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      '1.40% combined M&E + admin (1.25% M&E + 0.15% admin)',
+      'Accumulation-focused VA — no living benefit riders available',
+      'Penn Series Fund lineup with equity, fixed income, and Lifestyle allocation funds',
+      'Fixed account option available alongside variable subaccounts',
+      'Penn Mutual — A+ AM Best, A+ S&P, mutual company founded 1847'
+    ],
+    sourceUrl: 'https://www.pennmutual.com/static-assets/v1/item/dd690c32-2be3-dfb8-639e-9516589d61be/attachments/diversifier-II-va-prospectus.pdf',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 59. Ohio National ONcore Value Variable Annuity ──
+  {
+    id: 'ohio-national-oncore-value',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'SEC EDGAR CIK 73981, AnnuityDigest review, Ohio National/AuguStar prospectus',
+    carrierId: 'ohio-national',
+    name: 'Ohio National ONcore Value Variable Annuity',
+    contractType: 'B-Share (Low-Cost)',
+    surrenderPeriod: 7,
+    surrenderSchedule: [6, 5, 4, 3, 3, 2, 1],
+    meCharge: 0.75,
+    adminFee: 0,
+    totalAnnualCharge: 0.75,
+    meChargeBreakdown: { mortalityRisk: 0.45, expenseRisk: 0.30 },
+    annualServiceCharge: 30,
+    fundExpenseRange: { min: 0.40, max: 1.50 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 55,
+    subaccountIds: [],
+    livingBenefits: [],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of account value or total premiums less withdrawals' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states except NY',
+    highlights: [
+      'Ultra-low 0.75% M&E charge (0.45% mortality + 0.30% expense) — one of the lowest B-share VAs',
+      'Accumulation-focused product — no income riders to maintain low costs',
+      '$30 annual contract fee',
+      '55+ subaccount options from multiple fund families',
+      'Ohio National (AuguStar) — A+ AM Best rated'
+    ],
+    sourceUrl: 'https://www.sec.gov/Archives/edgar/data/73981/000119312518309035/d630621d497.htm',
+    lastRateUpdate: '2025-01-01'
+  },
+
+  // ── 60. Brighthouse Series VA-4 with FlexChoice Access ──
+  {
+    id: 'brighthouse-flexchoice-access-va4',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-03-01',
+    verificationSource: 'SEC EDGAR CIK 356475, BrighthouseFinancial.com fact cards, Series/Class VA-4 prospectus',
+    carrierId: 'brighthouse-financial',
+    name: 'Series VA-4 with FlexChoice Access',
+    contractType: 'L-Share',
+    surrenderPeriod: 4,
+    surrenderSchedule: [8, 6, 4, 2],
+    meCharge: 1.55,
+    adminFee: 0.05,
+    totalAnnualCharge: 1.60,
+    annualServiceCharge: 30,
+    serviceChargeWaivedAt: 50000,
+    fundExpenseRange: { min: 0.51, max: 1.21 },
+    minimumPremium: 10000,
+    minimumPremiumQualified: 5000,
+    maximumIssueAge: 85,
+    subaccountCount: 75,
+    subaccountIds: [],
+    nursingHomeWaiver: true,
+    terminalIllnessWaiver: true,
+    livingBenefits: [
+      {
+        name: 'FlexChoice Access (Single)',
+        type: 'GMWB',
+        annualCost: 1.35,
+        maxAnnualCost: 2.00,
+        rollupRate: 5.0,
+        withdrawalRates: { age55: 3.50, age60: 4.00, age65: 5.00, age70: 5.50, age75: 6.00 },
+        stepUpFrequency: 'Annual',
+        waitingPeriod: 0,
+        description: '5% rollup on benefit base with annual step-up. Same rider as Series VA.'
+      },
+      {
+        name: 'FlexChoice Access (Joint)',
+        type: 'GMWB',
+        annualCost: 1.50,
+        maxAnnualCost: 2.00,
+        rollupRate: 5.0,
+        withdrawalRates: { age55: 3.00, age60: 3.50, age65: 4.50, age70: 5.00, age75: 5.50 },
+        stepUpFrequency: 'Annual',
+        waitingPeriod: 0,
+        description: '5% rollup with joint spousal coverage.'
+      }
+    ],
+    deathBenefits: [
+      { name: 'Return of Premium', type: 'Standard', annualCost: 0, description: 'Greater of policy value or total premiums less withdrawals' },
+      { name: 'Highest Anniversary Value', type: 'Enhanced', annualCost: 0.20, description: 'Highest anniversary value locked in annually' },
+      { name: 'FlexChoice Access DB', type: 'Enhanced', annualCost: 0.65, maxAnnualCost: 1.20, description: 'Enhanced death benefit with FlexChoice Access feature' }
+    ],
+    freeWithdrawalPercent: 10,
+    rmdFriendly: true,
+    stateAvailability: 'All states',
+    highlights: [
+      'Shorter 4-year L-Share surrender period (vs 7-year for Series VA)',
+      'Higher M&E of 1.60% is trade-off for faster access to funds',
+      'Same FlexChoice Access GLWB rider with 5% rollup as Series VA',
+      'Nursing home and terminal illness waivers included',
+      'Brighthouse Financial — A AM Best, A S&P, $240B AUM'
+    ],
+    sourceUrl: 'https://www.brighthousefinancial.com/products/annuities/series-va-with-flexchoice-rider/',
+    lastRateUpdate: '2025-05-01'
   }
 ];

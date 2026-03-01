@@ -2171,5 +2171,774 @@ export const iulProducts = [
     ],
     sourceUrl: "https://www.fglife.com/life-insurance/historic-rates?product=Execudex,pathsetter,everlast",
     lastRateUpdate: "2026-02-01"
+  },
+
+  // Pacific Life Horizon IUL 2
+  {
+    id: "pacific-life-horizon-iul-2",
+    carrierId: "pacific-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: pacificlife.com product page, lifeinsurancerecommendations.com (S&P 500 cap 9.00% confirmed), BusinessWire launch announcement 4/8/2024",
+    name: "Pacific Horizon IUL 2",
+    maxIllustratedRate: 6.10,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "1-Year S&P 500 Indexed Account"
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 14.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "1-Year High Cap Indexed Account",
+        strategyFee: 0.80
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 16.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "1-Year High Cap Plus Indexed Account",
+        strategyFee: 3.00
+      },
+      {
+        indexName: "Invesco QQQ ETF",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 50,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "1-Year No Cap Dynamic Par Indexed Account"
+      },
+      {
+        indexName: "BlackRock iBLD Endura VC 5.5 ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 200,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "BlackRock Endura Index Account"
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 2.25,
+      variableLoanAvailable: true,
+      indexedLoanRate: 4.90,
+      fixedChargeIndexedLoanRate: 4.50,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: "To Age 90",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Premier Living Benefits Rider 2", "Enhanced Performance Factor Rider", "Age 90 No-Lapse Guarantee Rider", "Flexible Duration No-Lapse Guarantee Rider"],
+    minimumFaceAmount: 100000,
+    maximumIssueAge: 85,
+    highlights: [
+      "Pacific Life's newest flagship IUL — replaces PDX IUL 2 and original Horizon",
+      "BlackRock Endura Index — 200% uncapped participation",
+      "High Cap Plus account — 16.00% cap (3.00% strategy fee)",
+      "Fixed Charge Indexed Loan — guaranteed 4.50% loan charge rate",
+      "Three coverage design options for flexibility",
+      "Pacific Life — A+ AM Best, AA- S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://lifeinsurance.pacificlife.com/horizon2",
+    lastRateUpdate: "2026-02-07"
+  },
+
+  // John Hancock Accumulation IUL 23
+  {
+    id: "john-hancock-accumulation-iul-23",
+    carrierId: "john-hancock",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: johnhancock.com, nfgbrokerage.com (Barclays Global MA Plus 165% confirmed effective 3/15/2024), lifeinsurancerecommendations.com (S&P 500 cap 9.00%)",
+    name: "Accumulation IUL 23",
+    maxIllustratedRate: 6.45,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Base Capped Indexed Account"
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Two-Year Point-to-Point",
+        capRate: 18.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Base Two-Year Capped Indexed Account"
+      },
+      {
+        indexName: "Barclays Global MA",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 125,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Barclays Global MA Bonus Indexed Account"
+      },
+      {
+        indexName: "Barclays Global MA",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 145,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Barclays Global MA Classic Indexed Account"
+      },
+      {
+        indexName: "Barclays Global MA",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 165,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Barclays Global MA Plus Indexed Account"
+      }
+    ],
+    fixedAccountRate: 3.00,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      indexedLoanRate: 5.0,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: "Included (premium-based)",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Vitality GO (included)", "Vitality PLUS (optional)", "Overloan Protection", "Indexed Performance Charge accounts"],
+    minimumFaceAmount: 100000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Barclays Global MA Plus — 165% uncapped participation (new with IUL 23)",
+      "Two-year S&P 500 account with 18% cap",
+      "Vitality wellness program with savings and rewards",
+      "Barclays Fixed Index Loan — guaranteed 5.00% charge",
+      "0.65% persistency bonus on fixed account in years 11+",
+      "John Hancock — A+ AM Best, AA- S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://www.johnhancock.com/life-insurance.html",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // North American Protection Builder IUL 2
+  {
+    id: "north-american-protection-builder-iul-2",
+    carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: northamericancompany.com product page, nfgbrokerage.com, Yahoo Finance launch announcement Jan 2025",
+    name: "Protection Builder IUL 2",
+    maxIllustratedRate: 5.85,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P MidCap 400",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Russell 2000",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 8.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Fidelity Multifactor Yield Index 5% ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 125,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.25,
+    guaranteedMinCreditingRate: 1.5,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: "To Age 120 (with Premium Guaranteed Rider)",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Premium Guaranteed Rider", "Accelerated Death Benefit (Critical/Chronic/Terminal)", "Overloan Protection Benefit", "Protected Death Benefit", "Waiver of Policy Charges"],
+    minimumFaceAmount: 100000,
+    maximumIssueAge: 85,
+    highlights: [
+      "Death benefit guaranteed to age 120 with Premium Guaranteed Rider",
+      "Fidelity Multifactor Yield Index (exclusive) — 125% uncapped participation",
+      "10-30% premium decrease vs. prior version for key demographics",
+      "Complete living benefits package included at no additional premium",
+      "North American — A+ AM Best, A+ S&P"
+    ],
+    sourceUrl: "https://www.northamericancompany.com/in-new-protection-builder-2",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // North American Smart Builder IUL 3
+  {
+    id: "north-american-smart-builder-iul-3",
+    carrierId: "north-american",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: northamericancompany.com product page, nfgbrokerage.com Smart Builder IUL announcement, ogletreefinancial.com review",
+    name: "Smart Builder IUL 3",
+    maxIllustratedRate: 5.90,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Point-to-Point",
+        capRate: 3.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Fidelity Multifactor Yield Index 5% ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 125,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        bonusRate: 1.65,
+        bonusRateYear11: 2.65
+      },
+      {
+        indexName: "Russell 2000",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 8.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.25,
+    guaranteedMinCreditingRate: 1.5,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: "Available (duration varies by premium)",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Waiver of Surrender Charge Option Rider", "Accelerated Death Benefit (Critical/Chronic/Terminal)", "Overloan Protection Benefit", "Protected Death Benefit"],
+    minimumFaceAmount: 100000,
+    maximumIssueAge: 79,
+    highlights: [
+      "0% premium load — more premium goes directly to cash value",
+      "Waiver of Surrender Charge Rider — 0% surrender charge from day one",
+      "Fidelity Multifactor Yield (exclusive) — 125% participation + 1.65% bonus yr 1, 2.65% yr 11+",
+      "Ideal for lump sum, short-pay, 1035 exchanges, and annuity max",
+      "North American — A+ AM Best, A+ S&P"
+    ],
+    sourceUrl: "https://www.northamericancompany.com/in-news-smart-builder-iul",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // Lincoln WealthAccelerate IUL
+  {
+    id: "lincoln-wealthaccelerate-iul",
+    carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: lincolnfinancial.com product page, lifeinsurancerecommendations.com (S&P 500 cap 9.50% confirmed), premierbrokerage.com announcement",
+    name: "WealthAccelerate IUL",
+    maxIllustratedRate: 6.00,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Average",
+        capRate: null,
+        participationRate: 50,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Lincoln Multi-Asset Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 130,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.00,
+    guaranteedMinCreditingRate: 2.0,
+    loanProvisions: {
+      fixedLoanRate: 4.75,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: "To Age 85",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Lincoln LifeAssure Accelerated Benefits Rider II", "Lincoln Critical Illness Rider", "Overloan Protection"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 60,
+    highlights: [
+      "Accelerated underwriting — no medical exam required",
+      "Streamlined product for healthy, younger clients",
+      "Lincoln Multi-Asset Index — 130% uncapped participation",
+      "Guaranteed fixed and participating loan charge rates",
+      "Lincoln Financial — A+ AM Best, A+ S&P, A2 Moody's"
+    ],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife/lincolnwealthaccelerateiul",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // Lincoln WealthPreserve 2 IUL
+  {
+    id: "lincoln-wealthpreserve-2-iul",
+    carrierId: "lincoln-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: lincolnfinancial.com product page, lifeinsurancerecommendations.com (S&P 500 cap 10.50% confirmed), BusinessWire product announcement",
+    name: "WealthPreserve 2 IUL",
+    maxIllustratedRate: 5.75,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.25,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 4.75,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: "Up to 40 years or Age 90 (whichever comes first)",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Lincoln LifeAssure Accelerated Benefits Rider", "No-Lapse Guarantee (25-year premium option)", "Overloan Protection"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Protection-first design with long-term death benefit guarantee",
+      "10.50% S&P 500 cap — guaranteed minimum cap of 8.25% first 10 years",
+      "No-lapse guarantee up to 40 years or age 90",
+      "25-year no-lapse premium option for budget-conscious clients",
+      "Lincoln Financial — A+ AM Best, A+ S&P, A2 Moody's"
+    ],
+    sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/lifeinsurance/permanentlife/indexeduniversallife/lincolnwealthpreserveiul2020",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // Corebridge Value+ Protector III
+  {
+    id: "corebridge-value-protector-iii",
+    carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: corebridgefinancial.com, lifeinsurancerecommendations.com (S&P 500 High Cap 10.00% confirmed), buaweb.com Corebridge product bulletin",
+    name: "Value+ Protector III",
+    maxIllustratedRate: 5.50,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (Cap Rate)",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0.25,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 High Cap Account"
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (High Bonus)",
+        capRate: 8.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0.25,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 High Bonus Account"
+      },
+      {
+        indexName: "ML Strategic Balanced Index",
+        creditingMethod: "Annual Point-to-Point (Blend Participation)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0.25,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Blend Participation Rate Account"
+      },
+      {
+        indexName: "Franklin Quality Dividend Index",
+        creditingMethod: "Annual Point-to-Point (Dividend Blend)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0.25,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Dividend Blend Participation Rate Account"
+      },
+      {
+        indexName: "PIMCO Global Optima Index",
+        creditingMethod: "Annual Point-to-Point (Global Blend)",
+        capRate: null,
+        participationRate: 75,
+        spread: 0,
+        floor: 0.25,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "Global Blend Participation Rate Account"
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 0.25,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: "To Age 90",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Access Solution (Chronic/Critical/Terminal)", "Income for Life Rider", "Overloan Protection Rider", "Select Income Rider", "Dollar Cost Averaging Rider"],
+    minimumFaceAmount: 100000,
+    maximumIssueAge: 85,
+    highlights: [
+      "Protection-focused IUL with affordable premiums",
+      "10.00% S&P 500 High Cap with 0.25% guaranteed floor",
+      "Five distinct index crediting strategies",
+      "Accelerated Access Solution — chronic, critical, and terminal illness",
+      "Income for Life Rider — guaranteed retirement income",
+      "Corebridge Financial — A AM Best, A+ S&P, A2 Moody's"
+    ],
+    sourceUrl: "https://www.corebridgefinancial.com",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // Penn Mutual Accumulation Builder Flex IUL
+  {
+    id: "penn-mutual-accumulation-builder-flex",
+    carrierId: "penn-mutual",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: pennmutual.com product page + brochure PM8571, lifeinsurancerecommendations.com (S&P 500 cap 10.00%), gateway.pennmutual.com",
+    name: "Accumulation Builder Flex IUL",
+    maxIllustratedRate: 6.15,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (Uncapped)",
+        capRate: null,
+        participationRate: 50,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Fidelity AIM Dividend Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 120,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 4.50,
+    guaranteedMinCreditingRate: 2.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: "To Age 90",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Death Benefit", "Chronic Illness Accelerated Benefit", "Overloan Protection Benefit", "Disability Waiver of Monthly Deductions", "Index Credit Enhancement (ICE — 10% guaranteed)"],
+    minimumFaceAmount: 75000,
+    maximumIssueAge: 75,
+    highlights: [
+      "4.50% fixed account rate — among highest in IUL market",
+      "Guaranteed 10% Index Credit Enhancement (ICE) on all indexed segments",
+      "Policy Value Enhancement (PVE) bonus starting year 11",
+      "Mutual company — record $300M dividend payout for 2026",
+      "Fidelity AIM Dividend Index — 120% uncapped participation",
+      "Penn Mutual — A+ AM Best, A+ S&P"
+    ],
+    sourceUrl: "https://gateway.pennmutual.com/products-performance/universal-life/accumulation-builder-flex-indexed-universal-life",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // Mutual of Omaha IUL Express
+  {
+    id: "mutual-of-omaha-iul-express",
+    carrierId: "mutual-of-omaha",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: mutualofomaha.com product guide 457978, lifeinsurancerecommendations.com (S&P 500 cap 9.25%), fmiagent.com rate update 2/1/2025",
+    name: "Indexed Universal Life Express",
+    maxIllustratedRate: 6.33,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.25,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 One-Year 100% Participation"
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (High Par)",
+        capRate: 7.00,
+        participationRate: 140,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 One-Year High Participation Rate"
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (Uncapped)",
+        capRate: null,
+        participationRate: 60,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 One-Year Uncapped"
+      },
+      {
+        indexName: "BofA U.S. Agility Index",
+        creditingMethod: "Annual Point-to-Point (Uncapped)",
+        capRate: null,
+        participationRate: 185,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "BofA U.S. Agility One-Year Uncapped"
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Death Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "Waiver of Monthly Deductions"],
+    minimumFaceAmount: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "No-exam simplified underwriting — coverage up to $300,000",
+      "BofA U.S. Agility Index — 185% uncapped participation",
+      "Identical cap/participation rates for new and existing policyholders",
+      "Four distinct index strategies — all annual point-to-point with 0% floor",
+      "Low $25,000 minimum face amount for accessible entry",
+      "Mutual of Omaha — A+ AM Best, AA- S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://www.mutualofomaha.com/life-insurance/indexed-universal-life",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // Principal Indexed UL Accumulation II
+  {
+    id: "principal-indexed-ul-accumulation-ii",
+    carrierId: "principal-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-03-01",
+    verificationSource: "Cross-verified: advisors.principal.com IUL Accumulation II page, principal.com performance update page, insuranceandestates.com (cap ~9%)",
+    name: "Indexed UL Accumulation II",
+    maxIllustratedRate: 5.95,
+    indexAccounts: [
+      {
+        indexName: "S&P 500 Price Return",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 9.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 Price Return Index Account"
+      },
+      {
+        indexName: "S&P 500 Total Return",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 7.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        accountLabel: "S&P 500 Total Return Index Account"
+      }
+    ],
+    fixedAccountRate: 3.25,
+    guaranteedMinCreditingRate: 0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: "To Age 90",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Waiver of Monthly Deductions", "Term Insurance Rider", "Children's Insurance Rider"],
+    minimumFaceAmount: 100000,
+    maximumIssueAge: 75,
+    highlights: [
+      "Unique S&P 500 Total Return account — includes dividends in crediting",
+      "Guaranteed minimum 3% cap rate and 100% participation rate",
+      "Strong accumulation design for ages 35-55",
+      "Tax-diversification tool for clients maxing qualified plans",
+      "Principal Financial — A+ AM Best, A+ S&P"
+    ],
+    sourceUrl: "https://advisors.principal.com/wps/portal/advisor/products/life-insurance/indexed-universal-life/indexed-ul-accumulation-ii",
+    lastRateUpdate: "2026-02-01"
   }
 ];

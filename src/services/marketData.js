@@ -245,6 +245,75 @@ const TICKER_MAP = {
 
   // ─── Multi-Strategy / TIPS ────────────────────────────────────
   'jpm-multi-strat':   'JMSAX', 'van-tips-index':    'VTIP',
+
+  // ─── Batch 3: New 50 Subaccounts ────────────────────────────
+  // Commodities / Real Assets
+  'inv-gold-precious':    'GLD',
+  'pim-commodity-real':   'DJP',
+  'gs-natural-resources': 'GNR',
+  'blk-timber-forestry':  'WOOD',
+  'blk-global-infra':     'IGF',
+
+  // Multi-Asset / Allocation
+  'am-conservative-alloc': 'AOK',
+  'blk-moderate-alloc':    'AOM',
+  'jpm-aggressive-alloc':  'AOA',
+  'wel-income-alloc':      'AOM',
+  'pru-capital-preserve':  'MINT',
+
+  // Specialty Fixed Income
+  'ev-floating-rate':   'FLOT',
+  'pim-bank-loan':      'BKLN',
+  'fid-convertible':    'CWB',
+  'nw-vanguard-muni':   'VTEB',
+  'pim-inflation-bond': 'TIP',
+
+  // International Regional
+  'trp-europe-stock':  'VGK',
+  'fid-asia-pacific':  'VPL',
+  'trp-japan-fund':    'EWJ',
+  'ms-china-growth':   'MCHI',
+  'tem-latin-america': 'ILF',
+
+  // Thematic / Sector
+  'blk-ai-robotics':        'BOTZ',
+  'inv-clean-energy':       'ICLN',
+  'gs-fintech':             'FINX',
+  'trp-biotech':            'IBB',
+  'blk-cybersecurity':      'HACK',
+  'inv-water-resources':    'PHO',
+  'jpm-aging-pop':          'AGNG',
+  'blk-digital-economy':    'EDOC',
+  'gs-space-innovation':    'ARKX',
+  'fid-blockchain-digital': 'BLOK',
+
+  // Income-Focused Equity
+  'trp-dividend-growth': 'TDVG',
+  'wel-equity-income':   'SCHD',
+  'nyl-preferred-stock': 'PFF',
+  'blk-covered-call':    'XYLD',
+  'fid-utilities':       'XLU',
+
+  // Quantitative / Factor
+  'inv-low-vol':          'SPLV',
+  'blk-momentum-factor':  'MTUM',
+  'dfa-quality-factor':   'DFLQX',
+  'dfa-value-factor':     'DFUVX',
+  'jpm-multi-factor':     'JPUS',
+
+  // Real Estate Specialized
+  'blk-global-reit':       'REET',
+  'jpm-healthcare-reit':   'KURE',
+  'blk-data-center-reit':  'SRVR',
+  'inv-residential-reit':  'REZ',
+  'pru-commercial-reit':   'VNQ',
+
+  // ESG Specialized
+  'cal-clean-water':     'CGW',
+  'par-gender-diversity': 'SHE',
+  'blk-carbon-neutral':  'CRBN',
+  'tiaa-social-impact':  'ESGV',
+  'cal-green-bond':      'BGRN',
 };
 
 // ── Asset-Class → Index ETF Mapping (for unmapped subaccounts) ─────────
@@ -538,6 +607,119 @@ class MarketDataService {
 
 // ── Singleton Export ───────────────────────────────────────────────────────
 export const marketData = new MarketDataService();
+
+// ── Retail Equivalent Lookup ──────────────────────────────────────────────
+// Returns { ticker, name, relationship } for a subaccount, using the
+// TICKER_MAP and fund.retailEquivalent (if present on newer funds).
+const TICKER_NAMES = {
+  'VOO': 'Vanguard S&P 500 ETF', 'SPY': 'SPDR S&P 500 ETF', 'VTI': 'Vanguard Total Stock Market ETF',
+  'VUG': 'Vanguard Growth ETF', 'VTV': 'Vanguard Value ETF', 'VV': 'Vanguard Large-Cap ETF',
+  'VO': 'Vanguard Mid-Cap ETF', 'VOT': 'Vanguard Mid-Cap Growth ETF', 'VOE': 'Vanguard Mid-Cap Value ETF',
+  'VB': 'Vanguard Small-Cap ETF', 'VBK': 'Vanguard Small-Cap Growth ETF', 'VBR': 'Vanguard Small-Cap Value ETF',
+  'VXUS': 'Vanguard Total International Stock ETF', 'VWO': 'Vanguard FTSE Emerging Markets ETF',
+  'VNQ': 'Vanguard Real Estate ETF', 'VBIAX': 'Vanguard Balanced Index Fund',
+  'AGG': 'iShares Core U.S. Aggregate Bond ETF', 'BND': 'Vanguard Total Bond Market ETF',
+  'BSV': 'Vanguard Short-Term Bond ETF', 'BIL': 'SPDR Bloomberg 1-3 Month T-Bill ETF',
+  'TIP': 'iShares TIPS Bond ETF', 'VTIP': 'Vanguard Short-Term Inflation-Protected Securities ETF',
+  'HYG': 'iShares iBoxx $ High Yield Corporate Bond ETF',
+  'EFA': 'iShares MSCI EAFE ETF', 'ACWI': 'iShares MSCI ACWI ETF',
+  'IWB': 'iShares Russell 1000 ETF', 'IWN': 'iShares Russell 2000 Value ETF',
+  'VGT': 'Vanguard Information Technology ETF', 'VHT': 'Vanguard Health Care ETF',
+  'VFH': 'Vanguard Financials ETF', 'VDE': 'Vanguard Energy ETF',
+  'QQQ': 'Invesco QQQ Trust', 'GLD': 'SPDR Gold Shares',
+  'GOVT': 'iShares U.S. Treasury Bond ETF', 'VGLT': 'Vanguard Long-Term Treasury ETF',
+  'VYM': 'Vanguard High Dividend Yield ETF', 'AOR': 'iShares Core Growth Allocation ETF',
+  'FCNTX': 'Fidelity Contrafund', 'FDGRX': 'Fidelity Growth Company',
+  'FDEQX': 'Fidelity Equity-Income', 'FSPTX': 'Fidelity Select Technology',
+  'FSPHX': 'Fidelity Select Health Care', 'FBALX': 'Fidelity Balanced',
+  'FDSSX': 'Fidelity Stock Selector All Cap', 'FEQIX': 'Fidelity Equity-Income',
+  'TRBCX': 'T. Rowe Price Blue Chip Growth', 'PRGFX': 'T. Rowe Price Growth Stock',
+  'TRVLX': 'T. Rowe Price Value',
+  'PTTRX': 'PIMCO Total Return', 'PIMIX': 'PIMCO Income', 'PHIYX': 'PIMCO High Yield',
+  'PTIPX': 'PIMCO Real Return', 'PRRIX': 'PIMCO Real Return',
+  'AGTHX': 'American Funds Growth Fund of America', 'AEPGX': 'American Funds EuroPacific Growth',
+  'NEWFX': 'American Funds New World', 'ABALX': 'American Balanced Fund',
+  'ANWPX': 'American Funds New Perspective', 'AWSHX': 'American Funds Washington Mutual',
+  'AIVSX': 'American Funds International Growth & Income',
+  'JLGMX': 'JPMorgan Large Cap Growth', 'JVAAX': 'JPMorgan Value Advantage',
+  'JMVSX': 'JPMorgan Mid Cap Value', 'JPHAX': 'JPMorgan Hedged Equity',
+  'JIERX': 'JPMorgan International Equity', 'JMSAX': 'JPMorgan Multi-Strategy',
+  'BFMCX': 'BlackRock Total Return', 'MDIZX': 'BlackRock Global Allocation',
+  'BGSAX': 'BlackRock Technology Opportunities', 'BASAX': 'BlackRock Systematic Multi-Strategy',
+  'MDDVX': 'BlackRock Equity Dividend', 'MDIIX': 'BlackRock International',
+  'MALOX': 'BlackRock Global Allocation',
+  'GSZAX': 'Goldman Sachs Strategic Growth',
+  'ACSTX': 'Invesco Comstock', 'LCEAX': 'Invesco Diversified Dividend',
+  'OACAX': 'Invesco Main Street All Cap',
+  'CSRSX': 'Cohen & Steers Realty Shares',
+  'HYLAX': 'Western Asset High Yield',
+  'DFIVX': 'DFA International Value', 'DFUVX': 'DFA U.S. Large Cap Value',
+  'PRBLX': 'Parnassus Core Equity', 'CSXAX': 'Calvert Equity',
+  'TISCX': 'TIAA-CREF Social Choice Equity',
+  'DODFX': 'Dodge & Cox International Stock',
+  'OIDAX': 'Invesco International Diversified',
+  'TEEMX': 'Templeton Emerging Markets',
+  'TPINX': 'Templeton Global Bond',
+  'VTTVX': 'Vanguard Target Retirement 2025', 'VFORX': 'Vanguard Target Retirement 2040',
+  'VFIFX': 'Vanguard Target Retirement 2050', 'VFFVX': 'Vanguard Target Retirement 2055',
+  'VLXVX': 'Vanguard Target Retirement 2060', 'TRRJX': 'T. Rowe Price Retirement 2035',
+  'AALTX': 'American Funds Target Date 2045',
+  'FHYAX': 'Federated Hermes High Yield', 'BNDX': 'Vanguard Total International Bond ETF',
+  'VSS': 'Vanguard FTSE All-World ex-US Small-Cap ETF',
+  'SPAXX': 'Fidelity Government Money Market', 'VMFXX': 'Vanguard Federal Money Market',
+  'QSPRX': 'PGIM Quant Solutions Alternative', 'FSENX': 'Fidelity Select Energy',
+  'SPGAX': 'PGIM Jennison Growth', 'VASGX': 'Vanguard LifeStrategy Growth',
+  'SHSAX': 'BlackRock Health Sciences', 'PFPIX': 'Parnassus Fixed Income',
+  // ─── Batch 3: New 50 Subaccount Tickers ────────────────────
+  'DJP': 'iPath Bloomberg Commodity Index', 'GNR': 'SPDR S&P Global Natural Resources ETF',
+  'WOOD': 'iShares Global Timber & Forestry ETF', 'IGF': 'iShares Global Infrastructure ETF',
+  'AOK': 'iShares Core Conservative Allocation ETF', 'AOM': 'iShares Core Moderate Allocation ETF',
+  'AOA': 'iShares Core Aggressive Allocation ETF', 'MINT': 'PIMCO Enhanced Short Maturity Active ETF',
+  'FLOT': 'iShares Floating Rate Bond ETF', 'BKLN': 'Invesco Senior Loan ETF',
+  'CWB': 'SPDR Bloomberg Convertible Securities ETF', 'VTEB': 'Vanguard Tax-Exempt Bond ETF',
+  'VGK': 'Vanguard FTSE Europe ETF', 'VPL': 'Vanguard FTSE Pacific ETF',
+  'EWJ': 'iShares MSCI Japan ETF', 'MCHI': 'iShares MSCI China ETF',
+  'ILF': 'iShares Latin America 40 ETF',
+  'BOTZ': 'Global X Robotics & AI ETF', 'ICLN': 'iShares Global Clean Energy ETF',
+  'FINX': 'Global X FinTech ETF', 'IBB': 'iShares Biotechnology ETF',
+  'HACK': 'ETFMG Prime Cyber Security ETF', 'PHO': 'Invesco Water Resources ETF',
+  'AGNG': 'Global X Aging Population ETF', 'EDOC': 'Global X Telemedicine & Digital Health ETF',
+  'ARKX': 'ARK Space Exploration & Innovation ETF', 'BLOK': 'Amplify Transformational Data Sharing ETF',
+  'TDVG': 'T. Rowe Price Dividend Growth ETF', 'SCHD': 'Schwab U.S. Dividend Equity ETF',
+  'PFF': 'iShares Preferred and Income Securities ETF', 'XYLD': 'Global X S&P 500 Covered Call ETF',
+  'XLU': 'Utilities Select Sector SPDR Fund',
+  'SPLV': 'Invesco S&P 500 Low Volatility ETF', 'MTUM': 'iShares MSCI USA Momentum Factor ETF',
+  'DFLQX': 'DFA US Large Cap Equity', 'JPUS': 'JPMorgan Diversified Return U.S. Equity ETF',
+  'REET': 'iShares Global REIT ETF', 'KURE': 'KraneShares MSCI All China Health Care ETF',
+  'SRVR': 'Pacer Benchmark Data & Infrastructure Real Estate SCTR ETF',
+  'REZ': 'iShares Residential and Multisector Real Estate ETF',
+  'CGW': 'Invesco S&P Global Water Index ETF', 'SHE': 'SPDR SSGA Gender Diversity Index ETF',
+  'CRBN': 'iShares MSCI ACWI Low Carbon Target ETF', 'ESGV': 'Vanguard ESG U.S. Stock ETF',
+  'BGRN': 'iShares USD Green Bond ETF',
+};
+
+export function getRetailEquivalent(fund) {
+  // First check if fund has retailEquivalent field (newer funds)
+  if (fund.retailEquivalent) {
+    return {
+      ticker: fund.retailEquivalent.ticker,
+      name: fund.retailEquivalent.name || TICKER_NAMES[fund.retailEquivalent.ticker] || fund.retailEquivalent.ticker,
+      relationship: fund.retailEquivalent.relationship || 'mirror',
+    };
+  }
+
+  // Fall back to TICKER_MAP
+  const ticker = TICKER_MAP[fund.id];
+  if (ticker) {
+    return {
+      ticker,
+      name: TICKER_NAMES[ticker] || ticker,
+      relationship: 'mirror',
+    };
+  }
+
+  return null;
+}
 
 // ── Helper: Format daily change with color ────────────────────────────────
 export function formatDailyChange(change) {

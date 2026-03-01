@@ -4,7 +4,8 @@
 
 import { getSubaccounts, getVAProducts, getVULProducts } from '../data/index.js';
 import { pct, currency } from '../utils/formatters.js';
-import { marketData, formatDailyChange, liveBadge } from '../services/marketData.js';
+import { marketData, formatDailyChange, liveBadge, getRetailEquivalent } from '../services/marketData.js';
+import { enrichFund } from '../utils/fundEnrichment.js';
 
 let sortKey = 'morningstarRating';
 let sortDir = 'desc';
@@ -277,11 +278,15 @@ export function renderFundExplorer() {
 
 export function renderFundDetail(id) {
   const allFunds = getSubaccounts();
-  const fund = allFunds.find(f => f.id === id);
-  if (!fund) return `<div class="text-center py-20"><h2 class="text-xl font-bold">Fund not found</h2><a href="#/funds" class="text-purple-500 hover:underline mt-2 inline-block">&larr; Back to Fund Research</a></div>`;
+  const rawFund = allFunds.find(f => f.id === id);
+  if (!rawFund) return `<div class="text-center py-20"><h2 class="text-xl font-bold">Fund not found</h2><a href="#/funds" class="text-purple-500 hover:underline mt-2 inline-block">&larr; Back to Fund Research</a></div>`;
 
-  // Get live data for this fund
+  // Enrich with auto-generated description, sector allocation, risk metrics
+  const fund = enrichFund(rawFund);
+
+  // Get live data and retail equivalent
   const liveChange = marketData.getDailyChange(fund.id, fund.assetClass, fund.style);
+  const retail = getRetailEquivalent(fund);
 
   // Find which VA and VUL products include this fund
   const vaProducts = getVAProducts().filter(p => (p.subaccountIds || []).includes(id));
@@ -293,166 +298,316 @@ export function renderFundDetail(id) {
     'Balanced': 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300',
     'Money Market': 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300',
     'Alternative': 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300',
-    'Target Date': 'bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300'
+    'Target Date': 'bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300',
+    'Real Assets': 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300',
+    'International': 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300',
+    'Commodities': 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300',
   };
 
+  // Style Box — Morningstar-style 3x3 grid
+  const sizeMap = { 'Large Cap': 0, 'Mid Cap': 1, 'Small Cap': 2 };
+  const styleMap = { 'Value': 0, 'Blend': 1, 'Core': 1, 'Growth': 2 };
+  const sizeIdx = Object.keys(sizeMap).find(k => (fund.category || '').includes(k)) ? sizeMap[Object.keys(sizeMap).find(k => (fund.category || '').includes(k))] : null;
+  const styleIdx = styleMap[fund.style] ?? null;
+  const hasStyleBox = sizeIdx != null && styleIdx != null && fund.assetClass === 'Equity';
+
+  // Risk metrics (from fund.riskMetrics or defaults)
+  const rm = fund.riskMetrics || {};
+
+  // Sector allocation
+  const sectors = fund.sectorAllocation || {};
+  const sectorEntries = Object.entries(sectors).sort((a, b) => b[1] - a[1]);
+  const sectorColors = {
+    // camelCase keys (legacy format from some funds)
+    technology: '#8B5CF6', healthcare: '#10B981', financials: '#3B82F6', consumer: '#F59E0B',
+    industrials: '#6366F1', energy: '#EF4444', materials: '#14B8A6', utilities: '#F97316',
+    realEstate: '#EC4899', communication: '#06B6D4', consumerStaples: '#84CC16',
+    consumerDiscretionary: '#F59E0B', informationTechnology: '#8B5CF6',
+    // Proper case keys (enrichment format)
+    'Technology': '#8B5CF6', 'Healthcare': '#10B981', 'Financials': '#3B82F6',
+    'Consumer Discretionary': '#F59E0B', 'Consumer Staples': '#84CC16',
+    'Communication Services': '#06B6D4', 'Industrials': '#6366F1', 'Energy': '#EF4444',
+    'Materials': '#14B8A6', 'Utilities': '#F97316', 'Real Estate': '#EC4899',
+    // Bond sectors
+    'U.S. Treasury': '#3B82F6', 'Corporate Investment Grade': '#6366F1',
+    'Mortgage-Backed': '#10B981', 'Government Agency': '#8B5CF6',
+    'Asset-Backed': '#F59E0B', 'Municipal': '#14B8A6', 'International': '#EC4899',
+    'Cash': '#94A3B8', 'BB-Rated': '#EF4444', 'B-Rated': '#F97316',
+    'CCC & Below': '#DC2626', 'Not Rated': '#6B7280', 'Investment Grade': '#3B82F6',
+    // Sector-specific (Technology sub)
+    'Software': '#8B5CF6', 'Semiconductors': '#6366F1', 'IT Services': '#A78BFA',
+    'Hardware': '#7C3AED', 'Internet': '#818CF8',
+    // Healthcare sub
+    'Pharmaceuticals': '#10B981', 'Biotechnology': '#34D399', 'Medical Devices': '#6EE7B7',
+    'Healthcare Services': '#059669', 'Managed Care': '#047857', 'Life Sciences Tools': '#065F46',
+    // Other
+    'Other': '#94A3B8', 'GIC Contracts': '#3B82F6', 'Synthetic GICs': '#6366F1',
+    'Government Bonds': '#8B5CF6', 'Corporate Bonds': '#6366F1',
+    'Specialized REITs': '#EC4899', 'Residential': '#F472B6', 'Industrial': '#6366F1',
+    'Retail': '#F59E0B', 'Office': '#14B8A6', 'Healthcare Facilities': '#10B981',
+    'Data Centers': '#8B5CF6', 'Self-Storage': '#F97316',
+  };
+
+  // Relationship label
+  const relLabel = { mirror: 'Mirrors', similar: 'Similar to', 'index-proxy': 'Tracks index of' };
+
   return `
-    <div class="space-y-6">
+    <div class="space-y-5">
       <!-- Header -->
       <div class="flex items-start justify-between flex-wrap gap-3">
         <div>
           <a href="#/funds" class="text-sm text-slate-500 hover:text-purple-500 transition-colors">&larr; All Funds</a>
           <h1 class="text-2xl font-bold mt-1">${fund.name}</h1>
-          <p class="text-slate-500 dark:text-slate-400">
-            ${fund.manager || ''} ${fund.ticker ? `&middot; <span class="font-mono text-xs">${fund.ticker}</span>` : ''}
-            &middot; <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${classColors[fund.assetClass] || 'bg-slate-100 text-slate-700'}">${fund.assetClass}</span>
-            &middot; <span class="text-xs">${fund.category || ''}</span>
+          <p class="text-slate-500 dark:text-slate-400 flex items-center flex-wrap gap-x-2 gap-y-1 mt-1">
+            <span>${fund.manager || ''}</span>
+            ${fund.ticker ? `<span class="font-mono text-xs bg-slate-100 dark:bg-slate-700 px-1.5 py-0.5 rounded">${fund.ticker}</span>` : ''}
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${classColors[fund.assetClass] || 'bg-slate-100 text-slate-700'}">${fund.assetClass}</span>
+            <span class="text-xs">${fund.category || ''}</span>
+            ${fund.style ? `<span class="text-xs text-slate-400">&middot; ${fund.style}</span>` : ''}
           </p>
+          ${fund.description ? `<p class="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-3xl leading-relaxed">${fund.description}</p>` : ''}
         </div>
         ${liveChange ? `
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center min-w-[120px]">
+        <div class="bg-white dark:bg-slate-800 rounded-xl border ${liveChange.dailyChange >= 0 ? 'border-emerald-200 dark:border-emerald-800' : 'border-red-200 dark:border-red-800'} p-3 text-center min-w-[130px]">
           <div class="text-xl font-bold font-mono ${liveChange.dailyChange >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${liveChange.dailyChange >= 0 ? '+' : ''}${liveChange.dailyChange.toFixed(2)}%</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">
-            Today ${liveChange.proxyType === 'direct' ? `via ${liveChange.source}` : `est. via ${liveChange.indexName || liveChange.source}`}
+          <div class="text-[10px] text-slate-400 mt-0.5">Today's Change</div>
+          <div class="text-[9px] text-slate-300 mt-0.5">${liveChange.proxyType === 'direct' ? `via ${liveChange.source}` : `est. via ${liveChange.indexName || liveChange.source}`}</div>
+        </div>
+        ` : ''}
+      </div>
+
+      <!-- Retail Equivalent Tracking -->
+      ${retail ? `
+      <div class="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 rounded-xl border border-purple-200 dark:border-purple-800 p-4">
+        <div class="flex items-center gap-3 flex-wrap">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            <div>
+              <div class="text-xs font-medium text-purple-600 dark:text-purple-400">Retail Equivalent</div>
+              <div class="text-sm font-semibold text-slate-800 dark:text-slate-200">${relLabel[retail.relationship] || 'Tracks'} <span class="font-mono text-purple-700 dark:text-purple-300">${retail.ticker}</span></div>
+            </div>
+          </div>
+          <div class="text-sm text-slate-600 dark:text-slate-300">${retail.name}</div>
+          <div class="ml-auto flex items-center gap-1.5">
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold ${retail.relationship === 'mirror' ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400' : retail.relationship === 'similar' ? 'bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400' : 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400'}">${retail.relationship === 'mirror' ? 'MIRROR FUND' : retail.relationship === 'similar' ? 'SIMILAR FUND' : 'INDEX PROXY'}</span>
           </div>
         </div>
-        ` : ''}
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">This insurance subaccount ${retail.relationship === 'mirror' ? 'mirrors the strategy and holdings of' : retail.relationship === 'similar' ? 'follows a similar strategy to' : 'tracks the same index as'} the publicly-traded <span class="font-semibold">${retail.name}</span> (${retail.ticker}). Daily returns and market data are sourced from the retail equivalent.</p>
       </div>
+      ` : ''}
 
-      <!-- Key Metrics -->
-      <div class="grid grid-cols-2 md:grid-cols-${liveChange ? '7' : '6'} gap-3">
-        ${liveChange ? `
-        <div class="bg-white dark:bg-slate-800 rounded-xl border ${liveChange.dailyChange >= 0 ? 'border-emerald-200 dark:border-emerald-800' : 'border-red-200 dark:border-red-800'} p-4 text-center">
-          <div class="text-2xl font-bold font-mono ${liveChange.dailyChange >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${liveChange.dailyChange >= 0 ? '+' : ''}${liveChange.dailyChange.toFixed(2)}%</div>
-          <div class="text-xs text-slate-500 mt-1">Daily Change <span class="inline-flex ml-0.5 w-1.5 h-1.5 rounded-full ${liveChange.proxyType === 'direct' ? 'bg-emerald-500' : 'bg-sky-500'}"></span></div>
+      <!-- Key Metrics Row -->
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center">
+          <div class="text-xl font-bold"><span class="text-amber-500">${'★'.repeat(fund.morningstarRating || 0)}<span class="text-slate-200 dark:text-slate-600">${'★'.repeat(5 - (fund.morningstarRating || 0))}</span></span></div>
+          <div class="text-[10px] text-slate-500 mt-1">Morningstar</div>
         </div>
-        ` : ''}
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
-          <div class="text-2xl font-bold"><span class="text-amber-500">${'★'.repeat(fund.morningstarRating || 0)}</span></div>
-          <div class="text-xs text-slate-500 mt-1">Morningstar Rating</div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center">
+          <div class="text-xl font-bold text-purple-600 dark:text-purple-400">${pct(fund.expenseRatio)}</div>
+          <div class="text-[10px] text-slate-500 mt-1">Expense Ratio</div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
-          <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">${pct(fund.expenseRatio)}</div>
-          <div class="text-xs text-slate-500 mt-1">Expense Ratio</div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center">
+          <div class="text-xl font-bold ${(fund.ytdReturn || 0) > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${fund.ytdReturn != null ? pct(fund.ytdReturn) : 'N/A'}</div>
+          <div class="text-[10px] text-slate-500 mt-1">YTD Return</div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
-          <div class="text-2xl font-bold ${(fund.oneYearReturn || 0) > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${fund.oneYearReturn != null ? pct(fund.oneYearReturn) : 'N/A'}</div>
-          <div class="text-xs text-slate-500 mt-1">1-Year Return</div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center">
+          <div class="text-xl font-bold ${(fund.oneYearReturn || 0) > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${fund.oneYearReturn != null ? pct(fund.oneYearReturn) : 'N/A'}</div>
+          <div class="text-[10px] text-slate-500 mt-1">1-Year</div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
-          <div class="text-2xl font-bold">${fund.fiveYearReturn != null ? pct(fund.fiveYearReturn) : 'N/A'}</div>
-          <div class="text-xs text-slate-500 mt-1">5-Year Return</div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center">
+          <div class="text-xl font-bold">${fund.fiveYearReturn != null ? pct(fund.fiveYearReturn) : 'N/A'}</div>
+          <div class="text-[10px] text-slate-500 mt-1">5-Year Ann.</div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
-          <div class="text-2xl font-bold">${fund.sharpeRatio != null ? fund.sharpeRatio.toFixed(2) : 'N/A'}</div>
-          <div class="text-xs text-slate-500 mt-1">Sharpe Ratio</div>
-        </div>
-        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
-          <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">${(vaProducts.length + vulProducts.length)}</div>
-          <div class="text-xs text-slate-500 mt-1">Products Available</div>
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center">
+          <div class="text-xl font-bold text-blue-600 dark:text-blue-400">${(vaProducts.length + vulProducts.length)}</div>
+          <div class="text-[10px] text-slate-500 mt-1">Products</div>
         </div>
       </div>
 
-      <!-- Performance & Details Grid -->
-      <div class="grid md:grid-cols-2 gap-4">
-        <!-- Performance Table -->
+      <!-- Three Column: Performance | Risk & Style | Details -->
+      <div class="grid md:grid-cols-3 gap-4">
+
+        <!-- Col 1: Performance -->
         <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
-          <h3 class="font-semibold text-lg mb-3">Performance</h3>
-          <dl class="space-y-2 text-sm">
+          <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-3">Performance</h3>
+          <dl class="space-y-1.5 text-sm">
             ${liveChange ? `
             <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500 flex items-center gap-1">Daily Change <span class="inline-flex w-1.5 h-1.5 rounded-full ${liveChange.proxyType === 'direct' ? 'bg-emerald-500' : 'bg-sky-500'}"></span></dt>
+              <dt class="text-slate-500 flex items-center gap-1">
+                Daily
+                <span class="relative flex h-1.5 w-1.5"><span class="animate-ping absolute h-full w-full rounded-full ${liveChange.proxyType === 'direct' ? 'bg-emerald-400' : 'bg-sky-400'} opacity-75"></span><span class="relative rounded-full h-1.5 w-1.5 ${liveChange.proxyType === 'direct' ? 'bg-emerald-500' : 'bg-sky-500'}"></span></span>
+              </dt>
               <dd class="font-medium font-mono ${liveChange.dailyChange >= 0 ? 'text-emerald-600' : 'text-red-600'}">${liveChange.dailyChange >= 0 ? '+' : ''}${liveChange.dailyChange.toFixed(2)}%</dd>
             </div>
             ` : ''}
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">YTD Return</dt>
-              <dd class="font-medium font-mono ${(fund.ytdReturn || 0) > 0 ? 'text-emerald-600' : 'text-red-600'}">${fund.ytdReturn != null ? pct(fund.ytdReturn) : 'N/A'}</dd>
+            ${[
+              ['YTD', fund.ytdReturn],
+              ['1-Year', fund.oneYearReturn],
+              ['3-Year Ann.', fund.threeYearReturn],
+              ['5-Year Ann.', fund.fiveYearReturn],
+              ['10-Year Ann.', fund.tenYearReturn],
+            ].map(([label, val], i, arr) => `
+            <div class="flex justify-between py-1 ${i < arr.length - 1 ? 'border-b border-slate-100 dark:border-slate-700' : ''}">
+              <dt class="text-slate-500">${label}</dt>
+              <dd class="font-medium font-mono ${val != null && val > 0 ? 'text-emerald-600' : val != null && val < 0 ? 'text-red-600' : ''}">${val != null ? pct(val) : 'N/A'}</dd>
             </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">1-Year Return</dt>
-              <dd class="font-medium font-mono ${(fund.oneYearReturn || 0) > 0 ? 'text-emerald-600' : 'text-red-600'}">${fund.oneYearReturn != null ? pct(fund.oneYearReturn) : 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">3-Year Return (Ann.)</dt>
-              <dd class="font-medium font-mono">${fund.threeYearReturn != null ? pct(fund.threeYearReturn) : 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">5-Year Return (Ann.)</dt>
-              <dd class="font-medium font-mono">${fund.fiveYearReturn != null ? pct(fund.fiveYearReturn) : 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">10-Year Return (Ann.)</dt>
-              <dd class="font-medium font-mono">${fund.tenYearReturn != null ? pct(fund.tenYearReturn) : 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Standard Deviation</dt>
-              <dd class="font-medium font-mono">${fund.standardDeviation != null ? fund.standardDeviation.toFixed(1) : 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1">
-              <dt class="text-slate-500">Sharpe Ratio</dt>
-              <dd class="font-medium font-mono">${fund.sharpeRatio != null ? fund.sharpeRatio.toFixed(2) : 'N/A'}</dd>
-            </div>
+            `).join('')}
           </dl>
         </div>
 
-        <!-- Fund Details -->
+        <!-- Col 2: Risk & Style -->
+        <div class="space-y-4">
+          <!-- Risk Metrics -->
+          <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+            <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-3">Risk Analysis</h3>
+            <dl class="space-y-1.5 text-sm">
+              ${[
+                ['Std Deviation', fund.standardDeviation, v => v?.toFixed(1)],
+                ['Sharpe Ratio', fund.sharpeRatio, v => v?.toFixed(2)],
+                ['Sortino Ratio', rm.sortinoRatio, v => v?.toFixed(2)],
+                ['Alpha', rm.alpha, v => (v >= 0 ? '+' : '') + v?.toFixed(2)],
+                ['Beta', rm.beta, v => v?.toFixed(2)],
+                ['R-Squared', rm.rSquared, v => v?.toFixed(0) + '%'],
+                ['Max Drawdown', rm.maxDrawdown, v => v?.toFixed(1) + '%'],
+              ].filter(([, val]) => val != null).map(([label, val, fmt], i, arr) => `
+              <div class="flex justify-between py-1 ${i < arr.length - 1 ? 'border-b border-slate-100 dark:border-slate-700' : ''}">
+                <dt class="text-slate-500">${label}</dt>
+                <dd class="font-medium font-mono">${fmt(val)}</dd>
+              </div>
+              `).join('')}
+              ${!fund.standardDeviation && !rm.sortinoRatio ? '<div class="text-xs text-slate-400 italic">Risk metrics not available</div>' : ''}
+            </dl>
+          </div>
+
+          <!-- Style Box (Morningstar 3x3) -->
+          ${hasStyleBox ? `
+          <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+            <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-3">Style Box</h3>
+            <div class="flex items-center gap-4">
+              <div class="grid grid-cols-3 gap-0.5 w-20 h-20">
+                ${[0,1,2].flatMap(row => [0,1,2].map(col => {
+                  const active = row === sizeIdx && col === styleIdx;
+                  return `<div class="w-full h-full ${active ? 'bg-purple-600 dark:bg-purple-500' : 'bg-slate-100 dark:bg-slate-700'} ${row === 0 && col === 0 ? 'rounded-tl' : ''} ${row === 0 && col === 2 ? 'rounded-tr' : ''} ${row === 2 && col === 0 ? 'rounded-bl' : ''} ${row === 2 && col === 2 ? 'rounded-br' : ''}"></div>`;
+                })).join('')}
+              </div>
+              <div class="text-xs text-slate-500">
+                <div class="flex gap-4 mb-1"><span class="w-12">Value</span><span class="w-12">Blend</span><span class="w-12">Growth</span></div>
+                <div class="space-y-0.5">
+                  <div class="text-[10px]">Large</div>
+                  <div class="text-[10px]">Mid</div>
+                  <div class="text-[10px]">Small</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          ` : ''}
+
+          <!-- Capture Ratios -->
+          ${rm.upCaptureRatio != null ? `
+          <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+            <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-3">Capture Ratios</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="text-center">
+                <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">${rm.upCaptureRatio?.toFixed(0)}%</div>
+                <div class="text-[10px] text-slate-500">Up Capture</div>
+                <div class="mt-1 h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden"><div class="h-full bg-emerald-500 rounded-full" style="width: ${Math.min(rm.upCaptureRatio, 150) / 1.5}%"></div></div>
+              </div>
+              <div class="text-center">
+                <div class="text-lg font-bold text-red-600 dark:text-red-400">${rm.downCaptureRatio?.toFixed(0)}%</div>
+                <div class="text-[10px] text-slate-500">Down Capture</div>
+                <div class="mt-1 h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden"><div class="h-full bg-red-500 rounded-full" style="width: ${Math.min(rm.downCaptureRatio, 150) / 1.5}%"></div></div>
+              </div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-2">vs. benchmark. Lower down capture = better downside protection.</p>
+          </div>
+          ` : ''}
+        </div>
+
+        <!-- Col 3: Fund Details -->
         <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
-          <h3 class="font-semibold text-lg mb-3">Fund Details</h3>
-          <dl class="space-y-2 text-sm">
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Manager</dt>
-              <dd class="font-medium">${fund.manager || 'N/A'}</dd>
+          <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-3">Fund Details</h3>
+          <dl class="space-y-1.5 text-sm">
+            ${[
+              ['Manager', fund.manager],
+              ['Category', fund.category],
+              ['Style', fund.style],
+              ['Expense Ratio', fund.expenseRatio != null ? pct(fund.expenseRatio) : null],
+              ['Total Assets', fund.totalAssets],
+              ['Inception', fund.inceptionDate],
+              ['Turnover Rate', fund.turnoverRate != null ? fund.turnoverRate + '%' : null],
+            ].filter(([, val]) => val != null).map(([label, val], i, arr) => `
+            <div class="flex justify-between py-1 ${i < arr.length - 1 ? 'border-b border-slate-100 dark:border-slate-700' : ''}">
+              <dt class="text-slate-500">${label}</dt>
+              <dd class="font-medium">${label === 'Category' ? `<span class="px-2 py-0.5 rounded text-xs font-medium ${classColors[fund.assetClass] || 'bg-slate-100 text-slate-700'}">${val}</span>` : val}</dd>
             </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Category</dt>
-              <dd class="font-medium">${fund.category || 'N/A'}</dd>
+            `).join('')}
+            ${retail ? `
+            <div class="flex justify-between py-1 border-t border-slate-100 dark:border-slate-700 mt-2 pt-2">
+              <dt class="text-slate-500">Retail Ticker</dt>
+              <dd class="font-medium font-mono text-purple-600 dark:text-purple-400">${retail.ticker}</dd>
             </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Asset Class</dt>
-              <dd class="font-medium"><span class="px-2 py-0.5 rounded text-xs font-medium ${classColors[fund.assetClass] || ''}">${fund.assetClass}</span></dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Style</dt>
-              <dd class="font-medium">${fund.style || 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Expense Ratio</dt>
-              <dd class="font-medium">${pct(fund.expenseRatio)}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Total Assets</dt>
-              <dd class="font-medium">${fund.totalAssets || 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-              <dt class="text-slate-500">Inception</dt>
-              <dd class="font-medium">${fund.inceptionDate || 'N/A'}</dd>
-            </div>
-            <div class="flex justify-between py-1${liveChange ? ' border-b border-slate-100 dark:border-slate-700' : ''}">
-              <dt class="text-slate-500">Turnover Rate</dt>
-              <dd class="font-medium">${fund.turnoverRate != null ? fund.turnoverRate + '%' : 'N/A'}</dd>
-            </div>
-            ${liveChange ? `
             <div class="flex justify-between py-1">
-              <dt class="text-slate-500">Data Source</dt>
-              <dd class="font-medium text-xs">
-                ${liveChange.proxyType === 'direct'
-                  ? `<span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400">Direct: ${liveChange.source}</span>`
-                  : `<span class="px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400">Index proxy: ${liveChange.source}</span>`
-                }
-              </dd>
+              <dt class="text-slate-500">Relationship</dt>
+              <dd class="font-medium text-xs"><span class="px-2 py-0.5 rounded ${retail.relationship === 'mirror' ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400' : 'bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400'}">${retail.relationship === 'mirror' ? 'Mirror Fund' : retail.relationship === 'similar' ? 'Similar Fund' : 'Index Proxy'}</span></dd>
             </div>
             ` : ''}
           </dl>
         </div>
+
       </div>
+
+      <!-- Sector Allocation -->
+      ${sectorEntries.length > 0 ? `
+      <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+        <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-4">Sector Allocation</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="space-y-2">
+            ${sectorEntries.map(([sector, pctVal]) => {
+              const label = sector.includes(' ') ? sector : sector.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()).trim();
+              const color = sectorColors[sector] || '#94A3B8';
+              return `
+              <div>
+                <div class="flex justify-between text-xs mb-0.5">
+                  <span class="text-slate-600 dark:text-slate-300">${label}</span>
+                  <span class="font-mono font-medium">${pctVal.toFixed(1)}%</span>
+                </div>
+                <div class="h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                  <div class="h-full rounded-full transition-all" style="width: ${pctVal}%; background-color: ${color}"></div>
+                </div>
+              </div>`;
+            }).join('')}
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="relative w-40 h-40">
+              ${(() => {
+                let cumulative = 0;
+                return sectorEntries.slice(0, 8).map(([sector, pctVal]) => {
+                  const start = cumulative;
+                  cumulative += pctVal;
+                  const color = sectorColors[sector] || '#94A3B8';
+                  const startAngle = (start / 100) * 360;
+                  const endAngle = (cumulative / 100) * 360;
+                  const largeArc = endAngle - startAngle > 180 ? 1 : 0;
+                  const x1 = 80 + 70 * Math.cos((startAngle - 90) * Math.PI / 180);
+                  const y1 = 80 + 70 * Math.sin((startAngle - 90) * Math.PI / 180);
+                  const x2 = 80 + 70 * Math.cos((endAngle - 90) * Math.PI / 180);
+                  const y2 = 80 + 70 * Math.sin((endAngle - 90) * Math.PI / 180);
+                  return `<svg class="absolute inset-0 w-full h-full" viewBox="0 0 160 160"><path d="M80,80 L${x1},${y1} A70,70 0 ${largeArc},1 ${x2},${y2} Z" fill="${color}" opacity="0.85"/></svg>`;
+                }).join('');
+              })()}
+              <div class="absolute inset-0 flex items-center justify-center"><div class="w-16 h-16 rounded-full bg-white dark:bg-slate-800"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      ` : ''}
 
       <!-- Top Holdings -->
       ${fund.topHoldings?.length ? `
       <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
-        <h3 class="font-semibold text-lg mb-3">Top Holdings</h3>
+        <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400 mb-3">Top Holdings</h3>
         <div class="flex flex-wrap gap-2">
-          ${fund.topHoldings.map(h => `<span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 rounded-lg text-sm">${h}</span>`).join('')}
+          ${fund.topHoldings.map((h, i) => `<span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 rounded-lg text-sm flex items-center gap-1.5"><span class="text-[10px] text-slate-400 font-mono">${i + 1}</span> ${h}</span>`).join('')}
         </div>
       </div>
       ` : ''}
@@ -461,8 +616,8 @@ export function renderFundDetail(id) {
       ${(vaProducts.length + vulProducts.length) > 0 ? `
       <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
         <div class="px-5 py-3 border-b border-slate-200 dark:border-slate-700">
-          <h3 class="font-semibold text-lg">Available In These Products</h3>
-          <p class="text-xs text-slate-500">${vaProducts.length} VA products &middot; ${vulProducts.length} VUL products</p>
+          <h3 class="font-semibold text-sm uppercase tracking-wide text-slate-400">Available In These Products</h3>
+          <p class="text-xs text-slate-500 mt-0.5">${vaProducts.length} VA products &middot; ${vulProducts.length} VUL products</p>
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-sm data-table">
