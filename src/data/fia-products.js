@@ -4522,5 +4522,299 @@ export const fiaProducts = [
     highlights: ["S&P 500 cap 7.25% with 7.15% performance trigger", "GS Momentum Builder 250% participation on 3-year term (uncapped)", "4.05% fixed account rate — one of the highest", "Optional GLWB rider (0.95% annual cost)", "107% Guaranteed Minimum Account Value"],
     sourceUrl: "https://www.westernsouthern.com/distributors/products/annuities/indexed-annuities",
     lastRateUpdate: "2026-02-27"
+  },
+
+  // ── 72. Sagicor Sage Accumulator 5 ──
+  {
+    id: "sagicor-sage-accumulator-5",
+    carrierId: "sagicor",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Sagicor Sage Accumulator 5",
+    surrenderPeriod: 5,
+    surrenderSchedule: [9, 8, 7, 6, 5, 0],
+    minimumPremium: 20000,
+    maximumIssueAge: 90,
+    guaranteedMinimumRate: 1.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 5.00,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 10.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "iShares MSCI EAFE ETF", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 65, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "iShares MSCI Emerging Markets ETF", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 60, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "iShares ESG Aware MSCI USA ETF", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 51, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["10.50% S&P 500 cap rate — among the highest for 5-year products", "5.00% fixed account rate", "International index exposure via iShares EAFE (65%) and Emerging Markets (60%)", "No annual fees or contract charges", "ESG-aware index option available"],
+    sourceUrl: "https://myannuitystore.com/annuity-rates/fixed-index-annuity-rates/",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 73. Sagicor Sage Accumulator 10 ──
+  {
+    id: "sagicor-sage-accumulator-10",
+    carrierId: "sagicor",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Sagicor Sage Accumulator 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 90,
+    guaranteedMinimumRate: 1.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 5.00,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 10.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 56, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "iShares MSCI EAFE ETF", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 64, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "iShares MSCI Emerging Markets ETF", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 57, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "iShares ESG Aware MSCI USA ETF", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 51, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["10.00% S&P 500 cap rate on 10-year term", "5.00% fixed account rate", "Broad international diversification via iShares ETFs", "No annual fees or contract charges", "Market value adjustment applies"],
+    sourceUrl: "https://annuityeducator.com/reviews/sagicor-life-insurance-company/fixed-index/sage-accumulator-10-fia",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 74. Corebridge Power 5 Protector ──
+  {
+    id: "corebridge-power-5-protector",
+    carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Corebridge Power 5 Protector",
+    surrenderPeriod: 5,
+    surrenderSchedule: [8, 7, 6, 5, 4, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.30,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 9.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 55, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.40 },
+      { indexName: "S&P 500", creditingMethod: "5-Year Point-to-Point", capRate: 65.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "PIMCO Global Optima", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 95, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "ML Strategic Balanced", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 140, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "AQR DynamiQ Allocation", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 235, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["9.50% S&P 500 annual cap with 7.40% performance trigger", "65% S&P 500 5-year point-to-point cap", "AQR DynamiQ Allocation 235% uncapped participation", "4.30% fixed account rate", "Short 5-year surrender period with no income rider fee"],
+    sourceUrl: "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-5-protector",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 75. Corebridge Power 10 Protector Plus Income ──
+  {
+    id: "corebridge-power-10-protector-plus-income",
+    carrierId: "corebridge-financial",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Corebridge Power 10 Protector Plus Income",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 2.65,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 4.90, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 18, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 4.15 },
+      { indexName: "PIMCO Global Optima", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 34, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "ML Strategic Balanced", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 47, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "AQR DynamiQ Allocation", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 123, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "AQR DynamiQ Allocation", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 168, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: true,
+    highlights: ["Lifetime Income Choice rider available (1.10% annual fee)", "AQR DynamiQ Allocation 123% annual / 168% biennial participation (uncapped)", "10% annual penalty-free withdrawal", "87.5% minimum guaranteed surrender value", "Issued by American General Life Insurance Company (Corebridge)"],
+    sourceUrl: "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-10-protector-plus-income",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 76. Ibexis FIA Plus 10 ──
+  {
+    id: "ibexis-fia-plus-10",
+    carrierId: "ibexis",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Ibexis FIA Plus 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 82,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.50,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (0% Floor)", capRate: 9.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (-5% Floor)", capRate: 12.75, participationRate: 100, spread: 0, floor: -5, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (-10% Floor)", capRate: 16.50, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
+      { indexName: "HSBC AI Global Tactical", creditingMethod: "Annual Point-to-Point (0% Floor)", capRate: null, participationRate: 122, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "HSBC AI Global Tactical", creditingMethod: "Annual Point-to-Point (-5% Floor)", capRate: null, participationRate: 171, spread: 0, floor: -5, isUncapped: true },
+      { indexName: "BofA U.S. Strength", creditingMethod: "Annual Point-to-Point (0% Floor)", capRate: null, participationRate: 106, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "BofA U.S. Strength", creditingMethod: "Annual Point-to-Point (-5% Floor)", capRate: null, participationRate: 151, spread: 0, floor: -5, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["Unique adjustable floor structure (-2.5%, -5%, -10%, -15%)", "S&P 500 cap up to 20.25% with -15% floor", "HSBC AI Global Tactical uncapped 122%+ participation", "Bailout provision if S&P 500 cap falls below declared bailout rate", "4.50% fixed account rate with annual declared rate option"],
+    sourceUrl: "https://annuityeducator.com/reviews/ibexis-life-annuity-insurance-company/fixed-index/fia-plus-10",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 77. Ibexis WealthDefender 10 ──
+  {
+    id: "ibexis-wealthdefender-10",
+    carrierId: "ibexis",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Ibexis WealthDefender 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 82,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.60,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Cap with Bailout)", capRate: 9.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Nasdaq-100 Engle 10%", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 93, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Nasdaq-100 Engle 10%", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 130, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Barclays Tactical Growth", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 96, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Barclays Tactical Growth", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 140, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["9.25% S&P 500 cap with bailout provision for rate protection", "Nasdaq-100 Engle 10% index with 130% biennial participation (uncapped)", "Barclays Tactical Growth 140% biennial participation (uncapped)", "4.60% fixed account rate", "Guaranteed participation rates available for full withdrawal charge period"],
+    sourceUrl: "https://annuityeducator.com/reviews/ibexis-life-annuity-insurance-company/fixed-index/wealthdefender-10",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 78. Symetra Edge Elite 7 ──
+  {
+    id: "symetra-edge-elite-7",
+    carrierId: "symetra",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Symetra Edge Elite 7",
+    surrenderPeriod: 7,
+    surrenderSchedule: [8, 8, 7, 6, 5, 4, 3, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 4.30,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 9.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 50, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 70, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.25 },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 9.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Nasdaq-100", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 7.75 },
+      { indexName: "JP Morgan ETF Efficiente 5", creditingMethod: "Annual Point-to-Point", capRate: 18.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "JP Morgan ETF Efficiente 5", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 175, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "JP Morgan ETF Efficiente 5", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 260, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Putnam Dynamic Low Volatility ER", creditingMethod: "Annual Point-to-Point", capRate: 18.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Putnam Dynamic Low Volatility ER", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 220, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Putnam Dynamic Low Volatility ER", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 320, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["Putnam Dynamic Low Vol 320% biennial participation (uncapped)", "JP Morgan ETF Efficiente 5 — 260% biennial participation (uncapped)", "9.25% S&P 500 cap with 7.25% performance trigger", "9.75% Nasdaq-100 cap with 7.75% performance trigger", "97% Guardrail protection on enhanced participation strategies"],
+    sourceUrl: "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-7",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 79. GILICO WealthChoice 10 ──
+  {
+    id: "gilico-wealthchoice-10",
+    carrierId: "gilico",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "GILICO WealthChoice 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 20000,
+    maximumIssueAge: 80,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 5.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 5.00,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Cap with Bailout)", capRate: 10.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 40, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 2.25, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Performance Trigger", capRate: null, participationRate: null, spread: 0, floor: 0, isUncapped: false, triggerRate: 6.70 },
+      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Annual Point-to-Point", capRate: 11.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "Horizon Ascend 5%", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 140, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Barclays Global Quality", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 165, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: true,
+    highlights: ["5% premium bonus on 10-year term", "10.00% S&P 500 cap with bailout provision", "S&P 500 Dynamic Intraday TCA 11.00% cap", "Barclays Global Quality 165% uncapped participation", "Optional GLWB rider (0.95% annual fee)"],
+    sourceUrl: "https://annuityeducator.com/reviews/guaranty-income-life-insurance-company/fixed-index/wealthchoice-10-1",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 80. Delaware Life Peak 10 ──
+  {
+    id: "delaware-life-peak-10",
+    carrierId: "delaware-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Delaware Life Peak 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
+    minimumPremium: 25000,
+    maximumIssueAge: 85,
+    guaranteedMinimumRate: 1.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 3.95,
+    indexStrategies: [
+      { indexName: "Avg Daily Risk Control", creditingMethod: "Annual Point-to-Point", capRate: 9.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "AB Growth & Value", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 240, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "JPM Cycle", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 250, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Avg Daily Risk Control", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 205, spread: 0, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: false,
+    highlights: ["JPM Cycle 250% biennial participation (uncapped)", "AB Growth & Value 240% biennial participation (uncapped)", "9.50% annual cap on Avg Daily Risk Control index", "1.00% minimum guaranteed rate on 87.5% of premium", "3.95% fixed account rate"],
+    sourceUrl: "https://myannuitystore.com/annuity-rates/fixed-index-annuity-rates/",
+    lastRateUpdate: "2026-02-28"
+  },
+
+  // ── 81. Nassau Personal Income Annuity 10 ──
+  {
+    id: "nassau-personal-income-annuity-10",
+    carrierId: "nassau-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Nassau Personal Income Annuity 10",
+    surrenderPeriod: 10,
+    surrenderSchedule: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    minimumPremium: 15000,
+    maximumIssueAge: 80,
+    guaranteedMinimumRate: 0.0,
+    premiumBonus: 0.0,
+    freeWithdrawalPercent: 10,
+    fixedAccountRate: 1.50,
+    indexStrategies: [
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Cap)", capRate: 4.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
+      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 25, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "S&P 500", creditingMethod: "Biennial Point-to-Point (Participation)", capRate: null, participationRate: 41, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point (Participation)", capRate: null, participationRate: 22, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "Smart Passage SG", creditingMethod: "Sunrise Annual Point-to-Point", capRate: null, participationRate: 65, spread: 0, floor: 0, isUncapped: true },
+      { indexName: "UBS Tactical Multi-Asset", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 100, spread: 4.75, floor: 0, isUncapped: true }
+    ],
+    incomeRiderAvailable: true,
+    highlights: ["Mandatory income rider (0.95% annual fee) with two strategy options", "Income Strategy: Tomorrow offers 14% simple annual growth on income base for 10 years", "Income Strategy: Today offers 30%-45% initial bonus on income base", "16 indexed accounts across S&P 500, Nasdaq-100, Smart Passage SG, UBS Tactical", "$15,000 minimum premium — one of the lowest in class"],
+    sourceUrl: "https://annuityrateshq.com/annuity-reviews/nassau-personal-income-indexed-annuity-review",
+    lastRateUpdate: "2026-02-28"
   }
 ];

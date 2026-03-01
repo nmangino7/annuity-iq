@@ -1,18 +1,20 @@
 // =============================================================================
-// FundExplorer.js - Subaccount / Fund Research Tool
+// FundExplorer.js - Subaccount / Fund Research Tool with Live Market Data
 // =============================================================================
 
 import { getSubaccounts, getVAProducts, getVULProducts } from '../data/index.js';
 import { pct, currency } from '../utils/formatters.js';
+import { marketData, formatDailyChange, liveBadge } from '../services/marketData.js';
 
 let sortKey = 'morningstarRating';
 let sortDir = 'desc';
 let filters = { assetClass: 'all', style: 'all', minRating: 0, maxExpense: 5, search: '' };
 let pageSize = 50;
 let currentPage = 1;
+let enrichedFunds = null; // Cache for live-enriched fund data
 
 function getFilteredFunds() {
-  let funds = getSubaccounts();
+  let funds = enrichedFunds || getSubaccounts();
 
   if (filters.assetClass !== 'all') funds = funds.filter(f => f.assetClass === filters.assetClass);
   if (filters.style !== 'all') funds = funds.filter(f => f.style === filters.style);
@@ -28,9 +30,19 @@ function getFilteredFunds() {
     );
   }
 
+  // Support sorting by daily change
   funds.sort((a, b) => {
-    let va = a[sortKey] ?? '', vb = b[sortKey] ?? '';
-    if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+    let va, vb;
+    if (sortKey === '_dailyChange') {
+      va = a._live?.dailyChange ?? null;
+      vb = b._live?.dailyChange ?? null;
+      if (va == null) va = sortDir === 'asc' ? Infinity : -Infinity;
+      if (vb == null) vb = sortDir === 'asc' ? Infinity : -Infinity;
+    } else {
+      va = a[sortKey] ?? '';
+      vb = b[sortKey] ?? '';
+    }
+    if (typeof va === 'string') { va = va.toLowerCase(); vb = (vb + '').toLowerCase(); }
     if (va < vb) return sortDir === 'asc' ? -1 : 1;
     if (va > vb) return sortDir === 'asc' ? 1 : -1;
     return 0;
@@ -43,6 +55,8 @@ export function renderFundExplorer() {
   const allFunds = getSubaccounts();
   const assetClasses = [...new Set(allFunds.map(f => f.assetClass).filter(Boolean))].sort();
   const styles = [...new Set(allFunds.map(f => f.style).filter(Boolean))].sort();
+  const stats = marketData.getStats();
+  const ms = marketData.getMarketStatus();
 
   const html = `
     <div class="space-y-4">
@@ -58,6 +72,51 @@ export function renderFundExplorer() {
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
             Filters
           </button>
+        </div>
+      </div>
+
+      <!-- Market Status Banner -->
+      <div id="market-status-banner" class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full ${ms.status === 'open' ? 'bg-emerald-400' : 'bg-slate-400'} opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 ${ms.status === 'open' ? 'bg-emerald-500' : ms.status === 'pre' || ms.status === 'after' ? 'bg-amber-500' : 'bg-slate-400'}"></span>
+              </span>
+              <span class="text-sm font-medium ${ms.color}">${ms.label}</span>
+            </div>
+            <span class="text-xs text-slate-400" id="market-last-updated">
+              ${stats.lastUpdated ? `Updated ${marketData.formatTimestamp()}` : 'No live data loaded'}
+            </span>
+            ${stats.cachedQuotes > 0 ? `<span class="text-xs text-slate-400">· ${stats.cachedQuotes} quotes cached</span>` : ''}
+          </div>
+          <div class="flex items-center gap-2">
+            ${!stats.hasApiKey ? `
+              <button onclick="window._showApiKeyModal()" class="px-2.5 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-lg text-xs font-medium hover:bg-amber-200 transition-colors flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+                Setup API Key
+              </button>
+            ` : `
+              <button onclick="window._refreshMarketData()" id="refresh-btn" class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-medium hover:bg-purple-200 transition-colors flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" id="refresh-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                Refresh
+              </button>
+            `}
+          </div>
+        </div>
+      </div>
+
+      <!-- API Key Modal (hidden) -->
+      <div id="api-key-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 max-w-md w-full shadow-2xl">
+          <h3 class="text-lg font-bold mb-2">Connect Live Market Data</h3>
+          <p class="text-sm text-slate-500 mb-4">Enter your <a href="https://site.financialmodelingprep.com/register" target="_blank" class="text-purple-500 hover:underline">Financial Modeling Prep</a> API key to enable live daily returns. The free tier provides 250 API calls/day.</p>
+          <input id="fmp-key-input" type="text" placeholder="Your FMP API key..." class="w-full bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg px-4 py-2.5 text-sm mb-3 font-mono">
+          <div class="flex gap-2 justify-end">
+            <button onclick="window._closeApiKeyModal()" class="px-4 py-2 text-sm text-slate-500 hover:text-slate-700 transition-colors">Cancel</button>
+            <button onclick="window._saveApiKey()" class="px-4 py-2 bg-purple-600 text-white text-sm rounded-lg hover:bg-purple-700 transition-colors font-medium">Save & Refresh</button>
+          </div>
         </div>
       </div>
 
@@ -112,13 +171,17 @@ export function renderFundExplorer() {
                 <th class="text-left px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('name')">Fund Name</th>
                 <th class="text-left px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('category')">Category</th>
                 <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('expenseRatio')">Expense</th>
-                <th class="text-center px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('morningstarRating')">Rating <span class="text-[10px]">&#9660;</span></th>
+                <th class="text-center px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('morningstarRating')">Rating</th>
+                <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('_dailyChange')">
+                  <span class="flex items-center justify-end gap-1">Day
+                    <span class="relative flex h-1.5 w-1.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span></span>
+                  </span>
+                </th>
                 <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('ytdReturn')">YTD</th>
                 <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('oneYearReturn')">1Y</th>
                 <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('threeYearReturn')">3Y</th>
                 <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('fiveYearReturn')">5Y</th>
-                <th class="text-right px-3 py-3 font-medium text-slate-500 dark:text-slate-400 sortable" onclick="window._sortFunds('sharpeRatio')">Sharpe</th>
-                <th class="text-center px-3 py-3 font-medium text-slate-500 dark:text-slate-400">Available In</th>
+                <th class="text-center px-3 py-3 font-medium text-slate-500 dark:text-slate-400">Avail.</th>
               </tr>
             </thead>
             <tbody id="fund-table-body">
@@ -148,7 +211,66 @@ export function renderFundExplorer() {
   };
 
   window._loadMoreFunds = () => { currentPage++; renderFundTable(); };
-  window._pageInit = () => renderFundTable();
+
+  window._refreshMarketData = async () => {
+    const btn = document.getElementById('refresh-btn');
+    const icon = document.getElementById('refresh-icon');
+    if (btn) btn.disabled = true;
+    if (icon) icon.classList.add('animate-spin');
+    const statusEl = document.getElementById('market-last-updated');
+    if (statusEl) statusEl.textContent = 'Refreshing...';
+
+    try {
+      await marketData.refresh();
+      enrichedFunds = marketData.enrichSubaccounts(getSubaccounts());
+      renderFundTable();
+      if (statusEl) statusEl.textContent = `Updated ${marketData.formatTimestamp()}`;
+    } catch (e) {
+      if (statusEl) statusEl.textContent = 'Refresh failed — check API key';
+    } finally {
+      if (btn) btn.disabled = false;
+      if (icon) icon.classList.remove('animate-spin');
+    }
+  };
+
+  window._showApiKeyModal = () => {
+    document.getElementById('api-key-modal')?.classList.remove('hidden');
+  };
+  window._closeApiKeyModal = () => {
+    document.getElementById('api-key-modal')?.classList.add('hidden');
+  };
+  window._saveApiKey = async () => {
+    const key = document.getElementById('fmp-key-input')?.value?.trim();
+    if (!key) return;
+    marketData.setApiKey(key);
+    window._closeApiKeyModal();
+    // Re-render banner to show refresh button instead of setup button
+    const banner = document.getElementById('market-status-banner');
+    if (banner) {
+      banner.querySelector('.flex.items-center.gap-2:last-child').innerHTML = `
+        <button onclick="window._refreshMarketData()" id="refresh-btn" class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-medium hover:bg-purple-200 transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" id="refresh-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          Refresh
+        </button>
+      `;
+    }
+    await window._refreshMarketData();
+  };
+
+  window._pageInit = () => {
+    // Enrich with cached data if available
+    if (marketData.hasApiKey() && marketData.cache) {
+      enrichedFunds = marketData.enrichSubaccounts(getSubaccounts());
+    } else {
+      enrichedFunds = getSubaccounts();
+    }
+    renderFundTable();
+
+    // Auto-refresh if API key exists and cache is stale
+    if (marketData.hasApiKey() && !marketData.cache) {
+      window._refreshMarketData();
+    }
+  };
 
   return html;
 }
@@ -156,7 +278,10 @@ export function renderFundExplorer() {
 export function renderFundDetail(id) {
   const allFunds = getSubaccounts();
   const fund = allFunds.find(f => f.id === id);
-  if (!fund) return `<div class="text-center py-20"><h2 class="text-xl font-bold">Fund not found</h2><a href="#/funds" class="text-purple-500 hover:underline mt-2 inline-block">← Back to Fund Research</a></div>`;
+  if (!fund) return `<div class="text-center py-20"><h2 class="text-xl font-bold">Fund not found</h2><a href="#/funds" class="text-purple-500 hover:underline mt-2 inline-block">&larr; Back to Fund Research</a></div>`;
+
+  // Get live data for this fund
+  const liveChange = marketData.getDailyChange(fund.id, fund.assetClass, fund.style);
 
   // Find which VA and VUL products include this fund
   const vaProducts = getVAProducts().filter(p => (p.subaccountIds || []).includes(id));
@@ -176,18 +301,32 @@ export function renderFundDetail(id) {
       <!-- Header -->
       <div class="flex items-start justify-between flex-wrap gap-3">
         <div>
-          <a href="#/funds" class="text-sm text-slate-500 hover:text-purple-500 transition-colors">← All Funds</a>
+          <a href="#/funds" class="text-sm text-slate-500 hover:text-purple-500 transition-colors">&larr; All Funds</a>
           <h1 class="text-2xl font-bold mt-1">${fund.name}</h1>
           <p class="text-slate-500 dark:text-slate-400">
-            ${fund.manager || ''} ${fund.ticker ? `· <span class="font-mono text-xs">${fund.ticker}</span>` : ''}
-            · <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${classColors[fund.assetClass] || 'bg-slate-100 text-slate-700'}">${fund.assetClass}</span>
-            · <span class="text-xs">${fund.category || ''}</span>
+            ${fund.manager || ''} ${fund.ticker ? `&middot; <span class="font-mono text-xs">${fund.ticker}</span>` : ''}
+            &middot; <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${classColors[fund.assetClass] || 'bg-slate-100 text-slate-700'}">${fund.assetClass}</span>
+            &middot; <span class="text-xs">${fund.category || ''}</span>
           </p>
         </div>
+        ${liveChange ? `
+        <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-center min-w-[120px]">
+          <div class="text-xl font-bold font-mono ${liveChange.dailyChange >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${liveChange.dailyChange >= 0 ? '+' : ''}${liveChange.dailyChange.toFixed(2)}%</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">
+            Today ${liveChange.proxyType === 'direct' ? `via ${liveChange.source}` : `est. via ${liveChange.indexName || liveChange.source}`}
+          </div>
+        </div>
+        ` : ''}
       </div>
 
       <!-- Key Metrics -->
-      <div class="grid grid-cols-2 md:grid-cols-6 gap-3">
+      <div class="grid grid-cols-2 md:grid-cols-${liveChange ? '7' : '6'} gap-3">
+        ${liveChange ? `
+        <div class="bg-white dark:bg-slate-800 rounded-xl border ${liveChange.dailyChange >= 0 ? 'border-emerald-200 dark:border-emerald-800' : 'border-red-200 dark:border-red-800'} p-4 text-center">
+          <div class="text-2xl font-bold font-mono ${liveChange.dailyChange >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}">${liveChange.dailyChange >= 0 ? '+' : ''}${liveChange.dailyChange.toFixed(2)}%</div>
+          <div class="text-xs text-slate-500 mt-1">Daily Change <span class="inline-flex ml-0.5 w-1.5 h-1.5 rounded-full ${liveChange.proxyType === 'direct' ? 'bg-emerald-500' : 'bg-sky-500'}"></span></div>
+        </div>
+        ` : ''}
         <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center">
           <div class="text-2xl font-bold"><span class="text-amber-500">${'★'.repeat(fund.morningstarRating || 0)}</span></div>
           <div class="text-xs text-slate-500 mt-1">Morningstar Rating</div>
@@ -220,6 +359,12 @@ export function renderFundDetail(id) {
         <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
           <h3 class="font-semibold text-lg mb-3">Performance</h3>
           <dl class="space-y-2 text-sm">
+            ${liveChange ? `
+            <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
+              <dt class="text-slate-500 flex items-center gap-1">Daily Change <span class="inline-flex w-1.5 h-1.5 rounded-full ${liveChange.proxyType === 'direct' ? 'bg-emerald-500' : 'bg-sky-500'}"></span></dt>
+              <dd class="font-medium font-mono ${liveChange.dailyChange >= 0 ? 'text-emerald-600' : 'text-red-600'}">${liveChange.dailyChange >= 0 ? '+' : ''}${liveChange.dailyChange.toFixed(2)}%</dd>
+            </div>
+            ` : ''}
             <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
               <dt class="text-slate-500">YTD Return</dt>
               <dd class="font-medium font-mono ${(fund.ytdReturn || 0) > 0 ? 'text-emerald-600' : 'text-red-600'}">${fund.ytdReturn != null ? pct(fund.ytdReturn) : 'N/A'}</dd>
@@ -283,10 +428,21 @@ export function renderFundDetail(id) {
               <dt class="text-slate-500">Inception</dt>
               <dd class="font-medium">${fund.inceptionDate || 'N/A'}</dd>
             </div>
-            <div class="flex justify-between py-1">
+            <div class="flex justify-between py-1${liveChange ? ' border-b border-slate-100 dark:border-slate-700' : ''}">
               <dt class="text-slate-500">Turnover Rate</dt>
               <dd class="font-medium">${fund.turnoverRate != null ? fund.turnoverRate + '%' : 'N/A'}</dd>
             </div>
+            ${liveChange ? `
+            <div class="flex justify-between py-1">
+              <dt class="text-slate-500">Data Source</dt>
+              <dd class="font-medium text-xs">
+                ${liveChange.proxyType === 'direct'
+                  ? `<span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400">Direct: ${liveChange.source}</span>`
+                  : `<span class="px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400">Index proxy: ${liveChange.source}</span>`
+                }
+              </dd>
+            </div>
+            ` : ''}
           </dl>
         </div>
       </div>
@@ -306,7 +462,7 @@ export function renderFundDetail(id) {
       <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
         <div class="px-5 py-3 border-b border-slate-200 dark:border-slate-700">
           <h3 class="font-semibold text-lg">Available In These Products</h3>
-          <p class="text-xs text-slate-500">${vaProducts.length} VA products · ${vulProducts.length} VUL products</p>
+          <p class="text-xs text-slate-500">${vaProducts.length} VA products &middot; ${vulProducts.length} VUL products</p>
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-sm data-table">
@@ -348,7 +504,7 @@ export function renderFundDetail(id) {
 }
 
 function renderFundTable() {
-  const allFunds = getSubaccounts();
+  const allFunds = enrichedFunds || getSubaccounts();
   const funds = getFilteredFunds();
   const displayed = funds.slice(0, currentPage * pageSize);
   const hasMore = displayed.length < funds.length;
@@ -363,6 +519,7 @@ function renderFundTable() {
     const equityCount = allFunds.filter(f => f.assetClass === 'Equity').length;
     const bondCount = allFunds.filter(f => f.assetClass === 'Fixed Income').length;
     const avg1yr = allFunds.filter(f => f.oneYearReturn != null).length ? (allFunds.filter(f => f.oneYearReturn != null).reduce((s, f) => s + f.oneYearReturn, 0) / allFunds.filter(f => f.oneYearReturn != null).length) : 0;
+    const liveCount = allFunds.filter(f => f._live).length;
     summaryEl.innerHTML = `
       <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
         <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">${allFunds.length}</div>
@@ -390,23 +547,25 @@ function renderFundTable() {
   tbody.innerHTML = displayed.map(f => `
     <tr class="border-t border-slate-100 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/30 cursor-pointer" onclick="location.hash='/funds/${f.id}'">
       <td class="px-3 py-2.5">
-        <div class="font-medium text-purple-600 dark:text-purple-400 hover:underline">${f.name}</div>
-        <div class="text-xs text-slate-400">${f.manager || ''} ${f.ticker ? '· ' + f.ticker : ''}</div>
+        <div class="font-medium text-purple-600 dark:text-purple-400 hover:underline">${f.name}${liveBadge(f)}</div>
+        <div class="text-xs text-slate-400">${f.manager || ''} ${f.ticker ? '&middot; ' + f.ticker : ''}${f._live?.source ? ' &middot; <span class="font-mono text-[10px] text-slate-300">' + f._live.source + '</span>' : ''}</div>
       </td>
       <td class="px-3 py-2.5 text-xs">${f.category || ''}</td>
       <td class="px-3 py-2.5 text-right font-mono ${f.expenseRatio <= 0.25 ? 'text-emerald-600 dark:text-emerald-400 font-semibold' : ''}">${pct(f.expenseRatio)}</td>
       <td class="px-3 py-2.5 text-center"><span class="text-amber-500 text-xs">${'★'.repeat(f.morningstarRating || 0)}</span><span class="text-slate-300 text-xs">${'★'.repeat(5 - (f.morningstarRating || 0))}</span></td>
+      <td class="px-3 py-2.5 text-right">${f._live ? formatDailyChange(f._live.dailyChange) : '<span class="text-slate-300 text-xs">—</span>'}</td>
       <td class="px-3 py-2.5 text-right font-mono ${(f.ytdReturn || 0) > 0 ? 'text-emerald-600' : 'text-red-600'}">${f.ytdReturn != null ? pct(f.ytdReturn) : '—'}</td>
       <td class="px-3 py-2.5 text-right font-mono ${(f.oneYearReturn || 0) > 0 ? 'text-emerald-600' : 'text-red-600'}">${f.oneYearReturn != null ? pct(f.oneYearReturn) : '—'}</td>
       <td class="px-3 py-2.5 text-right font-mono">${f.threeYearReturn != null ? pct(f.threeYearReturn) : '—'}</td>
       <td class="px-3 py-2.5 text-right font-mono">${f.fiveYearReturn != null ? pct(f.fiveYearReturn) : '—'}</td>
-      <td class="px-3 py-2.5 text-right font-mono">${f.sharpeRatio != null ? f.sharpeRatio.toFixed(2) : '—'}</td>
       <td class="px-3 py-2.5 text-center"><span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-semibold bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300">${(f.availableIn || []).length}</span></td>
     </tr>
   `).join('');
 
   if (countEl) {
-    countEl.innerHTML = `Showing ${displayed.length} of ${funds.length} funds` +
+    const liveCount = displayed.filter(f => f._live).length;
+    const liveLabel = liveCount > 0 ? ` · <span class="text-emerald-500">${liveCount} with live data</span>` : '';
+    countEl.innerHTML = `Showing ${displayed.length} of ${funds.length} funds${liveLabel}` +
       (hasMore ? ` <button onclick="window._loadMoreFunds()" class="ml-2 text-purple-600 dark:text-purple-400 hover:underline font-medium">Show More</button>` : '');
   }
 }

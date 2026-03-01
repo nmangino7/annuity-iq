@@ -1347,5 +1347,829 @@ export const iulProducts = [
     ],
     sourceUrl: "https://www.allianzlife.com/what-we-offer/life-insurance/accumulator-indexed-universal-life",
     lastRateUpdate: "2026-02-27"
+  },
+
+  // ── 21. Mutual of Omaha Income Advantage IUL ──
+  {
+    id: "mutual-of-omaha-income-advantage-iul",
+    carrierId: "mutual-of-omaha",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "Watermark Life rate update (Feb 2025 max illustrated rates), BUA Web (fixed account & loan rate changes April 2024), Mutual of Omaha historical crediting rate PDF, lifeinsurancerecommendations.com (cap 10.00% confirmed)",
+    name: "Income Advantage IUL",
+    maxIllustratedRate: 6.33,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (High Participation)",
+        capRate: 7.00,
+        participationRate: 140,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Uncapped Annual Point-to-Point",
+        capRate: null,
+        participationRate: 60,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "BofA US Agility Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 185,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 4.00,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 5.00,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "Guaranteed Refund Option (GRO)"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 75,
+    highlights: [
+      "S&P 500 cap rate of 10.00% with 100% participation",
+      "BofA US Agility Index — 185% uncapped participation",
+      "Guaranteed Refund Option — return of premiums paid (100% at year 20–25)",
+      "Identical cap/par rates for new and in-force policyholders",
+      "4.00% fixed account rate",
+      "Mutual of Omaha — A+ AM Best, AA- S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://www.mutualofomaha.com/life-insurance",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 22. American National Signature Performance IUL ──
+  {
+    id: "american-national-signature-performance-iul",
+    carrierId: "american-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "LifeInsuranceRecommendations.com (cap 10.25%, uncapped 8.00% spread confirmed), American National product announcement, industry comparison data",
+    name: "Signature Performance IUL",
+    maxIllustratedRate: 6.20,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.25,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Uncapped Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 8.00,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P MARC 5% Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Nasdaq-100",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 8.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Chronic Illness Accelerated Benefit Rider", "Critical Illness Rider", "Terminal Illness Rider", "Waiver of Premium"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    highlights: [
+      "10.25% S&P 500 cap rate with 100% participation",
+      "Uncapped S&P 500 with 8.00% spread — unlimited upside above spread",
+      "S&P MARC 5% low-volatility index — uncapped participation",
+      "Nasdaq-100 index account for large-cap growth exposure",
+      "Living benefits for chronic, critical, and terminal illness included",
+      "American National — A AM Best, A S&P"
+    ],
+    sourceUrl: "https://www.americannational.com/home/newsroom/2021/-american-national-universal-life-enhancements",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 23. Symetra Accumulator Ascent IUL ──
+  {
+    id: "symetra-accumulator-ascent-iul",
+    carrierId: "symetra",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "LifeInsuranceRecommendations.com (cap 10.50%, uncapped 5.00% spread confirmed), Symetra.com product pages, Symetra May 2023 press release (fixed 5.25%, Putnam bonus 1%), Premier Brokerage cap/par rate sheet",
+    name: "Accumulator Ascent IUL",
+    maxIllustratedRate: 6.50,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Uncapped Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 5.00,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "JPMorgan ETF Efficiente 5 Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Putnam Dynamic Low Volatility ER Index",
+        creditingMethod: "Annual Point-to-Point (with Bonus)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        indexBonus: { bonusRate: 1.00, guaranteed: true }
+      }
+    ],
+    fixedAccountRate: 5.25,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Chronic Illness Rider", "Terminal Illness Rider", "Cancer Care Compass Rider", "Waiver of Premium"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    highlights: [
+      "10.50% S&P 500 cap rate — among highest in IUL market",
+      "Uncapped S&P 500 with 5.00% spread",
+      "5.25% fixed account rate — highest tier in IUL market",
+      "Putnam Dynamic Low Volatility Index with 1.00% guaranteed bonus",
+      "Eight-year lookback guarantee on minimum cash value growth",
+      "Cancer Care Compass rider with early detection test",
+      "Symetra — A AM Best, A S&P"
+    ],
+    sourceUrl: "https://www.symetra.com/our-products/individuals/life-insurance/permanent-life-insurance/accumulator-ascent-IUL",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 24. F&G Pathsetter IUL ──
+  {
+    id: "fg-pathsetter-iul",
+    carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "F&G sample illustration (S&P 500 cap 12.00% confirmed), F&G Pathsetter Diversification Brochure (Barclays 170% par), fglife.com historic rates tool, InsuranceGeek 2025 IUL comparison",
+    name: "Pathsetter IUL",
+    maxIllustratedRate: 9.00,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 12.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (High Participation)",
+        capRate: null,
+        participationRate: 140,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Point-to-Point",
+        capRate: 4.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Barclays Trailblazer Sectors 5 Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 170,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        indexBonus: { bonusRate: 1.00, startYear: 2 }
+      },
+      {
+        indexName: "BlackRock Market Advantage Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Morgan Stanley US Equity Allocator Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 0.25,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "Overloan Protection"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Industry-leading 12.00% S&P 500 cap rate with 100% participation",
+      "Barclays Trailblazer Sectors 5 — 170% uncapped participation with 1% bonus",
+      "Six diverse index crediting options including BlackRock and Morgan Stanley",
+      "S&P 500 cap rate stability — less than 0.50% annual change since 2020",
+      "0.25% guaranteed minimum annual interest on all accounts",
+      "F&G — A AM Best, A- S&P"
+    ],
+    sourceUrl: "https://www.fglife.com/life-insurance/historic-rates?product=pathsetter",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 25. Midland National Strategic Accumulator IUL 3 ──
+  {
+    id: "midland-national-strategic-accumulator-iul-3",
+    carrierId: "midland-national",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "Midland National product announcement + PR Newswire (Fidelity 125% par, 1.65% bonus), midlandnational.com index selections guide, NFG Brokerage product details, lifeinsurancerecommendations.com cap rate listing",
+    name: "Strategic Accumulator IUL 3",
+    maxIllustratedRate: 6.80,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: true,
+        multiplierValue: 1.10,
+        multiplierStartYear: 6
+      },
+      {
+        indexName: "S&P MidCap 400",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: true,
+        multiplierValue: 1.10,
+        multiplierStartYear: 6
+      },
+      {
+        indexName: "Russell 2000",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: true,
+        multiplierValue: 1.10,
+        multiplierStartYear: 6
+      },
+      {
+        indexName: "Fidelity Multifactor Yield Index 5% ER",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 125,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null,
+        indexBonus: { years1to10: 1.65, years11plus: 2.65, guaranteed: 0.50 }
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 1.5,
+    loanProvisions: {
+      fixedLoanRate: 6.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true,
+      fixedInterestParticipatingLoan: true,
+      loanInterestBonus: 0.50
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Overloan Protection", "Waiver of Surrender Charge"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 75,
+    highlights: [
+      "Exclusive Fidelity Multifactor Yield Index — 125% uncapped participation",
+      "Fidelity Index bonus: 1.65% (yr 1-10), 2.65% (yr 11+) non-guaranteed",
+      "S&P 500, S&P MidCap 400, Russell 2000 — all capped at 10.50%",
+      "10% Account Index Multiplier from year 6+",
+      "Guaranteed 0.50% loan interest bonus on borrowed cash value",
+      "Minimum account value guarantee — 2.5% average annual return",
+      "Midland National (Sammons) — A+ AM Best, A+ S&P"
+    ],
+    sourceUrl: "https://www.midlandnational.com/indexed-ul-performance",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 26. Ameritas Growth IUL II ──
+  {
+    id: "ameritas-growth-iul-ii",
+    carrierId: "ameritas",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "Ameritas.com product page, FMI Agent rate sheet (effective 05/01/2025), Ameritas marketing guide (cap 9.50% confirmed), LifeInsuranceRecommendations.com, Ameritas AG49-A compliance notice",
+    name: "Growth IUL II",
+    maxIllustratedRate: 6.10,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (1-Year)",
+        capRate: 9.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (2-Year)",
+        capRate: 19.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500 Sector Rotator Daily RC2 5% Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "BNP Paribas Momentum Multi-Asset 5 Index",
+        creditingMethod: "Annual Point-to-Point (1-Year)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "BNP Paribas Momentum Multi-Asset 5 Index",
+        creditingMethod: "Annual Point-to-Point (2-Year)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "Waiver of Premium"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    accountValueBonus: { currentRate: 0.45, guaranteedMinimum: 0.10, startYear: 11 },
+    highlights: [
+      "9.50% S&P 500 cap — strong rate parity between new and in-force policies",
+      "2-Year S&P 500 account with 19.00% cap for extended crediting periods",
+      "S&P 500 Sector Rotator RC2 5% — uncapped volatility-managed index",
+      "BNP Paribas Momentum Multi-Asset 5 — uncapped 1-year and 2-year options",
+      "Account value bonus of 0.45% starting year 11 (0.10% guaranteed minimum)",
+      "Ameritas in-force parity — treats existing policyholders same as new business",
+      "Ameritas — A AM Best"
+    ],
+    sourceUrl: "https://www.ameritas.com/industry-professionals/life-insurance/index-universal/",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 27. Equitable BrightLife Grow IUL ──
+  {
+    id: "equitable-brightlife-grow-iul",
+    carrierId: "equitable",
+    ratesVerified: 'partial',
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "Equitable.com product pages (index options, floor, guaranteed interest confirmed), Premier Brokerage product announcement, NerdWallet 2026 review. Note: Equitable removed from lifeinsurancerecommendations.com cap rate comparison 1/21/2025 — specific cap rates not publicly disclosed.",
+    name: "BrightLife Grow IUL (Series 159)",
+    maxIllustratedRate: null,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (1-Year)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        capRateNote: "Cap declared periodically — not publicly disclosed"
+      },
+      {
+        indexName: "Russell 2000",
+        creditingMethod: "Annual Point-to-Point (1-Year)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        capRateNote: "Cap declared periodically — not publicly disclosed"
+      },
+      {
+        indexName: "MSCI EAFE",
+        creditingMethod: "Annual Point-to-Point (1-Year)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        capRateNote: "Cap declared periodically — not publicly disclosed"
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point (3-Year)",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        capRateNote: "Cap declared periodically — not publicly disclosed"
+      }
+    ],
+    fixedAccountRate: 2.00,
+    guaranteedMinCreditingRate: 2.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "Long-Term Care Rider"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Four indexed options: S&P 500 (1-yr & 3-yr), Russell 2000, MSCI EAFE",
+      "International diversification with MSCI EAFE index option",
+      "3-Year S&P 500 term for extended market exposure",
+      "100% participation up to cap on all indexed accounts",
+      "Guaranteed Interest Account floor of 2.00%",
+      "Cap rates declared periodically by Equitable — not publicly posted",
+      "Equitable — A+ AM Best, A+ S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://equitable.com/products/life-insurance/indexed-universal-life-insurance/brightlife-grow-159",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 28. Protective Indexed Choice UL (2025 Update) ──
+  {
+    id: "protective-indexed-choice-ul-2025",
+    carrierId: "protective-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "Protective.com rate update notice (March 2025 effective), comparion.protective.com product update page, lifeinsurancerecommendations.com (cap 9.00% pre-update, 8.50% post-update confirmed)",
+    name: "Indexed Choice UL (2025 Rates)",
+    maxIllustratedRate: 5.55,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 8.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 2.0,
+    loanProvisions: {
+      fixedLoanRate: 5.05,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: false
+    },
+    noLapseGuarantee: "To Age 121",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "Waiver of Premium"],
+    minimumFaceAmount: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Strong no-lapse guarantee to age 121 — best-in-class for protection",
+      "8.50% S&P 500 cap rate (updated March 2025)",
+      "Fixed account rate of 3.50% — unchanged",
+      "Lower minimum face amount of $25,000 — accessible entry point",
+      "2.00% guaranteed minimum crediting rate",
+      "Simple single-index design focused on protection with accumulation potential",
+      "Protective Life — A+ AM Best, AA- S&P, A1 Moody's"
+    ],
+    sourceUrl: "https://comparion.protective.com/about-us/news/life-insurance/product-updates/2025/were-updating-rates-on-select-products",
+    lastRateUpdate: "2025-03-15"
+  },
+
+  // ── 29. Securian Eclipse Accumulator II IUL (2025 Enhanced) ──
+  {
+    id: "securian-eclipse-accumulator-ii-2025",
+    carrierId: "securian",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "BusinessWire press release (Feb 2025 launch, Hindsight account details), lifeinsurancerecommendations.com (cap 10.00%, PRISM 200% participation confirmed), Securian.com financial professional page, WinkIntel product announcement",
+    name: "Eclipse Accumulator II IUL (2025 Enhanced)",
+    maxIllustratedRate: 6.55,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Performance Trigger",
+        capRate: null,
+        participationRate: null,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        triggerRate: 8.00,
+        guaranteedMinTriggerRate: 2.00
+      },
+      {
+        indexName: "S&P PRISM Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 200,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500 Low Volatility Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 65,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Hindsight Index (S&P 500 / Nasdaq-100 / Russell 2000)",
+        creditingMethod: "Performance-Weighted Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null,
+        hindsightWeighting: "60% highest / 40% second / 0% third performing index",
+        capRateNote: "Subject to a cap — declared periodically"
+      }
+    ],
+    fixedAccountRate: 3.25,
+    guaranteedMinCreditingRate: 1.0,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: null,
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Overloan Protection", "Waiver of Premium"],
+    minimumFaceAmount: 50000,
+    maximumIssueAge: 80,
+    highlights: [
+      "NEW 2025 enhanced version — five diverse indexed account options",
+      "S&P PRISM Index — 200% uncapped participation (current 215%)",
+      "Unique Hindsight Index blends S&P 500, Nasdaq-100, Russell 2000",
+      "Performance Trigger — earns 8.00% if S&P 500 is flat or positive",
+      "Transparent charges with consumer-friendly design",
+      "Available in all states except CA, FL, OR, NY (CA available Feb 2026)",
+      "Securian — A+ AM Best, AA- S&P"
+    ],
+    sourceUrl: "https://www.securian.com/financial-professionals/products/individual-life-insurance/indexed-universal-life/eclipse-accumulator.html",
+    lastRateUpdate: "2025-02-10"
+  },
+
+  // ── 30. F&G Everlast IUL ──
+  {
+    id: "fg-everlast-iul",
+    carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    verificationSource: "F&G Everlast vs Pathsetter comparison brochure (ADV5572), fglife.com historic rates tool, F&G product page, FinalExpenseBrokerage IUL guide",
+    name: "Everlast IUL",
+    maxIllustratedRate: 6.50,
+    indexAccounts: [
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: 10.00,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "S&P 500",
+        creditingMethod: "Monthly Point-to-Point",
+        capRate: 3.50,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: false,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "Barclays Trailblazer Sectors 5 Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 150,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      },
+      {
+        indexName: "BlackRock Market Advantage Index",
+        creditingMethod: "Annual Point-to-Point",
+        capRate: null,
+        participationRate: 100,
+        spread: 0,
+        floor: 0,
+        isUncapped: true,
+        hasMultiplier: false,
+        multiplierValue: null
+      }
+    ],
+    fixedAccountRate: 3.50,
+    guaranteedMinCreditingRate: 0.25,
+    loanProvisions: {
+      fixedLoanRate: 5.0,
+      variableLoanAvailable: true,
+      zeroNetCostLoanAvailable: true
+    },
+    noLapseGuarantee: "To Age 90",
+    deathBenefitOptions: ["Level", "Increasing"],
+    riders: ["Accelerated Benefit Rider", "Chronic Illness Rider", "Terminal Illness Rider", "No-Lapse Guarantee Rider"],
+    minimumFaceAmount: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Protection-focused IUL with no-lapse guarantee to age 90",
+      "10.00% S&P 500 cap rate with 100% participation",
+      "Barclays Trailblazer Sectors 5 — 150% uncapped participation",
+      "Lower minimum face amount of $25,000 for accessible entry",
+      "0.25% guaranteed minimum annual interest",
+      "F&G — A AM Best, A- S&P"
+    ],
+    sourceUrl: "https://www.fglife.com/life-insurance/historic-rates?product=Execudex,pathsetter,everlast",
+    lastRateUpdate: "2026-02-01"
   }
 ];

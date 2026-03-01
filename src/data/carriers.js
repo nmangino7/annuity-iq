@@ -935,5 +935,77 @@ export const carriers = [
     totalAssets: "$420B CAD",
     productCategories: ["va", "vul"],
     website: "https://www.sunlife.com"
+  },
+  {
+    id: "sagicor",
+    name: "Sagicor Life Insurance Company",
+    shortName: "Sagicor",
+    ratings: {
+      amBest: { rating: "A-", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: { rating: "BBB+", outlook: "Stable" },
+      comdex: 70
+    },
+    yearsInBusiness: 186,
+    foundedYear: 1840,
+    headquarters: "Scottsdale, AZ",
+    totalAssets: "$9B",
+    productCategories: ["fia", "myga"],
+    website: "https://www.sagicor.com"
+  },
+  {
+    id: "ibexis",
+    name: "Ibexis Life & Annuity Insurance Company",
+    shortName: "Ibexis",
+    ratings: {
+      amBest: { rating: "A-", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: 70
+    },
+    yearsInBusiness: 89,
+    foundedYear: 1937,
+    headquarters: "Topeka, KS",
+    totalAssets: "$3B",
+    productCategories: ["fia", "myga"],
+    website: "https://ibexis.com"
+  },
+  {
+    id: "gilico",
+    name: "Guaranty Income Life Insurance Company",
+    shortName: "GILICO (Kuvare)",
+    ratings: {
+      amBest: { rating: "A-", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: 70
+    },
+    yearsInBusiness: 97,
+    foundedYear: 1929,
+    headquarters: "Baton Rouge, LA",
+    totalAssets: "$5B",
+    productCategories: ["fia", "myga"],
+    website: "https://www.gilico.com"
+  },
+  {
+    id: "nassau-life",
+    name: "Nassau Life and Annuity Company",
+    shortName: "Nassau",
+    ratings: {
+      amBest: { rating: "B++", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: 57
+    },
+    yearsInBusiness: 44,
+    foundedYear: 1982,
+    headquarters: "Hartford, CT",
+    totalAssets: "$26B",
+    productCategories: ["fia", "glwb", "myga"],
+    website: "https://nfg.com"
   }
 ];

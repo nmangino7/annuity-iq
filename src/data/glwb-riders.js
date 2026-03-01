@@ -3328,5 +3328,399 @@ export const glwbRiders = [
     highlights: ["12-year rollup period — longest available", "1.5x nursing home benefit", "Trusted Mutual of Omaha brand", "Issue age up to 85"],
     sourceUrl: "https://www.mutualofomaha.com/annuities",
     lastRateUpdate: "2026-02-01"
+  },
+
+  // ═══════════════════════════════════════════════════════════════════
+  // NEW RIDERS 123–132 (added 2026-02-28)
+  // ═══════════════════════════════════════════════════════════════════
+
+  // ── 123. EquiTrust MarketEarly Income Index — Income Benefit Rider ─
+  // Source: EquiTrust agent portal disclosure (ET-MKE-1101WI)
+  // Verified: 7% compound Y1–5 / 4% compound Y6–10 rollup, 20% BB bonus,
+  //   single payout 5.10% at 50, +0.10%/yr; joint = single minus 1.00%
+  {
+    id: "equitrust-marketearly-income",
+    carrierId: "equitrust",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "MarketEarly Income Benefit Rider",
+    attachedProduct: "EquiTrust MarketEarly Income Index",
+    riderFee: 1.25,
+    rollUp: {
+      rate: 7.0,
+      type: "Compound",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 5.60, "60-64": 6.10, "65-69": 6.60, "70-74": 7.10, "75-79": 7.60, "80+": 8.10 },
+      joint: { "55-59": 4.60, "60-64": 5.10, "65-69": 5.60, "70-74": 6.10, "75-79": 6.60, "80+": 7.10 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 10000,
+    maximumIssueAge: 80,
+    highlights: [
+      "7% compound rollup years 1–5, 4% compound years 6–10",
+      "20% first-year benefit base bonus on premiums",
+      "2x chronic illness income doubler for up to 5 years",
+      "Single payout starts at 5.10% age 50, increases 0.10% per year",
+      "Joint payout 1.00% lower than single at every age"
+    ],
+    sourceUrl: "https://agents.equitrust.com/products/product-offerings/income-focused-annuities/marketearly-income-index/",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 124. Aspida Synergy Choice Income — Built-in GLWB ──────────────
+  // Source: Aspida fact sheet (30042), annuityeducator.com, marketsynergy.net
+  // Verified: 12% simple rollup Y1–10, 32% BB bonus, 0.50% rider fee,
+  //   full payout table by single-year age confirmed
+  {
+    id: "aspida-synergy-choice-income",
+    carrierId: "aspida",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Synergy Choice Income GLWB",
+    attachedProduct: "Aspida Synergy Choice Income 10",
+    riderFee: 0.50,
+    rollUp: {
+      rate: 12.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 4.30, "60-64": 5.05, "65-69": 5.75, "70-74": 6.15, "75-79": 6.75, "80+": 7.65 },
+      joint: { "55-59": 3.80, "60-64": 4.55, "65-69": 5.25, "70-74": 5.65, "75-79": 6.25, "80+": 7.15 }
+    },
+    stepUpAvailable: false,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Industry-low 0.50% rider fee (1.50% max)",
+      "12% simple rollup for 10 years — among highest available",
+      "32% benefit base bonus on initial premium",
+      "2x nursing home multiplier (single) / 1.5x (joint) for up to 60 months",
+      "Backed by Ares Management ($400B+ AUM), A- AM Best"
+    ],
+    sourceUrl: "https://aspida.com/documents/fia/synergy-income/30042-Synergy-Choice-Income-Fact-Sheet.pdf",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 125. Eagle Life Select Income Focus 7 — LIBR Option 1 ──────────
+  // Source: Eagle Life brochure (09SB3592), eagle-lifeco.com
+  // Verified: 14% simple rollup for 5 years (Option 1), 1.00% rider fee,
+  //   payout table by single-year age confirmed from Cambridge distributor page
+  {
+    id: "eagle-life-select-income-focus-7",
+    carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Select Income Focus 7 LIBR Option 1",
+    attachedProduct: "Eagle Select Income Focus 7",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 14.0,
+      type: "Simple",
+      maxYears: 5
+    },
+    withdrawalRates: {
+      single: { "55-59": 5.50, "60-64": 6.15, "65-69": 6.70, "70-74": 7.00, "75-79": 7.40, "80+": 7.60 },
+      joint: { "55-59": 5.00, "60-64": 5.65, "65-69": 6.20, "70-74": 6.50, "75-79": 6.90, "80+": 7.10 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 10000,
+    maximumIssueAge: 80,
+    highlights: [
+      "14% simple daily rollup for 5 years — highest short-term rollup",
+      "2x Wellbeing Benefit income doubler (single) / 1.5x (joint)",
+      "Daily-credited rollup grows Income Account Value every day",
+      "7-year surrender period — shorter than most income FIAs",
+      "Payout percentage increases every year of age from 50–79+"
+    ],
+    sourceUrl: "https://eagle-lifeco.com/eagle-select-income-focus",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 126. Eagle Life Select Income Focus 10 — LIBR Option 2 ─────────
+  // Source: Eagle Life brochure (09SB3592), eagle-lifeco.com
+  // Verified: 12% simple rollup for 10 years (Option 2), 1.00% rider fee,
+  //   same payout table structure as Option 1
+  {
+    id: "eagle-life-select-income-focus-10",
+    carrierId: "eagle-life",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Select Income Focus 10 LIBR Option 2",
+    attachedProduct: "Eagle Select Income Focus 10",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 12.0,
+      type: "Simple",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 5.50, "60-64": 6.15, "65-69": 6.70, "70-74": 7.00, "75-79": 7.40, "80+": 7.60 },
+      joint: { "55-59": 5.00, "60-64": 5.65, "65-69": 6.20, "70-74": 6.50, "75-79": 6.90, "80+": 7.10 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 10000,
+    maximumIssueAge: 80,
+    highlights: [
+      "12% simple daily rollup for 10 years — longer accumulation period",
+      "Surpasses Option 1 IAV after 5 years 10 months of deferral",
+      "2x Wellbeing Benefit income doubler (single) / 1.5x (joint)",
+      "10-year surrender period with greater interest-crediting potential",
+      "Same high payout percentages as 7-year version"
+    ],
+    sourceUrl: "https://eagle-lifeco.com/eagle-select-income-focus",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 127. Nassau Amplified Income Plus — Nassau Bonus Annuity ────────
+  // Source: Nassau salesnet rider options page, assets.nfg.com rider disclosure
+  // Verified: 0.95% rider fee, 3% guaranteed rollup + 150% performance credits,
+  //   15-year rollup period, issue age up to 80
+  // Note: Age-band withdrawal rates from rider disclosure document;
+  //   Nassau does not publish full ABA tables publicly — rates set as 'partial'
+  {
+    id: "nassau-amplified-income-plus",
+    carrierId: "nassau",
+    ratesVerified: "partial",
+    lastVerifiedDate: "2026-02-28",
+    name: "Amplified Income Plus",
+    attachedProduct: "Nassau Bonus Annuity",
+    riderFee: 0.95,
+    rollUp: {
+      rate: 3.0,
+      type: "Simple",
+      maxYears: 15
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.75, "60-64": 4.50, "65-69": 5.25, "70-74": 5.75, "75-79": 6.25, "80+": 6.75 },
+      joint: { "55-59": 3.25, "60-64": 4.00, "65-69": 4.75, "70-74": 5.25, "75-79": 5.75, "80+": 6.25 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "3% guaranteed rollup PLUS 150% of annual index performance credits",
+      "15-year rollup period — among the longest available",
+      "Low 0.95% rider fee (max 1.50% after year 15)",
+      "Steady guaranteed income — amount does not decrease once elected",
+      "Available on Nassau Bonus Annuity with premium bonus"
+    ],
+    sourceUrl: "https://salesnet.nfg.com/rider-options-for-annuities",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 128. Nassau Amplified Income Plus with RIO ─────────────────────
+  // Source: Nassau salesnet, assets.nfg.com (A5219NBA_RS2.pdf)
+  // Verified: Same 0.95% fee and 3% rollup as base, but with Rising Income
+  //   Opportunity — rollup continues through year 15 anniversary even after
+  //   income begins, providing potential income increases
+  {
+    id: "nassau-amplified-income-plus-rio",
+    carrierId: "nassau",
+    ratesVerified: "partial",
+    lastVerifiedDate: "2026-02-28",
+    name: "Amplified Income Plus with Rising Income Opportunity",
+    attachedProduct: "Nassau Bonus Annuity",
+    riderFee: 0.95,
+    rollUp: {
+      rate: 3.0,
+      type: "Simple",
+      maxYears: 15
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.25, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.50 },
+      joint: { "55-59": 3.00, "60-64": 3.75, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.00 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Rising Income Opportunity — income can increase after rider exercise",
+      "3% guaranteed rollup + 150% index credits, continues through year 15",
+      "Lower initial payout vs. base version, but income may grow over time",
+      "0.95% rider fee (max 1.50% after year 15)",
+      "Performance-based roll-up continues even after income starts"
+    ],
+    sourceUrl: "https://salesnet.nfg.com/rider-options-for-annuities",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 129. Sentinel Security Life — Guaranteed Income Annuity GLWB ───
+  // Source: sslco.com, annuity.org, annuityratewatch.com
+  // Verified: 8.5% compound rollup (10 yrs), 11% premium bonus,
+  //   tiered rider fee 1.25% Y1–5 / 1.60% Y6–10, B++ AM Best
+  // Note: Exact age-band payout table not publicly published — rates
+  //   estimated from product disclosure context; set as 'partial'
+  {
+    id: "sentinel-security-gia-glwb",
+    carrierId: "sentinel-security-life",
+    ratesVerified: "partial",
+    lastVerifiedDate: "2026-02-28",
+    name: "Guaranteed Income Annuity GLWB Rider",
+    attachedProduct: "Sentinel Security Life Guaranteed Income Annuity 10",
+    riderFee: 1.25,
+    rollUp: {
+      rate: 8.5,
+      type: "Compound",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.75, "60-64": 4.50, "65-69": 5.25, "70-74": 5.75, "75-79": 6.50, "80+": 7.00 },
+      joint: { "55-59": 3.25, "60-64": 4.00, "65-69": 4.75, "70-74": 5.25, "75-79": 6.00, "80+": 6.50 }
+    },
+    stepUpAvailable: false,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 10000,
+    maximumIssueAge: 80,
+    highlights: [
+      "8.5% COMPOUND rollup for 10 years — highest compound rollup available",
+      "11% one-time premium bonus credited at issue",
+      "Tiered rider fee: 1.25% years 1–5, 1.60% years 6–10",
+      "2.75% minimum guaranteed interest rate on accumulation value",
+      "Income payments can be monthly, quarterly, semi-annual, or annual"
+    ],
+    sourceUrl: "https://www.sslco.com/products/guaranteed-income-annuity",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 130. TruStage Zone Income Annuity — GLWB Rider ─────────────────
+  // Source: trustage.com, annuityrateshq.com, annuityeducator.com
+  // Verified: 1.00% GLWB rider fee + 0.75% contract fee, RILA with
+  //   0% to -10% selectable floor and positive cap (never < 1%),
+  //   Barron's 100 Best Annuities recognized
+  // Note: Exact age-band withdrawal table not publicly published — rates
+  //   estimated from product materials; set as 'partial'
+  {
+    id: "trustage-zone-income-glwb",
+    carrierId: "trustage",
+    ratesVerified: "partial",
+    lastVerifiedDate: "2026-02-28",
+    name: "Zone Income GLWB Rider",
+    attachedProduct: "TruStage Zone Income Annuity",
+    riderFee: 1.00,
+    rollUp: {
+      rate: 0.0,
+      type: "None",
+      maxYears: 0
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.25, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.50 },
+      joint: { "55-59": 3.00, "60-64": 3.75, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.00 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: false,
+    nursingHomeMultiplier: null,
+    minimumPremium: 25000,
+    maximumIssueAge: 80,
+    highlights: [
+      "Registered index-linked annuity (RILA) with built-in GLWB",
+      "Selectable downside floor from 0% to -10% with positive cap",
+      "Income payments guaranteed for life even if contract value hits zero",
+      "Barron's 100 Best Annuities recognized",
+      "Additional 0.75% contract fee (total cost 1.75% with rider)"
+    ],
+    sourceUrl: "https://www.trustage.com/annuities/zone-income-annuity",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 131. F&G Safe Income Advantage — EGMWB Rider ───────────────────
+  // Source: success.fglife.com, annuityeducator.com, F&G brochure ADV2780
+  // Verified: 1.15% rider fee (1.50% max), up to 7.20% compound rollup
+  //   for 10 years or until age 85, EGMWB with Level/Increasing/Inflation
+  //   options, 2x impairment multiplier (single) / 1.5x (joint)
+  {
+    id: "fg-safe-income-advantage-egmwb",
+    carrierId: "fandg",
+    ratesVerified: true,
+    lastVerifiedDate: "2026-02-28",
+    name: "Safe Income Advantage EGMWB",
+    attachedProduct: "F&G Safe Income Advantage",
+    riderFee: 1.15,
+    rollUp: {
+      rate: 7.2,
+      type: "Compound",
+      maxYears: 10
+    },
+    withdrawalRates: {
+      single: { "55-59": 3.50, "60-64": 4.25, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.75 },
+      joint: { "55-59": 3.00, "60-64": 3.75, "65-69": 4.50, "70-74": 5.00, "75-79": 5.50, "80+": 6.25 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 10000,
+    maximumIssueAge: 80,
+    highlights: [
+      "7.20% COMPOUND rollup — grows faster than simple interest riders",
+      "Three EGMWB options: Level, Increasing, and Inflation-Adjusted income",
+      "2x impairment income multiplier (single) / 1.5x (joint)",
+      "Minimum age 60 to begin EGMWB withdrawals",
+      "F&G rated A (Excellent) by AM Best"
+    ],
+    sourceUrl: "https://success.fglife.com/fg-safe-income-advantage",
+    lastRateUpdate: "2026-02-01"
+  },
+
+  // ── 132. EquiTrust MarketSeven Index — Income Benefit Rider ────────
+  // Source: equitrust.com MarketSeven income rider page, agent portal
+  // Verified: 1.25% rider fee, 7% compound rollup for 7 years with
+  //   25% benefit base bonus. Income begins after 2nd contract year and age 50.
+  //   Exact per-age payout table agent-only — set as 'partial'
+  {
+    id: "equitrust-marketseven-income",
+    carrierId: "equitrust",
+    ratesVerified: "partial",
+    lastVerifiedDate: "2026-02-28",
+    name: "MarketSeven Income Benefit Rider",
+    attachedProduct: "EquiTrust MarketSeven Index",
+    riderFee: 1.25,
+    rollUp: {
+      rate: 7.0,
+      type: "Compound",
+      maxYears: 7
+    },
+    withdrawalRates: {
+      single: { "55-59": 5.00, "60-64": 5.50, "65-69": 6.00, "70-74": 6.50, "75-79": 7.00, "80+": 7.50 },
+      joint: { "55-59": 4.00, "60-64": 4.50, "65-69": 5.00, "70-74": 5.50, "75-79": 6.00, "80+": 6.50 }
+    },
+    stepUpAvailable: true,
+    rmdFriendly: true,
+    nursingHomeBenefit: true,
+    nursingHomeMultiplier: 2.0,
+    minimumPremium: 10000,
+    maximumIssueAge: 80,
+    highlights: [
+      "25% first-year benefit base bonus on premiums",
+      "7% compound rollup for 7 years — shorter accumulation period",
+      "Income withdrawals may begin after 2nd contract year and age 50",
+      "Withdrawals can be stopped and restarted without penalty",
+      "Income continues even if accumulation value reaches zero"
+    ],
+    sourceUrl: "https://www.equitrust.com/modals/marketseven-modals/income-rider-marketseven/",
+    lastRateUpdate: "2026-02-01"
   }
 ];
