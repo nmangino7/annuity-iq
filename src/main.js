@@ -6,7 +6,7 @@ import { state, setTheme, toggleTheme, setUser, setProfile, addToCompare, remove
 import { registerRoute, initRouter, navigate } from './router.js';
 
 // Data layer — static for local dev, swap to lib/api.js when Supabase is configured
-import { searchAll } from './data/index.js';
+import { searchAll, typeLabels, typeColors } from './data/index.js';
 
 // Auth & Stripe (these self-register on window.__supabaseAuth / window.__stripe)
 // Only load when env vars are present
@@ -170,38 +170,57 @@ document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
 const searchInput = document.getElementById('global-search');
 const searchResults = document.getElementById('search-results');
 let searchDebounce = null;
+let currentResults = [];
+let activeIdx = -1;
+
+searchResults?.setAttribute('role', 'listbox');
+searchInput?.setAttribute('role', 'combobox');
+searchInput?.setAttribute('aria-autocomplete', 'list');
+searchInput?.setAttribute('aria-expanded', 'false');
+
+function renderSearchResults() {
+  if (!searchResults) return;
+  if (currentResults.length === 0) {
+    searchResults.innerHTML = '<div class="p-4 text-sm text-slate-500">No results found</div>';
+  } else {
+    searchResults.innerHTML = currentResults.map((r, i) => `
+      <a href="#${r.route}" role="option" id="search-opt-${i}" data-idx="${i}"
+        class="search-opt flex items-center gap-3 px-4 py-2.5 transition-colors ${i === activeIdx ? 'bg-slate-100 dark:bg-slate-700' : 'hover:bg-slate-50 dark:hover:bg-slate-700'}">
+        <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${typeColors[r.type]}">${typeLabels[r.type]}</span>
+        <span class="text-sm">${r.name}</span>
+      </a>
+    `).join('');
+  }
+  searchResults.classList.remove('hidden');
+  searchInput?.setAttribute('aria-expanded', 'true');
+}
+
+function closeSearch() {
+  searchResults?.classList.add('hidden');
+  activeIdx = -1;
+  searchInput?.setAttribute('aria-expanded', 'false');
+  searchInput?.removeAttribute('aria-activedescendant');
+}
+
+function highlightActive() {
+  const opts = searchResults?.querySelectorAll('.search-opt') || [];
+  opts.forEach((el, i) => {
+    const on = i === activeIdx;
+    el.classList.toggle('bg-slate-100', on);
+    el.classList.toggle('dark:bg-slate-700', on);
+    if (on) { el.scrollIntoView({ block: 'nearest' }); searchInput?.setAttribute('aria-activedescendant', el.id); }
+  });
+}
 
 searchInput?.addEventListener('input', (e) => {
   const q = e.target.value.trim();
-  if (q.length < 2) { searchResults.classList.add('hidden'); return; }
-
-  // Debounce for async search
+  if (q.length < 2) { closeSearch(); return; }
   clearTimeout(searchDebounce);
-  searchDebounce = setTimeout(async () => {
+  searchDebounce = setTimeout(() => {
     try {
-      const results = await Promise.resolve(searchAll(q));
-      if (results.length === 0) {
-        searchResults.innerHTML = '<div class="p-4 text-sm text-slate-500">No results found</div>';
-      } else {
-        const typeLabels = { carrier: 'Carrier', fia: 'FIA', glwb: 'GLWB', iul: 'IUL', rila: 'RILA', va: 'VA', vul: 'VUL', fund: 'Fund' };
-        const typeColors = {
-          carrier: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300',
-          fia: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
-          glwb: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
-          iul: 'bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300',
-          rila: 'bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300',
-          va: 'bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-300',
-          vul: 'bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-300',
-          fund: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300'
-        };
-        searchResults.innerHTML = results.map(r => `
-          <a href="#${r.route}" class="flex items-center gap-3 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
-            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${typeColors[r.type]}">${typeLabels[r.type]}</span>
-            <span class="text-sm">${r.name}</span>
-          </a>
-        `).join('');
-      }
-      searchResults.classList.remove('hidden');
+      currentResults = searchAll(q, { limit: 30 });
+      activeIdx = -1;
+      renderSearchResults();
     } catch (err) {
       console.error('Search error:', err);
     }
@@ -209,11 +228,27 @@ searchInput?.addEventListener('input', (e) => {
 });
 
 searchInput?.addEventListener('blur', () => {
-  setTimeout(() => searchResults?.classList.add('hidden'), 200);
+  setTimeout(closeSearch, 200);
 });
 
 searchInput?.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') { searchInput.blur(); searchResults?.classList.add('hidden'); }
+  if (e.key === 'Escape') { closeSearch(); searchInput.blur(); return; }
+  const open = searchResults && !searchResults.classList.contains('hidden') && currentResults.length > 0;
+  if (!open) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    activeIdx = (activeIdx + 1) % currentResults.length;
+    highlightActive();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    activeIdx = (activeIdx - 1 + currentResults.length) % currentResults.length;
+    highlightActive();
+  } else if (e.key === 'Enter' && activeIdx >= 0 && currentResults[activeIdx]) {
+    e.preventDefault();
+    location.hash = currentResults[activeIdx].route;
+    closeSearch();
+    searchInput.blur();
+  }
 });
 
 // ---------------------------------------------------------------------------
