@@ -1012,7 +1012,7 @@ export const fiaProducts = [
   {
     id: "delaware-life-target-growth-10",
     carrierId: "delaware-life",
-    ratesVerified: true,
+    ratesVerified: false,
     lastVerifiedDate: "2026-02-21",
     name: "Delaware Life Target Growth 10",
     surrenderPeriod: 10,
@@ -1080,7 +1080,7 @@ export const fiaProducts = [
   {
     id: "ameritas-accumulation-7",
     carrierId: "ameritas",
-    ratesVerified: true,
+    ratesVerified: false,
     lastVerifiedDate: "2026-02-21",
     name: "Ameritas Accumulation 7",
     surrenderPeriod: 7,
@@ -1395,7 +1395,7 @@ export const fiaProducts = [
   {
     id: "brighthouse-shield-level-pay-plus",
     carrierId: "brighthouse-financial",
-    ratesVerified: true,
+    ratesVerified: false,
     lastVerifiedDate: "2026-02-21",
     name: "Brighthouse Shield Level Pay Plus",
     surrenderPeriod: 10,
@@ -1621,7 +1621,7 @@ export const fiaProducts = [
   {
     id: "delaware-life-momentum-10",
     carrierId: "delaware-life",
-    ratesVerified: true,
+    ratesVerified: false,
     lastVerifiedDate: "2026-02-21",
     name: "Delaware Life Momentum 10",
     surrenderPeriod: 10,

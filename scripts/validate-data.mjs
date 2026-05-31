@@ -105,9 +105,9 @@ for (const [coll, schema] of Object.entries(PRODUCT_SCHEMAS)) {
       if (!RATES_VERIFIED_ENUM.includes(rec.ratesVerified)) {
         err(coll, id, `ratesVerified=${JSON.stringify(rec.ratesVerified)} not one of ${JSON.stringify(RATES_VERIFIED_ENUM)}`);
       }
-      if (rec.ratesVerified === true) {
-        if (!rec.lastVerifiedDate) warn(coll, id, 'ratesVerified:true but no lastVerifiedDate');
-        if (!SOURCE_KEYS.some(k => rec[k])) warn(coll, id, 'ratesVerified:true but no source (verificationSource/sourceUrl)');
+      // Real provenance is a CITED SOURCE (a self-asserted date alone is not evidence).
+      if (rec.ratesVerified === true && !SOURCE_KEYS.some(k => rec[k])) {
+        warn(coll, id, 'ratesVerified:true but no source (verificationSource/sourceUrl)');
       }
     }
     // subaccounts use returnsVerified instead
