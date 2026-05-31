@@ -1043,5 +1043,45 @@ export const carriers = [
     totalAssets: "$27B",
     productCategories: ["fia", "glwb", "myga"],
     website: "https://www.equitrust.com"
+  },
+  {
+    id: "aspida",
+    name: "Aspida Life Insurance Company",
+    shortName: "Aspida",
+    ratings: {
+      amBest: { rating: "A-", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: null
+    },
+    yearsInBusiness: 6,
+    foundedYear: 2020,
+    headquarters: "Durham, NC",
+    totalAssets: null,
+    productCategories: ["fia", "glwb"],
+    website: "https://www.aspida.com",
+    lastVerifiedDate: "2026-05-31",
+    verificationSource: "AM Best rating affirmed 2025-08-29 (news.ambest.com); Aspida company profile"
+  },
+  {
+    id: "sentinel-security-life",
+    name: "Sentinel Security Life Insurance Company",
+    shortName: "Sentinel Security Life",
+    ratings: {
+      amBest: { rating: "B++", outlook: "Negative" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: null
+    },
+    yearsInBusiness: 78,
+    foundedYear: 1948,
+    headquarters: "Salt Lake City, UT",
+    totalAssets: null,
+    productCategories: ["fia", "glwb"],
+    website: null,
+    lastVerifiedDate: "2026-05-31",
+    verificationSource: "AM Best (news.ambest.com); AnnuityAdvantage carrier profile"
   }
 ];

@@ -123,6 +123,16 @@ export function truncate(str, len = 30) {
   return str.length > len ? str.slice(0, len) + '...' : str;
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+// "2026-05-31" -> "May 2026"; tolerant of YYYY-MM and bad input.
+export function monthYear(dateStr) {
+  if (!dateStr) return '';
+  const [y, m] = String(dateStr).split('-');
+  const mi = parseInt(m, 10) - 1;
+  return MONTHS[mi] != null ? `${MONTHS[mi]} ${y}` : (y || '');
+}
+
 export function getTopRate(strategies, field = 'capRate') {
   if (!strategies || !strategies.length) return null;
   const rates = strategies.map(s => s[field]).filter(r => r != null);

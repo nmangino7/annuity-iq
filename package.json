@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "seed": "node scripts/seed-supabase.js"
+    "seed": "node scripts/seed-supabase.js",
+    "validate:data": "node scripts/validate-data.mjs",
+    "test": "node --test",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "npm run validate:data && npm test && npm run smoke && npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1"

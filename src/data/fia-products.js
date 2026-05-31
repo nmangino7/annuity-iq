@@ -1,5 +1,4 @@
 export const fiaProducts = [
-  // ── 1. Allianz 222+ ──────────────────────────────────────────────────
   {
     id: "allianz-222-plus",
     carrierId: "allianz-life",
@@ -85,8 +84,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/222/rates",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 2. Allianz Benefit Control+ ──────────────────────────────────────
   {
     id: "allianz-benefit-control-plus",
     carrierId: "allianz-life",
@@ -172,8 +169,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities/benefit-control/rates",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 3. Athene Ascent Pro 10 ───────────────────────────────────────────
   {
     id: "athene-ascent-pro-10",
     carrierId: "athene",
@@ -231,8 +226,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.athene.com/products/fia/ascent-pro",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 3b. Athene Accumulator 10 ──────────────────────────────────────────
   {
     id: "athene-accumulator-10",
     carrierId: "athene",
@@ -272,8 +265,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.athene.com/products/fia/accumulator",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 4. Athene Agility 10 ─────────────────────────────────────────────
   {
     id: "athene-agility-10",
     carrierId: "athene",
@@ -340,8 +331,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.athene.com/products/fia/agility",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 5. Nationwide New Heights Select 12 ──────────────────────────────
   {
     id: "nationwide-new-heights-select-12",
     carrierId: "nationwide",
@@ -373,8 +362,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed/types/new-heights-select-12",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 6. Nationwide Peak 10 ────────────────────────────────────────────
   {
     id: "nationwide-peak-10",
     carrierId: "nationwide",
@@ -450,8 +437,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.nationwide.com/personal/investing/annuities/fixed-indexed/types/nationwide-peak-10",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 10. F&G Accumulator Plus ─────────────────────────────────────────
   {
     id: "fg-accumulator-plus",
     carrierId: "fandg",
@@ -482,8 +467,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 11. Pacific Index Foundation 2 ───────────────────────────────────
   {
     id: "pacific-index-foundation-2",
     carrierId: "pacific-life",
@@ -570,8 +553,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-22"
   },
-
-  // ── 13. Midland National Endeavor 8 ──────────────────────────────────
   {
     id: "midland-national-endeavor-8",
     carrierId: "midland-national",
@@ -638,8 +619,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.midlandnational.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 13b. Midland National IndexBuilder 10 ──────────────────────────────
   {
     id: "midland-national-indexbuilder-10",
     carrierId: "midland-national",
@@ -688,8 +667,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/midland-national-life-insurance-company/fixed-index/mnl-indexbuilder-10-high-band-most-states",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 15. American Equity AssetShield 10 ───────────────────────────────
   {
     id: "american-equity-assetshield-10",
     carrierId: "american-equity",
@@ -747,8 +724,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/american-equity-investment-life-insurance-company/fixed-index/assetshield-10",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 17. Great American Legend 7 ──────────────────────────────────────
   {
     id: "great-american-legend-7",
     carrierId: "great-american",
@@ -806,8 +781,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 18. Great American Safe Return ───────────────────────────────────
   {
     id: "great-american-safe-return",
     carrierId: "great-american",
@@ -833,8 +806,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.massmutualascend.com/products/fixed-indexed-annuity",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 19. Lincoln OptiBlend 10 ─────────────────────────────────────────
   {
     id: "lincoln-optiblend-10",
     carrierId: "lincoln-financial",
@@ -902,8 +873,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/lincoln-national-life-insurance-company/fixed-index/lincoln-optiblend-10",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 20. Lincoln OptiBlend 7 ──────────────────────────────────────────
   {
     id: "lincoln-optiblend-7",
     carrierId: "lincoln-financial",
@@ -930,8 +899,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 25b. Jackson Income Assurance ──────────────────────────────────────
   {
     id: "jackson-income-assurance",
     carrierId: "jackson-national",
@@ -972,8 +939,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.jackson.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 26. Symetra Accumulation Edge ────────────────────────────────────
   {
     id: "symetra-accumulation-edge",
     carrierId: "symetra",
@@ -1007,107 +972,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-5",
     lastRateUpdate: "2026-02-21"
   },
-
-  // ── 29. Delaware Life Target Growth 10 ───────────────────────────────
-  {
-    id: "delaware-life-target-growth-10",
-    carrierId: "delaware-life",
-    ratesVerified: true,
-    lastVerifiedDate: "2026-02-21",
-    name: "Delaware Life Target Growth 10",
-    surrenderPeriod: 10,
-    surrenderSchedule: [10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0],
-    minimumPremium: 25000,
-    maximumIssueAge: 80,
-    guaranteedMinimumRate: 0.0,
-    premiumBonus: 0,
-    freeWithdrawalPercent: 10,
-    fixedAccountRate: 4.60,
-    indexStrategies: [
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: 9.50,
-        participationRate: 100,
-        spread: 0,
-        floor: 0,
-        isUncapped: false
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 55,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "S&P 500",
-        creditingMethod: "Performance Trigger",
-        capRate: null,
-        participationRate: null,
-        spread: 0,
-        floor: 0,
-        isUncapped: false,
-        triggerRate: 7.25
-      },
-      {
-        indexName: "Goldman Sachs Canopy",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 110,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      },
-      {
-        indexName: "First Trust Capital Strength Barclays 10%",
-        creditingMethod: "Annual Point-to-Point",
-        capRate: null,
-        participationRate: 95,
-        spread: 0,
-        floor: 0,
-        isUncapped: true
-      }
-    ],
-    incomeRiderAvailable: true,
-    highlights: ["12% premium bonus", "S&P 500 Bailout cap 9.50%", "Goldman Sachs Canopy 110% PR", "Fixed account 4.60%", "Precision Portfolio option available (higher caps with fee)"],
-    lastRateUpdate: "2026-02-01"
-  },
-
-  // ── 33. Ameritas Accumulation 7 ──────────────────────────────────────
-  {
-    id: "ameritas-accumulation-7",
-    carrierId: "ameritas",
-    ratesVerified: true,
-    lastVerifiedDate: "2026-02-21",
-    name: "Ameritas Accumulation 7",
-    surrenderPeriod: 7,
-    surrenderSchedule: [9, 9, 8, 7, 6, 5, 4, 0],
-    minimumPremium: 10000,
-    maximumIssueAge: 85,
-    guaranteedMinimumRate: 0.0,
-    premiumBonus: 0.0,
-    freeWithdrawalPercent: 10,
-    fixedAccountRate: 4.85,
-    indexStrategies: [
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 9.00, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "S&P 500", creditingMethod: "Monthly Average", capRate: 10.80, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "S&P 500", creditingMethod: "Monthly Sum", capRate: 3.05, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 9.70, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "Russell 2000", creditingMethod: "Monthly Average", capRate: 11.80, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 8.75, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "MSCI EAFE", creditingMethod: "Monthly Average", capRate: 15.50, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "S&P 500 Sector Rotator DRC2 5%", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 175, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "S&P 500 Sector Rotator DRC2 5%", creditingMethod: "Biennial Point-to-Point", capRate: null, participationRate: 225, spread: 0, floor: 0, isUncapped: true }
-    ],
-    incomeRiderAvailable: false,
-    highlights: ["S&P 500 cap 9.00%, Russell 2000 cap 9.70%", "MSCI EAFE Monthly Avg 15.50% cap", "Sector Rotator PR 175/225%", "Fixed 4.85%, 7-year surrender, $10K minimum"],
-    lastRateUpdate: "2026-02-01"
-  },
-
-  // ── 35. Athene Performance Elite Plus 10 ─────────────────────────────
   {
     id: "athene-performance-elite-plus-10",
     carrierId: "athene",
@@ -1174,8 +1038,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 42. North American Charter Plus 14 ───────────────────────────────
   {
     id: "north-american-charter-plus-14",
     carrierId: "north-american",
@@ -1233,8 +1095,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 43. Allianz Core Income 7 ────────────────────────────────────────
   {
     id: "allianz-core-income-7",
     carrierId: "allianz-life",
@@ -1262,8 +1122,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 51. Allianz Benefit Control Annuity ─────────────────────────────
   {
     id: "allianz-benefit-control",
     carrierId: "allianz-life",
@@ -1297,8 +1155,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.allianzlife.com/what-we-offer/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 53. Athene Performance Elite Plus ────────────────────────────────
   {
     id: "athene-performance-elite-plus",
     carrierId: "athene",
@@ -1330,8 +1186,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 67. Global Atlantic ForeAccumulation II ─────────────────────────
   {
     id: "global-atlantic-foreaccumulation-ii",
     carrierId: "global-atlantic",
@@ -1390,41 +1244,6 @@ export const fiaProducts = [
     sourceUrl: "https://professionals.globalatlantic.com/products/annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 70. Brighthouse Shield Level Pay Plus ───────────────────────────
-  {
-    id: "brighthouse-shield-level-pay-plus",
-    carrierId: "brighthouse-financial",
-    ratesVerified: true,
-    lastVerifiedDate: "2026-02-21",
-    name: "Brighthouse Shield Level Pay Plus",
-    surrenderPeriod: 10,
-    surrenderSchedule: [8, 8, 7, 6, 5, 5, 4, 3, 2, 1, 0],
-    minimumPremium: 25000,
-    maximumIssueAge: 80,
-    guaranteedMinimumRate: 0.0,
-    premiumBonus: 0.0,
-    freeWithdrawalPercent: 10,
-    indexStrategies: [
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 10.00, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 7.50, participationRate: 100, spread: 0, floor: -25, isUncapped: false },
-      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 14.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
-      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
-      { indexName: "Russell 2000", creditingMethod: "Annual Point-to-Point", capRate: 9.00, participationRate: 100, spread: 0, floor: -25, isUncapped: false },
-      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 13.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
-      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 10.50, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
-      { indexName: "Nasdaq-100", creditingMethod: "Annual Point-to-Point", capRate: 8.00, participationRate: 100, spread: 0, floor: -25, isUncapped: false },
-      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 12.00, participationRate: 100, spread: 0, floor: -10, isUncapped: false },
-      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 9.50, participationRate: 100, spread: 0, floor: -15, isUncapped: false },
-      { indexName: "MSCI EAFE", creditingMethod: "Annual Point-to-Point", capRate: 7.00, participationRate: 100, spread: 0, floor: -25, isUncapped: false }
-    ],
-    incomeRiderAvailable: true,
-    highlights: ["RILA — S&P 500 cap 12% (10% buffer), 10% (15% buffer)", "Russell 2000 cap 14% (10% buffer)", "Nasdaq-100 cap 13% (10% buffer)", "SEC EDGAR verified rates (Dec 2024 filing)"],
-    lastRateUpdate: "2026-02-01"
-  },
-
-  // ── 92. Athene AccuMax 7 ────────────────────────────────────────────
   {
     id: "athene-accumax-7",
     carrierId: "athene",
@@ -1452,8 +1271,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.athene.com/products/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 93. North American NAC BenefitSolutions ─────────────────────────
   {
     id: "north-american-nac-benefitsolutions",
     carrierId: "north-american",
@@ -1485,8 +1302,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 94. F&G Safe Income Advantage ───────────────────────────────────
   {
     id: "fg-safe-income-advantage",
     carrierId: "fandg",
@@ -1554,8 +1369,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 95. Lincoln OptiBlend 5 ─────────────────────────────────────────
   {
     id: "lincoln-optiblend-5",
     carrierId: "lincoln-financial",
@@ -1582,8 +1395,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.lincolnfinancial.com/public/individuals/products/annuities/fixedindexedannuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 100. American Equity IncomeShield 10 ────────────────────────────
   {
     id: "american-equity-incomeshield-10",
     carrierId: "american-equity",
@@ -1616,37 +1427,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.american-equity.com/annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── 101. Delaware Life Momentum 10 ──────────────────────────────────
-  {
-    id: "delaware-life-momentum-10",
-    carrierId: "delaware-life",
-    ratesVerified: true,
-    lastVerifiedDate: "2026-02-21",
-    name: "Delaware Life Momentum 10",
-    surrenderPeriod: 10,
-    surrenderSchedule: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
-    minimumPremium: 25000,
-    maximumIssueAge: 80,
-    guaranteedMinimumRate: 0.0,
-    premiumBonus: 0.0,
-    freeWithdrawalPercent: 10,
-    fixedAccountRate: 4.50,
-    indexStrategies: [
-      { indexName: "S&P 500", creditingMethod: "Annual Point-to-Point", capRate: 9.30, participationRate: 100, spread: 0, floor: 0, isUncapped: false },
-      { indexName: "S&P 500 Dynamic Intraday TCA", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 65, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "Nasdaq-100 Volatility Control 12%", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 70, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "Barclays Aries", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 95, spread: 0, floor: 0, isUncapped: true },
-      { indexName: "BlackRock US Equity Bitcoin Balanced Risk 12%", creditingMethod: "Annual Point-to-Point", capRate: null, participationRate: 55, spread: 0, floor: 0, isUncapped: true }
-    ],
-    incomeRiderAvailable: true,
-    highlights: ["S&P 500 cap 9.30% — strong accumulation", "Bitcoin-linked index: BlackRock BTC Balanced 55% PR", "Barclays Aries 95% PR, Nasdaq-100 Vol Control 70% PR", "Fixed 4.50%, no bonus, $25K minimum"],
-    lastRateUpdate: "2026-02-01"
-  },
-
-  // ── SILAC Insurance Company ─────────────────────────────────────────────
-
-  // ── SILAC Teton 5 (Accumulation) ───────────────────────────────────────
   {
     id: "silac-teton-5",
     carrierId: "silac",
@@ -1756,8 +1536,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton 7 (Accumulation) ───────────────────────────────────────
   {
     id: "silac-teton-7",
     carrierId: "silac",
@@ -1866,8 +1644,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton 10 (Accumulation) ──────────────────────────────────────
   {
     id: "silac-teton-10",
     carrierId: "silac",
@@ -1976,8 +1752,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton 14 (Accumulation) ──────────────────────────────────────
   {
     id: "silac-teton-14",
     carrierId: "silac",
@@ -2059,8 +1833,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton Bonus 5 (Accumulation with Bonus) ─────────────────────
   {
     id: "silac-teton-bonus-5",
     carrierId: "silac",
@@ -2169,8 +1941,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton Bonus 7 (Accumulation with Bonus) ─────────────────────
   {
     id: "silac-teton-bonus-7",
     carrierId: "silac",
@@ -2279,8 +2049,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton Bonus 10 (Accumulation with Bonus) ────────────────────
   {
     id: "silac-teton-bonus-10",
     carrierId: "silac",
@@ -2416,8 +2184,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Teton Bonus 14 (Accumulation with Bonus) ────────────────────
   {
     id: "silac-teton-bonus-14",
     carrierId: "silac",
@@ -2490,8 +2256,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Denali 7 (Accumulation + Lifetime Income) ───────────────────
   {
     id: "silac-denali-7",
     carrierId: "silac",
@@ -2601,8 +2365,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Denali 10 (Accumulation + Lifetime Income) ──────────────────
   {
     id: "silac-denali-10",
     carrierId: "silac",
@@ -2712,8 +2474,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Denali 14 (Accumulation + Lifetime Income) ──────────────────
   {
     id: "silac-denali-14",
     carrierId: "silac",
@@ -2786,8 +2546,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Denali Bonus 7 (Accumulation + Bonus + Lifetime Income) ─────
   {
     id: "silac-denali-bonus-7",
     carrierId: "silac",
@@ -2878,8 +2636,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Denali Bonus 10 (Accumulation + Bonus + Lifetime Income) ────
   {
     id: "silac-denali-bonus-10",
     carrierId: "silac",
@@ -2979,8 +2735,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Denali Bonus 14 (Accumulation + Bonus + Lifetime Income) ────
   {
     id: "silac-denali-bonus-14",
     carrierId: "silac",
@@ -3053,8 +2807,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Evolve 7 (Income-Focused FIA) ───────────────────────────────
   {
     id: "silac-evolve-7",
     carrierId: "silac",
@@ -3164,8 +2916,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Evolve 10 (Income-Focused FIA) ──────────────────────────────
   {
     id: "silac-evolve-10",
     carrierId: "silac",
@@ -3312,8 +3062,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Evolve 14 (Income-Focused FIA) ──────────────────────────────
   {
     id: "silac-evolve-14",
     carrierId: "silac",
@@ -3386,8 +3134,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Vega 7 (Legacy / Wealth Transfer) ──────────────────────────
   {
     id: "silac-vega-7",
     carrierId: "silac",
@@ -3472,8 +3218,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Vega 10 (Legacy / Wealth Transfer) ─────────────────────────
   {
     id: "silac-vega-10",
     carrierId: "silac",
@@ -3557,8 +3301,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Vega 14 (Legacy / Wealth Transfer) ─────────────────────────
   {
     id: "silac-vega-14",
     carrierId: "silac",
@@ -3633,8 +3375,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Vega Bonus 7 (Legacy / Wealth Transfer with Bonus) ─────────
   {
     id: "silac-vega-bonus-7",
     carrierId: "silac",
@@ -3766,8 +3506,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Vega Bonus 10 (Legacy / Wealth Transfer with Bonus) ────────
   {
     id: "silac-vega-bonus-10",
     carrierId: "silac",
@@ -3890,8 +3628,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── SILAC Vega Bonus 14 (Legacy / Wealth Transfer with Bonus) ────────
   {
     id: "silac-vega-bonus-14",
     carrierId: "silac",
@@ -3968,8 +3704,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.silacins.com/products/annuities",
     lastRateUpdate: "2025-12-10"
   },
-
-  // ── F&G Accelerator Plus 10 ──────────────────────────────────────────
   {
     id: "fg-accelerator-plus-10",
     carrierId: "fandg",
@@ -4000,8 +3734,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── F&G Prosperity Elite 7 (Enhancement) ─────────────────────────────
   {
     id: "fg-prosperity-elite-7-enhancement",
     carrierId: "fandg",
@@ -4032,8 +3764,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── F&G Prosperity Elite 10 (Enhancement) ────────────────────────────
   {
     id: "fg-prosperity-elite-10-enhancement",
     carrierId: "fandg",
@@ -4064,8 +3794,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── F&G Prosperity Elite 14 (Enhancement) ────────────────────────────
   {
     id: "fg-prosperity-elite-14-enhancement",
     carrierId: "fandg",
@@ -4096,8 +3824,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.fglife.com/annuities/fia",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── North American PrimePath Pro 10 ────────────────────────────────
   {
     id: "nac-primepath-pro-10",
     carrierId: "north-american",
@@ -4130,8 +3856,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── North American VersaChoice ──────────────────────────────────────
   {
     id: "nac-versachoice",
     carrierId: "north-american",
@@ -4164,8 +3888,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.northamericancompany.com/annuities/fixed-index-annuities",
     lastRateUpdate: "2026-02-01"
   },
-
-  // ── Pacific Index Foundation (10yr) — from official rate sheet 02/16/2026 ──
   {
     id: "pacific-index-foundation-10",
     carrierId: "pacific-life",
@@ -4226,8 +3948,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-22"
   },
-
-  // ── Pacific Index Foundation 2 (10yr) — from official rate sheet 02/16/2026 ──
   {
     id: "pacific-index-foundation-2-10yr",
     carrierId: "pacific-life",
@@ -4304,8 +4024,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-22"
   },
-
-  // ── Pacific Index Edge (10yr) — from official rate sheet 02/16/2026 ──
   {
     id: "pacific-index-edge-10",
     carrierId: "pacific-life",
@@ -4356,7 +4074,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.annuities.pacificlife.com/home/annuities/fixed-annuities.html",
     lastRateUpdate: "2026-02-22"
   },
-  // ── 66. Protective Asset Builder II (10-Year) ──
   {
     id: "protective-asset-builder-ii-10",
     carrierId: "protective-life",
@@ -4384,7 +4101,6 @@ export const fiaProducts = [
     sourceUrl: "https://allstate.protective.com/retirement/indexed-annuities/protective-asset-builder-ii",
     lastRateUpdate: "2026-02-27"
   },
-  // ── 67. Protective Indexed Annuity II (10-Year) ──
   {
     id: "protective-indexed-annuity-ii-10",
     carrierId: "protective-life",
@@ -4408,7 +4124,6 @@ export const fiaProducts = [
     sourceUrl: "https://schwab.protective.com/annuities/indexed-annuities/protective-indexed-annuity-ii",
     lastRateUpdate: "2026-02-27"
   },
-  // ── 68. Security Benefit TopRidge Bonus Annuity ──
   {
     id: "security-benefit-topridge-bonus",
     carrierId: "security-benefit",
@@ -4442,7 +4157,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.securitybenefit.com/product/topridge-bonus-annuity",
     lastRateUpdate: "2026-02-27"
   },
-  // ── 69. American National Rate Certainty 7 ──
   {
     id: "american-national-rate-certainty-7",
     carrierId: "american-national",
@@ -4467,7 +4181,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.americannational.com/home/insurance/annuities",
     lastRateUpdate: "2026-02-27"
   },
-  // ── 70. American National Rate Certainty 10 ──
   {
     id: "american-national-rate-certainty-10",
     carrierId: "american-national",
@@ -4492,7 +4205,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.americannational.com/home/insurance/annuities",
     lastRateUpdate: "2026-02-27"
   },
-  // ── 71. Integrity Life Indextra 7 ──
   {
     id: "integrity-indextra-7",
     carrierId: "integrity-life",
@@ -4523,8 +4235,6 @@ export const fiaProducts = [
     sourceUrl: "https://www.westernsouthern.com/distributors/products/annuities/indexed-annuities",
     lastRateUpdate: "2026-02-27"
   },
-
-  // ── 72. Sagicor Sage Accumulator 5 ──
   {
     id: "sagicor-sage-accumulator-5",
     carrierId: "sagicor",
@@ -4550,8 +4260,6 @@ export const fiaProducts = [
     sourceUrl: "https://myannuitystore.com/annuity-rates/fixed-index-annuity-rates/",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 73. Sagicor Sage Accumulator 10 ──
   {
     id: "sagicor-sage-accumulator-10",
     carrierId: "sagicor",
@@ -4578,8 +4286,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/sagicor-life-insurance-company/fixed-index/sage-accumulator-10-fia",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 74. Corebridge Power 5 Protector ──
   {
     id: "corebridge-power-5-protector",
     carrierId: "corebridge-financial",
@@ -4608,8 +4314,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-5-protector",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 75. Corebridge Power 10 Protector Plus Income ──
   {
     id: "corebridge-power-10-protector-plus-income",
     carrierId: "corebridge-financial",
@@ -4638,8 +4342,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-10-protector-plus-income",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 76. Ibexis FIA Plus 10 ──
   {
     id: "ibexis-fia-plus-10",
     carrierId: "ibexis",
@@ -4668,8 +4370,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/ibexis-life-annuity-insurance-company/fixed-index/fia-plus-10",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 77. Ibexis WealthDefender 10 ──
   {
     id: "ibexis-wealthdefender-10",
     carrierId: "ibexis",
@@ -4696,8 +4396,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/ibexis-life-annuity-insurance-company/fixed-index/wealthdefender-10",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 78. Symetra Edge Elite 7 ──
   {
     id: "symetra-edge-elite-7",
     carrierId: "symetra",
@@ -4731,8 +4429,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/symetra-life-insurance-company/fixed-index/symetra-edge-elite-7",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 79. GILICO WealthChoice 10 ──
   {
     id: "gilico-wealthchoice-10",
     carrierId: "gilico",
@@ -4761,8 +4457,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/guaranty-income-life-insurance-company/fixed-index/wealthchoice-10-1",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 80. Delaware Life Peak 10 ──
   {
     id: "delaware-life-peak-10",
     carrierId: "delaware-life",
@@ -4788,8 +4482,6 @@ export const fiaProducts = [
     sourceUrl: "https://myannuitystore.com/annuity-rates/fixed-index-annuity-rates/",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 81. Nassau Personal Income Annuity 10 ──
   {
     id: "nassau-personal-income-annuity-10",
     carrierId: "nassau-life",
@@ -4817,8 +4509,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityrateshq.com/annuity-reviews/nassau-personal-income-indexed-annuity-review",
     lastRateUpdate: "2026-02-28"
   },
-
-  // ── 83. EquiTrust MarketSeven Index ──
   {
     id: "equitrust-marketseven-index",
     carrierId: "equitrust",
@@ -4851,8 +4541,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/equitrust-life-insurance-company/fixed-index/marketseven-index",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 84. EquiTrust MarketValue Index ──
   {
     id: "equitrust-marketvalue-index",
     carrierId: "equitrust",
@@ -4885,8 +4573,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/equitrust-life-insurance-company/fixed-index/marketvalue-index",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 85. EquiTrust MarketPower Bonus Index ──
   {
     id: "equitrust-marketpower-bonus-index",
     carrierId: "equitrust",
@@ -4919,8 +4605,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/equitrust-life-insurance-company/fixed-index/marketpower-bonus-index",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 86. Midland National RetireVantage 10 ──
   {
     id: "midland-national-retirevantage-10",
     carrierId: "midland-national",
@@ -4952,8 +4636,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/midland-national-life-insurance-company/fixed-index/mnl-retirevantage-10",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 87. Midland National IncomeVantage Pro ──
   {
     id: "midland-national-incomevantage-pro",
     carrierId: "midland-national",
@@ -4985,8 +4667,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/midland-national-life-insurance-company/fixed-index/mnl-incomevantage-pro",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 88. Athene Agility 7 ──
   {
     id: "athene-agility-7",
     carrierId: "athene",
@@ -5021,8 +4701,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/athene-annuity-and-life-company/fixed-index/athene-agility-7",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 89. American Equity AssetShield 7 ──
   {
     id: "american-equity-assetshield-7",
     carrierId: "american-equity",
@@ -5056,8 +4734,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/american-equity-investment-life-insurance-company/fixed-index/assetshield-7",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 90. Global Atlantic ForeAccumulation II 10 (Premium Enhancement) ──
   {
     id: "global-atlantic-foreaccumulation-ii-pe",
     carrierId: "global-atlantic",
@@ -5091,8 +4767,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/global-atlantic-financial-group/fixed-index/foreaccumulation-ii-10-with-premium-enhancement",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 91. Security Benefit Strategic Growth Annuity ──
   {
     id: "security-benefit-strategic-growth",
     carrierId: "security-benefit",
@@ -5126,8 +4800,6 @@ export const fiaProducts = [
     sourceUrl: "https://annuityeducator.com/reviews/security-benefit-life-insurance-company/fixed-index/strategic-growth-annuity",
     lastRateUpdate: "2026-03-01"
   },
-
-  // ── 92. Corebridge Power 10 Protector ──
   {
     id: "corebridge-power-10-protector",
     carrierId: "corebridge-financial",

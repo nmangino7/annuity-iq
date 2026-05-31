@@ -20,7 +20,7 @@ export function calcAnnualIncome(benefitBase, withdrawalRate) {
  * Get withdrawal rate for a given age from the withdrawal schedule
  */
 export function getWithdrawalRate(rates, age) {
-  if (age >= 80) return rates['80+'] || rates['80+'] || 0;
+  if (age >= 80) return rates['80+'] || 0;
   if (age >= 75) return rates['75-79'] || 0;
   if (age >= 70) return rates['70-74'] || 0;
   if (age >= 65) return rates['65-69'] || 0;

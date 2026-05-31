@@ -43,6 +43,29 @@ export function getSubaccounts() { return subaccounts; }
 export function getBenchmarks() { return benchmarks; }
 export function getHistorical() { return historicalRates; }
 
+// Aggregate data-trust stats for freshness/verification indicators in the UI.
+export function getDataStats() {
+  const products = [...fiaProducts, ...iulProducts, ...rilaProducts, ...vaProducts, ...vulProducts, ...glwbRiders];
+  const dates = [];
+  let verified = 0, partial = 0;
+  for (const p of products) {
+    if (p.ratesVerified === true) verified++;
+    else if (p.ratesVerified === 'partial') partial++;
+    if (p.lastVerifiedDate) dates.push(p.lastVerifiedDate);
+  }
+  for (const s of subaccounts) if (s.lastVerifiedDate) dates.push(s.lastVerifiedDate);
+  for (const c of carriers) if (c.lastVerifiedDate) dates.push(c.lastVerifiedDate);
+  dates.sort();
+  return {
+    totalProducts: products.length,
+    verifiedProducts: verified,
+    partialProducts: partial,
+    totalFunds: subaccounts.length,
+    totalCarriers: carriers.length,
+    latestVerifiedDate: dates.length ? dates[dates.length - 1] : null,
+  };
+}
+
 export function getProduct(id) {
   const fia = fiaProducts.find(p => p.id === id);
   if (fia) return { ...fia, type: 'fia', carrier: carrierMap.get(fia.carrierId) };
@@ -70,58 +93,5 @@ export function getCarrierProducts(carrierId) {
   };
 }
 
-export function searchAll(query) {
-  if (!query || query.length < 2) return [];
-  const q = query.toLowerCase();
-  const results = [];
-
-  carriers.forEach(c => {
-    if (c.name.toLowerCase().includes(q) || c.shortName.toLowerCase().includes(q)) {
-      results.push({ id: c.id, name: c.shortName, type: 'carrier', route: `/carriers/${c.id}` });
-    }
-  });
-
-  fiaProducts.forEach(p => {
-    if (p.name.toLowerCase().includes(q) || (carrierMap.get(p.carrierId)?.shortName || '').toLowerCase().includes(q)) {
-      results.push({ id: p.id, name: `${carrierMap.get(p.carrierId)?.shortName || ''} ${p.name}`, type: 'fia', route: `/fia/${p.id}` });
-    }
-  });
-
-  glwbRiders.forEach(r => {
-    if (r.name.toLowerCase().includes(q) || (carrierMap.get(r.carrierId)?.shortName || '').toLowerCase().includes(q)) {
-      results.push({ id: r.id, name: `${carrierMap.get(r.carrierId)?.shortName || ''} ${r.name}`, type: 'glwb', route: `/glwb/${r.id}` });
-    }
-  });
-
-  iulProducts.forEach(p => {
-    if (p.name.toLowerCase().includes(q) || (carrierMap.get(p.carrierId)?.shortName || '').toLowerCase().includes(q)) {
-      results.push({ id: p.id, name: `${carrierMap.get(p.carrierId)?.shortName || ''} ${p.name}`, type: 'iul', route: `/iul/${p.id}` });
-    }
-  });
-
-  rilaProducts.forEach(p => {
-    if (p.name.toLowerCase().includes(q) || (carrierMap.get(p.carrierId)?.shortName || '').toLowerCase().includes(q)) {
-      results.push({ id: p.id, name: `${carrierMap.get(p.carrierId)?.shortName || ''} ${p.name}`, type: 'rila', route: `/rila/${p.id}` });
-    }
-  });
-
-  vaProducts.forEach(p => {
-    if (p.name.toLowerCase().includes(q) || (carrierMap.get(p.carrierId)?.shortName || '').toLowerCase().includes(q)) {
-      results.push({ id: p.id, name: `${carrierMap.get(p.carrierId)?.shortName || ''} ${p.name}`, type: 'va', route: `/va/${p.id}` });
-    }
-  });
-
-  vulProducts.forEach(p => {
-    if (p.name.toLowerCase().includes(q) || (carrierMap.get(p.carrierId)?.shortName || '').toLowerCase().includes(q)) {
-      results.push({ id: p.id, name: `${carrierMap.get(p.carrierId)?.shortName || ''} ${p.name}`, type: 'vul', route: `/vul/${p.id}` });
-    }
-  });
-
-  subaccounts.forEach(s => {
-    if (s.name.toLowerCase().includes(q) || s.manager.toLowerCase().includes(q) || (s.ticker || '').toLowerCase().includes(q)) {
-      results.push({ id: s.id, name: `${s.name}`, type: 'fund', route: `/funds/${s.id}` });
-    }
-  });
-
-  return results.slice(0, 30);
-}
+// Ranked, fuzzy, multi-field search lives in ./search.js (re-exported for back-compat).
+export { searchAll, searchGrouped, typeLabels, typeColors } from './search.js';

@@ -30,7 +30,7 @@ export function renderProductDetail(id, type) {
         </div>
         <div class="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-4">
           <p class="text-xs text-slate-500 uppercase">Surrender Period</p>
-          <p class="text-2xl font-bold font-mono mt-1">${product.surrenderPeriod} years</p>
+          <p class="text-2xl font-bold font-mono mt-1">${product.surrenderPeriod != null ? product.surrenderPeriod + ' years' : 'N/A'}</p>
         </div>
         <div class="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-4">
           <p class="text-xs text-slate-500 uppercase">Premium Bonus</p>
@@ -52,7 +52,7 @@ export function renderProductDetail(id, type) {
               <th class="text-right px-4 py-2.5 font-medium text-slate-500">Floor</th>
             </tr></thead>
             <tbody>
-              ${product.indexStrategies.map(s => `
+              ${(product.indexStrategies || []).map(s => `
                 <tr class="border-t border-slate-100 dark:border-slate-700">
                   <td class="px-4 py-2.5 font-medium">${s.indexName}</td>
                   <td class="px-4 py-2.5 text-slate-500">${s.creditingMethod}</td>
@@ -85,13 +85,13 @@ export function renderProductDetail(id, type) {
       <div class="mt-6 grid grid-cols-2 gap-4">
         <div class="space-y-2 text-sm">
           <div class="flex justify-between"><span class="text-slate-500">Minimum Premium</span><span class="font-mono">${currency(product.minimumPremium)}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Max Issue Age</span><span class="font-mono">${product.maximumIssueAge}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Max Issue Age</span><span class="font-mono">${product.maximumIssueAge ?? 'N/A'}</span></div>
           <div class="flex justify-between"><span class="text-slate-500">Guaranteed Minimum</span><span class="font-mono">${pct(product.guaranteedMinimumRate)}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Free Withdrawal</span><span class="font-mono">${product.freeWithdrawalPercent}%</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Free Withdrawal</span><span class="font-mono">${product.freeWithdrawalPercent != null ? product.freeWithdrawalPercent + '%' : 'N/A'}</span></div>
         </div>
         <div class="space-y-2 text-sm">
-          <div class="flex justify-between"><span class="text-slate-500">Income Rider</span><span>${product.incomeRiderAvailable ? '<span class="text-emerald-600 font-medium">Available</span>' : 'Not Available'}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Last Rate Update</span><span class="font-mono text-xs">${product.lastRateUpdate}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Income Rider</span><span>${product.incomeRiderAvailable == null ? 'N/A' : (product.incomeRiderAvailable ? '<span class="text-emerald-600 font-medium">Available</span>' : 'Not Available')}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Last Rate Update</span><span class="font-mono text-xs">${product.lastRateUpdate || 'N/A'}</span></div>
         </div>
       </div>
     `;
@@ -150,8 +150,8 @@ export function renderProductDetail(id, type) {
         </div>
         <div class="space-y-2">
           <div class="flex justify-between"><span class="text-slate-500">Nursing Home</span><span>${product.nursingHomeBenefit ? '<span class="text-emerald-600 font-medium">' + product.nursingHomeMultiplier + 'x Doubler</span>' : 'No'}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Max Issue Age</span><span class="font-mono">${product.maximumIssueAge}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Last Update</span><span class="font-mono text-xs">${product.lastRateUpdate}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Max Issue Age</span><span class="font-mono">${product.maximumIssueAge ?? 'N/A'}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Last Update</span><span class="font-mono text-xs">${product.lastRateUpdate || 'N/A'}</span></div>
         </div>
       </div>
     `;
@@ -194,7 +194,7 @@ export function renderProductDetail(id, type) {
               <th class="text-center px-4 py-2.5 font-medium text-slate-500">Multiplier</th>
             </tr></thead>
             <tbody>
-              ${product.indexAccounts.map(a => `
+              ${(product.indexAccounts || []).map(a => `
                 <tr class="border-t border-slate-100 dark:border-slate-700">
                   <td class="px-4 py-2.5 font-medium">${a.indexName}</td>
                   <td class="px-4 py-2.5 text-slate-500">${a.creditingMethod}</td>
@@ -220,8 +220,8 @@ export function renderProductDetail(id, type) {
         <div class="space-y-2">
           <div class="flex justify-between"><span class="text-slate-500">Death Benefit</span><span>${(product.deathBenefitOptions || []).join(', ')}</span></div>
           <div class="flex justify-between"><span class="text-slate-500">Riders</span><span class="text-xs">${(product.riders || []).join(', ')}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Max Issue Age</span><span class="font-mono">${product.maximumIssueAge}</span></div>
-          <div class="flex justify-between"><span class="text-slate-500">Last Update</span><span class="font-mono text-xs">${product.lastRateUpdate}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Max Issue Age</span><span class="font-mono">${product.maximumIssueAge ?? 'N/A'}</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">Last Update</span><span class="font-mono text-xs">${product.lastRateUpdate || 'N/A'}</span></div>
         </div>
       </div>
     `;

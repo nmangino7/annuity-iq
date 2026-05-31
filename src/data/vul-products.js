@@ -2437,6 +2437,7 @@ export const vulProducts = [
   // ── Product 48 ──────────────────────────────────────────────────────────
   {
     id: 'equitable-vul-optimizer',
+    carrierId: 'equitable',
     name: 'Equitable VUL Optimizer',
     carrier: 'equitable',
     ratesVerified: true,
@@ -2474,6 +2475,7 @@ export const vulProducts = [
   // ── Product 49 ──────────────────────────────────────────────────────────
   {
     id: 'prudential-vul-protector-2018',
+    carrierId: 'prudential',
     name: 'PruLife VUL Protector (2018)',
     carrier: 'prudential',
     ratesVerified: true,
@@ -2508,6 +2510,7 @@ export const vulProducts = [
   // ── Product 50 ──────────────────────────────────────────────────────────
   {
     id: 'nyliac-corpexec-vul-ii',
+    carrierId: 'new-york-life',
     name: 'NYLIAC CorpExec VUL II',
     carrier: 'new-york-life',
     ratesVerified: true,
