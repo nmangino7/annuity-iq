@@ -244,7 +244,7 @@
         <span class="sidebar-text">Shortcuts <kbd class="px-1 py-0.5 bg-slate-200 dark:bg-slate-600 rounded text-[9px] font-mono ml-auto">?</kbd></span>
       </button>
       <div class="mt-1 px-3">
-        <p class="sidebar-text text-xs text-slate-400 dark:text-slate-500">Data as of Feb 2026</p>
+        <p id="sidebar-data-date" class="sidebar-text text-xs text-slate-400 dark:text-slate-500">Data as of Feb 2026</p>
       </div>
     </div>
   </aside>
@@ -270,6 +270,7 @@
 
       <!-- Right side: user menu -->
       <div class="flex items-center gap-3">
+        <span id="freshness-chip"></span>
         <span class="hidden sm:inline text-xs text-slate-400 dark:text-slate-500 font-mono">v2.0</span>
         <div id="user-menu" class="hidden">
           <div class="relative">

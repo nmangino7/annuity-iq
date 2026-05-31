@@ -1,5 +1,6 @@
-import { getFIAProducts, getGLWBRiders, getIULProducts, getRILAProducts, getVAProducts, getVULProducts, getSubaccounts, getCarriers, getHistorical } from '../data/index.js';
-import { pct, ratingBadge, currency, getTopRate, getTopParticipation } from '../utils/formatters.js';
+import { getFIAProducts, getGLWBRiders, getIULProducts, getRILAProducts, getVAProducts, getVULProducts, getSubaccounts, getCarriers, getHistorical, getDataStats } from '../data/index.js';
+import { pct, ratingBadge, currency, getTopRate, getTopParticipation, monthYear } from '../utils/formatters.js';
+import { dataIntegrityPanel } from '../components/ui.js';
 
 export function renderDashboard() {
   const fias = getFIAProducts();
@@ -11,6 +12,7 @@ export function renderDashboard() {
   const funds = getSubaccounts();
   const carriers = getCarriers();
   const historical = getHistorical();
+  const stats = getDataStats();
 
   // Compute stats (filter for annual strategies only to avoid multi-year caps skewing results).
   // Null-safe: new records may omit rate arrays entirely, and Math.max() of [] is -Infinity,
@@ -82,6 +84,9 @@ export function renderDashboard() {
           <p class="text-xs text-slate-400 mt-1">${carriers.length} carriers &bull; ${funds.length} funds</p>
         </div>
       </div>
+
+      <!-- Data Integrity -->
+      ${dataIntegrityPanel(stats)}
 
       <!-- Category Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -385,7 +390,7 @@ export function renderDashboard() {
       <!-- Disclaimer -->
       <div class="text-xs text-slate-400 dark:text-slate-500 text-center py-4">
         For informational purposes only. Not a solicitation or recommendation. Verify all rates directly with carriers before making decisions.
-        <br>Data as of February 2026. Rates are subject to change.
+        <br>Data verified through ${monthYear(stats.latestVerifiedDate)}. Rates are subject to change.
       </div>
     </div>
   `;

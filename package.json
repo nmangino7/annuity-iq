@@ -10,7 +10,8 @@
     "seed": "node scripts/seed-supabase.js",
     "validate:data": "node scripts/validate-data.mjs",
     "test": "node --test",
-    "check": "npm run validate:data && npm test && npm run build"
+    "smoke": "node scripts/smoke.mjs",
+    "check": "npm run validate:data && npm test && npm run smoke && npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1"

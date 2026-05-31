@@ -6,7 +6,9 @@ import { state, setTheme, toggleTheme, setUser, setProfile, addToCompare, remove
 import { registerRoute, initRouter, navigate } from './router.js';
 
 // Data layer — static for local dev, swap to lib/api.js when Supabase is configured
-import { searchAll, typeLabels, typeColors } from './data/index.js';
+import { searchAll, typeLabels, typeColors, getDataStats } from './data/index.js';
+import { freshnessChip } from './components/ui.js';
+import { monthYear } from './utils/formatters.js';
 
 // Auth & Stripe (these self-register on window.__supabaseAuth / window.__stripe)
 // Only load when env vars are present
@@ -375,6 +377,13 @@ if (!hasSupabase) {
   state.user = { id: 'local', email: 'local@dev', user_metadata: { full_name: 'Local Dev' } };
   state.subscriptionStatus = 'active';
 }
+
+// Data freshness / verification indicators (driven by the actual data, not a hardcoded string)
+const dataStats = getDataStats();
+const chipEl = document.getElementById('freshness-chip');
+if (chipEl) chipEl.innerHTML = freshnessChip(dataStats);
+const dateEl = document.getElementById('sidebar-data-date');
+if (dateEl && dataStats.latestVerifiedDate) dateEl.textContent = `Data verified through ${monthYear(dataStats.latestVerifiedDate)}`;
 
 updateCompareBar();
 initRouter();

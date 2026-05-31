@@ -43,6 +43,29 @@ export function getSubaccounts() { return subaccounts; }
 export function getBenchmarks() { return benchmarks; }
 export function getHistorical() { return historicalRates; }
 
+// Aggregate data-trust stats for freshness/verification indicators in the UI.
+export function getDataStats() {
+  const products = [...fiaProducts, ...iulProducts, ...rilaProducts, ...vaProducts, ...vulProducts, ...glwbRiders];
+  const dates = [];
+  let verified = 0, partial = 0;
+  for (const p of products) {
+    if (p.ratesVerified === true) verified++;
+    else if (p.ratesVerified === 'partial') partial++;
+    if (p.lastVerifiedDate) dates.push(p.lastVerifiedDate);
+  }
+  for (const s of subaccounts) if (s.lastVerifiedDate) dates.push(s.lastVerifiedDate);
+  for (const c of carriers) if (c.lastVerifiedDate) dates.push(c.lastVerifiedDate);
+  dates.sort();
+  return {
+    totalProducts: products.length,
+    verifiedProducts: verified,
+    partialProducts: partial,
+    totalFunds: subaccounts.length,
+    totalCarriers: carriers.length,
+    latestVerifiedDate: dates.length ? dates[dates.length - 1] : null,
+  };
+}
+
 export function getProduct(id) {
   const fia = fiaProducts.find(p => p.id === id);
   if (fia) return { ...fia, type: 'fia', carrier: carrierMap.get(fia.carrierId) };
