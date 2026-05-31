@@ -391,7 +391,7 @@ export const glwbRiders = [
   },
   // 15
   {
-    id: "american-equity-incomeshield-10",
+    id: "american-equity-incomeshield-10-rider",
     carrierId: "american-equity",
     ratesVerified: false,
     lastVerifiedDate: "2026-02-27",
@@ -3494,7 +3494,7 @@ export const glwbRiders = [
   //   Nassau does not publish full ABA tables publicly — rates set as 'partial'
   {
     id: "nassau-amplified-income-plus",
-    carrierId: "nassau",
+    carrierId: "nassau-life",
     ratesVerified: "partial",
     lastVerifiedDate: "2026-02-28",
     name: "Amplified Income Plus",
@@ -3533,7 +3533,7 @@ export const glwbRiders = [
   //   income begins, providing potential income increases
   {
     id: "nassau-amplified-income-plus-rio",
-    carrierId: "nassau",
+    carrierId: "nassau-life",
     ratesVerified: "partial",
     lastVerifiedDate: "2026-02-28",
     name: "Amplified Income Plus with Rising Income Opportunity",
@@ -4096,7 +4096,7 @@ export const glwbRiders = [
   //   or deferred up to 20 years. Waiting each additional birthday increases
   //   payout by 10% for up to 10 years. No fixed rollup — growth is credit-based.
   {
-    id: "midland-national-incomevantage-pro",
+    id: "midland-national-incomevantage-pro-rider",
     carrierId: "midland-national",
     ratesVerified: true,
     lastVerifiedDate: "2026-03-01",

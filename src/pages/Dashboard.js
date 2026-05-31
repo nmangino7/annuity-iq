@@ -12,12 +12,12 @@ export function renderDashboard() {
   const carriers = getCarriers();
   const historical = getHistorical();
 
-  // Compute stats (filter for annual strategies only to avoid multi-year caps skewing results)
+  // Compute stats (filter for annual strategies only to avoid multi-year caps skewing results).
+  // Null-safe: new records may omit rate arrays entirely, and Math.max() of [] is -Infinity,
+  // so every spread is guarded with `|| []` and seeded with a trailing 0.
   const annualOnly = s => s.capRate && s.capRate <= 15;
-  const topFIACap = Math.max(...fias.flatMap(p => p.indexStrategies.filter(annualOnly).map(s => s.capRate)));
-  const topGLWBRollup = Math.max(...glwbs.map(r => r.rollUp.rate));
-  const topIULCap = Math.max(...iuls.flatMap(p => p.indexAccounts.filter(annualOnly).map(s => s.capRate)));
-  const topComdex = Math.max(...carriers.filter(c => c.ratings.comdex).map(c => c.ratings.comdex));
+  const topFIACap = Math.max(...fias.flatMap(p => (p.indexStrategies || []).filter(annualOnly).map(s => s.capRate)), 0);
+  const topGLWBRollup = Math.max(...glwbs.map(r => r.rollUp?.rate).filter(v => v != null), 0);
 
   // RILA stats
   const rilaTopCap = Math.max(...rilas.flatMap(p => (p.accountOptions || []).filter(o => o.capRate && o.capRate <= 30).map(o => o.capRate)), 0);
@@ -37,8 +37,9 @@ export function renderDashboard() {
     return bMax - aMax;
   }).slice(0, 10);
 
-  // Top GLWB by withdrawal rate at 65
-  const topGLWBs = [...glwbs].sort((a, b) => (b.withdrawalRates.single['65-69'] || 0) - (a.withdrawalRates.single['65-69'] || 0)).slice(0, 10);
+  // Top GLWB by withdrawal rate at 65 (null-safe access for riders without a full schedule)
+  const wd65 = r => r.withdrawalRates?.single?.['65-69'] || 0;
+  const topGLWBs = [...glwbs].filter(wd65).sort((a, b) => wd65(b) - wd65(a)).slice(0, 10);
 
   // Top IUL by cap rate
   const topIULs = [...iuls].sort((a, b) => {

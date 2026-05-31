@@ -52,7 +52,7 @@ export function renderProductDetail(id, type) {
               <th class="text-right px-4 py-2.5 font-medium text-slate-500">Floor</th>
             </tr></thead>
             <tbody>
-              ${product.indexStrategies.map(s => `
+              ${(product.indexStrategies || []).map(s => `
                 <tr class="border-t border-slate-100 dark:border-slate-700">
                   <td class="px-4 py-2.5 font-medium">${s.indexName}</td>
                   <td class="px-4 py-2.5 text-slate-500">${s.creditingMethod}</td>
@@ -194,7 +194,7 @@ export function renderProductDetail(id, type) {
               <th class="text-center px-4 py-2.5 font-medium text-slate-500">Multiplier</th>
             </tr></thead>
             <tbody>
-              ${product.indexAccounts.map(a => `
+              ${(product.indexAccounts || []).map(a => `
                 <tr class="border-t border-slate-100 dark:border-slate-700">
                   <td class="px-4 py-2.5 font-medium">${a.indexName}</td>
                   <td class="px-4 py-2.5 text-slate-500">${a.creditingMethod}</td>
