@@ -5159,5 +5159,123 @@ export const fiaProducts = [
     highlights: ["9.50% S&P 500 annual cap — among the highest in the industry", "AQR DynamiQ Allocation at 315% biennial enhanced participation (uncapped)", "ML Strategic Balanced at 140% enhanced participation (uncapped)", "4.30% fixed account rate", "Pure accumulation design backed by Corebridge Financial (A+ S&P rated)"],
     sourceUrl: "https://annuityeducator.com/reviews/american-general-life-insurance-company/fixed-index/power-10-protector",
     lastRateUpdate: "2026-03-01"
+  },
+  // ── Verified additions (structural only; rates not publicly verifiable) ──
+  {
+    "id": "corebridge-power-select-builder",
+    "carrierId": "corebridge-financial",
+    "ratesVerified": false,
+    "lastVerifiedDate": "2026-05-31",
+    "verificationSource": "Carrier product page — structural terms only; current cap/participation rates not publicly verified",
+    "name": "Corebridge Power Select Builder",
+    "surrenderPeriod": 10,
+    "freeWithdrawalPercent": 10,
+    "incomeRiderAvailable": false,
+    "indexStrategies": [
+      {
+        "indexName": "S&P 500",
+        "creditingMethod": "Annual Point-to-Point",
+        "capRate": null,
+        "participationRate": null,
+        "spread": 0,
+        "floor": 0,
+        "isUncapped": false
+      }
+    ],
+    "highlights": [
+      "Currently marketed — confirm current rates with the carrier"
+    ],
+    "sourceUrl": "https://www.corebridgefinancial.com/what-we-offer/annuities/index-annuities",
+    "lastRateUpdate": null
+  },
+  {
+    "id": "corebridge-power-protector-10",
+    "carrierId": "corebridge-financial",
+    "ratesVerified": false,
+    "lastVerifiedDate": "2026-05-31",
+    "verificationSource": "Carrier product page — structural terms only; current cap/participation rates not publicly verified",
+    "name": "Corebridge Power Protector 10",
+    "surrenderPeriod": 10,
+    "freeWithdrawalPercent": 10,
+    "incomeRiderAvailable": true,
+    "indexStrategies": [
+      {
+        "indexName": "S&P 500",
+        "creditingMethod": "Annual Point-to-Point",
+        "capRate": null,
+        "participationRate": null,
+        "spread": 0,
+        "floor": 0,
+        "isUncapped": false
+      }
+    ],
+    "highlights": [
+      "Currently marketed — confirm current rates with the carrier"
+    ],
+    "sourceUrl": "https://www.corebridgefinancial.com/what-we-offer/annuities/index-annuities",
+    "lastRateUpdate": null
+  },
+  {
+    "id": "corebridge-power-index-5-plus",
+    "carrierId": "corebridge-financial",
+    "ratesVerified": false,
+    "lastVerifiedDate": "2026-05-31",
+    "verificationSource": "Carrier product page — structural terms only; current cap/participation rates not publicly verified",
+    "name": "Corebridge Power Index 5 Plus",
+    "surrenderPeriod": 5,
+    "freeWithdrawalPercent": 10,
+    "incomeRiderAvailable": true,
+    "indexStrategies": [
+      {
+        "indexName": "S&P 500",
+        "creditingMethod": "Annual Point-to-Point",
+        "capRate": null,
+        "participationRate": null,
+        "spread": 0,
+        "floor": 0,
+        "isUncapped": false
+      }
+    ],
+    "highlights": [
+      "Currently marketed — confirm current rates with the carrier"
+    ],
+    "sourceUrl": "https://www.corebridgefinancial.com/what-we-offer/annuities/index-annuities",
+    "lastRateUpdate": null
+  },
+  {
+    "id": "symetra-income-edge-fia",
+    "carrierId": "symetra",
+    "ratesVerified": false,
+    "lastVerifiedDate": "2026-05-31",
+    "verificationSource": "Carrier product page — structural terms only; current cap/participation rates not publicly verified",
+    "name": "Symetra Income Edge",
+    "surrenderPeriod": 7,
+    "freeWithdrawalPercent": 10,
+    "incomeRiderAvailable": true,
+    "indexStrategies": [
+      {
+        "indexName": "S&P 500",
+        "creditingMethod": "Annual Point-to-Point",
+        "capRate": null,
+        "participationRate": null,
+        "spread": 0,
+        "floor": 0,
+        "isUncapped": false
+      },
+      {
+        "indexName": "JPMorgan ETF Efficiente 5",
+        "creditingMethod": "Annual Point-to-Point",
+        "capRate": null,
+        "participationRate": null,
+        "spread": 0,
+        "floor": 0,
+        "isUncapped": false
+      }
+    ],
+    "highlights": [
+      "Currently marketed — confirm current rates with the carrier"
+    ],
+    "sourceUrl": "https://www.symetra.com/our-products/individuals/annuities/fixed-indexed/",
+    "lastRateUpdate": null
   }
 ];
