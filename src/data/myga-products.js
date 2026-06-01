@@ -1,0 +1,131 @@
+// =============================================================================
+// MYGA — Multi-Year Guaranteed Annuities. Fixed, CD-like annuities with a rate
+// locked for the full guarantee term. Carriers and AM Best ratings are verified
+// against carrier/AM Best sources. Declared rates reset frequently and are often
+// premium-banded and state-specific: a rate is marked `true` only where a single
+// current figure is confirmed from a dated public source, and `'partial'` where
+// only a range/market level is confirmed (see verificationNote). Confirm with the
+// carrier before use.
+// =============================================================================
+
+export const mygaProducts = [
+  {
+    id: 'aspida-synergy-choice-5',
+    carrierId: 'aspida',
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-06-01',
+    verificationNote: 'Premium-banded: published 5-yr rates range ~4.95%–5.25% by band/state; 5.10% used as a representative figure',
+    verificationSource: 'Aspida Synergy Choice 5 rate listings (annuityresources.com / myannuitystore.com), effective ~2026-03-24',
+    name: 'Aspida Synergy Choice 5',
+    termYears: 5,
+    guaranteedRate: 5.10,
+    minimumPremium: 5000,
+    maximumIssueAge: 90,
+    surrenderPeriod: 5,
+    surrenderSchedule: [9, 8, 7, 6, 5],
+    freeWithdrawalPercent: 10,
+    marketValueAdjustment: true,
+    rmdFriendly: true,
+    highlights: ['Rate locked for the full 5-year term', '10% annual free withdrawals after year 1'],
+    lastRateUpdate: '2026-03-24'
+  },
+  {
+    id: 'aspida-synergy-choice-3',
+    carrierId: 'aspida',
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-06-01',
+    verificationNote: 'Carrier/product confirmed; specific current 3-yr rate not individually confirmed — figure reflects the Aspida MYGA curve below its 5-yr point',
+    verificationSource: 'Aspida Synergy Choice product listing (myannuitystore.com / annuity.org), as of 2026-05',
+    name: 'Aspida Synergy Choice 3',
+    termYears: 3,
+    guaranteedRate: 4.80,
+    minimumPremium: 5000,
+    maximumIssueAge: 90,
+    surrenderPeriod: 3,
+    surrenderSchedule: [9, 8, 7],
+    freeWithdrawalPercent: 10,
+    marketValueAdjustment: true,
+    rmdFriendly: true,
+    highlights: ['Short 3-year guarantee', 'Market-value-adjusted'],
+    lastRateUpdate: '2026-05-01'
+  },
+  {
+    id: 'americo-platinum-assure-5',
+    carrierId: 'americo',
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-06-01',
+    verificationNote: 'Carrier, product and $25k minimum confirmed; 5-yr rate per annuityresources.com (listing date not firmly dated) — confirm current rate with carrier',
+    verificationSource: 'Americo Platinum Assure 5 listing (annuityresources.com); Americo Platinum Assure Series agent guide (americo.com)',
+    name: 'Platinum Assure 5',
+    termYears: 5,
+    guaranteedRate: 5.35,
+    minimumPremium: 25000,
+    maximumIssueAge: 90,
+    surrenderPeriod: 5,
+    surrenderSchedule: [9, 8, 7, 6, 5],
+    freeWithdrawalPercent: 10,
+    marketValueAdjustment: true,
+    rmdFriendly: true,
+    highlights: ['Penalty-free RMDs', 'Full account value available at end of term'],
+    lastRateUpdate: '2026-03-20'
+  },
+  {
+    id: 'fg-secure-myga-7',
+    carrierId: 'fandg',
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-06-01',
+    verificationNote: 'Carrier/product confirmed (F&G Secure MYGA MVA, 3/5/7-yr); specific 7-yr rate not individually confirmed — figure reflects the A-rated MYGA 7-yr market level (~5.0%–5.75%)',
+    verificationSource: 'F&G Secure MYGA MVA rate sheet & market range (immediateannuities.com / myannuitystore.com), as of 2026-05',
+    name: 'F&G Secure MYGA 7',
+    termYears: 7,
+    guaranteedRate: 5.40,
+    minimumPremium: 20000,
+    maximumIssueAge: 85,
+    surrenderPeriod: 7,
+    surrenderSchedule: [9, 8, 7, 6, 5, 4, 3],
+    freeWithdrawalPercent: 10,
+    marketValueAdjustment: true,
+    rmdFriendly: true,
+    highlights: ['Longest guarantee tier', '10% annual free-withdrawal provision'],
+    lastRateUpdate: '2026-05-01'
+  },
+  {
+    id: 'sentinel-personal-choice-5',
+    carrierId: 'sentinel-security-life',
+    ratesVerified: 'partial',
+    lastVerifiedDate: '2026-06-01',
+    verificationNote: 'Sources disagree: My Annuity Store shows 6.25% (eff. 2026-04-11) while some aggregators show lower; 6.25% used but confirm with carrier. $2,500 minimum confirmed',
+    verificationSource: 'Sentinel Personal Choice Annuity 5 listing (myannuitystore.com), effective 2026-04-11',
+    name: 'Personal Choice Annuity 5',
+    termYears: 5,
+    guaranteedRate: 6.25,
+    minimumPremium: 2500,
+    maximumIssueAge: 90,
+    surrenderPeriod: 5,
+    surrenderSchedule: [10, 9, 8, 7, 6],
+    freeWithdrawalPercent: 10,
+    marketValueAdjustment: true,
+    rmdFriendly: true,
+    highlights: ['Low $2,500 minimum', 'Competitive 5-year rate'],
+    lastRateUpdate: '2026-04-11'
+  },
+  {
+    id: 'americo-platinum-assure-3',
+    carrierId: 'americo',
+    ratesVerified: true,
+    lastVerifiedDate: '2026-06-01',
+    verificationSource: 'Americo Platinum Assure 3 — 4.45% current annual yield, effective 2026-03-20 (annuityadvantage.com)',
+    name: 'Platinum Assure 3',
+    termYears: 3,
+    guaranteedRate: 4.45,
+    minimumPremium: 25000,
+    maximumIssueAge: 90,
+    surrenderPeriod: 3,
+    surrenderSchedule: [9, 8, 7],
+    freeWithdrawalPercent: 10,
+    marketValueAdjustment: true,
+    rmdFriendly: true,
+    highlights: ['Short commitment', 'Penalty-free RMDs'],
+    lastRateUpdate: '2026-03-20'
+  }
+];

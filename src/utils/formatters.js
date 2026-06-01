@@ -64,24 +64,32 @@ export function benchmarkGauge(value, min, max, label = '') {
     </div>`;
 }
 
+// Products use `ratesVerified`, bonds `yieldVerified`, funds `returnsVerified` —
+// one accessor so the verify badge/banner render consistently for all of them.
+function verifiedFlag(product) {
+  return product.ratesVerified ?? product.yieldVerified ?? product.returnsVerified;
+}
+
 export function verifyBadge(product) {
-  if (product.ratesVerified === true) {
-    return ' <span title="Rates verified from carrier source" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-semibold rounded-full align-middle">Verified</span>';
+  const flag = verifiedFlag(product);
+  if (flag === true) {
+    return ' <span title="Confirmed from a cited source" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-semibold rounded-full align-middle">Verified</span>';
   }
-  if (product.ratesVerified === 'partial') {
-    return ` <span title="${product.verificationNote || 'Key rates partially verified'}" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400 text-[10px] font-semibold rounded-full align-middle">Partial</span>`;
+  if (flag === 'partial') {
+    return ` <span title="${product.verificationNote || 'Key figures partially verified'}" class="inline-flex items-center ml-1 px-1.5 py-0.5 bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400 text-[10px] font-semibold rounded-full align-middle">Partial</span>`;
   }
   return '';
 }
 
 export function verifyBanner(product) {
-  if (product.ratesVerified === true) {
+  const flag = verifiedFlag(product);
+  if (flag === true) {
     return `<div class="flex items-center gap-2 px-3 py-2 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-lg">
       <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      <span class="text-sm text-emerald-700 dark:text-emerald-300"><strong>Verified</strong> &mdash; Rates confirmed from carrier source on ${product.lastVerifiedDate || 'N/A'}</span>
+      <span class="text-sm text-emerald-700 dark:text-emerald-300"><strong>Verified</strong> &mdash; Confirmed from a cited source on ${product.lastVerifiedDate || 'N/A'}</span>
     </div>`;
   }
-  if (product.ratesVerified === 'partial') {
+  if (flag === 'partial') {
     return `<div class="flex items-center gap-2 px-3 py-2 bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 rounded-lg">
       <svg class="w-4 h-4 text-sky-600 dark:text-sky-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       <span class="text-sm text-sky-700 dark:text-sky-300"><strong>Partially Verified</strong> &mdash; ${product.verificationNote || 'Key rates confirmed'} (${product.lastVerifiedDate || 'N/A'})</span>

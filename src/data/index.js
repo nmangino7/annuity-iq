@@ -5,6 +5,9 @@ import { iulProducts } from './iul-products.js';
 import { rilaProducts } from './rila-products.js';
 import { vaProducts } from './va-products.js';
 import { vulProducts } from './vul-products.js';
+import { mygaProducts } from './myga-products.js';
+import { corporateBonds } from './corporate-bonds.js';
+import { municipalBonds } from './municipal-bonds.js';
 import { subaccounts } from './subaccounts.js';
 import { benchmarks } from './benchmarks.js';
 import { historicalRates } from './historical.js';
@@ -38,6 +41,19 @@ export function getVULProducts() {
   return vulProducts.map(p => ({ ...p, carrier: carrierMap.get(p.carrierId) }));
 }
 
+export function getMYGAProducts() {
+  return mygaProducts.map(p => ({ ...p, carrier: carrierMap.get(p.carrierId) }));
+}
+
+export function getCorporateBonds() { return corporateBonds.map(b => ({ ...b, bondType: 'corp' })); }
+export function getMunicipalBonds() { return municipalBonds.map(b => ({ ...b, bondType: 'muni' })); }
+
+// Combined feed for the Bond Yields explorer. Bonds are benchmark yields, not
+// carrier products, so there's no carrier join.
+export function getBonds() {
+  return [...getCorporateBonds(), ...getMunicipalBonds()];
+}
+
 export function getSubaccounts() { return subaccounts; }
 
 export function getBenchmarks() { return benchmarks; }
@@ -45,12 +61,15 @@ export function getHistorical() { return historicalRates; }
 
 // Aggregate data-trust stats for freshness/verification indicators in the UI.
 export function getDataStats() {
-  const products = [...fiaProducts, ...iulProducts, ...rilaProducts, ...vaProducts, ...vulProducts, ...glwbRiders];
+  const products = [...fiaProducts, ...iulProducts, ...rilaProducts, ...vaProducts, ...vulProducts, ...glwbRiders, ...mygaProducts];
+  const bonds = [...corporateBonds, ...municipalBonds];
   const dates = [];
   let verified = 0, partial = 0;
-  for (const p of products) {
-    if (p.ratesVerified === true) verified++;
-    else if (p.ratesVerified === 'partial') partial++;
+  // Products use `ratesVerified`; bonds use `yieldVerified` — count both flavors.
+  for (const p of [...products, ...bonds]) {
+    const flag = p.ratesVerified ?? p.yieldVerified;
+    if (flag === true) verified++;
+    else if (flag === 'partial') partial++;
     if (p.lastVerifiedDate) dates.push(p.lastVerifiedDate);
   }
   for (const s of subaccounts) if (s.lastVerifiedDate) dates.push(s.lastVerifiedDate);
@@ -60,6 +79,7 @@ export function getDataStats() {
     totalProducts: products.length,
     verifiedProducts: verified,
     partialProducts: partial,
+    totalBonds: bonds.length,
     totalFunds: subaccounts.length,
     totalCarriers: carriers.length,
     latestVerifiedDate: dates.length ? dates[dates.length - 1] : null,
@@ -79,6 +99,12 @@ export function getProduct(id) {
   if (va) return { ...va, type: 'va', carrier: carrierMap.get(va.carrierId) };
   const vul = vulProducts.find(p => p.id === id);
   if (vul) return { ...vul, type: 'vul', carrier: carrierMap.get(vul.carrierId) };
+  const myga = mygaProducts.find(p => p.id === id);
+  if (myga) return { ...myga, type: 'myga', carrier: carrierMap.get(myga.carrierId) };
+  const corp = corporateBonds.find(b => b.id === id);
+  if (corp) return { ...corp, type: 'corp', bondType: 'corp' };
+  const muni = municipalBonds.find(b => b.id === id);
+  if (muni) return { ...muni, type: 'muni', bondType: 'muni' };
   return null;
 }
 
@@ -89,7 +115,8 @@ export function getCarrierProducts(carrierId) {
     iul: iulProducts.filter(p => p.carrierId === carrierId).map(p => ({ ...p, type: 'iul', carrier: carrierMap.get(p.carrierId) })),
     rila: rilaProducts.filter(p => p.carrierId === carrierId).map(p => ({ ...p, type: 'rila', carrier: carrierMap.get(p.carrierId) })),
     va: vaProducts.filter(p => p.carrierId === carrierId).map(p => ({ ...p, type: 'va', carrier: carrierMap.get(p.carrierId) })),
-    vul: vulProducts.filter(p => p.carrierId === carrierId).map(p => ({ ...p, type: 'vul', carrier: carrierMap.get(p.carrierId) }))
+    vul: vulProducts.filter(p => p.carrierId === carrierId).map(p => ({ ...p, type: 'vul', carrier: carrierMap.get(p.carrierId) })),
+    myga: mygaProducts.filter(p => p.carrierId === carrierId).map(p => ({ ...p, type: 'myga', carrier: carrierMap.get(p.carrierId) }))
   };
 }
 

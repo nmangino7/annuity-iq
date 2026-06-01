@@ -6,7 +6,7 @@ export function renderCarrierProfile(id) {
   if (!carrier) return `<div class="text-center py-20"><p class="text-xl">Carrier not found</p><a href="#/carriers" class="text-blue-600 hover:underline mt-4 inline-block">Back to Directory</a></div>`;
 
   const products = getCarrierProducts(id);
-  const totalProducts = products.fia.length + products.glwb.length + products.iul.length + (products.rila?.length || 0) + (products.va?.length || 0) + (products.vul?.length || 0);
+  const totalProducts = products.fia.length + products.glwb.length + products.iul.length + (products.rila?.length || 0) + (products.va?.length || 0) + (products.vul?.length || 0) + (products.myga?.length || 0);
 
   return `
     <div class="space-y-6 max-w-5xl">
@@ -165,6 +165,24 @@ export function renderCarrierProfile(id) {
               </div>
               <div class="flex items-center gap-4 text-sm">
                 <span class="font-mono text-teal-600 dark:text-teal-400">${p.subaccountCount || 0} funds</span>
+                <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </a>
+          `).join('')}
+        ` : ''}
+
+        ${(products.myga?.length || 0) > 0 ? `
+          <div class="px-5 py-3 bg-cyan-50/50 dark:bg-cyan-900/10 border-b border-slate-200 dark:border-slate-700">
+            <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase">Multi-Year Guarantees — MYGA (${products.myga.length})</span>
+          </div>
+          ${products.myga.map(p => `
+            <a href="#/myga/${p.id}" class="flex items-center justify-between px-5 py-3 border-b border-slate-100 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+              <div>
+                <span class="font-medium text-sm">${p.name}</span>
+                ${p.termYears ? `<span class="text-xs text-slate-400 ml-2">${p.termYears}yr term</span>` : ''}
+              </div>
+              <div class="flex items-center gap-4 text-sm">
+                <span class="font-mono text-cyan-600 dark:text-cyan-400">${p.guaranteedRate != null ? pct(p.guaranteedRate) : 'N/A'}</span>
                 <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </div>
             </a>

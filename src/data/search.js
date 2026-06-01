@@ -20,9 +20,12 @@ import { iulProducts } from './iul-products.js';
 import { rilaProducts } from './rila-products.js';
 import { vaProducts } from './va-products.js';
 import { vulProducts } from './vul-products.js';
+import { mygaProducts } from './myga-products.js';
+import { corporateBonds } from './corporate-bonds.js';
+import { municipalBonds } from './municipal-bonds.js';
 import { subaccounts } from './subaccounts.js';
 
-export const typeLabels = { carrier: 'Carrier', fia: 'FIA', glwb: 'GLWB', iul: 'IUL', rila: 'RILA', va: 'VA', vul: 'VUL', fund: 'Fund' };
+export const typeLabels = { carrier: 'Carrier', fia: 'FIA', glwb: 'GLWB', iul: 'IUL', rila: 'RILA', va: 'VA', vul: 'VUL', myga: 'MYGA', corp: 'Corp Bond', muni: 'Muni Bond', fund: 'Fund' };
 export const typeColors = {
   carrier: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300',
   fia: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
@@ -31,6 +34,9 @@ export const typeColors = {
   rila: 'bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300',
   va: 'bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-300',
   vul: 'bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-300',
+  myga: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-300',
+  corp: 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300',
+  muni: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300',
   fund: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300',
 };
 
@@ -57,6 +63,7 @@ function buildIndex() {
     const fields = [];
     addField(fields, 'name', p.name);
     addField(fields, 'carrier', carrierShort);
+    addField(fields, 'category', p.category); // bonds: rating tier / category text (no-op when absent)
     // Avoid redundant prefixes like "Allianz Life Allianz 222+" when the product
     // name already leads with the carrier's first word.
     const firstWord = carrierShort.split(' ')[0].toLowerCase();
@@ -64,7 +71,7 @@ function buildIndex() {
     entries.push({
       id: p.id, type, route: `${routePrefix}/${p.id}`,
       name: display,
-      verified: p.ratesVerified === true,
+      verified: p.ratesVerified === true || p.yieldVerified === true,
       fields,
     });
   };
@@ -82,6 +89,10 @@ function buildIndex() {
   rilaProducts.forEach(p => addProduct(p, 'rila', '/rila'));
   vaProducts.forEach(p => addProduct(p, 'va', '/va'));
   vulProducts.forEach(p => addProduct(p, 'vul', '/vul'));
+  mygaProducts.forEach(p => addProduct(p, 'myga', '/myga'));
+  // Bonds have no carrier; both kinds open in the combined Bond Yields explorer.
+  corporateBonds.forEach(p => addProduct(p, 'corp', '/bonds'));
+  municipalBonds.forEach(p => addProduct(p, 'muni', '/bonds'));
 
   subaccounts.forEach(s => {
     const fields = [];
