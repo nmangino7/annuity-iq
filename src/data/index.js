@@ -8,6 +8,7 @@ import { vulProducts } from './vul-products.js';
 import { mygaProducts } from './myga-products.js';
 import { corporateBonds } from './corporate-bonds.js';
 import { municipalBonds } from './municipal-bonds.js';
+import { treasuryBonds } from './treasury-bonds.js';
 import { subaccounts } from './subaccounts.js';
 import { benchmarks } from './benchmarks.js';
 import { historicalRates } from './historical.js';
@@ -47,11 +48,12 @@ export function getMYGAProducts() {
 
 export function getCorporateBonds() { return corporateBonds.map(b => ({ ...b, bondType: 'corp' })); }
 export function getMunicipalBonds() { return municipalBonds.map(b => ({ ...b, bondType: 'muni' })); }
+export function getGovernmentBonds() { return treasuryBonds.map(b => ({ ...b, bondType: 'govt' })); }
 
 // Combined feed for the Bond Yields explorer. Bonds are benchmark yields, not
 // carrier products, so there's no carrier join.
 export function getBonds() {
-  return [...getCorporateBonds(), ...getMunicipalBonds()];
+  return [...getCorporateBonds(), ...getMunicipalBonds(), ...getGovernmentBonds()];
 }
 
 export function getSubaccounts() { return subaccounts; }
@@ -62,7 +64,7 @@ export function getHistorical() { return historicalRates; }
 // Aggregate data-trust stats for freshness/verification indicators in the UI.
 export function getDataStats() {
   const products = [...fiaProducts, ...iulProducts, ...rilaProducts, ...vaProducts, ...vulProducts, ...glwbRiders, ...mygaProducts];
-  const bonds = [...corporateBonds, ...municipalBonds];
+  const bonds = [...corporateBonds, ...municipalBonds, ...treasuryBonds];
   const dates = [];
   let verified = 0, partial = 0;
   // Products use `ratesVerified`; bonds use `yieldVerified` — count both flavors.
@@ -105,6 +107,8 @@ export function getProduct(id) {
   if (corp) return { ...corp, type: 'corp', bondType: 'corp' };
   const muni = municipalBonds.find(b => b.id === id);
   if (muni) return { ...muni, type: 'muni', bondType: 'muni' };
+  const govt = treasuryBonds.find(b => b.id === id);
+  if (govt) return { ...govt, type: 'govt', bondType: 'govt' };
   return null;
 }
 

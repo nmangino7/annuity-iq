@@ -19,12 +19,13 @@ export const PRODUCT_SCHEMAS = {
   // Bonds are benchmark YIELD references, not carrier products: no carrierId, so no carrierRef.
   corporateBonds: { idField: 'id', required: ['id', 'name'], crossTypeId: true },
   municipalBonds: { idField: 'id', required: ['id', 'name'], crossTypeId: true },
+  treasuryBonds:  { idField: 'id', required: ['id', 'name'], crossTypeId: true },
   subaccounts: { idField: 'id', required: ['id', 'name', 'assetClass'] },
 };
 
 // Collections whose ids share one namespace because getProduct() (src/data/index.js)
 // resolves by bare id across all of them — a cross-type collision silently shadows.
-export const CROSS_TYPE_COLLECTIONS = ['fiaProducts', 'iulProducts', 'rilaProducts', 'vaProducts', 'vulProducts', 'glwbRiders', 'mygaProducts', 'corporateBonds', 'municipalBonds'];
+export const CROSS_TYPE_COLLECTIONS = ['fiaProducts', 'iulProducts', 'rilaProducts', 'vaProducts', 'vulProducts', 'glwbRiders', 'mygaProducts', 'corporateBonds', 'municipalBonds', 'treasuryBonds'];
 
 // Allowed values for the verification flag shared across product records.
 export const RATES_VERIFIED_ENUM = [true, false, 'partial'];

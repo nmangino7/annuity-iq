@@ -167,7 +167,7 @@ export function renderDashboard() {
             <div>
               <p class="text-emerald-200 text-sm font-medium">Bond Yields</p>
               <p class="text-2xl font-bold mt-1">${bonds.length} Benchmarks</p>
-              <p class="text-emerald-200 text-xs mt-2">Corporate &amp; municipal yields by tier and maturity</p>
+              <p class="text-emerald-200 text-xs mt-2">Corporate, municipal &amp; Treasury yields by tier and maturity</p>
             </div>
             <svg class="w-8 h-8 text-emerald-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </div>
