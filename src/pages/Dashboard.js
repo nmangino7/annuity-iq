@@ -1,4 +1,4 @@
-import { getFIAProducts, getGLWBRiders, getIULProducts, getRILAProducts, getVAProducts, getVULProducts, getSubaccounts, getCarriers, getHistorical, getDataStats } from '../data/index.js';
+import { getFIAProducts, getGLWBRiders, getIULProducts, getRILAProducts, getVAProducts, getVULProducts, getMYGAProducts, getBonds, getSubaccounts, getCarriers, getHistorical, getDataStats } from '../data/index.js';
 import { pct, ratingBadge, currency, getTopRate, getTopParticipation, monthYear } from '../utils/formatters.js';
 import { dataIntegrityPanel } from '../components/ui.js';
 
@@ -9,6 +9,8 @@ export function renderDashboard() {
   const rilas = getRILAProducts();
   const vas = getVAProducts();
   const vuls = getVULProducts();
+  const mygas = getMYGAProducts();
+  const bonds = getBonds();
   const funds = getSubaccounts();
   const carriers = getCarriers();
   const historical = getHistorical();
@@ -58,7 +60,7 @@ export function renderDashboard() {
       <!-- Header -->
       <div>
         <h1 class="text-2xl font-bold">Dashboard</h1>
-        <p class="text-slate-500 dark:text-slate-400 mt-1">Market overview across ${fias.length + glwbs.length + iuls.length + rilas.length + vas.length + vuls.length} products and ${funds.length} subaccounts</p>
+        <p class="text-slate-500 dark:text-slate-400 mt-1">Market overview across ${fias.length + glwbs.length + iuls.length + rilas.length + vas.length + vuls.length + mygas.length} products and ${funds.length} subaccounts</p>
       </div>
 
       <!-- Hero Stats -->
@@ -80,8 +82,8 @@ export function renderDashboard() {
         </div>
         <div class="bg-white dark:bg-slate-800 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
           <p class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Products Tracked</p>
-          <p class="text-3xl font-bold text-slate-700 dark:text-slate-200 mt-2 font-mono">${fias.length + glwbs.length + iuls.length + rilas.length + vas.length + vuls.length}</p>
-          <p class="text-xs text-slate-400 mt-1">${carriers.length} carriers &bull; ${funds.length} funds</p>
+          <p class="text-3xl font-bold text-slate-700 dark:text-slate-200 mt-2 font-mono">${fias.length + glwbs.length + iuls.length + rilas.length + vas.length + vuls.length + mygas.length}</p>
+          <p class="text-xs text-slate-400 mt-1">${carriers.length} carriers &bull; ${funds.length} funds &bull; ${bonds.length} bond benchmarks</p>
         </div>
       </div>
 
@@ -148,6 +150,26 @@ export function renderDashboard() {
               <p class="text-teal-200 text-xs mt-2">COI, loan provisions, death benefits</p>
             </div>
             <svg class="w-8 h-8 text-teal-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+        </a>
+        <a href="#/myga" class="group bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-xl p-6 text-white hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-cyan-200 text-sm font-medium">Multi-Year Guarantees (MYGA)</p>
+              <p class="text-2xl font-bold mt-1">${mygas.length} Products</p>
+              <p class="text-cyan-200 text-xs mt-2">Guaranteed rates, terms, surrender, liquidity</p>
+            </div>
+            <svg class="w-8 h-8 text-cyan-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+        </a>
+        <a href="#/bonds" class="group bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl p-6 text-white hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-emerald-200 text-sm font-medium">Bond Yields</p>
+              <p class="text-2xl font-bold mt-1">${bonds.length} Benchmarks</p>
+              <p class="text-emerald-200 text-xs mt-2">Corporate &amp; municipal yields by tier and maturity</p>
+            </div>
+            <svg class="w-8 h-8 text-emerald-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </div>
         </a>
         <a href="#/funds" class="group bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl p-6 text-white hover:shadow-lg transition-shadow">

@@ -55,6 +55,8 @@ import { renderRILAExplorer, renderRILADetail } from './pages/RILAExplorer.js';
 import { renderVAExplorer, renderVADetail } from './pages/VAExplorer.js';
 import { renderVULExplorer, renderVULDetail } from './pages/VULExplorer.js';
 import { renderFundExplorer, renderFundDetail } from './pages/FundExplorer.js';
+import { renderMYGAExplorer, renderMYGADetail } from './pages/MYGAExplorer.js';
+import { renderBondExplorer, renderBondDetail } from './pages/BondExplorer.js';
 import { renderPolicyLookup } from './pages/PolicyLookup.js';
 
 // ---------------------------------------------------------------------------
@@ -81,6 +83,10 @@ registerRoute('/va', () => renderVAExplorer());
 registerRoute('/va/:id', (params) => renderVADetail(params.id));
 registerRoute('/vul', () => renderVULExplorer());
 registerRoute('/vul/:id', (params) => renderVULDetail(params.id));
+registerRoute('/myga', () => renderMYGAExplorer());
+registerRoute('/myga/:id', (params) => renderMYGADetail(params.id));
+registerRoute('/bonds', () => renderBondExplorer());
+registerRoute('/bonds/:id', (params) => renderBondDetail(params.id));
 registerRoute('/funds', () => renderFundExplorer());
 registerRoute('/funds/:id', (params) => renderFundDetail(params.id));
 registerRoute('/compare', () => renderCompare());

@@ -15,12 +15,16 @@ export const PRODUCT_SCHEMAS = {
   vaProducts:  { idField: 'id', required: ['id', 'carrierId', 'name'], carrierRef: true, crossTypeId: true, subaccountRef: true },
   vulProducts: { idField: 'id', required: ['id', 'carrierId', 'name'], carrierRef: true, crossTypeId: true, subaccountRef: true },
   glwbRiders:  { idField: 'id', required: ['id', 'carrierId', 'name'], carrierRef: true, crossTypeId: true },
+  mygaProducts:{ idField: 'id', required: ['id', 'carrierId', 'name'], carrierRef: true, crossTypeId: true },
+  // Bonds are benchmark YIELD references, not carrier products: no carrierId, so no carrierRef.
+  corporateBonds: { idField: 'id', required: ['id', 'name'], crossTypeId: true },
+  municipalBonds: { idField: 'id', required: ['id', 'name'], crossTypeId: true },
   subaccounts: { idField: 'id', required: ['id', 'name', 'assetClass'] },
 };
 
 // Collections whose ids share one namespace because getProduct() (src/data/index.js)
 // resolves by bare id across all of them — a cross-type collision silently shadows.
-export const CROSS_TYPE_COLLECTIONS = ['fiaProducts', 'iulProducts', 'rilaProducts', 'vaProducts', 'vulProducts', 'glwbRiders'];
+export const CROSS_TYPE_COLLECTIONS = ['fiaProducts', 'iulProducts', 'rilaProducts', 'vaProducts', 'vulProducts', 'glwbRiders', 'mygaProducts', 'corporateBonds', 'municipalBonds'];
 
 // Allowed values for the verification flag shared across product records.
 export const RATES_VERIFIED_ENUM = [true, false, 'partial'];
@@ -39,6 +43,10 @@ export const RANGES = {
   bufferLevel:        [0, 100],
   floorLevel:         [-100, 0],
   fixedAccountRate:   [0, 15],
+  guaranteedRate:     [0, 15],          // MYGA declared rate
+  currentYield:       [0, 25],          // bond benchmark yield
+  taxableEquivalentYield: [0, 40],      // muni yield grossed up for tax
+  termYears:          [1, 20],          // MYGA guarantee term
   guaranteedMinimumRate: [0, 10],
   guaranteedMinCreditingRate: [0, 10],
   premiumBonus:       [0, 30],

@@ -1059,7 +1059,7 @@ export const carriers = [
     foundedYear: 2020,
     headquarters: "Durham, NC",
     totalAssets: null,
-    productCategories: ["fia", "glwb"],
+    productCategories: ["fia", "glwb", "myga"],
     website: "https://www.aspida.com",
     lastVerifiedDate: "2026-05-31",
     verificationSource: "AM Best rating affirmed 2025-08-29 (news.ambest.com); Aspida company profile"
@@ -1079,9 +1079,29 @@ export const carriers = [
     foundedYear: 1948,
     headquarters: "Salt Lake City, UT",
     totalAssets: null,
-    productCategories: ["fia", "glwb"],
+    productCategories: ["fia", "glwb", "myga"],
     website: null,
     lastVerifiedDate: "2026-05-31",
     verificationSource: "AM Best (news.ambest.com); AnnuityAdvantage carrier profile"
+  },
+  {
+    id: "americo",
+    name: "Americo Financial Life and Annuity Insurance Company",
+    shortName: "Americo",
+    ratings: {
+      amBest: { rating: "A", outlook: "Stable" },
+      sAndP: null,
+      moodys: null,
+      fitch: null,
+      comdex: null
+    },
+    yearsInBusiness: 80,
+    foundedYear: 1946,
+    headquarters: "Kansas City, MO",
+    totalAssets: null,
+    productCategories: ["myga"],
+    website: "https://www.americo.com",
+    lastVerifiedDate: "2026-06-01",
+    verificationSource: "AM Best A (Excellent) per Americo company & AnnuityAdvantage/My Annuity Store profiles, 2026; founded 1946, Kansas City, MO"
   }
 ];

@@ -18,6 +18,9 @@ import { rilaProducts } from '../src/data/rila-products.js';
 import { vaProducts } from '../src/data/va-products.js';
 import { vulProducts } from '../src/data/vul-products.js';
 import { glwbRiders } from '../src/data/glwb-riders.js';
+import { mygaProducts } from '../src/data/myga-products.js';
+import { corporateBonds } from '../src/data/corporate-bonds.js';
+import { municipalBonds } from '../src/data/municipal-bonds.js';
 import { subaccounts } from '../src/data/subaccounts.js';
 import {
   PRODUCT_SCHEMAS, CROSS_TYPE_COLLECTIONS, RATES_VERIFIED_ENUM,
@@ -26,7 +29,8 @@ import {
 
 const COLLECTIONS = {
   carriers, fiaProducts, iulProducts, rilaProducts,
-  vaProducts, vulProducts, glwbRiders, subaccounts,
+  vaProducts, vulProducts, glwbRiders, mygaProducts,
+  corporateBonds, municipalBonds, subaccounts,
 };
 
 const errors = [];
