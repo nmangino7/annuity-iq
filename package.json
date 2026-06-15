@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "seed": "node scripts/seed-supabase.js",
+    "build:managed": "python3 scripts/build_managed_accounts.py",
     "validate:data": "node scripts/validate-data.mjs",
     "test": "node --test",
     "smoke": "node scripts/smoke.mjs",

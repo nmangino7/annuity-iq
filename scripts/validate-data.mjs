@@ -22,6 +22,7 @@ import { mygaProducts } from '../src/data/myga-products.js';
 import { corporateBonds } from '../src/data/corporate-bonds.js';
 import { municipalBonds } from '../src/data/municipal-bonds.js';
 import { treasuryBonds } from '../src/data/treasury-bonds.js';
+import { managedAccounts } from '../src/data/managed-accounts.js';
 import { subaccounts } from '../src/data/subaccounts.js';
 import {
   PRODUCT_SCHEMAS, CROSS_TYPE_COLLECTIONS, RATES_VERIFIED_ENUM,
@@ -31,7 +32,7 @@ import {
 const COLLECTIONS = {
   carriers, fiaProducts, iulProducts, rilaProducts,
   vaProducts, vulProducts, glwbRiders, mygaProducts,
-  corporateBonds, municipalBonds, treasuryBonds, subaccounts,
+  corporateBonds, municipalBonds, treasuryBonds, managedAccounts, subaccounts,
 };
 
 const errors = [];

@@ -24,7 +24,7 @@ globalThis.location = { hash: '' };
 
 const {
   getFIAProducts, getIULProducts, getRILAProducts, getVAProducts, getVULProducts,
-  getGLWBRiders, getMYGAProducts, getBonds, getSubaccounts, getCarriers,
+  getGLWBRiders, getMYGAProducts, getBonds, getManagedAccounts, getSubaccounts, getCarriers,
 } = await import('../src/data/index.js');
 
 const id = (arr) => (arr()[0]?.id);
@@ -42,6 +42,7 @@ const VUL = await import('../src/pages/VULExplorer.js');       add('VULExplorer'
 const FUND = await import('../src/pages/FundExplorer.js');     add('FundExplorer', () => FUND.renderFundExplorer());
 const MYGA = await import('../src/pages/MYGAExplorer.js');     add('MYGAExplorer', () => MYGA.renderMYGAExplorer());
 const BOND = await import('../src/pages/BondExplorer.js');     add('BondExplorer', () => BOND.renderBondExplorer());
+const MA = await import('../src/pages/ManagedAccounts.js');    add('ManagedAccounts', () => MA.renderManagedAccountsExplorer());
 const PD = await import('../src/pages/ProductDetail.js');
 const CAR = await import('../src/pages/Carriers.js');          add('Carriers', () => CAR.renderCarriers());
 const CP = await import('../src/pages/CarrierProfile.js');
@@ -61,6 +62,7 @@ add('VUL detail', () => VUL.renderVULDetail(id(getVULProducts)));
 add('Fund detail', () => FUND.renderFundDetail(id(getSubaccounts)));
 add('MYGA detail', () => MYGA.renderMYGADetail(id(getMYGAProducts)));
 add('Bond detail', () => BOND.renderBondDetail(id(getBonds)));
+add('Managed Account detail', () => MA.renderManagedAccountDetail(id(getManagedAccounts)));
 add('Carrier profile', () => CP.renderCarrierProfile(id(getCarriers)));
 
 let failed = 0;

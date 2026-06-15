@@ -9,6 +9,7 @@ import { mygaProducts } from './myga-products.js';
 import { corporateBonds } from './corporate-bonds.js';
 import { municipalBonds } from './municipal-bonds.js';
 import { treasuryBonds } from './treasury-bonds.js';
+import { managedAccounts } from './managed-accounts.js';
 import { subaccounts } from './subaccounts.js';
 import { benchmarks } from './benchmarks.js';
 import { historicalRates } from './historical.js';
@@ -56,6 +57,9 @@ export function getBonds() {
   return [...getCorporateBonds(), ...getMunicipalBonds(), ...getGovernmentBonds()];
 }
 
+// Managed accounts (SMA / model portfolios) — owner-provided, no carrier join.
+export function getManagedAccounts() { return managedAccounts; }
+
 export function getSubaccounts() { return subaccounts; }
 
 export function getBenchmarks() { return benchmarks; }
@@ -67,9 +71,10 @@ export function getDataStats() {
   const bonds = [...corporateBonds, ...municipalBonds, ...treasuryBonds];
   const dates = [];
   let verified = 0, partial = 0;
-  // Products use `ratesVerified`; bonds use `yieldVerified` — count both flavors.
-  for (const p of [...products, ...bonds]) {
-    const flag = p.ratesVerified ?? p.yieldVerified;
+  // Products use `ratesVerified`, bonds `yieldVerified`, managed accounts
+  // `returnsVerified` — count all three flavors.
+  for (const p of [...products, ...bonds, ...managedAccounts]) {
+    const flag = p.ratesVerified ?? p.yieldVerified ?? p.returnsVerified;
     if (flag === true) verified++;
     else if (flag === 'partial') partial++;
     if (p.lastVerifiedDate) dates.push(p.lastVerifiedDate);
@@ -82,6 +87,7 @@ export function getDataStats() {
     verifiedProducts: verified,
     partialProducts: partial,
     totalBonds: bonds.length,
+    totalManagedAccounts: managedAccounts.length,
     totalFunds: subaccounts.length,
     totalCarriers: carriers.length,
     latestVerifiedDate: dates.length ? dates[dates.length - 1] : null,
@@ -109,6 +115,8 @@ export function getProduct(id) {
   if (muni) return { ...muni, type: 'muni', bondType: 'muni' };
   const govt = treasuryBonds.find(b => b.id === id);
   if (govt) return { ...govt, type: 'govt', bondType: 'govt' };
+  const sma = managedAccounts.find(a => a.id === id);
+  if (sma) return { ...sma, type: 'sma' };
   return null;
 }
 
