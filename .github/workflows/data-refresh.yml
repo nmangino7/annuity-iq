@@ -1,0 +1,55 @@
+name: Data refresh (managed accounts)
+
+# FREE auto-update for the Managed Accounts data — no paid APIs.
+# Regenerates src/data/managed-accounts.js from data-sources/*.xlsx, validates,
+# and commits the result. Runs when:
+#   • you upload/replace a spreadsheet in data-sources/ (push trigger)
+#   • you click "Run workflow" (manual)
+#   • weekly (in case the source or generator changes)
+# To refresh the data: re-export the OPS Strategist Lookup from your platform and
+# commit it over data-sources/OPS_Strategist_Lookup.xlsx — the app rebuilds itself.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data-sources/**'
+      - 'scripts/build_managed_accounts.py'
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate managed-accounts data from the spreadsheet
+        run: npm run build:managed
+
+      - name: Validate data integrity
+        run: npm run validate:data
+
+      - name: Commit regenerated data if it changed
+        run: |
+          if [ -n "$(git status --porcelain src/data/managed-accounts.js)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add src/data/managed-accounts.js
+            git commit -m "chore(data): auto-refresh managed accounts from OPS Strategist Lookup"
+            git push
+          else
+            echo "No changes — managed-accounts.js already up to date."
+          fi

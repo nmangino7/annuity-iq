@@ -1,4 +1,4 @@
-import { getFIAProducts, getGLWBRiders, getIULProducts, getRILAProducts, getVAProducts, getVULProducts, getMYGAProducts, getBonds, getSubaccounts, getCarriers, getHistorical, getDataStats } from '../data/index.js';
+import { getFIAProducts, getGLWBRiders, getIULProducts, getRILAProducts, getVAProducts, getVULProducts, getMYGAProducts, getBonds, getManagedAccounts, getSubaccounts, getCarriers, getHistorical, getDataStats } from '../data/index.js';
 import { pct, ratingBadge, currency, getTopRate, getTopParticipation, monthYear } from '../utils/formatters.js';
 import { dataIntegrityPanel } from '../components/ui.js';
 
@@ -11,6 +11,7 @@ export function renderDashboard() {
   const vuls = getVULProducts();
   const mygas = getMYGAProducts();
   const bonds = getBonds();
+  const managed = getManagedAccounts();
   const funds = getSubaccounts();
   const carriers = getCarriers();
   const historical = getHistorical();
@@ -167,9 +168,19 @@ export function renderDashboard() {
             <div>
               <p class="text-emerald-200 text-sm font-medium">Bond Yields</p>
               <p class="text-2xl font-bold mt-1">${bonds.length} Benchmarks</p>
-              <p class="text-emerald-200 text-xs mt-2">Corporate &amp; municipal yields by tier and maturity</p>
+              <p class="text-emerald-200 text-xs mt-2">Corporate, municipal &amp; Treasury yields by tier and maturity</p>
             </div>
             <svg class="w-8 h-8 text-emerald-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+        </a>
+        <a href="#/managed" class="group bg-gradient-to-br from-fuchsia-600 to-fuchsia-800 rounded-xl p-6 text-white hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-fuchsia-200 text-sm font-medium">Managed Accounts (SMA)</p>
+              <p class="text-2xl font-bold mt-1">${managed.length} Models</p>
+              <p class="text-fuchsia-200 text-xs mt-2">Strategist model portfolios — gross &amp; net performance</p>
+            </div>
+            <svg class="w-8 h-8 text-fuchsia-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </div>
         </a>
         <a href="#/funds" class="group bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl p-6 text-white hover:shadow-lg transition-shadow">

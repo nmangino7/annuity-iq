@@ -19,12 +19,15 @@ export const PRODUCT_SCHEMAS = {
   // Bonds are benchmark YIELD references, not carrier products: no carrierId, so no carrierRef.
   corporateBonds: { idField: 'id', required: ['id', 'name'], crossTypeId: true },
   municipalBonds: { idField: 'id', required: ['id', 'name'], crossTypeId: true },
+  treasuryBonds:  { idField: 'id', required: ['id', 'name'], crossTypeId: true },
+  // Managed accounts (SMA / model portfolios): owner-provided, no carrierId.
+  managedAccounts: { idField: 'id', required: ['id', 'name', 'firm'], crossTypeId: true },
   subaccounts: { idField: 'id', required: ['id', 'name', 'assetClass'] },
 };
 
 // Collections whose ids share one namespace because getProduct() (src/data/index.js)
 // resolves by bare id across all of them — a cross-type collision silently shadows.
-export const CROSS_TYPE_COLLECTIONS = ['fiaProducts', 'iulProducts', 'rilaProducts', 'vaProducts', 'vulProducts', 'glwbRiders', 'mygaProducts', 'corporateBonds', 'municipalBonds'];
+export const CROSS_TYPE_COLLECTIONS = ['fiaProducts', 'iulProducts', 'rilaProducts', 'vaProducts', 'vulProducts', 'glwbRiders', 'mygaProducts', 'corporateBonds', 'municipalBonds', 'treasuryBonds', 'managedAccounts'];
 
 // Allowed values for the verification flag shared across product records.
 export const RATES_VERIFIED_ENUM = [true, false, 'partial'];
@@ -58,7 +61,7 @@ export const RANGES = {
   totalAnnualCharge:  [0, 5],
   surrenderPeriod:    [0, 20],
   maximumIssueAge:    [0, 100],
-  expenseRatio:       [0, 5],
+  expenseRatio:       [0, 10],         // alt/long-short SMA models legitimately run high (short borrow + dividend costs)
   ytdReturn:          [-100, 200],
   oneYearReturn:      [-100, 200],
   threeYearReturn:    [-100, 100],

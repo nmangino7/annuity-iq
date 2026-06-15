@@ -11,9 +11,15 @@ let sortKey = 'currentYield';
 let sortDir = 'desc';
 let filters = { type: 'all', minYield: 0 };
 
-const typeBadge = (bondType) => bondType === 'muni'
-  ? '<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Muni</span>'
-  : '<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">Corp</span>';
+const BOND_TYPE_BADGE = {
+  muni: ['Muni', 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300'],
+  govt: ['Treasury', 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300'],
+  corp: ['Corp', 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300'],
+};
+const typeBadge = (bondType) => {
+  const [label, cls] = BOND_TYPE_BADGE[bondType] || BOND_TYPE_BADGE.corp;
+  return `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${cls}">${label}</span>`;
+};
 
 function getFilteredBonds() {
   let bonds = getBonds();
@@ -37,7 +43,7 @@ export function renderBondExplorer() {
     <div class="space-y-4">
       <div class="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h1 class="text-2xl font-bold">Bond Yields <span class="text-base font-normal text-slate-500 dark:text-slate-400">(Corporate &amp; Municipal)</span></h1>
+          <h1 class="text-2xl font-bold">Bond Yields <span class="text-base font-normal text-slate-500 dark:text-slate-400">(Corporate, Municipal &amp; Treasury)</span></h1>
           <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Benchmark yields by credit tier and maturity — as-of references, not individual securities</p>
         </div>
         <button onclick="document.getElementById('bond-filters').classList.toggle('hidden')" class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 rounded-lg text-sm hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors flex items-center gap-1">
@@ -47,7 +53,7 @@ export function renderBondExplorer() {
       </div>
 
       <!-- Summary Cards -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="bond-summary-cards"></div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3" id="bond-summary-cards"></div>
 
       <!-- Filters -->
       <div id="bond-filters" class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 hidden">
@@ -55,7 +61,7 @@ export function renderBondExplorer() {
           <div>
             <label class="block text-xs font-medium text-slate-500 mb-1">Type</label>
             <select id="bf-type" class="w-full bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg px-3 py-1.5 text-sm">
-              <option value="all">All</option><option value="corp">Corporate</option><option value="muni">Municipal</option>
+              <option value="all">All</option><option value="corp">Corporate</option><option value="muni">Municipal</option><option value="govt">Treasury / Govt</option>
             </select>
           </div>
           <div>
@@ -219,6 +225,7 @@ function renderBondTable() {
     const all = getBonds();
     const corp = all.filter(b => b.bondType === 'corp');
     const muni = all.filter(b => b.bondType === 'muni');
+    const govt = all.filter(b => b.bondType === 'govt');
     const yields = all.map(b => b.currentYield).filter(y => y != null);
     const topYield = yields.length ? Math.max(...yields) : 0;
     summaryEl.innerHTML = `
@@ -233,6 +240,10 @@ function renderBondTable() {
       <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
         <div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">${muni.length}</div>
         <div class="text-xs text-slate-500 mt-1">Municipal</div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
+        <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">${govt.length}</div>
+        <div class="text-xs text-slate-500 mt-1">Treasury / Govt</div>
       </div>
       <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
         <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">${pct(topYield)}</div>
